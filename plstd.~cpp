@@ -1041,6 +1041,7 @@ for(int i=1; i <AdvStringGrid1->RowCount;i++)
 TabSheet2->TabVisible = false;
 TabSheet11->TabVisible = false;
 TabSheet14->TabVisible = false;
+TabSheet22->TabVisible = false;
 
   }
  else if (VERSION == 1)
@@ -1054,6 +1055,7 @@ TabSheet14->TabVisible = false;
    TabSheet14->TabVisible = false;
    TabSheet7->TabVisible = false; //true;
    // $$$$$$$$$$$ TabSheet7->TabVisible = true;
+TabSheet22->TabVisible = false;
 
  TabSheet10->TabVisible = true;
    TabSheet15->TabVisible = false;
@@ -31785,7 +31787,7 @@ void __fastcall TplStandard::tachemereamont(int numero)
 
 Label180->Caption = Label15->Caption;
 Label181->Caption = AdvStringGrid1->RowCount;
-                                                         
+
 vectorpred.clear();
 vectorsucc.clear();
 if(numero==1){
@@ -32235,10 +32237,10 @@ AdvStringGrid1CellValidate(Sender,18, ress,  "I---", true);
 AdvStringGrid1CellValidate(Sender,19, ress,  "T---", true);
 AdvStringGrid1CellValidate(Sender,20, ress,  AdvStringGrid8->Cells[4][colAdv], true);
 
-av->Cells[41][nt]= "P---";
-av->Cells[42][nt]= "I---";
-av->Cells[43][nt]= "T---";
-av->Cells[44][nt]=  AdvStringGrid8->Cells[4][colAdv];
+av->Cells[41][ress]= "P---";
+av->Cells[42][ress]= "I---";
+av->Cells[43][ress]= "T---";
+av->Cells[44][ress]=  AdvStringGrid8->Cells[4][colAdv];
 
 str22tmp="";
  btSaveAffectClick(Sender);
@@ -32263,6 +32265,81 @@ switch(ACol)
  current_task=sommets[ctask];
  grefresh(current_task,'0');
 
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::Button56Click(TObject *Sender)
+{
+double x;
+AnsiString str22;
+AnsiString tmpt;
+int strlength;
+AnsiString str222;
+int strlength2;
+double tmpt2;
+double tmpt3;
+Series1->Clear();
+Series2->Clear();
+for(int i=1;i<ave->RowCount;i++)
+Series1->AddBar(StrToFloat(ave->Cells[4][i]),ave->Cells[1][i],clRed);
+
+
+for(int j=1;j<ave->RowCount;j++){
+str22=ave->Cells[4][j];
+if(j+1<ave->RowCount)
+str222=ave->Cells[4][j+1];
+x= StrToFloat(str222)+StrToFloat(str22);
+Series2->XValues->Order=loNone;
+Series2->HasZValues=true;
+Series2->Add(x,ave->Cells[1][j],clBlue);
+
+}
+TabSheet22->Visible= true;
+PageControl1->ActivePageIndex=22;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::Button57Click(TObject *Sender)
+{
+int ix;
+for (ix=1;ix<=LASTTASK;ix++)
+   {
+     if (coche[ix]=='X')
+         {
+		 for(int j=1;j<AdvStringGrid15->RowCount;j++){
+	AdvStringGrid15->Cells[1][j]=AdvStringGrid1->Cells[1][ix];
+	AdvStringGrid15->Cells[2][j]=AdvStringGrid1->Cells[2][ix];
+	AdvStringGrid15->Cells[3][j]=AdvStringGrid1->Cells[3][ix];
+	AdvStringGrid15->Cells[4][j]=AdvStringGrid1->Cells[4][ix];
+	AdvStringGrid15->Cells[5][j]=AdvStringGrid1->Cells[5][ix];
+	AdvStringGrid15->Cells[6][j]=AdvStringGrid1->Cells[6][ix];
+	AdvStringGrid15->Cells[7][j]=AdvStringGrid1->Cells[7][ix];
+    AdvStringGrid15->Cells[8][j]=AdvStringGrid1->Cells[9][ix];
+	AdvStringGrid15->Cells[9][j]=AdvStringGrid1->Cells[10][ix];
+	AdvStringGrid15->Cells[10][j]=AdvStringGrid1->Cells[11][ix];
+	AdvStringGrid15->Cells[11][j]=AdvStringGrid1->Cells[12][ix];
+	AdvStringGrid15->Cells[12][j]=AdvStringGrid1->Cells[13][ix];
+	AdvStringGrid15->Cells[13][j]=AdvStringGrid1->Cells[17][ix];
+	AdvStringGrid15->Cells[14][j]=AdvStringGrid1->Cells[18][ix];
+	AdvStringGrid15->Cells[15][j]=AdvStringGrid1->Cells[19][ix];
+	AdvStringGrid15->Cells[16][j]=AdvStringGrid1->Cells[20][ix];
+	AdvStringGrid15->Cells[17][j]=AdvStringGrid1->Cells[22][ix];
+	AdvStringGrid15->Cells[18][j]=AdvStringGrid1->Cells[23][ix];
+	AdvStringGrid15->Cells[19][j]=AdvStringGrid1->Cells[24][ix];
+	}
+
+}else{
+                  ShowMessage("Aucune tache n'est cochée, veuillez séléctionner les taches que vous souhaitez exporter!");
+                  return;
+                 }
+
+
+
+		 }
+                 
+TabSheet20->Visible= true;
+PageControl1->ActivePageIndex=20;
 }
 //---------------------------------------------------------------------------
 

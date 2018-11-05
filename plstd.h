@@ -553,6 +553,13 @@ __published:	// IDE-managed Components
         TLabel *Label186;
         TButton *Button55;
         TListBox *ListBox2;
+        TTabSheet *TabSheet22;
+        TChart *Chart1;
+        TBarSeries *Series1;
+        TButton *Button56;
+        TChart *Chart2;
+        TLineSeries *Series2;
+        TButton *Button57;
 
         void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
         void __fastcall FormCreate(TObject *Sender);
@@ -926,6 +933,8 @@ __published:	// IDE-managed Components
         void __fastcall ListBox2Click(TObject *Sender);
         void __fastcall asCritCellValidate(TObject *Sender, int ACol,
           int ARow, AnsiString &Value, bool &Valid);
+        void __fastcall Button56Click(TObject *Sender);
+        void __fastcall Button57Click(TObject *Sender);
 
 private:	// User declarations
 
