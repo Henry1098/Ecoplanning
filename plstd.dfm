@@ -1,6 +1,6 @@
 object plStandard: TplStandard
-  Left = 106
-  Top = 41
+  Left = -77
+  Top = 44
   Width = 1382
   Height = 744
   Caption = 'x'
@@ -24,7 +24,7 @@ object plStandard: TplStandard
     Top = 0
     Width = 1273
     Height = 686
-    ActivePage = TabSheet5
+    ActivePage = TabSheet15
     Align = alLeft
     BiDiMode = bdLeftToRight
     MultiLine = True

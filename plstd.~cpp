@@ -32224,7 +32224,6 @@ AdvStringGrid1->Cells[19][ress] = "T---";
 AdvStringGrid1->Cells[20][ress] = AdvStringGrid8->Cells[4][colAdv];
 asCrit->Cells[9][ress] = AdvStringGrid8->Cells[4][colAdv];
 
- btSaveAffectClick(Sender);
 
 
 
@@ -32236,9 +32235,34 @@ AdvStringGrid1CellValidate(Sender,18, ress,  "I---", true);
 AdvStringGrid1CellValidate(Sender,19, ress,  "T---", true);
 AdvStringGrid1CellValidate(Sender,20, ress,  AdvStringGrid8->Cells[4][colAdv], true);
 
+av->Cells[41][nt]= "P---";
+av->Cells[42][nt]= "I---";
+av->Cells[43][nt]= "T---";
+av->Cells[44][nt]=  AdvStringGrid8->Cells[4][colAdv];
+
 str22tmp="";
+ btSaveAffectClick(Sender);
 
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TplStandard::asCritCellValidate(TObject *Sender, int ACol,
+      int ARow, AnsiString &Value, bool &Valid)
+{
+switch(ACol)
+{
+ case 9:
+ asCrit->Cells[9][ARow]=Value;
+ AdvStringGrid1->Cells[20][ARow]=Value;
+ Valid=true;
+ break;
+
+}
+  Change1();
+ current_task=sommets[ctask];
+ grefresh(current_task,'0');
+
+}
+//---------------------------------------------------------------------------
 

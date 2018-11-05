@@ -1008,6 +1008,7 @@ object plStandard: TplStandard
         OnSelectCell = asCritSelectCell
         OnClickCell = asCritClickCell
         OnCanEditCell = asCritCanEditCell
+        OnCellValidate = asCritCellValidate
         ActiveCellFont.Charset = DEFAULT_CHARSET
         ActiveCellFont.Color = clWindowText
         ActiveCellFont.Height = -11

@@ -32235,6 +32235,11 @@ AdvStringGrid1CellValidate(Sender,18, ress,  "I---", true);
 AdvStringGrid1CellValidate(Sender,19, ress,  "T---", true);
 AdvStringGrid1CellValidate(Sender,20, ress,  AdvStringGrid8->Cells[4][colAdv], true);
 
+av->Cells[41][ress]= "P---";
+av->Cells[42][ress]= "I---";
+av->Cells[43][ress]= "T---";
+av->Cells[44][ress]=  AdvStringGrid8->Cells[4][colAdv];
+
 str22tmp="";
  btSaveAffectClick(Sender);
 
