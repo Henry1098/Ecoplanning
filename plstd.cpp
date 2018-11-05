@@ -1038,21 +1038,21 @@ for(int i=1; i <AdvStringGrid1->RowCount;i++)
    TabSheet19->TabVisible = false;
    TabSheet20->TabVisible = false;
      TabSheet21->TabVisible = false;
-TabSheet2->TabVisible = false;
-TabSheet11->TabVisible = false;
-TabSheet14->TabVisible = false;
+TabSheet2->TabVisible = true;
+TabSheet11->TabVisible = true;
+TabSheet14->TabVisible = true;
 TabSheet22->TabVisible = false;
 
   }
  else if (VERSION == 1)
   {
-   TabSheet2->TabVisible = false;
+   TabSheet2->TabVisible = true;
    TabSheet3->TabVisible = false;
-   TabSheet11->TabVisible = false;
+   TabSheet11->TabVisible = true;
    TabSheet5->TabVisible = false;
    TabSheet9->TabVisible = true;
    TabSheet12->TabVisible = false;
-   TabSheet14->TabVisible = false;
+   TabSheet14->TabVisible = true;
    TabSheet7->TabVisible = false; //true;
    // $$$$$$$$$$$ TabSheet7->TabVisible = true;
 TabSheet22->TabVisible = false;

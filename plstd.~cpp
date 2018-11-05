@@ -1038,9 +1038,9 @@ for(int i=1; i <AdvStringGrid1->RowCount;i++)
    TabSheet19->TabVisible = false;
    TabSheet20->TabVisible = false;
      TabSheet21->TabVisible = false;
-TabSheet2->TabVisible = false;
-TabSheet11->TabVisible = false;
-TabSheet14->TabVisible = false;
+TabSheet2->TabVisible = true;
+TabSheet11->TabVisible = true;
+TabSheet14->TabVisible = true;
 TabSheet22->TabVisible = false;
 
   }
@@ -32303,11 +32303,12 @@ PageControl1->ActivePageIndex=22;
 void __fastcall TplStandard::Button57Click(TObject *Sender)
 {
 int ix;
-for (ix=1;ix<=LASTTASK;ix++)
+
+ for (ix=1;ix<=LASTTASK;ix++)
    {
-     if (coche[ix]=='X')
+      if (coche[ix]=='X')
          {
-		 for(int j=1;j<AdvStringGrid15->RowCount;j++){
+         	 for(int j=1;j<AdvStringGrid15->RowCount;j++){
 	AdvStringGrid15->Cells[1][j]=AdvStringGrid1->Cells[1][ix];
 	AdvStringGrid15->Cells[2][j]=AdvStringGrid1->Cells[2][ix];
 	AdvStringGrid15->Cells[3][j]=AdvStringGrid1->Cells[3][ix];
@@ -32328,16 +32329,12 @@ for (ix=1;ix<=LASTTASK;ix++)
 	AdvStringGrid15->Cells[18][j]=AdvStringGrid1->Cells[23][ix];
 	AdvStringGrid15->Cells[19][j]=AdvStringGrid1->Cells[24][ix];
 	}
+                              }else{
+          ShowMessage("Aucune tâche selectionnée");
+          return;
 
-}else{
-                  ShowMessage("Aucune tache n'est cochée, veuillez séléctionner les taches que vous souhaitez exporter!");
-                  return;
-                 }
-
-
-
-		 }
-                 
+         }
+     }
 TabSheet20->Visible= true;
 PageControl1->ActivePageIndex=20;
 }

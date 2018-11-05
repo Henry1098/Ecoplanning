@@ -1,6 +1,6 @@
 object plStandard: TplStandard
-  Left = 103
-  Top = 207
+  Left = -28
+  Top = 156
   Width = 1382
   Height = 788
   Caption = 'x'
@@ -838,15 +838,6 @@ object plStandard: TplStandard
         TabOrder = 22
         Visible = False
         OnClick = Button53Click
-      end
-      object Button57: TButton
-        Left = 696
-        Top = 0
-        Width = 75
-        Height = 25
-        Caption = 'Button57'
-        TabOrder = 23
-        OnClick = Button57Click
       end
     end
     object TabSheet5: TTabSheet

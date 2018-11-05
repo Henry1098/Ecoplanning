@@ -559,7 +559,6 @@ __published:	// IDE-managed Components
         TButton *Button56;
         TChart *Chart2;
         TLineSeries *Series2;
-        TButton *Button57;
 
         void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
         void __fastcall FormCreate(TObject *Sender);
