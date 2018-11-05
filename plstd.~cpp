@@ -5790,11 +5790,30 @@ if (Key == VK_INSERT)
      asCrit->Cells[2][addr] =  AnsiString (tmp);
      // effacer les criteres dans av et dans asCrit
      count = av->ColCount;
-     for (m=4; m<count; m++)  av->Cells[m][nt]="";
+     int countRow=av->RowCount;
+//     for (m=4; m<count; m++)  av->Cells[m][nt]="";
 
      count = asCrit->ColCount;
-   for (m=3; m<count; m++)
-   asCrit->Cells[addr][nt]="";
+ //1  for (m=3; m<count; m++)
+//2   asCrit->Cells[addr][nt]="";
+
+
+     asCrit->Cells[1][addr]=  AdvStringGrid1->Cells[1][addr];
+     asCrit->Cells[2][addr]=  AdvStringGrid1->Cells[2][addr];
+     asCrit->Cells[3][addr]=  "P---";
+     asCrit->Cells[4][addr]=  "PHASES";
+     asCrit->Cells[5][addr]=  "I---";
+     asCrit->Cells[6][addr]=  "INTERVENANTS";
+     asCrit->Cells[7][addr]=  "T---";
+     asCrit->Cells[8][addr]=  "TRIS";
+     asCrit->Cells[9][addr]=  "R---";
+     asCrit->Cells[10][addr]=  "RESSOURCES";
+
+     AdvStringGrid1->Cells[17][addr]=  "P---";
+     AdvStringGrid1->Cells[18][addr]=  "I---";
+     AdvStringGrid1->Cells[19][addr]=  "T---";
+     AdvStringGrid1->Cells[20][addr]=  "R---";
+
 
      // strcpy(libel[nb_taches],tmp);
      AdvStringGrid1->Cells[10][addr]= "1";  // cal
@@ -5877,6 +5896,7 @@ if (Key == VK_INSERT)
     }
 
  Change1();
+ btSaveAffectClick(Sender);
 
  }
 
@@ -31671,7 +31691,7 @@ void __fastcall TplStandard::Button413Click(TObject *Sender)
 
  int numero;
    numero = 1;
-   
+
 
 
 tachemereamont(1);
@@ -31765,7 +31785,9 @@ void __fastcall TplStandard::tachemereamont(int numero)
 
 Label180->Caption = Label15->Caption;
 Label181->Caption = AdvStringGrid1->RowCount;
-
+                                                         
+vectorpred.clear();
+vectorsucc.clear();
 if(numero==1){
 des=InputBox("Tache mère","Veuillez entrer une designation pour la tache mère","ASXFD");
 des2=InputBox("Tache mère","Veuillez entrer une designation pour la tache fille","ASXFD");
@@ -31815,7 +31837,8 @@ AdvStringGrid8->Cells[7][1] =des;
      }
 Label188->Caption = IntToStr(AdvStringGrid3->RowCount)-1;
 Label189->Caption = IntToStr(AdvStringGrid2->RowCount)-1;
-
+vectorpred.clear();
+vectorsucc.clear();
  for (int i(0); i < PageControl1->PageCount; ++i)
     PageControl1->Pages[i]->TabVisible = false;
 
@@ -32199,6 +32222,9 @@ AdvStringGrid1->Cells[17][ress] = "P---";
 AdvStringGrid1->Cells[18][ress] = "I---";
 AdvStringGrid1->Cells[19][ress] = "T---";
 AdvStringGrid1->Cells[20][ress] = AdvStringGrid8->Cells[4][colAdv];
+asCrit->Cells[9][ress] = AdvStringGrid8->Cells[4][colAdv];
+
+ btSaveAffectClick(Sender);
 
 
 
@@ -32209,7 +32235,6 @@ AdvStringGrid1CellValidate(Sender,17, ress,  "P---", true);
 AdvStringGrid1CellValidate(Sender,18, ress,  "I---", true);
 AdvStringGrid1CellValidate(Sender,19, ress,  "T---", true);
 AdvStringGrid1CellValidate(Sender,20, ress,  AdvStringGrid8->Cells[4][colAdv], true);
-
 
 str22tmp="";
 

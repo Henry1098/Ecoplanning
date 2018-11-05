@@ -24,7 +24,7 @@ object plStandard: TplStandard
     Top = 0
     Width = 1273
     Height = 686
-    ActivePage = pl1
+    ActivePage = TabSheet5
     Align = alLeft
     BiDiMode = bdLeftToRight
     MultiLine = True
@@ -1008,6 +1008,7 @@ object plStandard: TplStandard
         OnSelectCell = asCritSelectCell
         OnClickCell = asCritClickCell
         OnCanEditCell = asCritCanEditCell
+        OnCellValidate = asCritCellValidate
         ActiveCellFont.Charset = DEFAULT_CHARSET
         ActiveCellFont.Color = clWindowText
         ActiveCellFont.Height = -11

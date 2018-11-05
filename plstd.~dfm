@@ -24,7 +24,7 @@ object plStandard: TplStandard
     Top = 0
     Width = 1273
     Height = 686
-    ActivePage = pl1
+    ActivePage = TabSheet15
     Align = alLeft
     BiDiMode = bdLeftToRight
     MultiLine = True

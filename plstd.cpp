@@ -5790,24 +5790,29 @@ if (Key == VK_INSERT)
      asCrit->Cells[2][addr] =  AnsiString (tmp);
      // effacer les criteres dans av et dans asCrit
      count = av->ColCount;
-     for (m=4; m<count; m++)  av->Cells[m][nt]="";
+     int countRow=av->RowCount;
+//     for (m=4; m<count; m++)  av->Cells[m][nt]="";
 
      count = asCrit->ColCount;
  //1  for (m=3; m<count; m++)
 //2   asCrit->Cells[addr][nt]="";
 
-    
-     asCrit->Cells[1][asCrit->RowCount]=  AdvStringGrid1->Cells[1][asCrit->RowCount];
-     asCrit->Cells[2][asCrit->RowCount]=  AdvStringGrid1->Cells[2][asCrit->RowCount];
-     asCrit->Cells[3][asCrit->RowCount]=  "P---";
-     asCrit->Cells[4][asCrit->RowCount]=  "PHASES";
-     asCrit->Cells[5][asCrit->RowCount]=  "I---";
-     asCrit->Cells[6][asCrit->RowCount]=  "INTERVENANTS";
-     asCrit->Cells[7][asCrit->RowCount]=  "T---";
-     asCrit->Cells[8][asCrit->RowCount]=  "TRIS";
-     asCrit->Cells[9][asCrit->RowCount]=  "R---";
-     asCrit->Cells[10][asCrit->RowCount]=  "RESSOURCES";
 
+     asCrit->Cells[1][addr]=  AdvStringGrid1->Cells[1][addr];
+     asCrit->Cells[2][addr]=  AdvStringGrid1->Cells[2][addr];
+     asCrit->Cells[3][addr]=  "P---";
+     asCrit->Cells[4][addr]=  "PHASES";
+     asCrit->Cells[5][addr]=  "I---";
+     asCrit->Cells[6][addr]=  "INTERVENANTS";
+     asCrit->Cells[7][addr]=  "T---";
+     asCrit->Cells[8][addr]=  "TRIS";
+     asCrit->Cells[9][addr]=  "R---";
+     asCrit->Cells[10][addr]=  "RESSOURCES";
+
+     AdvStringGrid1->Cells[17][addr]=  "P---";
+     AdvStringGrid1->Cells[18][addr]=  "I---";
+     AdvStringGrid1->Cells[19][addr]=  "T---";
+     AdvStringGrid1->Cells[20][addr]=  "R---";
 
 
      // strcpy(libel[nb_taches],tmp);
@@ -5891,6 +5896,7 @@ if (Key == VK_INSERT)
     }
 
  Change1();
+ btSaveAffectClick(Sender);
 
  }
 
@@ -32216,6 +32222,8 @@ AdvStringGrid1->Cells[17][ress] = "P---";
 AdvStringGrid1->Cells[18][ress] = "I---";
 AdvStringGrid1->Cells[19][ress] = "T---";
 AdvStringGrid1->Cells[20][ress] = AdvStringGrid8->Cells[4][colAdv];
+asCrit->Cells[9][ress] = AdvStringGrid8->Cells[4][colAdv];
+
 
 
 
@@ -32227,10 +32235,29 @@ AdvStringGrid1CellValidate(Sender,18, ress,  "I---", true);
 AdvStringGrid1CellValidate(Sender,19, ress,  "T---", true);
 AdvStringGrid1CellValidate(Sender,20, ress,  AdvStringGrid8->Cells[4][colAdv], true);
 
-
 str22tmp="";
+ btSaveAffectClick(Sender);
 
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TplStandard::asCritCellValidate(TObject *Sender, int ACol,
+      int ARow, AnsiString &Value, bool &Valid)
+{
+switch(ACol)
+{
+ case 9:
+ asCrit->Cells[9][ARow]=Value;
+ AdvStringGrid1->Cells[20][ARow]=Value;
+ Valid=true;
+ break;
+
+}
+  Change1();
+ current_task=sommets[ctask];
+ grefresh(current_task,'0');
+
+}
+//---------------------------------------------------------------------------
 

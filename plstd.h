@@ -924,6 +924,8 @@ __published:	// IDE-managed Components
         void __fastcall AdvStringGrid8CanEditCell(TObject *Sender,
           int ARow, int ACol, bool &CanEdit);
         void __fastcall ListBox2Click(TObject *Sender);
+        void __fastcall asCritCellValidate(TObject *Sender, int ACol,
+          int ARow, AnsiString &Value, bool &Valid);
 
 private:	// User declarations
 
