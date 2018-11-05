@@ -1,0 +1,26 @@
+INSTALLATION DE ECOPLANNING SOUS WINDOWS 7
+
+1/  Le client doit fournir son Code Client a Ecoplanning. En retour Ecoplanning enverra la clé de
+   de débridage.
+
+   Pour obtenir le code client, celui ci doit activer l'application "Invite de commandes", présente dans les
+   "Accessoires"
+
+   Une fenetre à fond noir apparait
+   Il suffit de taper "ipconfig /all"
+   On obtient une liste . Il faut sélectionner le numéro associé a "Adresse physique"
+   C'est cette adresse qui servira à générer la clé licence.
+
+2/  Le client doit télécharger le programme  à l'addresse suivante, avec son navigateur :
+
+ www.ecoplanning.fr/FastDownload/SetupEcoplanningNK.exe
+
+ 3/ Ecoplanning fournit au client la clé licence
+
+ 4/ Le client installe le logiciel avec le Setup.
+
+   puis lance Ecoplanning.exe
+   Il lui sera demandé de fournir la clé, pour pouvoir continuer
+
+
+

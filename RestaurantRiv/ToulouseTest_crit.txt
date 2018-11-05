@@ -1,0 +1,35 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>P</c1><c2>00</c2><c3></c3><c4></c4><d>Réunions Mapitrise d'oeuvre</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>Modèle concour</d><r></r><t></t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>2 ie Modèle  MO</d><r></r><t></t>
+<c1>P</c1><c2>03</c2><c3></c3><c4></c4><d>3 ie Modèler  MO</d><r></r><t></t>
+<c1>P</c1><c2>04</c2><c3></c3><c4></c4><d>4 ie Modèle  MO</d><r></r><t></t>
+<c1>P</c1><c2>05</c2><c3></c3><c4></c4><d>Planning grosses réparations</d><r></r><t></t>
+<c1>P</c1><c2>06</c2><c3></c3><c4></c4><d>Outils Excel pour échéanc Financier</d><r></r><t></t>
+<c1>P</c1><c2>07</c2><c3></c3><c4></c4><d>Autres Outils Excel</d><r></r><t></t>
+<c1>P</c1><c2>021</c2><c3></c3><c4></c4><d>Autres Modèle  MO</d><r></r><t></t>
+<c1>P</c1><c2>08</c2><c3></c3><c4></c4><d>Elabora notice Solution Ecoplanning</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>T</c1><c2>T0</c2><c3></c3><c4></c4><d>Mission de maîtrise d'oeuvre</d><r></r><t></t>
+<c1>T</c1><c2>T1</c2><c3></c3><c4></c4><d>Détermination données avec GP</d><r></r><t></t>
+<c1>T</c1><c2>T2</c2><c3></c3><c4></c4><d>Elaboration des outils solution</d><r></r><t></t>
+<c1>T</c1><c2>T3</c2><c3></c3><c4></c4><d>Tests outils solution par GP</d><r></r><t></t>
+<c1>T</c1><c2>T4</c2><c3></c3><c4></c4><d>Essais du Groupe Pilote</d><r></r><t></t>
+<c1>T</c1><c2>T5</c2><c3></c3><c4></c4><d>Elaboration des outils base TGO</d><r></r><t></t>
+<c1>T</c1><c2>T6</c2><c3></c3><c4></c4><d>Tests base TGO par GP</d><r></r><t></t>
+<c1>T</c1><c2>T7</c2><c3></c3><c4></c4><d>Utlisation base TGO par GP</d><r></r><t></t>
+<c1>T</c1><c2>T8</c2><c3></c3><c4></c4><d>Documents de Formation</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

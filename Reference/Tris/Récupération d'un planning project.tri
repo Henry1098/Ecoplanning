@@ -1,0 +1,15 @@
+<l>Récupération d'un planning project</l><des>
+
+Récupération des données à partir 
+
+du module récupération des données fichier 
+
+sous Excel d'un planning Project
+
+
+
+Présentations des  trois sous/ critères 
+
+du critère phases avec les niveaux :  			         N-1  N-2 , N-3
+
+</des><detail>O</detail><champs><CH>+*PHASES</CH><N0></N0><N1>X</N1><N2></N2><N3></N3><DT>X</DT><TR> </TR><BL> </BL><lc>L</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>36</ht><jh>Centre</jh><jv>Haut</jv><cb>8454143</cb><lg>43</lg><ep1>0.1</ep1><cl1>0</cl1><ls2>Non</ls2><ep2>0.1</ep2><cl2>0</cl2>|<CH>+*PHASES</CH><N0></N0><N1></N1><N2>X</N2><N3></N3><DT>X</DT><TR> </TR><BL> </BL><lc>L</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>28</ht><jh>Centre</jh><jv>Haut</jv><cb>16777139</cb><lg>33</lg><ep1>0.1</ep1><cl1>0</cl1><ls2>Non</ls2><ep2>0.1</ep2><cl2>0</cl2>|<CH>+*PHASES</CH><N0></N0><N1></N1><N2></N2><N3>X</N3><DT>X</DT><TR> </TR><BL> </BL><lc>C</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>26</ht><jh>Centre</jh><jv>Haut</jv><cb>11796479</cb><lg>650</lg><ep1>0.1</ep1><cl1>0</cl1><ls2></ls2><ep2>0.1</ep2><cl2>0</cl2>|</champs><envelop><lc>X</lc><pol>_________</pol><ct>8454143</ct><it>Standard</it><bd>Standard</bd><ht>24</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>28</lg><coult>32768</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|<lc>X</lc><pol></pol><ct>16777215</ct><it>Standard</it><bd>Standard</bd><ht>24</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>28</lg><coult>12171775</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|<lc>X</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>22</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>26</lg><coult>16777130</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|</envelop>

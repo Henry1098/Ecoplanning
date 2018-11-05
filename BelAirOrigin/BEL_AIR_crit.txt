@@ -1,0 +1,47 @@
+<c>1</c><l>P</l><d>TRANCHES</d><t>(null)</t>
+<c>2</c><l>C2</l><d>PHASES ET NIVEAUX</d><t>(null)</t>
+<c>3</c><l>C3</l><d>LOTS </d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2>TRANCHE 1</c2><c3></c3><c4></c4><d>TRANCHES</d><r></r><t>0</t>
+<c1>P</c1><c2>TRANCHE 2</c2><c3></c3><c4></c4><d>TRANCHES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 03</c2><c3>0</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 03</c2><c3>01</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 03</c2><c3>02</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 03</c2><c3>03</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 03</c2><c3>COUVERTURE </c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3>00</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3>01</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3>02</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3>03</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C2</c1><c2>BATIMENT 2</c2><c3>COUVERTURE</c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>C3</c1><c2>02</c2><c3></c3><c4></c4><d>LOT 1 DESAMIANTAGE</d><r></r><t>3</t>
+<c1>C3</c1><c2>03</c2><c3></c3><c4></c4><d>LOT 2 DEMOLITION </d><r></r><t>3</t>
+<c1>C3</c1><c2>04</c2><c3></c3><c4></c4><d>LOT 3 GROS OEUVRE</d><r></r><t>74</t>
+<c1>C3</c1><c2>05</c2><c3></c3><c4></c4><d>LOT 4 ETANCHEITE</d><r></r><t>22</t>
+<c1>C3</c1><c2>06</c2><c3></c3><c4></c4><d>LOT 5 SERRURERIE CHARPENTE METAL</d><r></r><t>15</t>
+<c1>C3</c1><c2>07</c2><c3></c3><c4></c4><d>LOT 6 BARDAGE </d><r></r><t>42</t>
+<c1>C3</c1><c2>08</c2><c3></c3><c4></c4><d>LOT 7 MENUISERIE ALUMINIUM</d><r></r><t>26</t>
+<c1>C3</c1><c2>09</c2><c3></c3><c4></c4><d>LOT 8 PORTE AUTOMATIQUE </d><r></r><t>2</t>
+<c1>C3</c1><c2>10</c2><c3></c3><c4></c4><d>LOT 9 CHARPENTE MENUISERIE</d><r></r><t>0</t>
+<c1>C3</c1><c2>11</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>12</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>13</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>14</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>15</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>16</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>17</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>18</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>19</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>LOT 1</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C3</c1><c2>LOT 1</c2><c3></c3><c4></c4><d>LOTS </d><r></r><t>0</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>
+

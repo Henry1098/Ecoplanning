@@ -1,0 +1,34 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>I</c1><c2>I-23-</c2><c3></c3><c4></c4><d>espaces verts</d><r></r><t></t>
+<c1>I</c1><c2>I-03-</c2><c3></c3><c4></c4><d>gros oeuvre</d><r></r><t></t>
+<c1>I</c1><c2>I-22-</c2><c3></c3><c4></c4><d>vrd</d><r></r><t></t>
+<c1>I</c1><c2>I-12-</c2><c3></c3><c4></c4><d>métallerie</d><r></r><t></t>
+<c1>I</c1><c2>I-14-</c2><c3></c3><c4></c4><d>ascenseur</d><r></r><t></t>
+<c1>I</c1><c2>I-24-</c2><c3></c3><c4></c4><d>carrelage</d><r></r><t></t>
+<c1>I</c1><c2>I-20-</c2><c3></c3><c4></c4><d>moquettes</d><r></r><t></t>
+<c1>I</c1><c2>I-19-</c2><c3></c3><c4></c4><d>parquet</d><r></r><t></t>
+<c1>I</c1><c2>I-17-</c2><c3></c3><c4></c4><d>peinture</d><r></r><t></t>
+<c1>I</c1><c2>I-13-</c2><c3></c3><c4></c4><d>electricite-chauffage</d><r></r><t></t>
+<c1>I</c1><c2>I-15-</c2><c3></c3><c4></c4><d>plomberie vmc</d><r></r><t></t>
+<c1>I</c1><c2>I-04-</c2><c3></c3><c4></c4><d>chapes</d><r></r><t></t>
+<c1>I</c1><c2>I-01-</c2><c3></c3><c4></c4><d>démolition</d><r></r><t></t>
+<c1>I</c1><c2>I-05-</c2><c3></c3><c4></c4><d>charpente</d><r></r><t></t>
+<c1>I</c1><c2>I-06-</c2><c3></c3><c4></c4><d>couverture</d><r></r><t></t>
+<c1>I</c1><c2>I-07-</c2><c3></c3><c4></c4><d>étanchéité</d><r></r><t></t>
+<c1>I</c1><c2>I-08-</c2><c3></c3><c4></c4><d>menuiseries extérieures</d><r></r><t></t>
+<c1>I</c1><c2>I-10-</c2><c3></c3><c4></c4><d>menuiseries intérieures</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

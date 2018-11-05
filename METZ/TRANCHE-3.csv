@@ -1,0 +1,738 @@
+N°;Nom;Durée;Début;Fin;Prédécesseurs;Successeurs
+1;;;;;;
+2;TRANCHE 3;975 jours;Lun 04/10/10;Ven 27/06/14;;
+3;;;;;;
+4;O.S. DE DEMARRAGE;0 jour;Lun 04/10/10;Lun 04/10/10;;"15FD+5 jours;5"
+5;PERIODE DE PREPARATION;12 sm;Lun 04/10/10;Ven 24/12/10;4;"8DD+30 jours;36DD+20 jours"
+6;;;;;;
+7;ETUDES EXE MOE;125 jours;Lun 15/11/10;Ven 06/05/11;;
+8;Bät S (EMOP);8 sm;Lun 15/11/10;Ven 07/01/11;5DD+30 jours;9DD+20 jours
+9;Bât R;15 sm;Lun 13/12/10;Ven 25/03/11;8DD+20 jours;10DD+20 jours
+10;Bât N (BBC);13 sm;Lun 10/01/11;Ven 08/04/11;9DD+20 jours;11DD+20 jours
+11;Bât K;13 sm;Lun 07/02/11;Ven 06/05/11;10DD+20 jours;
+12;;;;;;
+13;PHASE 1;320 jours;Lun 04/10/10;Ven 23/12/11;;
+14;PHASE 1A : DEMOLITIONS PREALABLES;50 jours;Ven 08/10/10;Ven 17/12/10;;
+15;301 - DEMOLITION / DESAMIANTAGE;50 jours;Ven 08/10/10;Ven 17/12/10;4FD+5 jours;
+16;Dépôt Plan de Retrait;0 jour;Ven 08/10/10;Ven 08/10/10;;"17;23FD+5 jours"
+17;Instruction Plan de Retrait MCA;4 sm;Lun 11/10/10;Ven 05/11/10;16;18
+18;Dépose MCA;1 sm;Lun 08/11/10;Ven 12/11/10;17;21
+19;Démolitions préalables;2 sm;Lun 06/12/10;Ven 17/12/10;31;
+20;322 - FACADES / BARDAGES METALLIQUES;10 jours;Lun 15/11/10;Ven 26/11/10;;
+21;Fermetures provisoires & issue de secours;2 sm;Lun 15/11/10;Ven 26/11/10;18;31FD-5 jours
+22;340 - GENIE CLIMATIQUE;10 jours;Lun 18/10/10;Ven 29/10/10;;
+23;Repérages;1 sm;Lun 18/10/10;Ven 22/10/10;16FD+5 jours;"24;26DD"
+24;Consignations & Dévoiments;1 sm;Lun 25/10/10;Ven 29/10/10;23;
+25;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;10 jours;Lun 18/10/10;Ven 29/10/10;;
+26;Repérages;1 sm;Lun 18/10/10;Ven 22/10/10;23DD;"27;29DD"
+27;Consignations & Dévoiments;1 sm;Lun 25/10/10;Ven 29/10/10;26;
+28;342 - ELECTRICITE;10 jours;Lun 18/10/10;Ven 29/10/10;;
+29;Repérages;1 sm;Lun 18/10/10;Ven 22/10/10;26DD;30
+30;Consignations & Dévoiments;1 sm;Lun 25/10/10;Ven 29/10/10;29;
+31;"DET MOe ""avant démolition""";2 sm;Lun 22/11/10;Ven 03/12/10;21FD-5 jours;19
+32;;;;;;
+33;PHASE 1B : BÂTIMENTS S, R1, N1 (BBC) & K1;320 jours;Lun 04/10/10;Ven 23/12/11;;
+34;;;;;;
+35;302 - TERRASSEMENTS / V.R.D.;75 jours;Lun 01/11/10;Ven 11/02/11;;
+36;Plate-forme Bât S;3 sm;Lun 01/11/10;Ven 19/11/10;5DD+20 jours;"37;48DD+20 jours"
+37;Plate-forme Bât R1;4 sm;Lun 22/11/10;Ven 17/12/10;36;38
+38;Plate-forme Bât N1;4 sm;Lun 20/12/10;Ven 14/01/11;37;39
+39;Plate-forme Bât K1;4 sm;Lun 17/01/11;Ven 11/02/11;38;
+40;;;;;;
+41;CONSTRUCTION BÂTIMENT S (EMOP) y/c Réception;215 jours;Lun 04/10/10;Ven 29/07/11;;
+42;302 - TERRASSEMENTS / V.R.D.;40 jours;Lun 07/02/11;Ven 01/04/11;;
+43;Tâches Critiques;4 sm;Lun 07/02/11;Ven 04/03/11;54;"44;46"
+44;Tâches non ciritiques sur consignes OPC;4 sm;Lun 07/03/11;Ven 01/04/11;43;
+45;303 - ESPACES VERTS;20 jours;Lun 07/03/11;Ven 01/04/11;;
+46;Tâches Critiques;4 sm;Lun 07/03/11;Ven 01/04/11;43;
+47;310 - GROS-ŒUVRE;80 jours;Lun 29/11/10;Ven 18/03/11;;
+48;Tâches Critiques;6 sm;Lun 29/11/10;Ven 07/01/11;36DD+20 jours;"49;54;96DD;99DD;102DD;125DD+4 sm"
+49;Tâches non ciritiques sur consignes OPC;10 sm;Lun 10/01/11;Ven 18/03/11;48;
+50;311 - DALLAGE INDUSTRIEL;50 jours;Lun 28/02/11;Ven 06/05/11;;
+51;Tâches Critiques;2 sm;Lun 28/02/11;Ven 11/03/11;57;"52FD+30 jours;55;72;69"
+52;Tâches non ciritiques sur consignes OPC;2 sm;Lun 25/04/11;Ven 06/05/11;51FD+30 jours;
+53;312 - CHARPENTE METALLIQUE;65 jours;Lun 10/01/11;Ven 08/04/11;;
+54;Tâches Critiques;4 sm;Lun 10/01/11;Ven 04/02/11;48;"55;57;61;65;43"
+55;Tâches non ciritiques sur consignes OPC;4 sm;Lun 14/03/11;Ven 08/04/11;"54;51";
+56;320 - COUVERTURE / ETANCHEITE;40 jours;Lun 07/02/11;Ven 01/04/11;;
+57;Tâches Critiques;3 sm;Lun 07/02/11;Ven 25/02/11;54;"51;58"
+58;HORS D'EAU;0 jour;Ven 25/02/11;Ven 25/02/11;57;"59;75;105FD+15 jours"
+59;Tâches non ciritiques sur consignes OPC;5 sm;Lun 28/02/11;Ven 01/04/11;58;
+60;321 - MENUISERIE EXTERIEURE ALUMINIUM;45 jours;Lun 07/02/11;Ven 08/04/11;;
+61;Tâches Critiques;3 sm;Lun 07/02/11;Ven 25/02/11;54;62
+62;HORS D'AIR;0 jour;Ven 25/02/11;Ven 25/02/11;61;63
+63;Tâches non ciritiques sur consignes OPC;6 sm;Lun 28/02/11;Ven 08/04/11;62;
+64;322 - FACADES / BARDAGES METALLIQUES;55 jours;Lun 07/02/11;Ven 22/04/11;;
+65;Tâches Critiques;3 sm;Lun 07/02/11;Ven 25/02/11;54;66
+66;HORS D'AIR;0 jour;Ven 25/02/11;Ven 25/02/11;65;67
+67;Tâches non ciritiques sur consignes OPC;8 sm;Lun 28/02/11;Ven 22/04/11;66;
+68;324 - PORTES INDUSTRIELLES;20 jours;Lun 14/03/11;Ven 08/04/11;;
+69;Tâches Critiques;2 sm;Lun 14/03/11;Ven 25/03/11;51;70
+70;Tâches non ciritiques sur consignes OPC;2 sm;Lun 28/03/11;Ven 08/04/11;69;
+71;330 - SERRURERIE / METALLERIE;45 jours;Lun 14/03/11;Ven 13/05/11;;
+72;Tâches Critiques;3 sm;Lun 14/03/11;Ven 01/04/11;51;73
+73;Tâches non ciritiques sur consignes OPC;6 sm;Lun 04/04/11;Ven 13/05/11;72;
+74;331 - CLOISONS;30 jours;Lun 28/02/11;Ven 08/04/11;;
+75;Tâches Critiques;4 sm;Lun 28/02/11;Ven 25/03/11;58;"76;81;87"
+76;Tâches non ciritiques sur consignes OPC;2 sm;Lun 28/03/11;Ven 08/04/11;75;
+77;332 - FAUX-PLAFONDS;20 jours;Lun 02/05/11;Ven 27/05/11;;
+78;Tâches Critiques;2 sm;Lun 02/05/11;Ven 13/05/11;90;"79;84"
+79;Tâches non ciritiques sur consignes OPC;2 sm;Lun 16/05/11;Ven 27/05/11;78;
+80;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;50 jours;Lun 28/03/11;Ven 03/06/11;;
+81;Tâches Critiques;2 sm;Lun 28/03/11;Ven 08/04/11;75;"82;90"
+82;Tâches non ciritiques sur consignes OPC;8 sm;Lun 11/04/11;Ven 03/06/11;81;
+83;334 - REVÊTEMENT SOL SOUPLE;20 jours;Lun 16/05/11;Ven 10/06/11;;
+84;Tâches Critiques;2 sm;Lun 16/05/11;Ven 27/05/11;78;"85;110;111"
+85;Tâches non ciritiques sur consignes OPC;2 sm;Lun 30/05/11;Ven 10/06/11;84;93
+86;335 - CARRELAGE / FAÏENCE;25 jours;Lun 28/03/11;Ven 29/04/11;;
+87;Tâches Critiques;3 sm;Lun 28/03/11;Ven 15/04/11;75;88
+88;Tâches non ciritiques sur consignes OPC;2 sm;Lun 18/04/11;Ven 29/04/11;87;
+89;336 - PEINTURE;30 jours;Lun 11/04/11;Ven 20/05/11;;
+90;Tâches Critiques;3 sm;Lun 11/04/11;Ven 29/04/11;81;"91;78"
+91;Tâches non ciritiques sur consignes OPC;3 sm;Lun 02/05/11;Ven 20/05/11;90;
+92;337 - NETTOYAGE;25 jours;Lun 13/06/11;Ven 15/07/11;;
+93;Nettoyage avant OPR;1 sm;Lun 13/06/11;Ven 17/06/11;85;"94FD+15 jours;112"
+94;Nettoyage avant RECEPTION;1 sm;Lun 11/07/11;Ven 15/07/11;93FD+15 jours;
+95;340 - GENIE CLIMATIQUE;140 jours;Lun 29/11/10;Ven 10/06/11;;
+96;Travaux sur consignes OPC;24 sm;Lun 29/11/10;Ven 13/05/11;48DD;97
+97;Essais / Mise en service;4 sm;Lun 16/05/11;Ven 10/06/11;96;
+98;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;140 jours;Lun 29/11/10;Ven 10/06/11;;
+99;Travaux sur consignes OPC;24 sm;Lun 29/11/10;Ven 13/05/11;48DD;100
+100;Essais / Mise en service;4 sm;Lun 16/05/11;Ven 10/06/11;99;
+101;342 - ELECTRICITE;140 jours;Lun 29/11/10;Ven 10/06/11;;
+102;Travaux sur consignes OPC;24 sm;Lun 29/11/10;Ven 13/05/11;48DD;103
+103;Essais / Mise en service;4 sm;Lun 16/05/11;Ven 10/06/11;102;
+104;350 - APPAREILS ELEVATEURS;170 jours;Lun 04/10/10;Ven 27/05/11;;
+105;Travaux sur consignes OPC;4 sm;Lun 21/03/11;Ven 15/04/11;58FD+15 jours;106FD+20 jours
+106;Essais / Mise en service;2 sm;Lun 16/05/11;Ven 27/05/11;105FD+20 jours;
+107;350 - APPAREILS ELEVATEURS;50 jours;Lun 04/10/10;Ven 10/12/10;;
+108;Travaux sur consignes OPC;4 sm;Lun 04/10/10;Ven 29/10/10;;109FD+20 jours
+109;Essais / Mise en service;2 sm;Lun 29/11/10;Ven 10/12/10;108FD+20 jours;
+110;351 - SIGNALETIQUE;2 sm;Lun 30/05/11;Ven 10/06/11;84;
+111;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;2 sm;Lun 30/05/11;Ven 10/06/11;84;
+112;O.P.R.;0 jour;Ven 17/06/11;Ven 17/06/11;93;113
+113;PARACHEVEMENT;3 sm;Lun 20/06/11;Ven 08/07/11;112;114
+114;RECEPTION;0 jour;Ven 08/07/11;Ven 08/07/11;113;115
+115;LEVEE DES RESERVES;3 sm;Lun 11/07/11;Ven 29/07/11;114;116
+116;LIVRAISON;0 jour;Ven 29/07/11;Ven 29/07/11;115;
+117;;;;;;
+118;CONSTRUCTION BÂTIMENT R1 (GENIE CIVIL) y/c Réception;240 jours;Lun 27/12/10;Ven 25/11/11;;
+119;302 - TERRASSEMENTS / V.R.D.;80 jours;Lun 02/05/11;Ven 19/08/11;;
+120;Tâches Critiques;6 sm;Lun 02/05/11;Ven 10/06/11;142;121FD+30 jours
+121;Tâches non ciritiques sur consignes OPC;4 sm;Lun 25/07/11;Ven 19/08/11;120FD+30 jours;123
+122;303 - ESPACES VERTS;20 jours;Lun 22/08/11;Ven 16/09/11;;
+123;Tâches non ciritiques sur consignes OPC;4 sm;Lun 22/08/11;Ven 16/09/11;121;
+124;310 - GROS-ŒUVRE;100 jours;Lun 27/12/10;Ven 13/05/11;;
+125;Tâches Critiques;8 sm;Lun 27/12/10;Ven 18/02/11;48DD+4 sm;"126;131;177DD;180DD;183DD;203DD+20 jours"
+126;Tâches non ciritiques sur consignes OPC;12 sm;Lun 21/02/11;Ven 13/05/11;125;
+127;311 - DALLAGE INDUSTRIEL;130 jours;Lun 02/05/11;Ven 28/10/11;;
+128;Tâches Critiques;3 sm;Lun 02/05/11;Ven 20/05/11;"135;143";"129FD+20 sm;156;153;188FD+10 jours"
+129;Tâches non ciritiques sur consignes OPC;3 sm;Lun 10/10/11;Ven 28/10/11;128FD+20 sm;
+130;312 - CHARPENTE METALLIQUE;60 jours;Lun 21/02/11;Ven 13/05/11;;
+131;Tâches Critiques;6 sm;Lun 21/02/11;Ven 01/04/11;125;"132;134;138;142"
+132;Tâches non ciritiques sur consignes OPC;6 sm;Lun 04/04/11;Ven 13/05/11;131;
+133;320 - COUVERTURE / ETANCHEITE;80 jours;Lun 04/04/11;Ven 22/07/11;;
+134;Tâches Critiques;4 sm;Lun 04/04/11;Ven 29/04/11;131;135
+135;HORS D'EAU;0 jour;Ven 29/04/11;Ven 29/04/11;134;"136;128"
+136;Tâches non ciritiques sur consignes OPC;12 sm;Lun 02/05/11;Ven 22/07/11;135;
+137;321 - MENUISERIE EXTERIEURE ALUMINIUM;90 jours;Lun 04/04/11;Ven 05/08/11;;
+138;Tâches Critiques;6 sm;Lun 04/04/11;Ven 13/05/11;131;139
+139;HORS D'AIR;0 jour;Ven 13/05/11;Ven 13/05/11;138;140
+140;Tâches non ciritiques sur consignes OPC;12 sm;Lun 16/05/11;Ven 05/08/11;139;
+141;322 - FACADES / BARDAGES METALLIQUES;80 jours;Lun 04/04/11;Ven 22/07/11;;
+142;Tâches Critiques;20 jours;Lun 04/04/11;Ven 29/04/11;131;"143;146DD+10 jours;120"
+143;HORS D'AIR;0 jour;Ven 29/04/11;Ven 29/04/11;142;"144;128;150"
+144;Tâches non ciritiques sur consignes OPC;12 sm;Lun 02/05/11;Ven 22/07/11;143;
+145;323 - FACADES BOIS;50 jours;Lun 18/04/11;Ven 24/06/11;;
+146;Tâches Critiques;2 sm;Lun 18/04/11;Ven 29/04/11;142DD+10 jours;147
+147;HORS D'AIR;0 jour;Ven 29/04/11;Ven 29/04/11;146;148FD+20 jours
+148;Tâches non ciritiques sur consignes OPC;4 sm;Lun 30/05/11;Ven 24/06/11;147FD+20 jours;
+149;324 - PORTES INDUSTRIELLES;50 jours;Lun 02/05/11;Ven 08/07/11;;
+150;Tâches Critiques;3 sm;Lun 02/05/11;Ven 20/05/11;143;151FD+20 jours
+151;Tâches non ciritiques sur consignes OPC;3 sm;Lun 20/06/11;Ven 08/07/11;150FD+20 jours;
+152;330 - SERRURERIE / METALLERIE;70 jours;Lun 23/05/11;Ven 26/08/11;;
+153;Tâches Critiques;4 sm;Lun 23/05/11;Ven 17/06/11;128;154
+154;Tâches non ciritiques sur consignes OPC;10 sm;Lun 20/06/11;Ven 26/08/11;153;
+155;331 - CLOISONS;30 jours;Lun 23/05/11;Ven 01/07/11;;
+156;Tâches Critiques;4 sm;Lun 23/05/11;Ven 17/06/11;128;"157;162;168"
+157;Tâches non ciritiques sur consignes OPC;2 sm;Lun 20/06/11;Ven 01/07/11;156;
+158;332 - FAUX-PLAFONDS;30 jours;Lun 08/08/11;Ven 16/09/11;;
+159;Tâches Critiques;3 sm;Lun 08/08/11;Ven 26/08/11;171;"160;165"
+160;Tâches non ciritiques sur consignes OPC;3 sm;Lun 29/08/11;Ven 16/09/11;159;
+161;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;75 jours;Lun 20/06/11;Ven 30/09/11;;
+162;Tâches Critiques;3 sm;Lun 20/06/11;Ven 08/07/11;156;"163FD+30 jours;171"
+163;Tâches non ciritiques sur consignes OPC;6 sm;Lun 22/08/11;Ven 30/09/11;162FD+30 jours;
+164;334 - REVÊTEMENT SOL SOUPLE;25 jours;Lun 29/08/11;Ven 30/09/11;;
+165;Tâches Critiques;3 sm;Lun 29/08/11;Ven 16/09/11;159;166
+166;Tâches non ciritiques sur consignes OPC;2 sm;Lun 19/09/11;Ven 30/09/11;165;
+167;335 - CARRELAGE / FAÏENCE;60 jours;Lun 20/06/11;Ven 09/09/11;;
+168;Tâches Critiques;4 sm;Lun 20/06/11;Ven 15/07/11;156;169FD+30 jours
+169;Tâches non ciritiques sur consignes OPC;2 sm;Lun 29/08/11;Ven 09/09/11;168FD+30 jours;
+170;336 - PEINTURE;50 jours;Lun 11/07/11;Ven 16/09/11;;
+171;Tâches Critiques;4 sm;Lun 11/07/11;Ven 05/08/11;162;"172;159"
+172;Tâches non ciritiques sur consignes OPC;6 sm;Lun 08/08/11;Ven 16/09/11;171;"174;185FF;186FF"
+173;337 - NETTOYAGE;35 jours;Lun 19/09/11;Ven 04/11/11;;
+174;Nettoyage avant OPR;1 sm;Lun 19/09/11;Ven 23/09/11;172;"190FD+5 jours;175FD+25 jours"
+175;Nettoyage avant RECEPTION;1 sm;Lun 31/10/11;Ven 04/11/11;174FD+25 jours;
+176;340 - GENIE CLIMATIQUE;190 jours;Lun 27/12/10;Ven 16/09/11;;
+177;Travaux sur consignes OPC;30 sm;Lun 27/12/10;Ven 22/07/11;125DD;178
+178;Essais / Mise en service;8 sm;Lun 25/07/11;Ven 16/09/11;177;
+179;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;190 jours;Lun 27/12/10;Ven 16/09/11;;
+180;Travaux sur consignes OPC;30 sm;Lun 27/12/10;Ven 22/07/11;125DD;181
+181;Essais / Mise en service;8 sm;Lun 25/07/11;Ven 16/09/11;180;
+182;342 - ELECTRICITE;190 jours;Lun 27/12/10;Ven 16/09/11;;
+183;Travaux sur consignes OPC;30 sm;Lun 27/12/10;Ven 22/07/11;125DD;184
+184;Essais / Mise en service;8 sm;Lun 25/07/11;Ven 16/09/11;183;
+185;351 - SIGNALETIQUE;3 sm;Lun 29/08/11;Ven 16/09/11;172FF;
+186;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 29/08/11;Ven 16/09/11;172FF;
+187;356 - PONTS ROULANTS;70 jours;Lun 06/06/11;Ven 09/09/11;;
+188;Tâches Critiques;4 sm;Lun 06/06/11;Ven 01/07/11;128FD+10 jours;189FD+30 jours
+189;Tâches non ciritiques sur consignes OPC;4 sm;Lun 15/08/11;Ven 09/09/11;188FD+30 jours;
+190;O.P.R.;0 jour;Ven 30/09/11;Ven 30/09/11;174FD+5 jours;191
+191;PARACHEVEMENT;4 sm;Lun 03/10/11;Ven 28/10/11;190;192
+192;RECEPTION;0 jour;Ven 28/10/11;Ven 28/10/11;191;193
+193;LEVEE DES RESERVES;4 sm;Lun 31/10/11;Ven 25/11/11;192;194
+194;LIVRAISON;0 jour;Ven 25/11/11;Ven 25/11/11;193;352
+195;;;;;;
+196;CONSTRUCTION BÂTIMENT N1 : BÂTIMENT (BOIS - COUVERTURE) y/c Réception;240 jours;Lun 24/01/11;Ven 23/12/11;;
+197;302 - TERRASSEMENTS / V.R.D.;80 jours;Lun 30/05/11;Ven 16/09/11;;
+198;Tâches Critiques;6 sm;Lun 30/05/11;Ven 08/07/11;223;199FD+30 jours
+199;Tâches non ciritiques sur consignes OPC;4 sm;Lun 22/08/11;Ven 16/09/11;198FD+30 jours;201
+200;303 - ESPACES VERTS;20 jours;Lun 19/09/11;Ven 14/10/11;;
+201;Tâches non ciritiques sur consignes OPC;4 sm;Lun 19/09/11;Ven 14/10/11;199;
+202;310 - GROS-ŒUVRE;100 jours;Lun 24/01/11;Ven 10/06/11;;
+203;Tâches Critiques;8 sm;Lun 24/01/11;Ven 18/03/11;125DD+20 jours;"204;209;258DD;261DD;264DD;284DD+20 jours"
+204;Tâches non ciritiques sur consignes OPC;12 sm;Lun 21/03/11;Ven 10/06/11;203;
+205;311 - DALLAGE INDUSTRIEL;130 jours;Lun 30/05/11;Ven 25/11/11;;
+206;Tâches Critiques;3 sm;Lun 30/05/11;Ven 17/06/11;"216;224";"207FD+20 sm;237;234;269FD+10 jours"
+207;Tâches non ciritiques sur consignes OPC;3 sm;Lun 07/11/11;Ven 25/11/11;206FD+20 sm;
+208;312 - CHARPENTE METALLIQUE;60 jours;Lun 21/03/11;Ven 10/06/11;;
+209;Tâches Critiques;6 sm;Lun 21/03/11;Ven 29/04/11;203;"210;215;219;223;212DD"
+210;Tâches non ciritiques sur consignes OPC;6 sm;Lun 02/05/11;Ven 10/06/11;209;
+211;313 - CHARPENTE BOIS;60 jours;Lun 21/03/11;Ven 10/06/11;;
+212;Tâches Critiques;6 sm;Lun 21/03/11;Ven 29/04/11;209DD;"213;215"
+213;Tâches non ciritiques sur consignes OPC;6 sm;Lun 02/05/11;Ven 10/06/11;212;
+214;320 - COUVERTURE / ETANCHEITE;80 jours;Lun 02/05/11;Ven 19/08/11;;
+215;Tâches Critiques;4 sm;Lun 02/05/11;Ven 27/05/11;"209;212";216
+216;HORS D'EAU;0 jour;Ven 27/05/11;Ven 27/05/11;215;"206;217"
+217;Tâches non ciritiques sur consignes OPC;12 sm;Lun 30/05/11;Ven 19/08/11;216;
+218;321 - MENUISERIE EXTERIEURE ALUMINIUM;90 jours;Lun 02/05/11;Ven 02/09/11;;
+219;Tâches Critiques;6 sm;Lun 02/05/11;Ven 10/06/11;209;220
+220;HORS D'AIR;0 jour;Ven 10/06/11;Ven 10/06/11;219;221
+221;Tâches non ciritiques sur consignes OPC;12 sm;Lun 13/06/11;Ven 02/09/11;220;
+222;322 - FACADES / BARDAGES METALLIQUES;80 jours;Lun 02/05/11;Ven 19/08/11;;
+223;Tâches Critiques;20 jours;Lun 02/05/11;Ven 27/05/11;209;"198;227DD+10 jours;224"
+224;HORS D'AIR;0 jour;Ven 27/05/11;Ven 27/05/11;223;"206;225;231"
+225;Tâches non ciritiques sur consignes OPC;12 sm;Lun 30/05/11;Ven 19/08/11;224;
+226;323 - FACADES BOIS;50 jours;Lun 16/05/11;Ven 22/07/11;;
+227;Tâches Critiques;2 sm;Lun 16/05/11;Ven 27/05/11;223DD+10 jours;228
+228;HORS D'AIR;0 jour;Ven 27/05/11;Ven 27/05/11;227;229FD+20 jours
+229;Tâches non ciritiques sur consignes OPC;4 sm;Lun 27/06/11;Ven 22/07/11;228FD+20 jours;
+230;324 - PORTES INDUSTRIELLES;50 jours;Lun 30/05/11;Ven 05/08/11;;
+231;Tâches Critiques;3 sm;Lun 30/05/11;Ven 17/06/11;224;232FD+20 jours
+232;Tâches non ciritiques sur consignes OPC;3 sm;Lun 18/07/11;Ven 05/08/11;231FD+20 jours;
+233;330 - SERRURERIE / METALLERIE;70 jours;Lun 20/06/11;Ven 23/09/11;;
+234;Tâches Critiques;4 sm;Lun 20/06/11;Ven 15/07/11;206;235
+235;Tâches non ciritiques sur consignes OPC;10 sm;Lun 18/07/11;Ven 23/09/11;234;
+236;331 - CLOISONS;30 jours;Lun 20/06/11;Ven 29/07/11;;
+237;Tâches Critiques;4 sm;Lun 20/06/11;Ven 15/07/11;206;"238;243;249"
+238;Tâches non ciritiques sur consignes OPC;2 sm;Lun 18/07/11;Ven 29/07/11;237;
+239;332 - FAUX-PLAFONDS;30 jours;Lun 05/09/11;Ven 14/10/11;;
+240;Tâches Critiques;3 sm;Lun 05/09/11;Ven 23/09/11;252;"241;246"
+241;Tâches non ciritiques sur consignes OPC;3 sm;Lun 26/09/11;Ven 14/10/11;240;
+242;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;75 jours;Lun 18/07/11;Ven 28/10/11;;
+243;Tâches Critiques;3 sm;Lun 18/07/11;Ven 05/08/11;237;"244FD+30 jours;252"
+244;Tâches non ciritiques sur consignes OPC;6 sm;Lun 19/09/11;Ven 28/10/11;243FD+30 jours;
+245;334 - REVÊTEMENT SOL SOUPLE;25 jours;Lun 26/09/11;Ven 28/10/11;;
+246;Tâches Critiques;3 sm;Lun 26/09/11;Ven 14/10/11;240;247
+247;Tâches non ciritiques sur consignes OPC;2 sm;Lun 17/10/11;Ven 28/10/11;246;
+248;335 - CARRELAGE / FAÏENCE;60 jours;Lun 18/07/11;Ven 07/10/11;;
+249;Tâches Critiques;4 sm;Lun 18/07/11;Ven 12/08/11;237;250FD+30 jours
+250;Tâches non ciritiques sur consignes OPC;2 sm;Lun 26/09/11;Ven 07/10/11;249FD+30 jours;
+251;336 - PEINTURE;50 jours;Lun 08/08/11;Ven 14/10/11;;
+252;Tâches Critiques;4 sm;Lun 08/08/11;Ven 02/09/11;243;"240;253"
+253;Tâches non ciritiques sur consignes OPC;6 sm;Lun 05/09/11;Ven 14/10/11;252;"255;266FF;267FF"
+254;337 - NETTOYAGE;35 jours;Lun 17/10/11;Ven 02/12/11;;
+255;Nettoyage avant OPR;1 sm;Lun 17/10/11;Ven 21/10/11;253;"271FD+5 jours;256FD+25 jours"
+256;Nettoyage avant RECEPTION;1 sm;Lun 28/11/11;Ven 02/12/11;255FD+25 jours;
+257;340 - GENIE CLIMATIQUE;190 jours;Lun 24/01/11;Ven 14/10/11;;
+258;Travaux sur consignes OPC;30 sm;Lun 24/01/11;Ven 19/08/11;203DD;259
+259;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;258;
+260;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;190 jours;Lun 24/01/11;Ven 14/10/11;;
+261;Travaux sur consignes OPC;30 sm;Lun 24/01/11;Ven 19/08/11;203DD;262
+262;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;261;
+263;342 - ELECTRICITE;190 jours;Lun 24/01/11;Ven 14/10/11;;
+264;Travaux sur consignes OPC;30 sm;Lun 24/01/11;Ven 19/08/11;203DD;265
+265;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;264;
+266;351 - SIGNALETIQUE;3 sm;Lun 26/09/11;Ven 14/10/11;253FF;
+267;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 26/09/11;Ven 14/10/11;253FF;
+268;356 - PONTS ROULANTS;70 jours;Lun 04/07/11;Ven 07/10/11;;
+269;Tâches Critiques;4 sm;Lun 04/07/11;Ven 29/07/11;206FD+10 jours;270FD+30 jours
+270;Tâches non ciritiques sur consignes OPC;4 sm;Lun 12/09/11;Ven 07/10/11;269FD+30 jours;
+271;O.P.R.;0 jour;Ven 28/10/11;Ven 28/10/11;255FD+5 jours;272
+272;PARACHEVEMENT;4 sm;Lun 31/10/11;Ven 25/11/11;271;273
+273;RECEPTION;0 jour;Ven 25/11/11;Ven 25/11/11;272;274
+274;LEVEE DES RESERVES;4 sm;Lun 28/11/11;Ven 23/12/11;273;275
+275;LIVRAISON;0 jour;Ven 23/12/11;Ven 23/12/11;274;
+276;;;;;;
+277;CONSTRUCTION BÂTIMENT K1 (ENERGIE) y/c Réception;220 jours;Lun 21/02/11;Ven 23/12/11;;
+278;302 - TERRASSEMENTS / V.R.D.;80 jours;Lun 30/05/11;Ven 16/09/11;;
+279;Tâches Critiques;6 sm;Lun 30/05/11;Ven 08/07/11;301;280FD+30 jours
+280;Tâches non ciritiques sur consignes OPC;4 sm;Lun 22/08/11;Ven 16/09/11;279FD+30 jours;282
+281;303 - ESPACES VERTS;20 jours;Lun 19/09/11;Ven 14/10/11;;
+282;Tâches non ciritiques sur consignes OPC;4 sm;Lun 19/09/11;Ven 14/10/11;280;
+283;310 - GROS-ŒUVRE;90 jours;Lun 21/02/11;Ven 24/06/11;;
+284;Tâches Critiques;6 sm;Lun 21/02/11;Ven 01/04/11;203DD+20 jours;"285;290;336DD;339DD;342DD"
+285;Tâches non ciritiques sur consignes OPC;12 sm;Lun 04/04/11;Ven 24/06/11;284;
+286;311 - DALLAGE INDUSTRIEL;130 jours;Lun 30/05/11;Ven 25/11/11;;
+287;Tâches Critiques;3 sm;Lun 30/05/11;Ven 17/06/11;"294;302";"288FD+20 sm;315;312"
+288;Tâches non ciritiques sur consignes OPC;3 sm;Lun 07/11/11;Ven 25/11/11;287FD+20 sm;
+289;312 - CHARPENTE METALLIQUE;50 jours;Lun 04/04/11;Ven 10/06/11;;
+290;Tâches Critiques;4 sm;Lun 04/04/11;Ven 29/04/11;284;"291;293;297;301"
+291;Tâches non ciritiques sur consignes OPC;6 sm;Lun 02/05/11;Ven 10/06/11;290;
+292;320 - COUVERTURE / ETANCHEITE;80 jours;Lun 02/05/11;Ven 19/08/11;;
+293;Tâches Critiques;4 sm;Lun 02/05/11;Ven 27/05/11;290;294
+294;HORS D'EAU;0 jour;Ven 27/05/11;Ven 27/05/11;293;"287;295"
+295;Tâches non ciritiques sur consignes OPC;12 sm;Lun 30/05/11;Ven 19/08/11;294;
+296;321 - MENUISERIE EXTERIEURE ALUMINIUM;90 jours;Lun 02/05/11;Ven 02/09/11;;
+297;Tâches Critiques;6 sm;Lun 02/05/11;Ven 10/06/11;290;298
+298;HORS D'AIR;0 jour;Ven 10/06/11;Ven 10/06/11;297;299
+299;Tâches non ciritiques sur consignes OPC;12 sm;Lun 13/06/11;Ven 02/09/11;298;
+300;322 - FACADES / BARDAGES METALLIQUES;80 jours;Lun 02/05/11;Ven 19/08/11;;
+301;Tâches Critiques;20 jours;Lun 02/05/11;Ven 27/05/11;290;"279;305DD+10 jours;302"
+302;HORS D'AIR;0 jour;Ven 27/05/11;Ven 27/05/11;301;"287;303;309"
+303;Tâches non ciritiques sur consignes OPC;12 sm;Lun 30/05/11;Ven 19/08/11;302;
+304;323 - FACADES BOIS;50 jours;Lun 16/05/11;Ven 22/07/11;;
+305;Tâches Critiques;2 sm;Lun 16/05/11;Ven 27/05/11;301DD+10 jours;306
+306;HORS D'AIR;0 jour;Ven 27/05/11;Ven 27/05/11;305;307FD+20 jours
+307;Tâches non ciritiques sur consignes OPC;4 sm;Lun 27/06/11;Ven 22/07/11;306FD+20 jours;
+308;324 - PORTES INDUSTRIELLES;50 jours;Lun 30/05/11;Ven 05/08/11;;
+309;Tâches Critiques;3 sm;Lun 30/05/11;Ven 17/06/11;302;310FD+20 jours
+310;Tâches non ciritiques sur consignes OPC;3 sm;Lun 18/07/11;Ven 05/08/11;309FD+20 jours;
+311;330 - SERRURERIE / METALLERIE;70 jours;Lun 20/06/11;Ven 23/09/11;;
+312;Tâches Critiques;4 sm;Lun 20/06/11;Ven 15/07/11;287;313
+313;Tâches non ciritiques sur consignes OPC;10 sm;Lun 18/07/11;Ven 23/09/11;312;
+314;331 - CLOISONS;30 jours;Lun 20/06/11;Ven 29/07/11;;
+315;Tâches Critiques;4 sm;Lun 20/06/11;Ven 15/07/11;287;"316;321;327"
+316;Tâches non ciritiques sur consignes OPC;2 sm;Lun 18/07/11;Ven 29/07/11;315;
+317;332 - FAUX-PLAFONDS;30 jours;Lun 05/09/11;Ven 14/10/11;;
+318;Tâches Critiques;3 sm;Lun 05/09/11;Ven 23/09/11;330;"319;324"
+319;Tâches non ciritiques sur consignes OPC;3 sm;Lun 26/09/11;Ven 14/10/11;318;
+320;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;75 jours;Lun 18/07/11;Ven 28/10/11;;
+321;Tâches Critiques;3 sm;Lun 18/07/11;Ven 05/08/11;315;"322FD+30 jours;330"
+322;Tâches non ciritiques sur consignes OPC;6 sm;Lun 19/09/11;Ven 28/10/11;321FD+30 jours;
+323;334 - REVÊTEMENT SOL SOUPLE;25 jours;Lun 26/09/11;Ven 28/10/11;;
+324;Tâches Critiques;3 sm;Lun 26/09/11;Ven 14/10/11;318;325
+325;Tâches non ciritiques sur consignes OPC;2 sm;Lun 17/10/11;Ven 28/10/11;324;
+326;335 - CARRELAGE / FAÏENCE;60 jours;Lun 18/07/11;Ven 07/10/11;;
+327;Tâches Critiques;4 sm;Lun 18/07/11;Ven 12/08/11;315;328FD+30 jours
+328;Tâches non ciritiques sur consignes OPC;2 sm;Lun 26/09/11;Ven 07/10/11;327FD+30 jours;
+329;336 - PEINTURE;50 jours;Lun 08/08/11;Ven 14/10/11;;
+330;Tâches Critiques;4 sm;Lun 08/08/11;Ven 02/09/11;321;"318;331"
+331;Tâches non ciritiques sur consignes OPC;6 sm;Lun 05/09/11;Ven 14/10/11;330;"333;344FF;345FF"
+332;337 - NETTOYAGE;35 jours;Lun 17/10/11;Ven 02/12/11;;
+333;Nettoyage avant OPR;1 sm;Lun 17/10/11;Ven 21/10/11;331;"346FD+5 jours;334FD+25 jours"
+334;Nettoyage avant RECEPTION;1 sm;Lun 28/11/11;Ven 02/12/11;333FD+25 jours;
+335;340 - GENIE CLIMATIQUE;170 jours;Lun 21/02/11;Ven 14/10/11;;
+336;Travaux sur consignes OPC;26 sm;Lun 21/02/11;Ven 19/08/11;284DD;337
+337;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;336;
+338;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;170 jours;Lun 21/02/11;Ven 14/10/11;;
+339;Travaux sur consignes OPC;26 sm;Lun 21/02/11;Ven 19/08/11;284DD;340
+340;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;339;
+341;342 - ELECTRICITE;170 jours;Lun 21/02/11;Ven 14/10/11;;
+342;Travaux sur consignes OPC;26 sm;Lun 21/02/11;Ven 19/08/11;284DD;343
+343;Essais / Mise en service;8 sm;Lun 22/08/11;Ven 14/10/11;342;
+344;351 - SIGNALETIQUE;3 sm;Lun 26/09/11;Ven 14/10/11;331FF;
+345;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 26/09/11;Ven 14/10/11;331FF;
+346;O.P.R.;0 jour;Ven 28/10/11;Ven 28/10/11;333FD+5 jours;347
+347;PARACHEVEMENT;4 sm;Lun 31/10/11;Ven 25/11/11;346;348
+348;RECEPTION;0 jour;Ven 25/11/11;Ven 25/11/11;347;349
+349;LEVEE DES RESERVES;4 sm;Lun 28/11/11;Ven 23/12/11;348;350
+350;LIVRAISON;0 jour;Ven 23/12/11;Ven 23/12/11;349;
+351;;;;;;
+352;BASCULEMENT PHASE 1B / 2A;9 sm;Lun 28/11/11;Ven 27/01/12;194;"358DD;359"
+353;;;;;;
+354;PHASE 2;560 jours;Lun 28/11/11;Ven 17/01/14;;
+355;;;;;;
+356;PHASE 2A;120 jours;Lun 28/11/11;Ven 11/05/12;;
+357;301 - DEMOLITION / DESAMIANTAGE;120 jours;Lun 28/11/11;Ven 11/05/12;;
+358;Dépôt Plan de Retrait Phase 2A;0 jour;Lun 28/11/11;Lun 28/11/11;352DD;
+359;Déolition Bâtiment EMOP;6 sm;Lun 30/01/12;Ven 09/03/12;352;"360DD+5 jours;363DF;366DF;369DF"
+360;Désamiantage Noyau Central;6 sm;Lun 06/02/12;Ven 16/03/12;359DD+5 jours;361
+361;Démolition Noyau Central;8 sm;Lun 19/03/12;Ven 11/05/12;360;"364DF-10 jours;367DF-10 jours;370DF-10 jours;375"
+362;340 - GENIE CLIMATIQUE;35 jours;Lun 16/01/12;Lun 05/03/12;;
+363;Consignations & dévoiements EMOP;2 sm;Lun 16/01/12;Lun 30/01/12;359DF;
+364;Consignations & dévoiements Noyau Central;2 sm;Lun 20/02/12;Lun 05/03/12;361DF-10 jours;
+365;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;35 jours;Lun 16/01/12;Lun 05/03/12;;
+366;Consignations & dévoiements EMOP;2 sm;Lun 16/01/12;Lun 30/01/12;359DF;
+367;Consignations & dévoiements Noyau Central;2 sm;Lun 20/02/12;Lun 05/03/12;361DF-10 jours;
+368;342 - ELECTRICITE;35 jours;Lun 16/01/12;Lun 05/03/12;;
+369;Consignations & dévoiements EMOP;2 sm;Lun 16/01/12;Lun 30/01/12;359DF;
+370;Consignations & dévoiements Noyau Central;2 sm;Lun 20/02/12;Lun 05/03/12;361DF-10 jours;
+371;;;;;;
+372;PHASE 2B;440 jours;Lun 14/05/12;Ven 17/01/14;;
+373;;;;;;
+374;302 - TERRASSEMENTS / V.R.D.;60 jours;Lun 14/05/12;Ven 03/08/12;;
+375;Plate-forme Bât N2 & M;4 sm;Lun 14/05/12;Ven 08/06/12;361;"376;465FD+10 jours;386"
+376;Plate-forme Bât K2 & J;4 sm;Lun 11/06/12;Ven 06/07/12;375;377
+377;Plate-forme Bât R2;4 sm;Lun 09/07/12;Ven 03/08/12;376;546
+378;;;;;;
+379;CONSTRUCTION BÂTIMENT M : Bâtiment BBC y/c Réception;340 jours;Lun 11/06/12;Ven 27/09/13;;
+380;302 - TERRASSEMENTS / V.R.D.;100 jours;Lun 24/12/12;Ven 10/05/13;;
+381;Tâches Critiques;8 sm;Lun 24/12/12;Ven 15/02/13;404;382FD+30 jours
+382;Tâches non ciritiques sur consignes OPC;6 sm;Lun 01/04/13;Ven 10/05/13;381FD+30 jours;384
+383;303 - ESPACES VERTS;20 jours;Lun 13/05/13;Ven 07/06/13;;
+384;Tâches non ciritiques sur consignes OPC;4 sm;Lun 13/05/13;Ven 07/06/13;382;
+385;310 - GROS-ŒUVRE;160 jours;Lun 11/06/12;Ven 18/01/13;;
+386;Tâches Critiques;12 sm;Lun 11/06/12;Ven 31/08/12;375;"387;392;439DD;442DD;445DD"
+387;Tâches non ciritiques sur consignes OPC;20 sm;Lun 03/09/12;Ven 18/01/13;386;
+388;311 - DALLAGE INDUSTRIEL;140 jours;Lun 24/12/12;Ven 05/07/13;;
+389;Tâches Critiques;4 sm;Lun 24/12/12;Ven 18/01/13;"396;405";"390FD+20 sm;418;415;450FD+10 jours"
+390;Tâches non ciritiques sur consignes OPC;4 sm;Lun 10/06/13;Ven 05/07/13;389FD+20 sm;
+391;312 - CHARPENTE METALLIQUE;100 jours;Lun 03/09/12;Ven 18/01/13;;
+392;Tâches Critiques;10 sm;Lun 03/09/12;Ven 09/11/12;386;"393;395;399;404"
+393;Tâches non ciritiques sur consignes OPC;10 sm;Lun 12/11/12;Ven 18/01/13;392;
+394;320 - COUVERTURE / ETANCHEITE;110 jours;Lun 12/11/12;Ven 12/04/13;;
+395;Tâches Critiques;6 sm;Lun 12/11/12;Ven 21/12/12;392;396
+396;HORS D'EAU;0 jour;Ven 21/12/12;Ven 21/12/12;395;"389;397"
+397;Tâches non ciritiques sur consignes OPC;16 sm;Lun 24/12/12;Ven 12/04/13;396;
+398;321 - MENUISERIE EXTERIEURE ALUMINIUM;140 jours;Lun 12/11/12;Ven 24/05/13;;
+399;Tâches Critiques;10 sm;Lun 12/11/12;Ven 18/01/13;392;400
+400;HORS D'AIR;0 jour;Ven 18/01/13;Ven 18/01/13;399;401
+401;TEST D'ETANCHEITE;4 sm;Lun 21/01/13;Ven 15/02/13;400;402
+402;Tâches non ciritiques sur consignes OPC;14 sm;Lun 18/02/13;Ven 24/05/13;401;
+403;322 - FACADES / BARDAGES METALLIQUES;90 jours;Lun 12/11/12;Ven 15/03/13;;
+404;Tâches Critiques;6 sm;Lun 12/11/12;Ven 21/12/12;392;"381;408DD+10 jours;405"
+405;HORS D'AIR;0 jour;Ven 21/12/12;Ven 21/12/12;404;"389;406;412"
+406;Tâches non ciritiques sur consignes OPC;12 sm;Lun 24/12/12;Ven 15/03/13;405;
+407;323 - FACADES BOIS;70 jours;Lun 26/11/12;Ven 01/03/13;;
+408;Tâches Critiques;4 sm;Lun 26/11/12;Ven 21/12/12;404DD+10 jours;409
+409;HORS D'AIR;0 jour;Ven 21/12/12;Ven 21/12/12;408;410FD+20 jours
+410;Tâches non ciritiques sur consignes OPC;6 sm;Lun 21/01/13;Ven 01/03/13;409FD+20 jours;
+411;324 - PORTES INDUSTRIELLES;60 jours;Lun 24/12/12;Ven 15/03/13;;
+412;Tâches Critiques;4 sm;Lun 24/12/12;Ven 18/01/13;405;413FD+20 jours
+413;Tâches non ciritiques sur consignes OPC;4 sm;Lun 18/02/13;Ven 15/03/13;412FD+20 jours;
+414;330 - SERRURERIE / METALLERIE;80 jours;Lun 21/01/13;Ven 10/05/13;;
+415;Tâches Critiques;6 sm;Lun 21/01/13;Ven 01/03/13;389;416
+416;Tâches non ciritiques sur consignes OPC;10 sm;Lun 04/03/13;Ven 10/05/13;415;
+417;331 - CLOISONS;50 jours;Lun 21/01/13;Ven 29/03/13;;
+418;Tâches Critiques;8 sm;Lun 21/01/13;Ven 15/03/13;389;"419;424;430"
+419;Tâches non ciritiques sur consignes OPC;2 sm;Lun 18/03/13;Ven 29/03/13;418;
+420;332 - FAUX-PLAFONDS;50 jours;Lun 27/05/13;Ven 02/08/13;;
+421;Tâches Critiques;6 sm;Lun 27/05/13;Ven 05/07/13;433;"422;427"
+422;Tâches non ciritiques sur consignes OPC;4 sm;Lun 08/07/13;Ven 02/08/13;421;
+423;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;100 jours;Lun 18/03/13;Ven 02/08/13;;
+424;Tâches Critiques;4 sm;Lun 18/03/13;Ven 12/04/13;418;"425FD+30 jours;433"
+425;Tâches non ciritiques sur consignes OPC;10 sm;Lun 27/05/13;Ven 02/08/13;424FD+30 jours;
+426;334 - REVÊTEMENT SOL SOUPLE;35 jours;Lun 08/07/13;Ven 23/08/13;;
+427;Tâches Critiques;4 sm;Lun 08/07/13;Ven 02/08/13;421;428
+428;Tâches non ciritiques sur consignes OPC;3 sm;Lun 05/08/13;Ven 23/08/13;427;
+429;335 - CARRELAGE / FAÏENCE;60 jours;Lun 18/03/13;Ven 07/06/13;;
+430;Tâches Critiques;4 sm;Lun 18/03/13;Ven 12/04/13;418;431FD+30 jours
+431;Tâches non ciritiques sur consignes OPC;2 sm;Lun 27/05/13;Ven 07/06/13;430FD+30 jours;
+432;336 - PEINTURE;70 jours;Lun 15/04/13;Ven 19/07/13;;
+433;Tâches Critiques;6 sm;Lun 15/04/13;Ven 24/05/13;424;"421;434"
+434;Tâches non ciritiques sur consignes OPC;8 sm;Lun 27/05/13;Ven 19/07/13;433;"436;447FF;448FF"
+435;337 - NETTOYAGE;35 jours;Lun 22/07/13;Ven 06/09/13;;
+436;Nettoyage avant OPR;1 sm;Lun 22/07/13;Ven 26/07/13;434;"452FD+5 jours;437FD+25 jours"
+437;Nettoyage avant RECEPTION;1 sm;Lun 02/09/13;Ven 06/09/13;436FD+25 jours;
+438;340 - GENIE CLIMATIQUE;290 jours;Lun 11/06/12;Ven 19/07/13;;
+439;Travaux sur consignes OPC;50 sm;Lun 11/06/12;Ven 24/05/13;386DD;440
+440;Essais / Mise en service;8 sm;Lun 27/05/13;Ven 19/07/13;439;
+441;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;290 jours;Lun 11/06/12;Ven 19/07/13;;
+442;Travaux sur consignes OPC;50 sm;Lun 11/06/12;Ven 24/05/13;386DD;443
+443;Essais / Mise en service;8 sm;Lun 27/05/13;Ven 19/07/13;442;
+444;342 - ELECTRICITE;290 jours;Lun 11/06/12;Ven 19/07/13;;
+445;Travaux sur consignes OPC;50 sm;Lun 11/06/12;Ven 24/05/13;386DD;446
+446;Essais / Mise en service;8 sm;Lun 27/05/13;Ven 19/07/13;445;
+447;351 - SIGNALETIQUE;3 sm;Lun 01/07/13;Ven 19/07/13;434FF;
+448;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 01/07/13;Ven 19/07/13;434FF;
+449;356 - PONTS ROULANTS;70 jours;Lun 04/02/13;Ven 10/05/13;;
+450;Tâches Critiques;4 sm;Lun 04/02/13;Ven 01/03/13;389FD+10 jours;451FD+30 jours
+451;Tâches non ciritiques sur consignes OPC;4 sm;Lun 15/04/13;Ven 10/05/13;450FD+30 jours;
+452;O.P.R.;0 jour;Ven 02/08/13;Ven 02/08/13;436FD+5 jours;453
+453;PARACHEVEMENT;4 sm;Lun 05/08/13;Ven 30/08/13;452;454
+454;RECEPTION;0 jour;Ven 30/08/13;Ven 30/08/13;453;455
+455;LEVEE DES RESERVES;4 sm;Lun 02/09/13;Ven 27/09/13;454;456
+456;LIVRAISON;0 jour;Ven 27/09/13;Ven 27/09/13;455;
+457;;;;;;
+458;CONSTRUCTION BÂTIMENT N2 : BOIS - COUVERTURE y/c Réception;340 jours;Lun 25/06/12;Ven 11/10/13;;
+459;302 - TERRASSEMENTS / V.R.D.;100 jours;Lun 10/12/12;Ven 26/04/13;;
+460;Tâches Critiques;8 sm;Lun 10/12/12;Ven 01/02/13;485;461FD+30 jours
+461;Tâches non ciritiques sur consignes OPC;6 sm;Lun 18/03/13;Ven 26/04/13;460FD+30 jours;463
+462;303 - ESPACES VERTS;20 jours;Lun 29/04/13;Ven 24/05/13;;
+463;Tâches non ciritiques sur consignes OPC;4 sm;Lun 29/04/13;Ven 24/05/13;461;
+464;310 - GROS-ŒUVRE;150 jours;Lun 25/06/12;Ven 18/01/13;;
+465;Tâches Critiques;10 sm;Lun 25/06/12;Ven 31/08/12;375FD+10 jours;"466;471;520DD;523DD;526DD"
+466;Tâches non ciritiques sur consignes OPC;20 sm;Lun 03/09/12;Ven 18/01/13;465;
+467;311 - DALLAGE INDUSTRIEL;140 jours;Lun 07/01/13;Ven 19/07/13;;
+468;Tâches Critiques;4 sm;Lun 07/01/13;Ven 01/02/13;"478;486";"469FD+20 sm;499;496;531FD+10 jours"
+469;Tâches non ciritiques sur consignes OPC;4 sm;Lun 24/06/13;Ven 19/07/13;468FD+20 sm;
+470;312 - CHARPENTE METALLIQUE;90 jours;Lun 03/09/12;Ven 04/01/13;;
+471;Tâches Critiques;8 sm;Lun 03/09/12;Ven 26/10/12;465;"472;481;485;474DD+4 sm"
+472;Tâches non ciritiques sur consignes OPC;10 sm;Lun 29/10/12;Ven 04/01/13;471;
+473;313 - CHARPENTE BOIS;90 jours;Lun 01/10/12;Ven 01/02/13;;
+474;Tâches Critiques;8 sm;Lun 01/10/12;Ven 23/11/12;471DD+4 sm;"475;477"
+475;Tâches non ciritiques sur consignes OPC;10 sm;Lun 26/11/12;Ven 01/02/13;474;
+476;320 - COUVERTURE / ETANCHEITE;110 jours;Lun 26/11/12;Ven 26/04/13;;
+477;Tâches Critiques;6 sm;Lun 26/11/12;Ven 04/01/13;474;478
+478;HORS D'EAU;0 jour;Ven 04/01/13;Ven 04/01/13;477;"468;479"
+479;Tâches non ciritiques sur consignes OPC;16 sm;Lun 07/01/13;Ven 26/04/13;478;
+480;321 - MENUISERIE EXTERIEURE ALUMINIUM;110 jours;Lun 29/10/12;Ven 29/03/13;;
+481;Tâches Critiques;6 sm;Lun 29/10/12;Ven 07/12/12;471;482
+482;HORS D'AIR;0 jour;Ven 07/12/12;Ven 07/12/12;481;483
+483;Tâches non ciritiques sur consignes OPC;16 sm;Lun 10/12/12;Ven 29/03/13;482;
+484;322 - FACADES / BARDAGES METALLIQUES;90 jours;Lun 29/10/12;Ven 01/03/13;;
+485;Tâches Critiques;6 sm;Lun 29/10/12;Ven 07/12/12;471;"460;489DD+10 jours;486"
+486;HORS D'AIR;0 jour;Ven 07/12/12;Ven 07/12/12;485;"468;487;493"
+487;Tâches non ciritiques sur consignes OPC;12 sm;Lun 10/12/12;Ven 01/03/13;486;
+488;323 - FACADES BOIS;70 jours;Lun 12/11/12;Ven 15/02/13;;
+489;Tâches Critiques;4 sm;Lun 12/11/12;Ven 07/12/12;485DD+10 jours;490
+490;HORS D'AIR;0 jour;Ven 07/12/12;Ven 07/12/12;489;491FD+20 jours
+491;Tâches non ciritiques sur consignes OPC;6 sm;Lun 07/01/13;Ven 15/02/13;490FD+20 jours;
+492;324 - PORTES INDUSTRIELLES;60 jours;Lun 10/12/12;Ven 01/03/13;;
+493;Tâches Critiques;4 sm;Lun 10/12/12;Ven 04/01/13;486;494FD+20 jours
+494;Tâches non ciritiques sur consignes OPC;4 sm;Lun 04/02/13;Ven 01/03/13;493FD+20 jours;
+495;330 - SERRURERIE / METALLERIE;80 jours;Lun 04/02/13;Ven 24/05/13;;
+496;Tâches Critiques;6 sm;Lun 04/02/13;Ven 15/03/13;468;497
+497;Tâches non ciritiques sur consignes OPC;10 sm;Lun 18/03/13;Ven 24/05/13;496;
+498;331 - CLOISONS;50 jours;Lun 04/02/13;Ven 12/04/13;;
+499;Tâches Critiques;8 sm;Lun 04/02/13;Ven 29/03/13;468;"500;505;511"
+500;Tâches non ciritiques sur consignes OPC;2 sm;Lun 01/04/13;Ven 12/04/13;499;
+501;332 - FAUX-PLAFONDS;50 jours;Lun 10/06/13;Ven 16/08/13;;
+502;Tâches Critiques;6 sm;Lun 10/06/13;Ven 19/07/13;514;"503;508"
+503;Tâches non ciritiques sur consignes OPC;4 sm;Lun 22/07/13;Ven 16/08/13;502;
+504;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;100 jours;Lun 01/04/13;Ven 16/08/13;;
+505;Tâches Critiques;4 sm;Lun 01/04/13;Ven 26/04/13;499;"506FD+30 jours;514"
+506;Tâches non ciritiques sur consignes OPC;10 sm;Lun 10/06/13;Ven 16/08/13;505FD+30 jours;
+507;334 - REVÊTEMENT SOL SOUPLE;35 jours;Lun 22/07/13;Ven 06/09/13;;
+508;Tâches Critiques;4 sm;Lun 22/07/13;Ven 16/08/13;502;509
+509;Tâches non ciritiques sur consignes OPC;3 sm;Lun 19/08/13;Ven 06/09/13;508;
+510;335 - CARRELAGE / FAÏENCE;60 jours;Lun 01/04/13;Ven 21/06/13;;
+511;Tâches Critiques;4 sm;Lun 01/04/13;Ven 26/04/13;499;512FD+30 jours
+512;Tâches non ciritiques sur consignes OPC;2 sm;Lun 10/06/13;Ven 21/06/13;511FD+30 jours;
+513;336 - PEINTURE;70 jours;Lun 29/04/13;Ven 02/08/13;;
+514;Tâches Critiques;6 sm;Lun 29/04/13;Ven 07/06/13;505;"502;515"
+515;Tâches non ciritiques sur consignes OPC;8 sm;Lun 10/06/13;Ven 02/08/13;514;"517;528FF;529FF"
+516;337 - NETTOYAGE;35 jours;Lun 05/08/13;Ven 20/09/13;;
+517;Nettoyage avant OPR;1 sm;Lun 05/08/13;Ven 09/08/13;515;"533FD+5 jours;518FD+25 jours"
+518;Nettoyage avant RECEPTION;1 sm;Lun 16/09/13;Ven 20/09/13;517FD+25 jours;
+519;340 - GENIE CLIMATIQUE;290 jours;Lun 25/06/12;Ven 02/08/13;;
+520;Travaux sur consignes OPC;50 sm;Lun 25/06/12;Ven 07/06/13;465DD;521
+521;Essais / Mise en service;8 sm;Lun 10/06/13;Ven 02/08/13;520;
+522;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;290 jours;Lun 25/06/12;Ven 02/08/13;;
+523;Travaux sur consignes OPC;50 sm;Lun 25/06/12;Ven 07/06/13;465DD;524
+524;Essais / Mise en service;8 sm;Lun 10/06/13;Ven 02/08/13;523;
+525;342 - ELECTRICITE;290 jours;Lun 25/06/12;Ven 02/08/13;;
+526;Travaux sur consignes OPC;50 sm;Lun 25/06/12;Ven 07/06/13;465DD;527
+527;Essais / Mise en service;8 sm;Lun 10/06/13;Ven 02/08/13;526;
+528;351 - SIGNALETIQUE;3 sm;Lun 15/07/13;Ven 02/08/13;515FF;
+529;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 15/07/13;Ven 02/08/13;515FF;
+530;356 - PONTS ROULANTS;70 jours;Lun 18/02/13;Ven 24/05/13;;
+531;Tâches Critiques;4 sm;Lun 18/02/13;Ven 15/03/13;468FD+10 jours;532FD+30 jours
+532;Tâches non ciritiques sur consignes OPC;4 sm;Lun 29/04/13;Ven 24/05/13;531FD+30 jours;
+533;O.P.R.;0 jour;Ven 16/08/13;Ven 16/08/13;517FD+5 jours;534
+534;PARACHEVEMENT;4 sm;Lun 19/08/13;Ven 13/09/13;533;535
+535;RECEPTION;0 jour;Ven 13/09/13;Ven 13/09/13;534;536
+536;LEVEE DES RESERVES;4 sm;Lun 16/09/13;Ven 11/10/13;535;537
+537;LIVRAISON;0 jour;Ven 11/10/13;Ven 11/10/13;536;
+538;;;;;;
+539;CONSTRUCTION BÂTIMENT K2 (ENERGIE) & J (ELECTROTECHNIQUE) y/c Réception;340 jours;Lun 06/08/12;Ven 22/11/13;;
+540;302 - TERRASSEMENTS / V.R.D.;100 jours;Lun 18/02/13;Ven 05/07/13;;
+541;Tâches Critiques;8 sm;Lun 18/02/13;Ven 12/04/13;566;542FD+30 jours
+542;Tâches non ciritiques sur consignes OPC;6 sm;Lun 27/05/13;Ven 05/07/13;541FD+30 jours;544
+543;303 - ESPACES VERTS;20 jours;Lun 08/07/13;Ven 02/08/13;;
+544;Tâches non ciritiques sur consignes OPC;4 sm;Lun 08/07/13;Ven 02/08/13;542;
+545;310 - GROS-ŒUVRE;160 jours;Lun 06/08/12;Ven 15/03/13;;
+546;Tâches Critiques;12 sm;Lun 06/08/12;Ven 26/10/12;377;"547;552;601DD;604DD;607DD;627DD+20 jours"
+547;Tâches non ciritiques sur consignes OPC;20 sm;Lun 29/10/12;Ven 15/03/13;546;
+548;311 - DALLAGE INDUSTRIEL;140 jours;Lun 18/02/13;Ven 30/08/13;;
+549;Tâches Critiques;4 sm;Lun 18/02/13;Ven 15/03/13;"559;567";"550FD+20 sm;580;577"
+550;Tâches non ciritiques sur consignes OPC;4 sm;Lun 05/08/13;Ven 30/08/13;549FD+20 sm;
+551;312 - CHARPENTE METALLIQUE;100 jours;Lun 29/10/12;Ven 15/03/13;;
+552;Tâches Critiques;10 sm;Lun 29/10/12;Ven 04/01/13;546;"553;558;562;566;555DD"
+553;Tâches non ciritiques sur consignes OPC;10 sm;Lun 07/01/13;Ven 15/03/13;552;
+554;313 - CHARPENTE BOIS;100 jours;Lun 29/10/12;Ven 15/03/13;;
+555;Tâches Critiques;10 sm;Lun 29/10/12;Ven 04/01/13;552DD;556
+556;Tâches non ciritiques sur consignes OPC;10 sm;Lun 07/01/13;Ven 15/03/13;555;
+557;320 - COUVERTURE / ETANCHEITE;110 jours;Lun 07/01/13;Ven 07/06/13;;
+558;Tâches Critiques;6 sm;Lun 07/01/13;Ven 15/02/13;552;559
+559;HORS D'EAU;0 jour;Ven 15/02/13;Ven 15/02/13;558;"549;560;610FD+20 jours"
+560;Tâches non ciritiques sur consignes OPC;16 sm;Lun 18/02/13;Ven 07/06/13;559;
+561;321 - MENUISERIE EXTERIEURE ALUMINIUM;130 jours;Lun 07/01/13;Ven 05/07/13;;
+562;Tâches Critiques;10 sm;Lun 07/01/13;Ven 15/03/13;552;563
+563;HORS D'AIR;0 jour;Ven 15/03/13;Ven 15/03/13;562;564
+564;Tâches non ciritiques sur consignes OPC;16 sm;Lun 18/03/13;Ven 05/07/13;563;
+565;322 - FACADES / BARDAGES METALLIQUES;90 jours;Lun 07/01/13;Ven 10/05/13;;
+566;Tâches Critiques;6 sm;Lun 07/01/13;Ven 15/02/13;552;"541;570DD+10 jours;567"
+567;HORS D'AIR;0 jour;Ven 15/02/13;Ven 15/02/13;566;"549;568;574"
+568;Tâches non ciritiques sur consignes OPC;12 sm;Lun 18/02/13;Ven 10/05/13;567;
+569;323 - FACADES BOIS;70 jours;Lun 21/01/13;Ven 26/04/13;;
+570;Tâches Critiques;4 sm;Lun 21/01/13;Ven 15/02/13;566DD+10 jours;571
+571;HORS D'AIR;0 jour;Ven 15/02/13;Ven 15/02/13;570;572FD+20 jours
+572;Tâches non ciritiques sur consignes OPC;6 sm;Lun 18/03/13;Ven 26/04/13;571FD+20 jours;
+573;324 - PORTES INDUSTRIELLES;60 jours;Lun 18/02/13;Ven 10/05/13;;
+574;Tâches Critiques;4 sm;Lun 18/02/13;Ven 15/03/13;567;575FD+20 jours
+575;Tâches non ciritiques sur consignes OPC;4 sm;Lun 15/04/13;Ven 10/05/13;574FD+20 jours;
+576;330 - SERRURERIE / METALLERIE;80 jours;Lun 18/03/13;Ven 05/07/13;;
+577;Tâches Critiques;6 sm;Lun 18/03/13;Ven 26/04/13;549;578
+578;Tâches non ciritiques sur consignes OPC;10 sm;Lun 29/04/13;Ven 05/07/13;577;
+579;331 - CLOISONS;50 jours;Lun 18/03/13;Ven 24/05/13;;
+580;Tâches Critiques;8 sm;Lun 18/03/13;Ven 10/05/13;549;"581;586;592"
+581;Tâches non ciritiques sur consignes OPC;2 sm;Lun 13/05/13;Ven 24/05/13;580;
+582;332 - FAUX-PLAFONDS;50 jours;Lun 22/07/13;Ven 27/09/13;;
+583;Tâches Critiques;6 sm;Lun 22/07/13;Ven 30/08/13;595;"584;589"
+584;Tâches non ciritiques sur consignes OPC;4 sm;Lun 02/09/13;Ven 27/09/13;583;
+585;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;100 jours;Lun 13/05/13;Ven 27/09/13;;
+586;Tâches Critiques;4 sm;Lun 13/05/13;Ven 07/06/13;580;"587FD+30 jours;595"
+587;Tâches non ciritiques sur consignes OPC;10 sm;Lun 22/07/13;Ven 27/09/13;586FD+30 jours;
+588;334 - REVÊTEMENT SOL SOUPLE;35 jours;Lun 02/09/13;Ven 18/10/13;;
+589;Tâches Critiques;4 sm;Lun 02/09/13;Ven 27/09/13;583;590
+590;Tâches non ciritiques sur consignes OPC;3 sm;Lun 30/09/13;Ven 18/10/13;589;
+591;335 - CARRELAGE / FAÏENCE;60 jours;Lun 13/05/13;Ven 02/08/13;;
+592;Tâches Critiques;4 sm;Lun 13/05/13;Ven 07/06/13;580;593FD+30 jours
+593;Tâches non ciritiques sur consignes OPC;2 sm;Lun 22/07/13;Ven 02/08/13;592FD+30 jours;
+594;336 - PEINTURE;70 jours;Lun 10/06/13;Ven 13/09/13;;
+595;Tâches Critiques;6 sm;Lun 10/06/13;Ven 19/07/13;586;"583;596"
+596;Tâches non ciritiques sur consignes OPC;8 sm;Lun 22/07/13;Ven 13/09/13;595;"598;612FF;613FF"
+597;337 - NETTOYAGE;35 jours;Lun 16/09/13;Ven 01/11/13;;
+598;Nettoyage avant OPR;1 sm;Lun 16/09/13;Ven 20/09/13;596;"615FD+5 jours;599FD+25 jours"
+599;Nettoyage avant RECEPTION;1 sm;Lun 28/10/13;Ven 01/11/13;598FD+25 jours;
+600;340 - GENIE CLIMATIQUE;290 jours;Lun 06/08/12;Ven 13/09/13;;
+601;Travaux sur consignes OPC;50 sm;Lun 06/08/12;Ven 19/07/13;546DD;602
+602;Essais / Mise en service;8 sm;Lun 22/07/13;Ven 13/09/13;601;
+603;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;290 jours;Lun 06/08/12;Ven 13/09/13;;
+604;Travaux sur consignes OPC;50 sm;Lun 06/08/12;Ven 19/07/13;546DD;605
+605;Essais / Mise en service;8 sm;Lun 22/07/13;Ven 13/09/13;604;
+606;342 - ELECTRICITE;290 jours;Lun 06/08/12;Ven 13/09/13;;
+607;Travaux sur consignes OPC;50 sm;Lun 06/08/12;Ven 19/07/13;546DD;608
+608;Essais / Mise en service;8 sm;Lun 22/07/13;Ven 13/09/13;607;
+609;350 - APPAREILS ELEVATEURS;50 jours;Lun 18/03/13;Ven 24/05/13;;
+610;Travaux sur consignes OPC;4 sm;Lun 18/03/13;Ven 12/04/13;559FD+20 jours;611FD+20 jours
+611;Essais / Mise en service;2 sm;Lun 13/05/13;Ven 24/05/13;610FD+20 jours;
+612;351 - SIGNALETIQUE;3 sm;Lun 26/08/13;Ven 13/09/13;596FF;
+613;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 26/08/13;Ven 13/09/13;596FF;
+614;;;;;;
+615;O.P.R.;0 jour;Ven 27/09/13;Ven 27/09/13;598FD+5 jours;616
+616;PARACHEVEMENT;4 sm;Lun 30/09/13;Ven 25/10/13;615;617
+617;RECEPTION;0 jour;Ven 25/10/13;Ven 25/10/13;616;618
+618;LEVEE DES RESERVES;4 sm;Lun 28/10/13;Ven 22/11/13;617;619
+619;LIVRAISON;0 jour;Ven 22/11/13;Ven 22/11/13;618;698FF
+620;CONSTRUCTION BÂTIMENT R2 (GENIE CIVIL) y/c Réception;250 jours;Lun 03/09/12;Ven 16/08/13;;
+621;302 - TERRASSEMENTS / V.R.D.;80 jours;Lun 21/01/13;Ven 10/05/13;;
+622;Tâches Critiques;6 sm;Lun 21/01/13;Ven 01/03/13;644;623FD+30 jours
+623;Tâches non ciritiques sur consignes OPC;4 sm;Lun 15/04/13;Ven 10/05/13;622FD+30 jours;625
+624;303 - ESPACES VERTS;20 jours;Lun 13/05/13;Ven 07/06/13;;
+625;Tâches non ciritiques sur consignes OPC;4 sm;Lun 13/05/13;Ven 07/06/13;623;
+626;310 - GROS-ŒUVRE;110 jours;Lun 03/09/12;Ven 01/02/13;;
+627;Tâches Critiques;10 sm;Lun 03/09/12;Ven 09/11/12;546DD+20 jours;"628;633;679DD;682DD;685DD"
+628;Tâches non ciritiques sur consignes OPC;12 sm;Lun 12/11/12;Ven 01/02/13;627;
+629;311 - DALLAGE INDUSTRIEL;130 jours;Lun 21/01/13;Ven 19/07/13;;
+630;Tâches Critiques;3 sm;Lun 21/01/13;Ven 08/02/13;"637;645";"631FD+20 sm;658;655;690FD+10 jours"
+631;Tâches non ciritiques sur consignes OPC;3 sm;Lun 01/07/13;Ven 19/07/13;630FD+20 sm;
+632;312 - CHARPENTE METALLIQUE;60 jours;Lun 12/11/12;Ven 01/02/13;;
+633;Tâches Critiques;6 sm;Lun 12/11/12;Ven 21/12/12;627;"634;636;640;644"
+634;Tâches non ciritiques sur consignes OPC;6 sm;Lun 24/12/12;Ven 01/02/13;633;
+635;320 - COUVERTURE / ETANCHEITE;80 jours;Lun 24/12/12;Ven 12/04/13;;
+636;Tâches Critiques;4 sm;Lun 24/12/12;Ven 18/01/13;633;637
+637;HORS D'EAU;0 jour;Ven 18/01/13;Ven 18/01/13;636;"630;638"
+638;Tâches non ciritiques sur consignes OPC;12 sm;Lun 21/01/13;Ven 12/04/13;637;
+639;321 - MENUISERIE EXTERIEURE ALUMINIUM;90 jours;Lun 24/12/12;Ven 26/04/13;;
+640;Tâches Critiques;6 sm;Lun 24/12/12;Ven 01/02/13;633;641
+641;HORS D'AIR;0 jour;Ven 01/02/13;Ven 01/02/13;640;642
+642;Tâches non ciritiques sur consignes OPC;12 sm;Lun 04/02/13;Ven 26/04/13;641;
+643;322 - FACADES / BARDAGES METALLIQUES;80 jours;Lun 24/12/12;Ven 12/04/13;;
+644;Tâches Critiques;4 sm;Lun 24/12/12;Ven 18/01/13;633;"622;648DD+10 jours;645"
+645;HORS D'AIR;0 jour;Ven 18/01/13;Ven 18/01/13;644;"630;646;652"
+646;Tâches non ciritiques sur consignes OPC;12 sm;Lun 21/01/13;Ven 12/04/13;645;
+647;323 - FACADES BOIS;50 jours;Lun 07/01/13;Ven 15/03/13;;
+648;Tâches Critiques;2 sm;Lun 07/01/13;Ven 18/01/13;644DD+10 jours;649
+649;HORS D'AIR;0 jour;Ven 18/01/13;Ven 18/01/13;648;650FD+20 jours
+650;Tâches non ciritiques sur consignes OPC;4 sm;Lun 18/02/13;Ven 15/03/13;649FD+20 jours;
+651;324 - PORTES INDUSTRIELLES;50 jours;Lun 21/01/13;Ven 29/03/13;;
+652;Tâches Critiques;3 sm;Lun 21/01/13;Ven 08/02/13;645;653FD+20 jours
+653;Tâches non ciritiques sur consignes OPC;3 sm;Lun 11/03/13;Ven 29/03/13;652FD+20 jours;
+654;330 - SERRURERIE / METALLERIE;70 jours;Lun 11/02/13;Ven 17/05/13;;
+655;Tâches Critiques;4 sm;Lun 11/02/13;Ven 08/03/13;630;656
+656;Tâches non ciritiques sur consignes OPC;10 sm;Lun 11/03/13;Ven 17/05/13;655;
+657;331 - CLOISONS;30 jours;Lun 11/02/13;Ven 22/03/13;;
+658;Tâches Critiques;4 sm;Lun 11/02/13;Ven 08/03/13;630;"659;664;670"
+659;Tâches non ciritiques sur consignes OPC;2 sm;Lun 11/03/13;Ven 22/03/13;658;
+660;332 - FAUX-PLAFONDS;30 jours;Lun 29/04/13;Ven 07/06/13;;
+661;Tâches Critiques;3 sm;Lun 29/04/13;Ven 17/05/13;673;"662;667"
+662;Tâches non ciritiques sur consignes OPC;3 sm;Lun 20/05/13;Ven 07/06/13;661;
+663;333 - MENUISERIE INTERIEURE BOIS / AGENCEMENT;75 jours;Lun 11/03/13;Ven 21/06/13;;
+664;Tâches Critiques;3 sm;Lun 11/03/13;Ven 29/03/13;658;"665FD+30 jours;673"
+665;Tâches non ciritiques sur consignes OPC;6 sm;Lun 13/05/13;Ven 21/06/13;664FD+30 jours;
+666;334 - REVÊTEMENT SOL SOUPLE;25 jours;Lun 20/05/13;Ven 21/06/13;;
+667;Tâches Critiques;3 sm;Lun 20/05/13;Ven 07/06/13;661;668
+668;Tâches non ciritiques sur consignes OPC;2 sm;Lun 10/06/13;Ven 21/06/13;667;
+669;335 - CARRELAGE / FAÏENCE;60 jours;Lun 11/03/13;Ven 31/05/13;;
+670;Tâches Critiques;4 sm;Lun 11/03/13;Ven 05/04/13;658;671FD+30 jours
+671;Tâches non ciritiques sur consignes OPC;2 sm;Lun 20/05/13;Ven 31/05/13;670FD+30 jours;
+672;336 - PEINTURE;50 jours;Lun 01/04/13;Ven 07/06/13;;
+673;Tâches Critiques;4 sm;Lun 01/04/13;Ven 26/04/13;664;"661;674"
+674;Tâches non ciritiques sur consignes OPC;6 sm;Lun 29/04/13;Ven 07/06/13;673;"676;687FF;688FF"
+675;337 - NETTOYAGE;35 jours;Lun 10/06/13;Ven 26/07/13;;
+676;Nettoyage avant OPR;1 sm;Lun 10/06/13;Ven 14/06/13;674;"692FD+5 jours;677FD+25 jours"
+677;Nettoyage avant RECEPTION;1 sm;Lun 22/07/13;Ven 26/07/13;676FD+25 jours;
+678;340 - GENIE CLIMATIQUE;180 jours;Lun 03/09/12;Ven 10/05/13;;
+679;Travaux sur consignes OPC;30 sm;Lun 03/09/12;Ven 29/03/13;627DD;680
+680;Essais / Mise en service;6 sm;Lun 01/04/13;Ven 10/05/13;679;
+681;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;180 jours;Lun 03/09/12;Ven 10/05/13;;
+682;Travaux sur consignes OPC;30 sm;Lun 03/09/12;Ven 29/03/13;627DD;683
+683;Essais / Mise en service;6 sm;Lun 01/04/13;Ven 10/05/13;682;
+684;342 - ELECTRICITE;180 jours;Lun 03/09/12;Ven 10/05/13;;
+685;Travaux sur consignes OPC;30 sm;Lun 03/09/12;Ven 29/03/13;627DD;686
+686;Essais / Mise en service;6 sm;Lun 01/04/13;Ven 10/05/13;685;
+687;351 - SIGNALETIQUE;3 sm;Lun 20/05/13;Ven 07/06/13;674FF;
+688;352 - EXTINCTEURS / SIGNALETIQUE DE SECURITE;3 sm;Lun 20/05/13;Ven 07/06/13;674FF;
+689;356 - PONTS ROULANTS;70 jours;Lun 25/02/13;Ven 31/05/13;;
+690;Tâches Critiques;4 sm;Lun 25/02/13;Ven 22/03/13;630FD+10 jours;691FD+30 jours
+691;Tâches non ciritiques sur consignes OPC;4 sm;Lun 06/05/13;Ven 31/05/13;690FD+30 jours;
+692;O.P.R.;0 jour;Ven 21/06/13;Ven 21/06/13;676FD+5 jours;693
+693;PARACHEVEMENT;4 sm;Lun 24/06/13;Ven 19/07/13;692;694
+694;RECEPTION;0 jour;Ven 19/07/13;Ven 19/07/13;693;695
+695;LEVEE DES RESERVES;4 sm;Lun 22/07/13;Ven 16/08/13;694;696
+696;LIVRAISON;0 jour;Ven 16/08/13;Ven 16/08/13;695;
+697;;;;;;
+698;GALERIE DE LIAISON T.C.E. sur consignes OPC;30 sm;Lun 29/04/13;Ven 22/11/13;619FF;"699;705FD+4 sm"
+699;O.P.R. / Levée des Réserves GALERIE;8 sm;Lun 25/11/13;Ven 17/01/14;698;"711;714;717"
+700;;;;;;
+701;PHASE 3;135 jours;Ven 20/12/13;Ven 27/06/14;;
+702;;;;;;
+703;PHASE 3A;70 jours;Ven 20/12/13;Ven 28/03/14;;
+704;301 - DEMOLITION / DESAMIANTAGE;70 jours;Ven 20/12/13;Ven 28/03/14;;
+705;Dépôt Plan de Retrait MCA;0 jour;Ven 20/12/13;Ven 20/12/13;698FD+4 sm;706
+706;Instruction Plan de Retrait MCA;4 sm;Lun 23/12/13;Ven 17/01/14;705;707
+707;Dépose MCA;6 sm;Lun 20/01/14;Ven 28/02/14;706;709
+708;Déconstruction Bât Z (Arts Appliqués modulaires);3 sm;Lun 27/01/14;Ven 14/02/14;717;"709;722"
+709;Démolition Solde Atelier Génie Civil;4 sm;Lun 03/03/14;Ven 28/03/14;"708;707;712";
+710;340 - GENIE CLIMATIQUE;30 jours;Lun 20/01/14;Ven 28/02/14;;
+711;Consignations Bât Z (Arts Appliqués modulaires);1 sm;Lun 20/01/14;Ven 24/01/14;699;712FD+20 jours
+712;Consignation Solde Atelier Génie Civil;1 sm;Lun 24/02/14;Ven 28/02/14;711FD+20 jours;709
+713;341 - INSTALLATIONS SANITAIRES / AIR COMPRIME;30 jours;Lun 20/01/14;Ven 28/02/14;;
+714;Consignations Bât Z (Arts Appliqués modulaires);1 sm;Lun 20/01/14;Ven 24/01/14;699;715FD+20 jours
+715;Consignation Solde Atelier Génie Civil;1 sm;Lun 24/02/14;Ven 28/02/14;714FD+20 jours;
+716;342 - ELECTRICITE;30 jours;Lun 20/01/14;Ven 28/02/14;;
+717;Consignations Bât Z (Arts Appliqués modulaires);1 sm;Lun 20/01/14;Ven 24/01/14;699;"708;718FD+20 jours"
+718;Consignation Solde Atelier Génie Civil;1 sm;Lun 24/02/14;Ven 28/02/14;717FD+20 jours;
+719;;;;;;
+720;PHASE 3B;95 jours;Lun 17/02/14;Ven 27/06/14;;
+721;302 - TERRASSEMENTS / V.R.D.;70 jours;Lun 17/02/14;Ven 23/05/14;;
+722;Travaux Parvis Central;8 sm;Lun 17/02/14;Ven 11/04/14;708;"723FD-10 jours;726;729DD"
+723;Parking Sud-Ouest (Tranche Conditionnelle);8 sm;Lun 31/03/14;Ven 23/05/14;722FD-10 jours;"731;727FF-5 jours;730DD"
+724;;;;;;
+725;303 - ESPACES VERTS;25 jours;Lun 14/04/14;Ven 16/05/14;;
+726;Travaux Parvis Central;2 sm;Lun 14/04/14;Ven 25/04/14;722;
+727;Parking Sud-Ouest (Tranche Conditionnelle);2 sm;Lun 05/05/14;Ven 16/05/14;723FF-5 jours;
+728;342 - ELECTRICITE;70 jours;Lun 17/02/14;Ven 23/05/14;;
+729;Travaux Parvis Central;8 sm;Lun 17/02/14;Ven 11/04/14;722DD;
+730;Parking Sud-Ouest (Tranche Conditionnelle);8 sm;Lun 31/03/14;Ven 23/05/14;723DD;
+731;O.P.R.;0 jour;Ven 23/05/14;Ven 23/05/14;723;732
+732;PARACHEVEMENT;3 sm;Lun 26/05/14;Ven 13/06/14;731;733
+733;RECEPTION;0 jour;Ven 13/06/14;Ven 13/06/14;732;734
+734;LEVEE DES RESERVES;2 sm;Lun 16/06/14;Ven 27/06/14;733;735
+735;LIVRAISON;0 jour;Ven 27/06/14;Ven 27/06/14;734;737
+736;;;;;;
+737;ACHEVEMENT TRANCHE 3;0 jour;Ven 27/06/14;Ven 27/06/14;735;

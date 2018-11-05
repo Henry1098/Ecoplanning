@@ -1,0 +1,25 @@
+<L>Désignation Tâche</L><C>A</C><A>LTA</A><N>2</N>
+<L>Durée prévisionnelle</L><C>N</C><A>DUP</A><N>3</N>
+<L>Cout Prévisionnel Pos</L><C>N</C><A>CPR</A><N>18</N>
+<L>Cout Prévisionnel Neg</L><C>N</C><A>CPR</A><N>19</N>
+<L>Début Souhaité</L><C>D</C><A>DSO</A><N>12</N>
+<L>Fin Souhaitée</L><C>D</C><A>FSO</A><N>13</N>
+<L>Code Tâche</L><C>A</C><A>CTA</A><N>11</N>
+<L>Champ 1</L><C>A</C><A>CH1</A><N>15</N>
+<L>Champ 2</L><C>A</C><A>CH2</A><N>16</N>
+<L>Champ 3</L><C>A</C><A>CH3</A><N>17</N>
+<L>Successeurs</L><C>A</C><A>SUC</A><N>64</N>
+<L>Début au plus tôt Réel</L><C>D</C><A>SEP</A><N>21</N>
+<L>Fin au plus tôt Réel</L><C>D</C><A>EEP</A><N>22</N>
+<L>Début au plus tard Réel</L><C>D</C><A>SEP</A><N>35</N>
+<L>Fin au plus tard Réelle</L><C>D</C><A>EEP</A><N>36</N>
+<L>Cout Réel Pos</L><C>N</C><A>COR</A><N>26</N>
+<L>Durée Réelle</L><C>N</C><A>DUR</A><N>23</N>
+<L>Marge Totale Réelle</L><C>N</C><A>DUR</A><N>29</N>
+<L>Début Réel Imposé</L><C>D</C><A>SEP</A><N>33</N>
+<L>Fin Réelle Imposée</L><C>D</C><A>EEP</A><N>34</N>
+<L>Retard Imputable</L><C>D</C><A>SEP</A><N>24</N>
+<L>Retard Total</L><C>D</C><A>EEP</A><N>25</N>
+<L>Dernière Actualisation</L><C>D</C><A>SEP</A><N>27</N>
+<L>% Restant</L><C>N</C><A>PRS</A><N>31</N>
+<L>Nombre de Jours Restants</L><C>N</C><A>NJR</A><N>32</N>

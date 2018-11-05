@@ -1,0 +1,42 @@
+<nt>1</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>NOTIFICATION DES MARCHES </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>PREPARATION DE CHANTIER </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>DEBUT DES TRAVAUX : 31.08.09</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>DESCENTE DE CHARGES </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>10</nt><des>DOSSIER D'EXECUTION G.O. </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>11</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>12</nt><des>DOSSIER D'EXECUTION CHARPENTE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>13</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>14</nt><des>VISAS G.O. CHARPENTE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>15</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>16</nt><des>INSTALLATION DE CHANTIER </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>17</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>18</nt><des>PLATEFORME DE TRAVAIL </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>19</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>20</nt><des>IMPLANTATION </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>21</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>22</nt><des>G.O. BAT. GARAGE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>23</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>24</nt><des>FABRICATION CHARPENTE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>25</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>26</nt><des>POTEAUX CHARP. METALLIQUE BARDAGE TCE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>27</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>28</nt><des>CONGES NOEL 2009</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>29</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>30</nt><des>NOUVEAU VESTIAIRE ET ANNEXES TCE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>31</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>32</nt><des>AMENAGEMENT R. de C. TCE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>33</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>34</nt><des>AMENAGEMENT R+1 et R+2 TCE </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>35</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>36</nt><des>TRAVAUX VRD </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>37</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>38</nt><des>PHASE RECEPTION </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>39</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>40</nt><des>MISE A DISPOSITION </des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>41</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>42</nt><des>.</des><c1>P---</c1><d1>PHASES</d1><c2>I-01---</c2><d2></d2><c3>T---</c3><d3>TRIS</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

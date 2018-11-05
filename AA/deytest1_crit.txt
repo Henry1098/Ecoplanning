@@ -1,0 +1,27 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>71</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>6</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>Maître d'oeuvre</d><r></r><t>8</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Gros-oeuvre et plâtrerie . Ent TEB</d><r></r><t>21</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Menuiserie int et ext bois - Ent LOUVET</d><r></r><t>9</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Electricité - Ent BLASCO ENTRENA</d><r></r><t>5</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>Plomberie - Ent SOMIP</d><r></r><t>7</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Menuiserie ext Alu - Ent DECARAS et PENA</d><r></r><t>3</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Peinture - Ent ?</d><r></r><t>4</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Serrurerie - Ent ?</d><r></r><t>4</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Cuisiniste - Ent CUISIBOIS</d><r></r><t>1</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Aspiration centralisée - Ent CENTRALYSMA</d><r></r><t>3</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>0</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

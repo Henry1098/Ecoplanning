@@ -1,0 +1,11 @@
+<nom>1.1   Une plage intervenants</nom><comment>Actuellement le filtre prend en compte 
+une plage du critère d'intervenants
+     de  I-01 à I-20 
+Vous pourrez modifier la valeur de cet
+intervalle pour répondre a vos besoins
+     si on remplace I-01 par I-03
+     si on remplace I-20 par I-10
+
+On  intervalle des intervenants
+       de I-03 à I-10
+</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>*INTERVENANTS</C><R>Compris entre</R><V1>I-01</V1><V2>I-20</V2>|</criteres>

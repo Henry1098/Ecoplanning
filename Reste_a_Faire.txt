@@ -1,0 +1,38 @@
+ECOPLANNING 
+
+FAIT
+====
+
+Enveloppes
+    Pas de désignation par défaut
+    Durée, Début et Fin dans les colonnes
+Menu Fenetres disparait
+MiniGantt : suppression des ascenseurs (recadrage automatique)
+Trace des liens
+    Couleurs differentes pour critique et non critique
+    Trace correcte quand c'est en dessous de la tache
+Gantt Previsionnel
+    Ebauche des le debut
+    Totalite dans la page
+Description entete
+    Couleur reapparait quand on appelle la fonte
+    Sous titre 2 central disparait
+Calendriers
+    Echelle haute ou basse occultees si c'est demande
+Description des taches
+    Les couleurs apparaissent directement
+Pied de page
+    $date dans le texte fait apparaitre la date du jours
+
+
+
+RESTE A FAIRE
+=============
+Dans Trier/Grouper
+  Blanc Separateur
+  Trait Separateur
+Description des taches
+  Haut,Droite , Gauche, Bas
+Tout le corps du graphe  
+Les Rapports.. sauts de page
+  

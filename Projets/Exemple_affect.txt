@@ -1,0 +1,10 @@
+<nt>1</nt><des>Ordre de service</des><c1>PH----</c1><d1>Pavillons-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>Installation de chantier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des>Terrassement pavillon A</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>Fondations pavillon A</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>Elévations sous sol pavillon A</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>Plancher haut sous sol pavillon A</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des>Essai 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>Essai 2</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>Essai 3</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>10</nt><des>Essai 4</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

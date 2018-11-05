@@ -1,0 +1,36 @@
+<c>1</c><l>P</l><d>PHASES</d><t>C1</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>C2</t>
+<c>3</c><l>T</l><d>TRIS</d><t>C3</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>179</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>PREPARATION</d><r></r><t>37</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>EXTENSION</d><r></r><t>97</t>
+<c1>P</c1><c2>03</c2><c3></c3><c4></c4><d>EXISTANT</d><r></r><t>21</t>
+<c1>P</c1><c2>04</c2><c3></c3><c4></c4><d>VRD AMENAGEMENTS EXTERIEURS</d><r></r><t>7</t>
+<c1>P</c1><c2>05</c2><c3></c3><c4></c4><d>RECEPTION - LIVRAISON</d><r></r><t>15</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d> </d><r></r><t>179</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>GROS OEUVRE</d><r></r><t>32</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>VRD</d><r></r><t>11</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>CHARPENTE - COUVERTURE</d><r></r><t>12</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>ETANCHEITE</d><r></r><t>7</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>MENUISERIES EXTERIEURES - FERMETURE</d><r></r><t>10</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>ELECTRICITE</d><r></r><t>30</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>CHAUFFAGE VENTILATION PLOMBERIE</d><r></r><t>34</t>
+<c1>I</c1><c2>07</c2><c3>01</c3><c4></c4><d>CHAUFFAGE - VENTILATION</d><r></r><t>27</t>
+<c1>I</c1><c2>07</c2><c3>02</c3><c4></c4><d> PLOMBERIE</d><r></r><t>7</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>CLOISONS MENUISERIES INTERIEURES PLAFONDS</d><r></r><t>16</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>CARRELAGE FAIENCES</d><r></r><t>3</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>REVETEMENT SOLS SOUPLES</d><r></r><t>5</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>PEINTURE NETTOYAGE</d><r></r><t>11</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>TRAITEMENT DES FACADES</d><r></r><t>1</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>LIVRAISON</d><r></r><t>4</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>179</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

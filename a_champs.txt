@@ -1,0 +1,75 @@
+00
+01    Numéro de Tâche
+02    Libellé
+03    Durée Prévisionnelle
+04    Début au Plus Tot Prévisionnel
+05    Fin au plus tot prévisionnel
+06    Début au plus tard prévisionnel
+07    Fin au plus tard Prévisionnel
+08    Marge Totale
+09    Marge Libre
+10    Calendrier
+11    Code Tache
+12    Date de début souhaité
+13    Date de fin souhaitée
+14    Cout Prévisionnel
+15    Champ Libre 1 // xx Tache Amont
+16    Champ Libre 2 //  yy Tache amont / ressources
+17    Champ Libre 3
+18    Cout > 0
+19    Cout < 0
+20
+21    Date de début réel
+22    Date de fin réelle
+23    Durée réelle
+24    Retard Imputable
+25    Retard Total
+26    Cout Réel
+27    Date Actualisation
+28    Marge réelle
+29    Marge Totale
+30    Date début réel Possible
+31    Pourcentage Restant
+32    Nb de jours restants
+33    Début réel souhaité
+34    Fin réellée souhaitée
+35    Début au plus tard réel
+36    Fin au plus tard réel
+37
+38    dist début prév
+39    dist fin prev
+40
+41    Code critère 1
+42    Code critère 2
+43    Code Critére 3
+44    Code critère 4
+45    Code critère 5
+46    Code critère 6
+47    Code critère 7
+48    Code critère 8
+49
+50
+51    Libellé critère 1
+52    Libellé critère 2
+53    Libellé critère 3
+54    Libellé critère 4
+55    Libellé critère 5
+56    Libellé critère 6
+57    Libellé critère 7
+58    Libellé critère 8
+59
+60
+61   nbpred
+62   Predecesseurs
+63   nb successeurs (y compris 9999)
+64   successeurs 
+65 
+66
+67   x1
+68   x2
+69   y1
+70   x2max
+71    Tri 1
+72    Tri 2
+73    Tri 3
+74    Tri 4

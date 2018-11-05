@@ -1,0 +1,51 @@
+<c>1</c><l>I</l><d>Intervenant</d><t>(null)</t>
+<c>2</c><l>L</l><d>Localisation</d><t>(null)</t>
+<c>3</c><l>T</l><d>Tris</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>Intervenant</d><r></r><t>582</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Terrassement - GO - SMBTP</d><r></r><t>62</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>Charpente bois - SOGYCOBOIS</d><r></r><t>10</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Couverture - Zinguerie - CHARDEYRON</d><r></r><t>21</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Etanchéité - GALOPIN</d><r></r><t>33</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Isolation - Peinture ext - Echafaud.- DPL SELLI</d><r></r><t>40</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>Menuiserie ext Bois - Bardage - VIROT</d><r></r><t>28</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Menuiserie ALU  -Serrurerie - ANTONIETTI</d><r></r><t>38</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Protections Solaires - INTERSTORES</d><r></r><t>17</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Cloisons et Plâtrerie - ORMES</d><r></r><t>36</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Menuiseries intérieures bois- METTEY</d><r></r><t>54</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Sols souples - Chapes - C.D.R.E</d><r></r><t>23</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>Peinture intérieure - DPL SELLI</d><r></r><t>23</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>Rails de portage - LIKO FRANCE</d><r></r><t>7</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>Plomberie Sanitaire - VICTOIRE</d><r></r><t>39</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>Electricité - STRASSER</d><r></r><t>92</t>
+<c1>I</c1><c2>16</c2><c3></c3><c4></c4><d>Chauffage- Ventil. - Clim. -HAEFELI-ZIMMERLIN</d><r></r><t>32</t>
+<c1>I</c1><c2>17</c2><c3></c3><c4></c4><d>Panneaux solaires - STHILE</d><r></r><t>0</t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>Fluides médicaux - RESOGAZ</d><r></r><t>0</t>
+<c1>I</c1><c2>19</c2><c3></c3><c4></c4><d>Cuisine - Chambres froides - HMI</d><r></r><t>0</t>
+<c1>I</c1><c2>20</c2><c3></c3><c4></c4><d>VRD - SEGO</d><r></r><t>19</t>
+<c1>I</c1><c2>21</c2><c3></c3><c4></c4><d>Plantations - VOIGNIER</d><r></r><t>0</t>
+<c1>I</c1><c2>22</c2><c3></c3><c4></c4><d>Nettoyage - NHP</d><r></r><t>0</t>
+<c1>I</c1><c2>23</c2><c3></c3><c4></c4><d>Tous corps d'état - TCE</d><r></r><t>2</t>
+<c1>L</c1><c2></c2><c3></c3><c4></c4><d>Localisation</d><r></r><t>83</t>
+<c1>L</c1><c2>01</c2><c3></c3><c4></c4><d>Extérieurs</d><r></r><t>20</t>
+<c1>L</c1><c2>02</c2><c3></c3><c4></c4><d>Toutes zones</d><r></r><t>2</t>
+<c1>L</c1><c2>03</c2><c3></c3><c4></c4><d>Unité A</d><r></r><t>6</t>
+<c1>L</c1><c2>04</c2><c3></c3><c4></c4><d>Unité B</d><r></r><t>6</t>
+<c1>L</c1><c2>05</c2><c3></c3><c4></c4><d>Unité C</d><r></r><t>6</t>
+<c1>L</c1><c2>06</c2><c3></c3><c4></c4><d>Unité D</d><r></r><t>6</t>
+<c1>L</c1><c2>07</c2><c3></c3><c4></c4><d>Unité E</d><r></r><t>6</t>
+<c1>L</c1><c2>08</c2><c3></c3><c4></c4><d>Unité F</d><r></r><t>6</t>
+<c1>L</c1><c2>09</c2><c3></c3><c4></c4><d>Unité G</d><r></r><t>6</t>
+<c1>L</c1><c2>10</c2><c3></c3><c4></c4><d>Unité H</d><r></r><t>6</t>
+<c1>L</c1><c2>11</c2><c3></c3><c4></c4><d>Unité I</d><r></r><t>6</t>
+<c1>L</c1><c2>12</c2><c3></c3><c4></c4><d>Unité J</d><r></r><t>7</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>Désignation 3</d><r></r><t>0</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

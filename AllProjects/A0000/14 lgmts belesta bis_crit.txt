@@ -1,0 +1,44 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASE </d><r></r><t>67</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>PHASE Travaux </d><r></r><t>67</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>PHASE Reception</d><r></r><t>0</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>67</t>
+<c1>I</c1><c2>001</c2><c3></c3><c4></c4><d>M. d'ouvrage</d><r></r><t>0</t>
+<c1>I</c1><c2>002</c2><c3></c3><c4></c4><d>M. d'oeuvre</d><r></r><t>0</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Maconnerie</d><r></r><t>14</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>Enduits</d><r></r><t>0</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Plâtrerie</d><r></r><t>25</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Carrelage</d><r></r><t>2</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Menuis. bois</d><r></r><t>1</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>Menuis. PVC</d><r></r><t>5</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Serrurerie</d><r></r><t>1</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Plomb.sanit.</d><r></r><t>6</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Elec. chauff.</d><r></r><t>5</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Sols souples</d><r></r><t>0</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>Peintures</d><r></r><t>0</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>Charp. couv.</d><r></r><t>5</t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>Démolitions</d><r></r><t>0</t>
+<c1>I</c1><c2>22</c2><c3></c3><c4></c4><d>VRD</d><r></r><t>3</t>
+<c1>I</c1><c2>31</c2><c3></c3><c4></c4><d>Télédistribution</d><r></r><t>0</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>67</t>
+<c1>T</c1><c2>01</c2><c3></c3><c4></c4><d>Maisons 1/2</d><r></r><t>12</t>
+<c1>T</c1><c2>02</c2><c3></c3><c4></c4><d>Maisons 3/4</d><r></r><t>11</t>
+<c1>T</c1><c2>03</c2><c3></c3><c4></c4><d>Maisons 5/6</d><r></r><t>11</t>
+<c1>T</c1><c2>04</c2><c3></c3><c4></c4><d>Maisons 7/8</d><r></r><t>12</t>
+<c1>T</c1><c2>05</c2><c3></c3><c4></c4><d>Collectif - 6 lgmts</d><r></r><t>14</t>
+<c1>T</c1><c2>06</c2><c3></c3><c4></c4><d>Garage</d><r></r><t>0</t>
+<c1>T</c1><c2>07</c2><c3></c3><c4></c4><d>Extérieurs</d><r></r><t>3</t>
+<c1>T</c1><c2>08</c2><c3></c3><c4></c4><d>Ens. maisons</d><r></r><t>4</t>
+<c1>T</c1><c2>09</c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2>01</c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>
+<c1>E</c1><c2></c2><c3></c3><c4></c4><d>Extérieurs</d><r></r><t>0</t>

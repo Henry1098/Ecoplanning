@@ -1,0 +1,12 @@
+<nom>1 plage phase</nom><comment>Actuellement le filtre donne pour un critère
+ une plage de P-01 à P-20
+
+Vous pourrez prendre en compte les valeurs réelles d'un critère de votre projet
+Localisations de  A-01 à B-05
+
+Vous pourrez modifiez ces valeurs Exemple
+"	remplacez -P-01 par A-01
+"	remplacez P-20 par B-05
+Ensuite pour ce projet vous pourrez 
+directement appliquer ce filtre
+</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>*PHASES</C><R>Compris entre</R><V1>P-04</V1><V2>P-04</V2>|</criteres>

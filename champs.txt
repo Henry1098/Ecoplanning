@@ -1,0 +1,500 @@
+14,65
+cw 0,21
+cw 1,45
+cw 2,80
+cw 3,127
+cw 4,51
+cw 5,42
+cw 6,50
+cw 7,34
+cw 8,35
+cw 9,50
+cw 10,70
+cw 11,82
+cw 12,75
+cw 13,70
+1,0,Num
+2,0,Code Champ
+3,0,Libellé
+4,0,Abbr
+5,0,Type
+6,0,Saisie(O/N/F)
+7,0,Min
+8,0,Max
+9,0,VTable
+10,0,S/P Control
+11,0,S/P Calcul
+12,0,Valeurs
+13,0,Espace
+1,1,C001
+2,1,T-NT
+3,1,Numéro de tache
+4,1,NT
+5,1,N4
+6,1,N
+7,1,1
+8,1,4200
+13,1,35
+1,2,C002
+2,2,T-LT
+3,2,Libellé Tache
+4,2,Libellé
+5,2,A50
+6,2,O
+13,2,80
+1,3,C003
+2,3,T-dPrev
+3,3,Durée Prévisionnelle
+4,3,DurPrev
+5,3,N4
+6,3,O
+7,3,1
+8,3,1000
+13,3,40
+1,4,C004
+2,4,T-dtPrev
+3,4,Début Plus Tot Prev
+4,4,dtPrev
+5,4,D8
+6,4,N
+13,4,70
+1,5,C005
+2,5,T-ftPrev
+3,5,Fin Plus Tot Prev
+4,5,ftPrev
+5,5,D8
+6,5,N
+13,5,70
+1,6,C006
+2,6,T-dTPrev
+3,6,Début Plus Tard Prev
+4,6,Deb Tard P
+5,6,D8
+6,6,N
+13,6,60
+1,7,C007
+2,7,T-fTPrev
+3,7,Fin Plus Tard Prev
+4,7,fTPrev
+5,7,D8
+6,7,N
+13,7,60
+1,8,C008
+2,8,T-MTotale
+3,8,Marge Totale
+4,8,mT
+5,8,N3
+6,8,N
+13,8,35
+1,9,C009
+2,9,T-Cal
+3,9,Calendrier
+4,9,Cal
+5,9,N1
+6,9,O
+7,9,1
+8,9,5
+13,9,30
+1,10,C010
+2,10,T-CodT
+3,10,Code Tache
+4,10,CodT
+5,10,A15
+6,10,O
+13,10,50
+1,11,C011
+2,11,T-MLibre
+3,11,Marge Libre
+4,11,MLib
+5,11,N3
+6,11,N
+13,11,35
+1,12,C012
+2,12,T-Coches
+3,12,Coches
+5,12,A1
+6,12,O
+12,12, |X|
+13,12,21
+1,13,C013
+2,13,T-CPrev
+3,13,Cout Prévisionnel
+4,13,CPrev
+5,13,F10,2
+6,13,O
+13,13,50
+1,14,C014
+2,14,P-NTPred
+3,14,Numéro tache Pred
+4,14,NTPred
+5,14,N4
+6,14,N
+13,14,30
+1,15,C015
+2,15,P-DTPrev
+3,15,Désignation T. Pred
+4,15,Désignation
+5,15,A50
+6,15,N
+13,15,80
+1,16,C016
+2,16,P-DPP
+3,16,Début Prévisonnel Poss
+4,16,DPP
+5,16,D10
+6,16,N
+13,16,60
+1,17,C017
+2,17,P-DuPred
+3,17,Durée Prédécesseur
+4,17,DuPred
+5,17,N3
+6,17,O
+7,17,1
+8,17,999
+13,17,30
+1,18,C018
+2,18,P-TypLPr
+3,18,Type de Lien Préd.
+4,18,TypLPr
+5,18,A2
+6,18,O
+12,18,FD|FF|DD|AM
+13,18,35
+1,19,C019
+2,19,P-DecPr
+3,19,Décalage Prédécesseur
+4,19,DecPr
+5,19,S3
+6,19,O
+7,19,-999
+8,19,999
+13,19,40
+1,20,C020
+2,20,S-NTSu
+3,20,Numéro Tache Suc.
+4,20,NuSu
+5,20,N4
+6,20,N
+13,20,40
+1,21,C021
+2,21,S-DTSucc
+3,21,Désignation Sucesseur
+4,21,DTSucc
+5,21,A50
+6,21,N
+13,21,80
+1,22,C022
+2,22,S-DuSucc
+3,22,Durée Successeur
+4,22,DuSucc
+5,22,N3
+6,22,O
+7,22,1
+8,22,999
+13,22,30
+1,23,C023
+2,23,S-DebtSu
+3,23,Déb Plus Tot Successeur
+4,23,DebtSu
+5,23,D8
+6,23,N
+13,23,40
+1,24,C024
+2,24,S-TypLSu
+3,24,Type de Lien Successeur
+4,24,TypLSu
+5,24,A2
+6,24,O
+12,24,FD|FF|DD|AM
+13,24,35
+1,25,C025
+2,25,S-DecSu
+3,25,Decalage Successeur
+4,25,DecSu
+5,25,S3
+6,25,O
+7,25,-999
+8,25,999
+13,25,40
+1,26,C026
+2,26,D-DDRPSa
+3,26,Date Début Réel Possible
+4,26,D Deb R Poss.
+5,26,D8
+6,26,N
+13,26,90
+1,27,C027
+2,27,D-RTotSa
+3,27,Retard Total
+4,27,R TOT
+5,27,N3
+6,27,N
+13,27,40
+1,28,C028
+2,28,D-JRestSa
+3,28,Jours Restants
+4,28,J Rest
+5,28,N3
+6,28,O
+7,28,0
+8,28,999
+13,28,45
+1,29,C029
+2,29,D-PRestSa
+3,29,% Restant
+4,29,% Rest
+5,29,N3
+6,29,O
+7,29,0
+8,29,100
+13,29,80
+1,30,C030
+2,30,D-PCoutSa
+3,30,% Cout Consommé
+4,30,P Cout
+5,30,N3
+6,30,O
+7,30,0
+8,30,100
+13,30,80
+1,31,C031
+2,31,B-NTPredP
+3,31,Num Tache
+4,31,Num T
+5,31,N4
+6,31,N
+13,31,35
+1,32,C032
+2,32,B-DDRPoP
+3,32,Date début réel Possible
+4,32,D Déb R Poss
+5,32,D8
+6,32,N
+13,32,80
+1,33,C033
+2,33,B-RImpP
+3,33,Retard Imputable
+4,33,R Imp
+5,33,N3
+6,33,N
+13,33,40
+1,34,C034
+2,34,B-RTotP
+3,34,Retard Total
+4,34,R Tot
+5,34,N3
+6,34,N
+13,34,40
+1,35,C035
+2,35,B-DDRP
+3,35,Date Début Réelle
+4,35,D Déb R
+5,35,D8
+6,35,O
+13,35,80
+1,36,C036
+2,36,B-DFRP
+3,36,Date Fin Réelle
+4,36,D Fin R
+5,36,D8
+6,36,O
+13,36,80
+1,37,C037
+2,37,B-PDurRP
+3,37,% Durée Réelle
+4,37,P Dur R
+5,37,F6.2
+6,37,O
+7,37,0
+8,37,100
+13,37,45
+1,38,C038
+2,38,B-JRESTP
+3,38,Jours Restants
+4,38,J Rest
+5,38,N3
+6,38,O
+7,38,0
+8,38,999
+13,38,30
+1,39,C039
+2,39,A-NT
+3,39,Numéro taches
+4,39,Num T
+5,39,N4
+6,39,N
+13,39,30
+1,40,C040
+2,40,A-Des
+3,40,Designation
+4,40,Libellé
+5,40,A50
+6,40,N
+13,40,100
+1,41,C041
+2,41,A-DDReel
+3,41,Date Début Réel
+4,41,D Deb R
+5,41,D8
+6,41,N
+13,41,80
+1,42,C042
+2,42,A-DurR
+3,42,Durée Réelle
+4,42,Dur R
+5,42,A3
+6,42,N
+13,42,30
+1,43,C043
+2,43,A-DFR
+3,43,Date Fin Réelle
+4,43,D Fin R
+5,43,D8
+6,43,N
+13,43,80
+1,44,C044
+2,44,A-RetImp
+3,44,Retard Imputable
+4,44,R Imp
+5,44,N3
+6,44,N
+13,44,40
+1,45,C045
+2,45,A-RetTotal
+3,45,Retard Total 
+4,45,R Tot
+5,45,N3
+6,45,N
+13,45,40
+1,46,C046
+2,46,A-DDedPrev
+3,46,Date Début Prévisionnel
+4,46,D Deb Pr
+5,46,D8
+6,46,N
+13,46,80
+1,47,C047
+2,47,A-DurPrev
+3,47,Durée Prévisionnelle
+4,47,Dur Pr
+5,47,N3
+6,47,N
+13,47,30
+1,48,C048
+2,48,A-DFinPrev
+3,48,Date Fin Prévisionnelle
+4,48,D Fin Pr
+5,48,D8
+6,48,N
+13,48,80
+1,49,C049
+2,49,A-CoutPr
+3,49,Cout Prévisionnel
+4,49,Cout Pr
+5,49,F10.2
+6,49,N
+13,49,70
+1,50,C050
+2,50,A-CoutR
+3,50,Cout Réel
+4,50,Cout R
+5,50,F10.2
+6,50,N
+13,50,70
+1,51,C051
+2,51,Neutre
+3,51,Col Neutre
+6,51,N
+13,51,21
+1,52,C052
+2,52,D-DAV
+3,52,Date Avancement
+4,52,D Avanc
+5,52,D8
+6,52,N
+13,52,70
+1,53,C053
+2,53,D-RIMP
+3,53,Retard Imputable
+4,53,R Imp
+5,53,N3
+6,53,N
+13,53,40
+1,54,C054
+2,54,D-RTOT
+3,54,Retard Imputable
+4,54,R Tot
+5,54,N3
+6,54,N
+13,54,40
+1,55,C055
+2,55,D-DurR
+3,55,Duree Réelle
+4,55,Dur R
+5,55,N3
+6,55,O
+13,55,45
+1,56,C056
+2,56,D-DDebR
+3,56,Date Début Réel
+4,56,D Déb R
+5,56,D8
+6,56,O
+13,56,70
+1,57,C057
+2,57,D-DFinR
+3,57,Date Fin Réelle
+4,57,D Fin R
+5,57,D8
+6,57,O
+13,57,70
+1,58,C058
+2,58,D-CR
+3,58,Cout Réel
+4,58,Cout R
+5,58,F10.2
+6,58,O
+13,58,70
+1,59,C059
+2,59,B-Design
+3,59,Designation Tache Pred
+4,59,Designation
+5,59,A50
+6,59,N
+13,59,100
+1,60,C060
+2,60,B-TL
+3,60,Type de Lien
+4,60,Typ L
+5,60,A2
+6,60,N
+13,60,40
+1,61,C061
+2,61,B-Decal
+3,61,Decalage
+4,61,Decal
+5,61,N3
+6,61,N
+13,61,50
+1,62,C062
+2,62,A-CAL
+3,62,Calendrier
+4,62,Cal
+5,62,N1
+6,62,N
+13,62,40
+1,63,C063
+2,63,B_CAL
+3,63,Calendrier predecessur
+4,63,Cal
+5,63,N1
+6,63,N
+13,63,40
+1,64,C064
+2,64,B-Dur
+3,64,Durée Réelle Pred
+4,64,Dur R
+5,64,N999
+6,64,O
+13,64,45

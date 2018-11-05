@@ -1,0 +1,66 @@
+					SafeNet, Inc
+				SOFTWARE/DRIVER LICENSE AGREEMENT
+
+Please read this license carefully before using the software. By using the software, you are agreeing to be bound by the terms of this license. If you do not agree to the terms of this license, promptly return the unused software to the place where you obtained it.
+
+1  DEFINITIONS.
+
+"SafeNet Software" - The software package includes the computer programs and documentation and was developed by SafeNet, Inc. (hereinafter “SafeNet”) to provide functionality to the SafeNet hardware or software.
+
+2  LICENSE.
+
+The application, demonstration, system and other software accompanying this License, whether on disk, in read only memory, or on any other media (the "SafeNet Software") and related documentation are licensed to you by SafeNet. You own the disk on which the SafeNet Software is recorded but SafeNet retains title to the SafeNet Software and related documentation. This License allows you to use the SafeNet Software for designing the SafeNet technology into your product(s). You must reproduce on any copy the SafeNet copyright notice and any other proprietary legends that were on the original copy of the SafeNet Software. This License is issued on a non-exclusive, non-transferable basis.
+
+3  RESTRICTIONS.
+
+The SafeNet Software contains copyrighted material, trade secrets and other proprietary material and in order to protect them you may modify the source code of the Software in any way you see fit, however you may not network, rent, lease, or loan the SafeNet Software in whole or in part. You may not electronically transmit the SafeNet Software from one computer to another or over a network.
+
+4  TERMINATION.
+
+This License is effective until terminated. You may terminate this License at any time by destroying the SafeNet Software and related documentation and all copies thereof. SafeNet may terminate this License immediately without notice if you fail to comply with any provision of this License. Upon termination you must destroy the SafeNet Software and related documentation and all copies thereof.
+
+5  EXPORT LAW ASSURANCE.
+
+You agree and certify that neither the SafeNet Software nor any other technical data received from SafeNet, nor the direct product thereof, will be exported outside the United States except as permitted by the laws and regulations of the United States which may require U.S. Government export approval/licensing. Failure to strictly comply with this provision shall automatically invalidate this License.
+
+6  GOVERNMENT END USERS.
+
+If you are acquiring the SafeNet Software on behalf of any unit or agency of the United States Government, the following provisions apply. The Government agrees:
+
+a. If the SafeNet Software is supplied to the Department of Defense (DoD), the SafeNet Software is classified as "Commercial Computer Software" and the Government is acquiring only "restricted rights" in the SafeNet Software and its documentation as that term is defined in Clause 252.227-7013(c)(1) of the DFARS; and
+
+b. If the SafeNet Software is supplied to any unit or agency of the United States Government other than DoD, the Government's rights in the SafeNet Software and its documentation will be as defined in Clause 52.227-19(c)(2) of the FAR or, in the case of NASA, in Clause 18-52.227-86(d) of the NASA Supplement to the FAR.
+
+
+7  DISCLAIMER OF WARRANTY ON SAFENET SOFTWARE.
+
+You expressly acknowledge and agree that use of the SafeNet Software is at your sole risk. THE SAFENET SOFTWARE AND RELATED DOCUMENTATION ARE PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND AND SAFENET EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. SafeNet does not warrant that the functions contained in the SafeNet software will meet your requirements, or that the operation of the SafeNet software will be uninterrupted or error-free, or that defects in the SafeNet software will be corrected.
+Furthermore, SafeNet does not warrant or make any representations regarding the use or the results of the use of the SafeNet software or related documentation in terms of their correctness, accuracy, reliability, or otherwise. No oral or written information or advice given by SafeNet or a SafeNet authorized representative shall create a warranty or in any way increase the scope of this warranty. Should the SafeNet software prove defective, you (and not SafeNet or a SafeNet authorized representative) assume the entire cost of all necessary servicing, repair or correction. Some states do not allow the exclusion of implied warranties, so the above exclusion may not apply to you.
+
+8  LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES SHALL SAFENET BE LIABLE FOR ANY INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OR INABILITY TO USE THE SAFENET SOFTWARE OR RELATED DOCUMENTATION, EVEN IF SAFENET OR A SAFENET AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. Some states do not allow the limitation or exclusion of liability for incidental or consequential damage, so the above limitation or exclusion may not apply to you. In no event shall SafeNet's total liability to you for all damages, losses, and causes of action (whether in contract, tort or otherwise) exceed the amount paid by you for the SafeNet Software.
+
+9  CONTROLLING LAW AND SEVERABILITY.
+
+This License shall be governed by and construed in accordance with the laws of the United States and the State of Delaware, as applied to agreements entered into and to be performed entirely within Delaware between Delaware residents. If for any reason a court of competent jurisdiction finds any provision of this License, or portion thereof, to be unenforceable, that provision of the License shall be enforced to the maximum extent permissible so as to effect the intent of the parties, and the remainder of this License shall continue in full force and effect.
+
+10  WAIVER.
+
+No failure by SafeNet to exercise or delay in exercising any right arising hereunder shall operate as a waiver thereof; nor shall a waiver by SafeNet of any such right be deemed to be a continuing waiver, but such waiver shall apply solely to the instance in which the waiver was granted.
+
+11  INVALIDITY.
+
+The invalidity of any provision of this License shall not affect the validity of any other provision hereof.
+
+12  COMPLETE AGREEMENT.
+
+This License constitutes the entire agreement between the parties with respect to the use of the SafeNet Software and related documentation, and supersedes all prior or contemporaneous understanding or agreements, written or oral, regarding such subject matter. No amendment to or modification of this License will be binding unless in writing and signed by a duly authorized representative of SafeNet.
+______________________________________________________________________
+
+Copyright © 2010.  SafeNet, Inc.  All rights reserved.
+
+SafeNet, Inc.
+4690 Millennium Drive, Belcamp, MD 21017  U.S.A.
+
+SafeNet™ is a trademark of SafeNet, Inc.

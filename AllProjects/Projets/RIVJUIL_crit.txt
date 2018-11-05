@@ -1,0 +1,21 @@
+<c>1</c><l>ph</l><d>ph</d><t>(null)</t>
+<c>2</c><l>int</l><d>int</d><t>(null)</t>
+<c>3</c><l>C3</l><d>Désignation 3</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>ph</c1><c2></c2><c3></c3><c4></c4><d>ph</d><r></r><t></t>
+<c1>ph</c1><c2>01</c2><c3></c3><c4></c4><d> ph 1</d><r></r><t></t>
+<c1>ph</c1><c2>02</c2><c3></c3><c4></c4><d>ph 2</d><r></r><t></t>
+<c1>ph</c1><c2>03</c2><c3></c3><c4></c4><d>ph 3</d><r></r><t></t>
+<c1>int</c1><c2></c2><c3></c3><c4></c4><d>int</d><r></r><t></t>
+<c1>int</c1><c2>01</c2><c3></c3><c4></c4><d>int 01</d><r></r><t></t>
+<c1>int</c1><c2>02</c2><c3></c3><c4></c4><d>int 02</d><r></r><t></t>
+<c1>C3</c1><c2></c2><c3></c3><c4></c4><d>Désignation 3</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t></t>

@@ -1,0 +1,483 @@
+N°;Nom;Durée;Début;Fin;Prédécesseurs;Successeurs
+1;O.S.DEMARRAGE TRAVAUX;0 jour;Jeu 24/12/09;Jeu 24/12/09;;"2FD+1 jour;3FD+1 jour;4FD+1 jour"
+2;PERIODE DE PREPARATION;6 sm;Ven 25/12/09;Jeu 04/02/10;1FD+1 jour;6
+3;ETUDES MOE / ENTREPRISES;20 sm;Ven 25/12/09;Jeu 13/05/10;1FD+1 jour;
+4;INTEMPERIES;30 jours;Ven 25/12/09;Jeu 04/02/10;1FD+1 jour;5
+5;DEVOIEMENT CABLES EDF SOUS BAT. C ET A;6 sm;Ven 05/02/10;Jeu 18/03/10;4;
+6;Installations de chantier / montage Grues;2 sm;Ven 05/02/10;Jeu 18/02/10;2;10
+7;;;;;;
+8;BÂTIMENT E;269 jours;Ven 19/02/10;Lun 11/04/11;;
+9;01 / GROS-ŒUVRE;196 jours;Ven 19/02/10;Mer 15/12/10;;
+10;Fondations;2 sm;Ven 19/02/10;Jeu 04/03/10;6;"11DD+5 jours;90DD;95DD;106FD+10 jours"
+11;Elévations + dallage RdC;2 sm;Ven 26/02/10;Jeu 11/03/10;10DD+5 jours;12
+12;Dalle haute RdC;2 sm;Ven 12/03/10;Jeu 25/03/10;11;13
+13;Elévations R+1;2 sm;Ven 26/03/10;Jeu 08/04/10;12;14
+14;Dalle haute R+1;1 sm;Ven 09/04/10;Jeu 15/04/10;13;15
+15;Elévations R+2;2 sm;Ven 16/04/10;Jeu 29/04/10;14;16
+16;Dalle haute R+2;1 sm;Ven 30/04/10;Jeu 06/05/10;15;17
+17;Elévations Attique;1 sm;Ven 07/05/10;Jeu 13/05/10;16;84FD+2 sm
+18;Structures métallique des balcons;2 sm;Lun 26/07/10;Ven 27/08/10;77DD+3 sm;"42FD+1 sm;116FD-1 sm"
+19;Pose platelages bois;1 sm;Lun 25/10/10;Ven 29/10/10;80;"20;28"
+20;Finitions sur consignes Moe;6 sm;Mar 02/11/10;Mer 15/12/10;19;
+21;03 / CHARPENTE - MURS OSSATURE BOIS - BARDAGE;78 jours;Lun 12/07/10;Lun 22/11/10;;
+22;Plans PAC;0 jour;Lun 12/07/10;Lun 12/07/10;23DF;
+23;Commande ;2 sm;Lun 12/07/10;Lun 26/07/10;24DF;22DF
+24;Fabrication;1 sm;Lun 26/07/10;Lun 23/08/10;25DF;23DF
+25;Pose murs bois;1 sm;Lun 23/08/10;Ven 27/08/10;31;"24DF;26"
+26;Pose charpente ;1 sm;Lun 30/08/10;Ven 03/09/10;25;27FD-2 jours
+27;Pose volige;1 sm;Jeu 02/09/10;Mer 08/09/10;26FD-2 jours;30FD+12 jours
+28;Réalisation bardage;13 jours;Mar 02/11/10;Lun 22/11/10;19;
+29;04 / COUVERTURE - ETANCHEITE - ZINGUERIE;80 jours;Lun 19/07/10;Mer 01/12/10;;
+30;Pose isolant + étanchéité;1 sm;Lun 27/09/10;Ven 01/10/10;27FD+12 jours;"46;34;38DD"
+31;Etanchéité terrasses;2 sm;Lun 19/07/10;Ven 30/07/10;77;"32;25"
+32;Pose dalles sur plots;1 sm;Lun 23/08/10;Ven 27/08/10;31;
+33;Zinguerie;1 sm;Jeu 25/11/10;Mer 01/12/10;81;
+34;Hors d'eau;0 jour;Ven 01/10/10;Ven 01/10/10;30;85FD+12 jours
+35;05 / MENUISERIES EXTERIEURES BOIS;45 jours;Lun 26/07/10;Ven 15/10/10;;
+36;Plans PAC;0 jour;Lun 26/07/10;Lun 26/07/10;37DF;
+37;Fabrication / Commande;6 sm;Lun 26/07/10;Lun 27/09/10;38DF;36DF
+38;Pose châssis;2 sm;Lun 27/09/10;Ven 08/10/10;30DD;"39;37DF;40;80FD+1 sm"
+39;Finitions;1 sm;Lun 11/10/10;Ven 15/10/10;38;
+40;Hors d'air;0 jour;Ven 08/10/10;Ven 08/10/10;38;
+41;06 / SERRURERIE - METALLERIE (sur cons OPC);115 jours;Lun 06/09/10;Mer 02/03/11;;
+42;Pose garde-corps balcons;1 sm;Lun 06/09/10;Ven 10/09/10;18FD+1 sm;
+43;Pose murs rideaux;1 sm;Jeu 02/12/10;Mer 08/12/10;81FD+1 sm;
+44;Pose mains courantes;1 sm;Jeu 24/02/11;Mer 02/03/11;71FD+1 sm;
+45;07 / CLOISONS - DOUBLAGES - FAUX PLAFONDS;45 jours;Lun 04/10/10;Mer 08/12/10;;
+46;Cloisons;5 sm;Lun 04/10/10;Lun 08/11/10;30;"47FD-2 sm;50;91DD;96DD;58DD+3 sm"
+47;Doublage;4 sm;Lun 25/10/10;Mer 24/11/10;46FD-2 sm;48
+48;Faux plafonds y c. soffites;2 sm;Jeu 25/11/10;Mer 08/12/10;47;69FD-1 sm
+49;08 / MENUISERIE INTERIEURE BOIS;75 jours;Mar 09/11/10;Mer 09/03/11;;
+50;Pose blocs portes;2 sm;Mar 09/11/10;Mer 24/11/10;46;52FD+2 sm
+51;Pose portes;3 jours;Jeu 20/01/11;Lun 24/01/11;70FD-2 sm;53FD-1 sm
+52;Pose trappes de visite;3 jours;Jeu 09/12/10;Lun 13/12/10;50FD+2 sm;
+53;Pose garde-corps escalier duplex;4 jours;Mar 18/01/11;Ven 21/01/11;51FD-1 sm;
+54;Pose plinthes bois;12 jours;Mar 22/02/11;Mer 09/03/11;64FD-7 jours;"88;55DD"
+55;Equipements / Quincaillerie des portes;1 sm;Mar 22/02/11;Lun 28/02/11;54DD;
+56;09 / CARRELAGE - FAÏENCE;50 jours;Lun 20/09/10;Mer 01/12/10;;
+57;Choix carrelage MO / Moe;0 jour;Lun 20/09/10;Lun 20/09/10;58DD-5 sm;
+58;Pose carrelage;3 sm;Lun 25/10/10;Mer 17/11/10;46DD+3 sm;"59FD-1 sm;57DD-5 sm"
+59;Pose faïence;2 sm;Mar 09/11/10;Mer 24/11/10;58FD-1 sm;60
+60;Finitions;1 sm;Jeu 25/11/10;Mer 01/12/10;59;
+61;10 / SOLS COLLES;35 jours;Jeu 13/01/11;Mer 02/03/11;;
+62;Choix des sols MO / Moe;0 jour;Jeu 13/01/11;Jeu 13/01/11;64DD-4 sm;
+63;Ragréage;1 sm;Jeu 03/02/11;Mer 09/02/11;70;"64;66DD"
+64;Pose revêtement de sol souple;15 jours;Jeu 10/02/11;Mer 02/03/11;63;"65FF;54FD-7 jours;62DD-4 sm"
+65;Pose revêtement sur escaliers;2 jours;Mar 01/03/11;Mer 02/03/11;64FF;
+66;Traitement d'imperméabilisation dans douches;3 jours;Jeu 03/02/11;Lun 07/02/11;63DD;67FD+2 jours
+67;Pose revêtement dans douche;1 sm;Jeu 10/02/11;Mer 16/02/11;66FD+2 jours;
+68;11 / PEINTURE;45 jours;Jeu 02/12/10;Mer 16/02/11;;
+69;Préparations;2 sm;Jeu 02/12/10;Mer 15/12/10;48FD-1 sm;70
+70;Peinture plafonds / murs logements;5 sm;Jeu 16/12/10;Mer 02/02/11;69;"72FD-1 sm;73FF;71;63;51FD-2 sm"
+71;Peinture plafonds / murs communs;2 sm;Jeu 03/02/11;Mer 16/02/11;70;44FD+1 sm
+72;Peinture sur ouvrages bois;2 sm;Jeu 27/01/11;Mer 09/02/11;70FD-1 sm;
+73;Peinture tuyauteries;1 sm;Jeu 27/01/11;Mer 02/02/11;70FF;
+74;12 / ECHAFAUDAGE;133 jours;Mer 05/05/10;Mer 01/12/10;;
+75;OS Arrêt de chantier;0 jour;Mer 05/05/10;Mer 05/05/10;;76
+76;ARRET DE CHANTIER EN RAISON ABSENCE ECHAFAUDAGE;43 jours;Mer 05/05/10;Ven 02/07/10;75;77
+77;Montage échafaudage;2 sm;Lun 05/07/10;Ven 16/07/10;76;"31;18DD+3 sm;173"
+78;Démontage échafaudage;1 sm;Jeu 25/11/10;Mer 01/12/10;81;82
+79;13 / ENDUIT EXTERIEUR;35 jours;Lun 18/10/10;Mer 08/12/10;;
+80;Crépis;1 sm;Lun 18/10/10;Ven 22/10/10;38FD+1 sm;"81FD+3 sm;176;19"
+81;Peinture;1 sm;Jeu 18/11/10;Mer 24/11/10;80FD+3 sm;"33;78;43FD+1 sm"
+82;Finitions;1 sm;Jeu 02/12/10;Mer 08/12/10;78;
+83;14 / ASCENSEUR;181 jours;Jeu 27/05/10;Mer 16/03/11;;
+84;Réception gaine d'ascenseur;0 jour;Jeu 27/05/10;Jeu 27/05/10;17FD+2 sm;
+85;Montage cabine;6 sm;Mer 20/10/10;Ven 03/12/10;34FD+12 jours;
+86;Essais techniques;1 sm;Jeu 10/03/11;Mer 16/03/11;99DD;
+87;15 / NETTOYAGE ;8 jours;Jeu 10/03/11;Lun 21/03/11;;
+88;Nettoyage complet du bâtiment;8 jours;Jeu 10/03/11;Lun 21/03/11;54;100
+89;16 / CHAUFFAGE - VENTILATION - SANITAIRE - SOLAIRE;251 jours;Ven 19/02/10;Mer 16/03/11;;
+90;Incorporations GO;3 mois;Ven 19/02/10;Jeu 13/05/10;10DD;
+91;Distribution;4 mois;Lun 04/10/10;Mer 09/02/11;46DD;92
+92;Appareillage ;3 sm;Jeu 10/02/11;Mer 02/03/11;91;
+93;Essais techniques;1 sm;Jeu 10/03/11;Mer 16/03/11;99DD;
+94;17 / ELECTRICITE;251 jours;Ven 19/02/10;Mer 16/03/11;;
+95;Incorporations GO;3 mois;Ven 19/02/10;Jeu 13/05/10;10DD;
+96;Distribution;4 mois;Lun 04/10/10;Mer 09/02/11;46DD;97FD-1 sm
+97;Appareillage ;3 sm;Jeu 03/02/11;Mer 23/02/11;96FD-1 sm;98
+98;CONSUEL;2 sm;Jeu 24/02/11;Mer 09/03/11;97;99
+99;Essais techniques;1 sm;Jeu 10/03/11;Mer 16/03/11;98;"86DD;93DD"
+100;OPR;0 jour;Lun 21/03/11;Lun 21/03/11;88;101
+101;PARACHEVEMENT;3 sm;Mar 22/03/11;Lun 11/04/11;100;102
+102;RECEPTION BATIMENT E;0 jour;Lun 11/04/11;Lun 11/04/11;101;
+103;;;;;;
+104;BÂTIMENT D;271 jours;Ven 19/03/10;Ven 13/05/11;;
+105;01 / GROS-ŒUVRE;181 jours;Ven 19/03/10;Mer 05/01/11;;
+106;Fondations;2 sm;Ven 19/03/10;Jeu 01/04/10;10FD+10 jours;"107DD+5 jours;186DD;191DD"
+107;Elévations + dallage s-sol;2 sm;Ven 26/03/10;Jeu 08/04/10;106DD+5 jours;"108;202FD+10 jours"
+108;Dalle haute s-sol;2 sm;Ven 09/04/10;Jeu 22/04/10;107;109
+109;Elévation RdC;2 sm;Ven 23/04/10;Jeu 06/05/10;108;110
+110;Dalle haute RdC;1 sm;Ven 07/05/10;Jeu 13/05/10;109;111
+111;Elévations R+1;2 sm;Ven 14/05/10;Jeu 27/05/10;110;112
+112;Dalle haute R+1;1 sm;Ven 28/05/10;Jeu 03/06/10;111;113
+113;Elévations R+2;2 sm;Ven 04/06/10;Jeu 17/06/10;112;114
+114;Dalle haute R+2;1 sm;Ven 18/06/10;Jeu 24/06/10;113;115
+115;Elévations Attique;1 sm;Ven 25/06/10;Jeu 01/07/10;114;180FD+2 sm
+116;Structures métallique des balcons;2 sm;Lun 23/08/10;Ven 03/09/10;18FD-1 sm;"140;211"
+117;Platelage bois des balcons;1 sm;Mar 02/11/10;Lun 08/11/10;176;"118;126"
+118;Finitions sur consignes Moe;6 sm;Mar 09/11/10;Mer 05/01/11;117;
+119;03 / CHARPENTE - MURS OSSATURE BOIS - BARDAGE;58 jours;Lun 06/09/10;Lun 29/11/10;;
+120;Plans PAC;0 jour;Lun 06/09/10;Lun 06/09/10;121DF;
+121;Commande ;2 sm;Lun 06/09/10;Lun 20/09/10;122DF;120DF
+122;Fabrication;1 sm;Lun 20/09/10;Lun 27/09/10;123DF;121DF
+123;Pose murs bois;1 sm;Lun 27/09/10;Ven 01/10/10;129FD+2 sm;"122DF;124"
+124;Pose charpente ;1 sm;Lun 04/10/10;Ven 08/10/10;123;125FD-2 jours
+125;Pose volige;1 sm;Jeu 07/10/10;Mer 13/10/10;124FD-2 jours;128
+126;Réalisation bardage;13 jours;Mar 09/11/10;Lun 29/11/10;117;
+127;04 / COUVERTURE - ETANCHEITE - ZINGUERIE;70 jours;Lun 30/08/10;Mer 08/12/10;;
+128;Pose isolant + étanchéité;1 sm;Jeu 14/10/10;Mer 20/10/10;125;"132;144FD+2 jours;136DD-1 sm"
+129;Etanchéité terrasses;2 sm;Lun 30/08/10;Ven 10/09/10;173FD+1 sm;"130;123FD+2 sm"
+130;Pose dalles sur plots;1 sm;Lun 13/09/10;Ven 17/09/10;129;
+131;Zinguerie;1 sm;Jeu 02/12/10;Mer 08/12/10;177;
+132;Hors d'eau;0 jour;Mer 20/10/10;Mer 20/10/10;128;181FD+2 sm
+133;05 / MENUISERIES EXTERIEURES BOIS;45 jours;Jeu 26/08/10;Mer 27/10/10;;
+134;Plans PAC;0 jour;Jeu 26/08/10;Jeu 26/08/10;135DF;
+135;Fabrication / Commande;6 sm;Jeu 26/08/10;Jeu 07/10/10;136DF;134DF
+136;Pose châssis;2 sm;Jeu 07/10/10;Mer 20/10/10;128DD-1 sm;"135DF;137"
+137;Finitions;1 sm;Jeu 21/10/10;Mer 27/10/10;136;138
+138;Hors d'air;0 jour;Mer 27/10/10;Mer 27/10/10;137;
+139;06 / SERRURERIE - METALLERIE (sur cons OPC);130 jours;Lun 06/09/10;Mer 23/03/11;;
+140;Pose garde-corps balcons;1 sm;Lun 06/09/10;Ven 10/09/10;116;
+141;Pose murs rideaux;1 sm;Jeu 09/12/10;Mer 15/12/10;177FD+1 sm;
+142;Pose mains courantes;1 sm;Jeu 17/03/11;Mer 23/03/11;169FD+1 sm;
+143;07 / CLOISONS - DOUBLAGES - FAUX PLAFONDS;45 jours;Lun 25/10/10;Mer 12/01/11;;
+144;Cloisons;5 sm;Lun 25/10/10;Mer 01/12/10;128FD+2 jours;"145FD-2 sm;148;156DD+3 sm;187DD;192DD"
+145;Doublage;4 sm;Jeu 18/11/10;Mer 15/12/10;144FD-2 sm;146
+146;Faux plafonds y c. soffites;2 sm;Jeu 16/12/10;Mer 12/01/11;145;167FD-1 sm
+147;08 / MENUISERIE INTERIEURE BOIS;82 jours;Jeu 02/12/10;Ven 08/04/11;;
+148;Pose blocs portes;2 sm;Jeu 02/12/10;Mer 15/12/10;144;150FD+2 sm
+149;Pose portes ;3 jours;Jeu 10/02/11;Lun 14/02/11;168FD-2 sm;151FD-1 sm
+150;Pose trappes de visite;3 jours;Jeu 13/01/11;Lun 17/01/11;148FD+2 sm;
+151;Pose garde-corps escalier duplex;4 jours;Mar 08/02/11;Ven 11/02/11;149FD-1 sm;
+152;Pose plinthes bois;12 jours;Jeu 24/03/11;Ven 08/04/11;162FD-1 sm;"153DD;184"
+153;Equipements / Quincaillerie des portes;1 sm;Jeu 24/03/11;Mer 30/03/11;152DD;
+154;09 / CARRELAGE - FAÏENCE;50 jours;Lun 11/10/10;Mer 05/01/11;;
+155;Choix carrelage MO / MOe;0 jour;Lun 11/10/10;Lun 11/10/10;156DD-5 sm;
+156;Pose carrelage;3 sm;Jeu 18/11/10;Mer 08/12/10;144DD+3 sm;"155DD-5 sm;157FD-1 sm"
+157;Pose faïence;2 sm;Jeu 02/12/10;Mer 15/12/10;156FD-1 sm;158
+158;Finitions;1 sm;Jeu 16/12/10;Mer 05/01/11;157;
+159;10 / SOLS COLLES;35 jours;Jeu 10/02/11;Mer 30/03/11;;
+160;Choix sols MO / Moe;0 jour;Jeu 10/02/11;Jeu 10/02/11;162DD-4 sm;
+161;Ragréage;2 sm;Jeu 24/02/11;Mer 09/03/11;168;"162;164DD"
+162;Pose revêtement de sol souple;15 jours;Jeu 10/03/11;Mer 30/03/11;161;"163FF;152FD-1 sm;160DD-4 sm"
+163;Pose revêtement sur escaliers;2 jours;Mar 29/03/11;Mer 30/03/11;162FF;
+164;Traitement d'imperméabilisation dans douches;3 jours;Jeu 24/02/11;Lun 28/02/11;161DD;165FD+2 jours
+165;Pose revêtement dans douche;1 sm;Jeu 03/03/11;Mer 09/03/11;164FD+2 jours;
+166;11 / PEINTURE;45 jours;Jeu 06/01/11;Mer 09/03/11;;
+167;Préparations;2 sm;Jeu 06/01/11;Mer 19/01/11;146FD-1 sm;168
+168;Peinture plafonds / murs logements;5 sm;Jeu 20/01/11;Mer 23/02/11;167;"169;170FD-1 sm;171FF;161;149FD-2 sm"
+169;Peinture plafonds / murs communs;2 sm;Jeu 24/02/11;Mer 09/03/11;168;142FD+1 sm
+170;Peinture sur ouvrages bois;2 sm;Jeu 17/02/11;Mer 02/03/11;168FD-1 sm;
+171;Peinture tuyauteries;1 sm;Jeu 17/02/11;Mer 23/02/11;168FF;
+172;12 / ECHAFAUDAGE;85 jours;Lun 19/07/10;Mer 08/12/10;;
+173;Montage échafaudage;2 sm;Lun 19/07/10;Ven 30/07/10;77;"129FD+1 sm;267FD+3 sm"
+174;Démontage échafaudage;1 sm;Jeu 02/12/10;Mer 08/12/10;177;178
+175;13 / ENDUIT EXTERIEUR;35 jours;Lun 25/10/10;Mer 15/12/10;;
+176;Crépis;1 sm;Lun 25/10/10;Ven 29/10/10;80;"177FD+3 sm;270FD+1 sm;117"
+177;Peinture;1 sm;Jeu 25/11/10;Mer 01/12/10;176FD+3 sm;"131;141FD+1 sm;174"
+178;Finitions;1 sm;Jeu 09/12/10;Mer 15/12/10;174;
+179;14 / ASCENSEUR;161 jours;Jeu 15/07/10;Mer 06/04/11;;
+180;Réception gaine d'ascenseur;0 jour;Jeu 15/07/10;Jeu 15/07/10;115FD+2 sm;
+181;Montage cabine;6 sm;Ven 05/11/10;Lun 03/01/11;132FD+2 sm;
+182;Essais techniques;1 sm;Jeu 31/03/11;Mer 06/04/11;195DD;
+183;15 / NETTOYAGE ;8 jours;Lun 11/04/11;Mer 20/04/11;;
+184;Nettoyage complet du bâtiment;8 jours;Lun 11/04/11;Mer 20/04/11;152;196
+185;16 / CHAUFFAGE - VENTILATION - SANITAIRE - SOLAIRE;246 jours;Ven 19/03/10;Mer 06/04/11;;
+186;Incorporations GO;3 mois;Ven 19/03/10;Jeu 10/06/10;106DD;
+187;Distribution;4 mois;Lun 25/10/10;Mer 02/03/11;144DD;188
+188;Appareillage ;3 sm;Jeu 03/03/11;Mer 23/03/11;187;
+189;Essais techniques;1 sm;Jeu 31/03/11;Mer 06/04/11;195DD;
+190;17 / ELECTRICITE;246 jours;Ven 19/03/10;Mer 06/04/11;;
+191;Incorporations GO;3 mois;Ven 19/03/10;Jeu 10/06/10;106DD;
+192;Distribution;4 mois;Lun 25/10/10;Mer 02/03/11;144DD;193FD-1 sm
+193;Appareillage ;3 sm;Jeu 24/02/11;Mer 16/03/11;192FD-1 sm;194
+194;CONSUEL;2 sm;Jeu 17/03/11;Mer 30/03/11;193;195
+195;Essais techniques;1 sm;Jeu 31/03/11;Mer 06/04/11;194;"189DD;182DD"
+196;OPR;0 jour;Mer 20/04/11;Mer 20/04/11;184;197
+197;PARACHEVEMENT;3 sm;Jeu 21/04/11;Ven 13/05/11;196;198
+198;RECEPTION BATIMENT D;0 jour;Ven 13/05/11;Ven 13/05/11;197;
+199;;;;;;
+200;BÂTIMENT C;264 jours;Ven 23/04/10;Ven 10/06/11;;
+201;01 / GROS-ŒUVRE;141 jours;Ven 23/04/10;Mer 01/12/10;;
+202;Fondations;1 sm;Ven 23/04/10;Jeu 29/04/10;107FD+10 jours;"203;276DD;281DD"
+203;Elévations + dallage RdC;2 sm;Ven 30/04/10;Jeu 13/05/10;202;"204;292FD+10 jours;210DD+2 sm"
+204;Dalle haute RdC;2 sm;Ven 14/05/10;Jeu 27/05/10;203;205
+205;Elévations R+1;2 sm;Ven 28/05/10;Jeu 10/06/10;204;206
+206;Dalle haute R+1;1 sm;Ven 11/06/10;Jeu 17/06/10;205;207
+207;Elévations R+2;1 sm;Ven 18/06/10;Jeu 24/06/10;206;208
+208;Dalle haute R+2;2 sm;Ven 25/06/10;Jeu 08/07/10;207;209
+209;Elévations Attique;1 sm;Ven 09/07/10;Jeu 15/07/10;208;213
+210;Coursive RdC à Attique;9 sm;Ven 14/05/10;Jeu 15/07/10;203DD+2 sm;
+211;Structures métallique des balcons;2 sm;Lun 06/09/10;Ven 17/09/10;116;235
+212;Pose platelages bois des balcons;1 sm;Jeu 25/11/10;Mer 01/12/10;270;221FD+2 jours
+213;Finitions sur consignes OPC;6 sm;Ven 16/07/10;Jeu 16/09/10;209;
+214;03 / CHARPENTE - MURS OSSATURE BOIS - BARDAGE;65 jours;Lun 20/09/10;Mer 05/01/11;;
+215;Plans PAC;0 jour;Lun 20/09/10;Lun 20/09/10;216DF;
+216;Commande ;2 sm;Lun 20/09/10;Lun 04/10/10;217DF;215DF
+217;Fabrication;1 sm;Lun 04/10/10;Lun 11/10/10;218DF;216DF
+218;Pose murs bois;1 sm;Lun 11/10/10;Ven 15/10/10;224;"217DF;219"
+219;Pose charpente ;1 sm;Lun 18/10/10;Ven 22/10/10;218;220FD-2 jours
+220;Pose volige;1 sm;Jeu 21/10/10;Mer 27/10/10;219FD-2 jours;223
+221;Réalisation bardage;13 jours;Lun 06/12/10;Mer 05/01/11;212FD+2 jours;
+222;04 / COUVERTURE - ETANCHEITE - ZINGUERIE;55 jours;Lun 27/09/10;Mer 15/12/10;;
+223;Pose isolant + étanchéité;2 sm;Jeu 28/10/10;Lun 15/11/10;220;227
+224;Etanchéité terrasses;2 sm;Lun 27/09/10;Ven 08/10/10;267;"225;218"
+225;Pose dalles sur plots;1 sm;Lun 11/10/10;Ven 15/10/10;224;
+226;Zinguerie;1 sm;Jeu 09/12/10;Mer 15/12/10;271;
+227;Hors d'eau;0 jour;Lun 15/11/10;Lun 15/11/10;223;239FD+7 jours
+228;05 / MENUISERIES EXTERIEURES BOIS;45 jours;Lun 23/08/10;Ven 22/10/10;;
+229;Plans PAC;0 jour;Lun 23/08/10;Lun 23/08/10;230DF;
+230;Fabrication / Commande;6 sm;Lun 23/08/10;Lun 04/10/10;231DF;229DF
+231;Pose châssis;2 sm;Lun 04/10/10;Ven 15/10/10;267FD+1 sm;"230DF;232"
+232;Finitions;1 sm;Lun 18/10/10;Ven 22/10/10;231;233
+233;Hors d'air;0 jour;Ven 22/10/10;Ven 22/10/10;232;
+234;06 / SERRURERIE - METALLERIE (sur cons OPC);135 jours;Lun 20/09/10;Mer 13/04/11;;
+235;Pose garde-corps balcons;1 sm;Lun 20/09/10;Ven 24/09/10;211;
+236;Pose murs rideaux;1 sm;Jeu 16/12/10;Mer 05/01/11;271FD+1 sm;
+237;Pose mains courantes;1 sm;Jeu 07/04/11;Mer 13/04/11;263FD+1 sm;
+238;07 / CLOISONS - DOUBLAGES - FAUX PLAFONDS;45 jours;Jeu 25/11/10;Mer 09/02/11;;
+239;Cloisons;5 sm;Jeu 25/11/10;Mer 12/01/11;227FD+7 jours;"240FD-2 sm;243;251DD+3 sm"
+240;Doublage;4 sm;Jeu 16/12/10;Mer 26/01/11;239FD-2 sm;"241;261"
+241;Faux plafonds y c. soffites;2 sm;Jeu 27/01/11;Mer 09/02/11;240;
+242;08 / MENUISERIE INTERIEURE BOIS;77 jours;Jeu 13/01/11;Mar 03/05/11;;
+243;Pose blocs portes;2 sm;Jeu 13/01/11;Mer 26/01/11;239;245FD+2 sm
+244;Pose portes ;3 jours;Jeu 03/03/11;Lun 07/03/11;262FD-2 sm;246FD-1 sm
+245;Pose trappes de visite;3 jours;Jeu 10/02/11;Lun 14/02/11;243FD+2 sm;
+246;Pose garde-corps escalier duplex;4 jours;Mar 01/03/11;Ven 04/03/11;244FD-1 sm;
+247;Pose plinthes bois;12 jours;Jeu 14/04/11;Mar 03/05/11;256FD-1 sm;"248DD;274"
+248;Equipements / Quincaillerie des portes;1 sm;Jeu 14/04/11;Mer 20/04/11;247DD;
+249;09 / CARRELAGE - FAÏENCE;50 jours;Mar 09/11/10;Mer 02/02/11;;
+250;Choix carrelage MO / Moe;0 jour;Mar 09/11/10;Mar 09/11/10;251DD-5 sm;
+251;Pose carrelage;3 sm;Jeu 16/12/10;Mer 19/01/11;239DD+3 sm;"250DD-5 sm;252FD-1 sm"
+252;Pose faïence;2 sm;Jeu 13/01/11;Mer 26/01/11;251FD-1 sm;253
+253;Finitions;1 sm;Jeu 27/01/11;Mer 02/02/11;252;
+254;10 / SOLS COLLES;25 jours;Jeu 17/03/11;Mer 20/04/11;;
+255;Ragréage;2 sm;Jeu 17/03/11;Mer 30/03/11;262;"256;258DD"
+256;Pose revêtement de sol souple;15 jours;Jeu 31/03/11;Mer 20/04/11;255;"257FF;247FD-1 sm"
+257;Pose revêtement sur escaliers;2 jours;Mar 19/04/11;Mer 20/04/11;256FF;
+258;Traitement d'imperméabilisation dans douches;3 jours;Jeu 17/03/11;Lun 21/03/11;255DD;259
+259;Pose revêtement dans douche;1 sm;Mar 22/03/11;Lun 28/03/11;258;
+260;11 / PEINTURE;45 jours;Jeu 27/01/11;Mer 30/03/11;;
+261;Préparations;2 sm;Jeu 27/01/11;Mer 09/02/11;240;262
+262;Peinture plafonds / murs logements;5 sm;Jeu 10/02/11;Mer 16/03/11;261;"263;264FD-1 sm;265FF;255;244FD-2 sm"
+263;Peinture plafonds / murs communs;2 sm;Jeu 17/03/11;Mer 30/03/11;262;237FD+1 sm
+264;Peinture sur ouvrages bois;2 sm;Jeu 10/03/11;Mer 23/03/11;262FD-1 sm;
+265;Peinture tuyauteries;1 sm;Jeu 10/03/11;Mer 16/03/11;262FF;
+266;12 / ECHAFAUDAGE;65 jours;Lun 13/09/10;Mer 15/12/10;;
+267;Montage échafaudage;2 sm;Lun 13/09/10;Ven 24/09/10;173FD+3 sm;"224;231FD+1 sm"
+268;Démontage échafaudage;1 sm;Jeu 09/12/10;Mer 15/12/10;271;272
+269;13 / ENDUIT EXTERIEUR;30 jours;Mar 09/11/10;Mer 05/01/11;;
+270;Crépis;2 sm;Mar 09/11/10;Mer 24/11/10;176FD+1 sm;"271;363;212"
+271;Peinture;2 sm;Jeu 25/11/10;Mer 08/12/10;270;"226;236FD+1 sm;268"
+272;Finitions;1 sm;Jeu 16/12/10;Mer 05/01/11;268;
+273;15 / NETTOYAGE ;8 jours;Mer 04/05/11;Ven 13/05/11;;
+274;Nettoyage complet du bâtiment;8 jours;Mer 04/05/11;Ven 13/05/11;247;286FD+3 jours
+275;16 / CHAUFFAGE - VENTILATION - SANITAIRE - SOLAIRE;225 jours;Ven 23/04/10;Mar 12/04/11;;
+276;Incorporations GO;3 mois;Ven 23/04/10;Jeu 15/07/10;202DD;277
+277;Distribution;7 mois;Ven 16/07/10;Mar 08/03/11;276;278
+278;Appareillage ;3 sm;Mer 09/03/11;Mar 29/03/11;277;
+279;Essais techniques;1 sm;Mer 06/04/11;Mar 12/04/11;285DD;
+280;17 / ELECTRICITE;225 jours;Ven 23/04/10;Mar 12/04/11;;
+281;Incorporations GO;3 mois;Ven 23/04/10;Jeu 15/07/10;202DD;282
+282;Distribution;7 mois;Ven 16/07/10;Mar 08/03/11;281;283FD-1 sm
+283;Appareillage ;3 sm;Mer 02/03/11;Mar 22/03/11;282FD-1 sm;284
+284;CONSUEL;2 sm;Mer 23/03/11;Mar 05/04/11;283;285
+285;Essais techniques;1 sm;Mer 06/04/11;Mar 12/04/11;284;279DD
+286;OPR ;0 jour;Mer 18/05/11;Mer 18/05/11;274FD+3 jours;287
+287;PARACHEVEMENT;3 sm;Jeu 19/05/11;Ven 10/06/11;286;288
+288;RECEPTION BATIMENT C;0 jour;Ven 10/06/11;Ven 10/06/11;287;
+289;;;;;;
+290;BÂTIMENT B;235 jours;Ven 28/05/10;Lun 06/06/11;;
+291;01 / GROS-ŒUVRE;123 jours;Ven 28/05/10;Ven 10/12/10;;
+292;Fondations;1 sm;Ven 28/05/10;Jeu 03/06/10;203FD+10 jours;"293;369DD;374DD"
+293;Elévations sous-sol;2 sm;Ven 04/06/10;Jeu 17/06/10;292;294
+294;Dallage sous-sol;1 sm;Ven 18/06/10;Jeu 24/06/10;293;"295;385"
+295;Dalle haute sous-sol;2 sm;Ven 25/06/10;Jeu 08/07/10;294;296
+296;Elévations RdC;2 sm;Ven 09/07/10;Jeu 22/07/10;295;297
+297;Dalle haute RdC;2 sm;Ven 23/07/10;Jeu 26/08/10;296;"298;303DD"
+298;Elévations R+1;1 sm;Ven 27/08/10;Jeu 02/09/10;297;299
+299;Dalle haute R+1;1 sm;Ven 03/09/10;Jeu 09/09/10;298;300
+300;Elévations R+2;1 sm;Ven 10/09/10;Jeu 16/09/10;299;301
+301;Dalle haute R+2;1 sm;Ven 17/09/10;Jeu 23/09/10;300;302
+302;Elévations Attique;1 sm;Ven 24/09/10;Jeu 30/09/10;301;"306;360FD+1 sm"
+303;Coursive du RdC à l'Attique;8 sm;Ven 23/07/10;Jeu 07/10/10;297DD;
+304;Structures métallique des balcons;2 sm;Ven 08/10/10;Jeu 21/10/10;360DD;328FD+1 sm
+305;Pose platelages bois des balcons;1 sm;Lun 06/12/10;Ven 10/12/10;363FD+2 jours;314
+306;Finitions sur consignes OPC;6 sm;Ven 01/10/10;Mar 16/11/10;302;
+307;03 / CHARPENTE - MURS OSSATURE BOIS - BARDAGE;56 jours;Ven 08/10/10;Mer 12/01/11;;
+308;Plans PAC;0 jour;Ven 08/10/10;Ven 08/10/10;309DF;
+309;Commande ;2 sm;Ven 08/10/10;Ven 22/10/10;310DF;308DF
+310;Fabrication;1 sm;Ven 22/10/10;Ven 29/10/10;311DF;309DF
+311;Pose murs bois;4 jours;Ven 29/10/10;Jeu 04/11/10;317;"310DF;312"
+312;Pose charpente ;1 sm;Ven 05/11/10;Lun 15/11/10;311;313FD-2 jours
+313;Pose volige;4 jours;Mer 10/11/10;Mer 17/11/10;312FD-2 jours;316
+314;Réalisation bardage;13 jours;Lun 13/12/10;Mer 12/01/11;305;
+315;04 / COUVERTURE - ETANCHEITE - ZINGUERIE;36 jours;Ven 15/10/10;Mer 08/12/10;;
+316;Pose isolant + étanchéité;2 sm;Jeu 18/11/10;Mer 01/12/10;313;318
+317;Etanchéité terrasses;2 sm;Ven 15/10/10;Jeu 28/10/10;360;"319;311"
+318;Pose dalles sur plots;1 sm;Jeu 02/12/10;Mer 08/12/10;316;
+319;Zinguerie;1 sm;Ven 29/10/10;Ven 05/11/10;317;320
+320;Hors d'eau;0 jour;Ven 05/11/10;Ven 05/11/10;319;"324FD-2 sm;332FD+1 sm"
+321;05 / MENUISERIES EXTERIEURES BOIS;45 jours;Ven 10/09/10;Mar 16/11/10;;
+322;Plans PAC;0 jour;Ven 10/09/10;Ven 10/09/10;323DF;
+323;Fabrication / Commande;6 sm;Ven 10/09/10;Ven 22/10/10;324DF;322DF
+324;Pose châssis;2 sm;Ven 22/10/10;Ven 05/11/10;320FD-2 sm;"323DF;325"
+325;Finitions;1 sm;Lun 08/11/10;Mar 16/11/10;324;326
+326;Hors d'air;0 jour;Mar 16/11/10;Mar 16/11/10;325;
+327;06 / SERRURERIE - METALLERIE (sur cons OPC);100 jours;Ven 29/10/10;Mar 05/04/11;;
+328;Pose garde-corps balcons;1 sm;Ven 29/10/10;Ven 05/11/10;304FD+1 sm;
+329;Pose murs rideaux;1 sm;Jeu 20/01/11;Mer 26/01/11;364FD+1 sm;
+330;Pose mains courantes;1 sm;Mer 30/03/11;Mar 05/04/11;356FD+1 sm;
+331;07 / CLOISONS - DOUBLAGES - FAUX PLAFONDS;45 jours;Mer 17/11/10;Mar 01/02/11;;
+332;Cloisons;5 sm;Mer 17/11/10;Mar 04/01/11;320FD+1 sm;"333FD-2 sm;336;344DD+3 sm"
+333;Doublage;4 sm;Mer 08/12/10;Mar 18/01/11;332FD-2 sm;"334;354"
+334;Faux plafonds y c. soffites;2 sm;Mer 19/01/11;Mar 01/02/11;333;
+335;08 / MENUISERIE INTERIEURE BOIS;82 jours;Mer 05/01/11;Lun 02/05/11;;
+336;Pose blocs portes;2 sm;Mer 05/01/11;Mar 18/01/11;332;338FD+2 sm
+337;Pose portes ;3 jours;Mer 23/02/11;Ven 25/02/11;355FD-2 sm;339FD-1 sm
+338;Pose trappes de visite;3 jours;Mer 02/02/11;Ven 04/02/11;336FD+2 sm;
+339;Pose garde-corps escalier duplex;4 jours;Lun 21/02/11;Jeu 24/02/11;337FD-1 sm;
+340;Pose plinthes bois;12 jours;Mer 13/04/11;Lun 02/05/11;349;"341DD;367"
+341;Equipements / Quincaillerie des portes;1 sm;Mer 13/04/11;Mar 19/04/11;340DD;
+342;09 / CARRELAGE - FAÏENCE;50 jours;Ven 29/10/10;Mar 25/01/11;;
+343;Choix carrelage MO / Moe;0 jour;Ven 29/10/10;Ven 29/10/10;344DD-5 sm;
+344;Pose carrelage;3 sm;Mer 08/12/10;Mar 11/01/11;332DD+3 sm;"343DD-5 sm;345FD-1 sm"
+345;Pose faïence;2 sm;Mer 05/01/11;Mar 18/01/11;344FD-1 sm;346
+346;Finitions;1 sm;Mer 19/01/11;Mar 25/01/11;345;
+347;10 / SOLS COLLES;25 jours;Mer 09/03/11;Mar 12/04/11;;
+348;Ragréage;2 sm;Mer 09/03/11;Mar 22/03/11;355;"349;351DD"
+349;Pose revêtement de sol souple;15 jours;Mer 23/03/11;Mar 12/04/11;348;"340;350FF"
+350;Pose revêtement sur escaliers;2 jours;Lun 11/04/11;Mar 12/04/11;349FF;
+351;Traitement d'imperméabilisation dans douches;3 jours;Mer 09/03/11;Ven 11/03/11;348DD;352
+352;Pose revêtement dans douche;1 sm;Lun 14/03/11;Ven 18/03/11;351;
+353;11 / PEINTURE;45 jours;Mer 19/01/11;Mar 22/03/11;;
+354;Préparations;2 sm;Mer 19/01/11;Mar 01/02/11;333;355
+355;Peinture plafonds / murs logements;5 sm;Mer 02/02/11;Mar 08/03/11;354;"337FD-2 sm;348;356;357FD-1 sm"
+356;Peinture plafonds / murs communs;2 sm;Mer 09/03/11;Mar 22/03/11;355;330FD+1 sm
+357;Peinture sur ouvrages bois;2 sm;Mer 02/03/11;Mar 15/03/11;355FD-1 sm;358FF
+358;Peinture tuyauteries;1 sm;Mer 09/03/11;Mar 15/03/11;357FF;
+359;12 / ECHAFAUDAGE;61 jours;Ven 08/10/10;Mer 19/01/11;;
+360;Montage échafaudage;1 sm;Ven 08/10/10;Jeu 14/10/10;302FD+1 sm;"304DD;317"
+361;Démontage échafaudage;1 sm;Jeu 13/01/11;Mer 19/01/11;364;365
+362;13 / ENDUIT EXTERIEUR;35 jours;Jeu 25/11/10;Mer 26/01/11;;
+363;Crépis;1 sm;Jeu 25/11/10;Mer 01/12/10;270;"364FD+3 sm;451;305FD+2 jours"
+364;Peinture;1 sm;Jeu 06/01/11;Mer 12/01/11;363FD+3 sm;"329FD+1 sm;361"
+365;Finitions;1 sm;Jeu 20/01/11;Mer 26/01/11;361;
+366;15 / NETTOYAGE ;8 jours;Mar 03/05/11;Jeu 12/05/11;;
+367;Nettoyage complet du bâtiment;8 jours;Mar 03/05/11;Jeu 12/05/11;340;379
+368;16 / CHAUFFAGE - VENTILATION - SANITAIRE - SOLAIRE;220 jours;Ven 28/05/10;Jeu 12/05/11;;
+369;Incorporations GO;3 mois;Ven 28/05/10;Jeu 09/09/10;292DD;370
+370;Distribution;7 mois;Ven 10/09/10;Mar 12/04/11;369;371FD-2 sm
+371;Appareillage ;3 sm;Mer 30/03/11;Mar 19/04/11;370FD-2 sm;
+372;Essais techniques;1 sm;Ven 06/05/11;Jeu 12/05/11;378DD;
+373;17 / ELECTRICITE;218 jours;Ven 28/05/10;Mar 10/05/11;;
+374;Incorporations GO;3 mois;Ven 28/05/10;Jeu 09/09/10;292DD;375
+375;Distribution;7 mois;Ven 10/09/10;Mar 12/04/11;374;376FD-2 sm
+376;Appareillage ;3 sm;Mer 30/03/11;Mar 19/04/11;375FD-2 sm;377
+377;CONSUEL;2 sm;Mer 20/04/11;Jeu 05/05/11;376;378
+378;Essais techniques;3 jours;Ven 06/05/11;Mar 10/05/11;377;372DD
+379;OPR ;0 jour;Jeu 12/05/11;Jeu 12/05/11;367;380
+380;PARACHEVEMENT;3 sm;Ven 13/05/11;Lun 06/06/11;379;381
+381;RECEPTION BATIMENT B;0 jour;Lun 06/06/11;Lun 06/06/11;380;
+382;;;;;;
+383;BÂTIMENT A;226 jours;Ven 25/06/10;Mer 22/06/11;;
+384;01 / GROS-ŒUVRE;108 jours;Ven 25/06/10;Ven 17/12/10;;
+385;Fondations;1 sm;Ven 25/06/10;Jeu 01/07/10;294;"386DD+5 jours;457DD;462DD"
+386;Elévations + dallage RdC;3 sm;Ven 02/07/10;Jeu 22/07/10;385DD+5 jours;"387;393DD"
+387;Dalle haute RdC;2 sm;Ven 23/07/10;Jeu 26/08/10;386;388
+388;Elévations R+1;2 sm;Ven 27/08/10;Jeu 09/09/10;387;389
+389;Dalle haute R+1;2 sm;Ven 10/09/10;Jeu 23/09/10;388;390
+390;Elévations Attique;1 sm;Ven 24/09/10;Jeu 30/09/10;389;448FD+2 sm
+391;Structures métallique des balcons;1 sm;Ven 22/10/10;Jeu 28/10/10;448;416FD+1 sm
+392;Pose platelages bois des balcons;1 sm;Lun 13/12/10;Ven 17/12/10;451FD+2 jours;402
+393;Coursive;7 sm;Ven 02/07/10;Jeu 09/09/10;386DD;394
+394;Finitions ;4 sm;Ven 10/09/10;Jeu 07/10/10;393;
+395;03 / CHARPENTE - MURS OSSATURE BOIS - BARDAGE;56 jours;Ven 15/10/10;Mer 19/01/11;;
+396;Plans PAC;0 jour;Ven 15/10/10;Ven 15/10/10;397DF;
+397;Commande ;2 sm;Ven 15/10/10;Ven 29/10/10;398DF;396DF
+398;Fabrication;1 sm;Ven 29/10/10;Lun 08/11/10;399DF;397DF
+399;Pose murs bois;4 jours;Lun 08/11/10;Lun 15/11/10;405;"398DF;400"
+400;Pose charpente ;1 sm;Mar 16/11/10;Lun 22/11/10;399;401
+401;Pose volige;4 jours;Mar 23/11/10;Ven 26/11/10;400;404
+402;Réalisation bardage;13 jours;Lun 03/01/11;Mer 19/01/11;392;
+403;04 / COUVERTURE - ETANCHEITE - ZINGUERIE;51 jours;Ven 22/10/10;Mer 19/01/11;;
+404;Pose isolant + étanchéité;2 sm;Lun 29/11/10;Ven 10/12/10;401;"406;408"
+405;Etanchéité terrasses;2 sm;Ven 22/10/10;Ven 05/11/10;448;399
+406;Pose dalles sur plots;1 sm;Lun 13/12/10;Ven 17/12/10;404;
+407;Zinguerie;1 sm;Jeu 13/01/11;Mer 19/01/11;452;
+408;Hors d'eau;0 jour;Ven 10/12/10;Ven 10/12/10;404;420FD+2 jours
+409;05 / MENUISERIES EXTERIEURES BOIS;45 jours;Ven 24/09/10;Mar 30/11/10;;
+410;Plans PAC;0 jour;Ven 24/09/10;Ven 24/09/10;411DF;
+411;Fabrication / Commande;6 sm;Ven 24/09/10;Lun 08/11/10;412DF;410DF
+412;Pose châssis;2 sm;Lun 08/11/10;Mar 23/11/10;448FD+2 sm;"413;411DF"
+413;Finitions;1 sm;Mer 24/11/10;Mar 30/11/10;412;414
+414;Hors d'air;0 jour;Mar 30/11/10;Mar 30/11/10;413;
+415;06 / SERRURERIE - METALLERIE (sur cons OPC);110 jours;Lun 08/11/10;Jeu 28/04/11;;
+416;Pose garde-corps balcons;1 sm;Lun 08/11/10;Mar 16/11/10;391FD+1 sm;
+417;Pose murs rideaux;1 sm;Jeu 20/01/11;Mer 26/01/11;449;
+418;Pose mains courantes;1 sm;Mer 20/04/11;Jeu 28/04/11;444FD+1 sm;
+419;07 / CLOISONS - DOUBLAGES - FAUX PLAFONDS;40 jours;Mer 15/12/10;Mar 22/02/11;;
+420;Cloisons;4 sm;Mer 15/12/10;Mar 25/01/11;408FD+2 jours;"421FD-1 sm;424;432"
+421;Doublage;3 sm;Mer 19/01/11;Mar 08/02/11;420FD-1 sm;422
+422;Faux plafonds y c. soffites;2 sm;Mer 09/02/11;Mar 22/02/11;421;442
+423;08 / MENUISERIE INTERIEURE BOIS;78 jours;Mer 26/01/11;Mar 17/05/11;;
+424;Pose blocs portes;8 jours;Mer 26/01/11;Ven 04/02/11;420;426FD+2 sm
+425;Pose portes ;3 jours;Mer 16/03/11;Ven 18/03/11;443FD-2 sm;427
+426;Pose trappes de visite;3 jours;Lun 21/02/11;Mer 23/02/11;424FD+2 sm;
+427;Pose garde-corps escalier duplex;4 jours;Lun 21/03/11;Jeu 24/03/11;425;
+428;Pose plinthes bois;2 sm;Mer 27/04/11;Mar 10/05/11;437;429
+429;Equipements / Quincaillerie des portes;1 sm;Mer 11/05/11;Mar 17/05/11;428;455
+430;09 / CARRELAGE - FAÏENCE;48 jours;Mer 08/12/10;Ven 25/02/11;;
+431;Choix carrelage MO / Moe;0 jour;Mer 08/12/10;Mer 08/12/10;432DD-5 sm;
+432;Pose carrelage;13 jours;Mer 26/01/11;Ven 11/02/11;420;"433FD-1 sm;431DD-5 sm"
+433;Pose faïence;2 sm;Lun 07/02/11;Ven 18/02/11;432FD-1 sm;434
+434;Finitions;1 sm;Lun 21/02/11;Ven 25/02/11;433;
+435;10 / SOLS COLLES;18 jours;Mer 30/03/11;Mar 26/04/11;;
+436;Ragréage;8 jours;Mer 30/03/11;Ven 08/04/11;443;"439DD;437"
+437;Pose revêtement de sol souple;10 jours;Lun 11/04/11;Mar 26/04/11;436;"428;438FF"
+438;Pose revêtement sur escaliers;2 jours;Jeu 21/04/11;Mar 26/04/11;437FF;
+439;Traitement d'imperméabilisation dans douches;3 jours;Mer 30/03/11;Ven 01/04/11;436DD;440FD+3 jours
+440;Pose revêtement dans douche;4 jours;Jeu 07/04/11;Mar 12/04/11;439FD+3 jours;
+441;11 / PEINTURE;40 jours;Mer 23/02/11;Mar 19/04/11;;
+442;Préparations;2 sm;Mer 23/02/11;Mar 08/03/11;422;443
+443;Peinture plafonds / murs logements;3 sm;Mer 09/03/11;Mar 29/03/11;442;"425FD-2 sm;436;444"
+444;Peinture plafonds / murs communs;2 sm;Mer 30/03/11;Mar 12/04/11;443;"418FD+1 sm;445FD-1 sm;446"
+445;Peinture sur ouvrages bois;2 sm;Mer 06/04/11;Mar 19/04/11;444FD-1 sm;
+446;Peinture tuyauteries;1 sm;Mer 13/04/11;Mar 19/04/11;444;
+447;12 / ECHAFAUDAGE;56 jours;Ven 15/10/10;Mer 19/01/11;;
+448;Montage échafaudage;1 sm;Ven 15/10/10;Jeu 21/10/10;390FD+2 sm;"391;405;412FD+2 sm"
+449;Démontage échafaudage;1 sm;Jeu 13/01/11;Mer 19/01/11;452;"417;453;472FD+12 jours"
+450;13 / ENDUIT EXTERIEUR;30 jours;Jeu 02/12/10;Mer 26/01/11;;
+451;Crépis;1 sm;Jeu 02/12/10;Mer 08/12/10;363;"452FD+2 sm;392FD+2 jours"
+452;Peinture;1 sm;Jeu 06/01/11;Mer 12/01/11;451FD+2 sm;"449;407"
+453;Finitions;1 sm;Jeu 20/01/11;Mer 26/01/11;449;
+454;15 / NETTOYAGE ;8 jours;Mer 18/05/11;Ven 27/05/11;;
+455;Nettoyage complet du bâtiment;8 jours;Mer 18/05/11;Ven 27/05/11;429;467
+456;16 / CHAUFFAGE - VENTILATION - SANITAIRE - SOLAIRE;200 jours;Ven 25/06/10;Jeu 12/05/11;;
+457;Incorporations GO;3 mois;Ven 25/06/10;Jeu 07/10/10;385DD;458
+458;Distribution;6 mois;Ven 08/10/10;Mar 12/04/11;457;459FD-2 sm
+459;Appareillage ;3 sm;Mer 30/03/11;Mar 19/04/11;458FD-2 sm;
+460;Essais techniques;1 sm;Ven 06/05/11;Jeu 12/05/11;466DD;
+461;17 / ELECTRICITE;198 jours;Ven 25/06/10;Mar 10/05/11;;
+462;Incorporations GO;3 mois;Ven 25/06/10;Jeu 07/10/10;385DD;463
+463;Distribution;6 mois;Ven 08/10/10;Mar 12/04/11;462;464FD-2 sm
+464;Appareillage ;3 sm;Mer 30/03/11;Mar 19/04/11;463FD-2 sm;465
+465;CONSUEL;2 sm;Mer 20/04/11;Jeu 05/05/11;464;466
+466;Essais techniques;3 jours;Ven 06/05/11;Mar 10/05/11;465;460DD
+467;OPR ;0 jour;Ven 27/05/11;Ven 27/05/11;455;468
+468;PARACHEVEMENT;3 sm;Lun 30/05/11;Mer 22/06/11;467;469
+469;RECEPTION BATIMENT A;0 jour;Mer 22/06/11;Mer 22/06/11;468;
+470;;;;;;
+471;02 / AMENAGEMENTS EXTERIEURS - VRD - ESPACES VERTS;100 jours;Lun 07/02/11;Ven 01/07/11;;
+472;Assainissment & raccordement EP ;3 sm;Lun 07/02/11;Ven 25/02/11;449FD+12 jours;473FD-2 sm
+473;Réseaux EU/EV;4 sm;Lun 14/02/11;Ven 11/03/11;472FD-2 sm;474FD-2 sm
+474;Réseaux secs (gaz, élec, etc…) & AEP;4 sm;Lun 28/02/11;Ven 25/03/11;473FD-2 sm;475FD-1 sm
+475;Terrassements / plate formes;2 sm;Lun 21/03/11;Ven 01/04/11;474FD-1 sm;476FD-1 sm
+476;Bordures, pavés, etc…;4 sm;Lun 28/03/11;Mar 26/04/11;475FD-1 sm;477
+477;Mise en œuvre terre végétale;1 sm;Mer 27/04/11;Mar 03/05/11;476;478
+478;Engazonnement / Plantations;1 sm;Mer 04/05/11;Mar 10/05/11;477;479
+479;Reprofilage plate formes;1 sm;Mer 11/05/11;Mar 17/05/11;478;480
+480;Enrobés;1 sm;Mer 18/05/11;Mar 24/05/11;479;481
+481;Traçage & finitions;2 sm;Mer 25/05/11;Jeu 09/06/11;480;482
+482;RECEPTION AMENAGEMENTS EXTERIEURS;3 sm;Ven 10/06/11;Ven 01/07/11;481;

@@ -1,0 +1,31 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>R</l><d>RESSOURCES</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>260</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>279</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>01  GROS OEUVRE VRD - MARTI</d><r></r><t>74</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>02  CHARPENTE - DL OCEAN</d><r></r><t>27</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>03  COUVERTURE ETANCHEITE - SMAC</d><r></r><t>29</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>04A MENUISERIES EXTER. M.S.O.</d><r></r><t>13</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>04B BARDAGE - SMAC</d><r></r><t>15</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>05  MENUISERIES INTER. LEGENDRE & LUREAU</d><r></r><t>9</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>06  PLATRERIE - MAINVIELLE</d><r></r><t>10</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>07  PLAFONDS INDUSTRIELS - CECCHINI</d><r></r><t>12</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>08  REVETEMENTS CARRELAGES - ALCOR</d><r></r><t>13</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>09  PEINTURE - LARREY</d><r></r><t>8</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>10  CVC PLO SANIT GS - CBS TECHNIQUES</d><r></r><t>28</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>11  ELECTRICITE - EGE AQUITAINE</d><r></r><t>20</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>T.C.E.</d><r></r><t>9</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>ARCHITECTE -N RAGUENEAU & A ROUX</d><r></r><t>6</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>BET - OTCE</d><r></r><t>6</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>279</t>
+<c1>R</c1><c2></c2><c3></c3><c4></c4><d>RESSOURCES</d><r></r><t>279</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

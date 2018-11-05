@@ -1,0 +1,10 @@
+<nom>1 plage n°</nom><comment>Actuellement ce filtre permet de visualiser
+les tâches à l'écran qui sont compris entre
+deux nombre soit : 1 et 999
+
+Vous pourrez modifiez ces valeurs Exemple
+"	remplacez -	1 par 10
+"	remplacez 	999 par 50
+pour visualiser que les tâches de 10 à 50, 
+les autres étant occulter 
+</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>1</V1><V2>9</V2>|</criteres>

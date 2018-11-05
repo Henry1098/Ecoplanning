@@ -1,0 +1,24 @@
+De nombreux exemples, voir importants, montrent que:la notion « maîtrise temps » 
+du déroulement d’un projet, n’est pas prise en compte correctement au contraire 
+des notions coût et qualité avec lesquelles elle est liée. 
+
+- Obtenir des plannings, très visuels pour répondre aux besoins spécifiques 
+des branches Bâtiments et Ingénierie.
+- de faire des actualisations rapides du projet pour connaître aussitôt les 
+conséquences des retards, voir établir un planning de rattrapage
+- de procéder (si nécessaire) à une analyse plus complète pour imputer le 
+retard aux tâches concernées
+- avec un modèle de récupérer les articles d’un devis, sur Excel, 
+pour obtenir le premier planning opérationnel 
+
+
+Logiciel Ecoplanning. La maîtrise du temps et des côuts dans le déroulement d'un projet
+
+Ecoplanning Software : Mastering Time and Costs in Project Execution
+
+Ecoplanning permet
+
+- L'obtention de plannings très visuels (Bâtiments, Industrie, Services
+- Des actualisations périodiques et établissement de plannings de rattrapage
+- L'imputation de retard aux tâches concernées
+- Importation de données externes (Excel,...) 

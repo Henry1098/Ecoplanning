@@ -1,0 +1,14 @@
+<nom>2 plages n°</nom><comment>Actuellement ce filtre permet de visualiser
+les tâches à l'écran qui sont compris entre
+deux périodes. Vous visualiserez les Tâches comprise entre 1 et 20 et 40 et 80
+
+Vous pourrez modifiez ces valeurs Exemple
+d'une part  remplacez -	1 par 10
+	  remplacez 	80 par 250
+d'autre part remplacez -	20 par 100
+	   remplacez 	40 par 150
+
+Vous visualiserez les tâches
+comprise entre 10 et 100 et 150 et 250
+
+</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>1</V1><V2>100</V2>|<A>Supprimer</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>20</V1><V2>40</V2>|</criteres>

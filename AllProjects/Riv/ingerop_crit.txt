@@ -1,0 +1,57 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Critère 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Critère 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Critère 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Critère 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Critère 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>146</t>
+<c1>P</c1><c2>001---</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>3</t>
+<c1>P</c1><c2>002---</c2><c3></c3><c4></c4><d>Maître d'œuvre</d><r></r><t>7</t>
+<c1>P</c1><c2>003-001--</c2><c3></c3><c4></c4><d>Démolitions / Terrassements : MAIA FONDATION</d><r></r><t>5</t>
+<c1>P</c1><c2>003-002--</c2><c3></c3><c4></c4><d>Fondations spéciales : ELTS</d><r></r><t>4</t>
+<c1>P</c1><c2>003-003--</c2><c3></c3><c4></c4><d>Gros œuvre : GCC</d><r></r><t>3</t>
+<c1>P</c1><c2>003-003-001-</c2><c3></c3><c4></c4><d>Sous sol -2</d><r></r><t>8</t>
+<c1>P</c1><c2>003-003-002-</c2><c3></c3><c4></c4><d>Dallages niv 280-50 brut fini</d><r></r><t>2</t>
+<c1>P</c1><c2>003-003-003-</c2><c3></c3><c4></c4><d>Sous sol -1</d><r></r><t>9</t>
+<c1>P</c1><c2>003-003-004-</c2><c3></c3><c4></c4><d>Niveau 0</d><r></r><t>3</t>
+<c1>P</c1><c2>003-003-005-</c2><c3></c3><c4></c4><d>Niveau 1</d><r></r><t>3</t>
+<c1>P</c1><c2>003-003-006-</c2><c3></c3><c4></c4><d>Niveau 2</d><r></r><t>3</t>
+<c1>P</c1><c2>003-003-007-</c2><c3></c3><c4></c4><d>Finitions- travaux divers</d><r></r><t>7</t>
+<c1>P</c1><c2>003-004--</c2><c3></c3><c4></c4><d>Revêtement de façades : ROLANDO et POISSON</d><r></r><t>3</t>
+<c1>P</c1><c2>003-005--</c2><c3></c3><c4></c4><d>Charpente métallique : LEGRAND</d><r></r><t>8</t>
+<c1>P</c1><c2>003-006--</c2><c3></c3><c4></c4><d>Couverture Etanchéité : SIC ETANCHEITE</d><r></r><t>5</t>
+<c1>P</c1><c2>003-007--</c2><c3></c3><c4></c4><d>Menuiserie alu - occultations : PRINCEPS ALU</d><r></r><t>3</t>
+<c1>P</c1><c2>003-008--</c2><c3></c3><c4></c4><d>Serrurerie - Métallerie : METALLERIE DU FOREZ BLANCHET</d><r></r><t>15</t>
+<c1>P</c1><c2>003-009--</c2><c3></c3><c4></c4><d>Menuiseries intérieures bois : THALMANN</d><r></r><t>8</t>
+<c1>P</c1><c2>003-010--</c2><c3></c3><c4></c4><d>Plafonds suspendus : GUY MEUNIER</d><r></r><t>2</t>
+<c1>P</c1><c2>003-011--</c2><c3></c3><c4></c4><d>Cloisons doublage : PERROTIN</d><r></r><t>3</t>
+<c1>P</c1><c2>003-012--</c2><c3></c3><c4></c4><d>Carrelage - Faïence : BERRY</d><r></r><t>2</t>
+<c1>P</c1><c2>003-013--</c2><c3></c3><c4></c4><d>Sols collés : STORIA</d><r></r><t>2</t>
+<c1>P</c1><c2>003-014--</c2><c3></c3><c4></c4><d>Ascenseur : KONE</d><r></r><t>5</t>
+<c1>P</c1><c2>003-015--</c2><c3></c3><c4></c4><d>Peinture - Revêtement muraux : PERROTIN</d><r></r><t>5</t>
+<c1>P</c1><c2>003-016--</c2><c3></c3><c4></c4><d>Plomberie sanitaire - Chauffage ventilation : S.K.L.</d><r></r><t>9</t>
+<c1>P</c1><c2>003-017--</c2><c3></c3><c4></c4><d>Electricité - courant faible : BRUNET</d><r></r><t>6</t>
+<c1>P</c1><c2>003-018--</c2><c3></c3><c4></c4><d>VRD : ESPACES VERTS DU MONT D'OR</d><r></r><t>6</t>
+<c1>P</c1><c2>003-019--</c2><c3></c3><c4></c4><d>Espace verts : CHIEZE</d><r></r><t>7</t>
+<c1>P</c1><c2>04</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>05</c2><c3></c3><c4></c4><d>Maître d'œuvre</d><r></r><t>0</t>
+<c1>P</c1><c2>06</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>07</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>08</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>09</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>10</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>11</c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>P</c1><c2>12</c2><c3></c3><c4></c4><d>Maître d'œuvre</d><r></r><t>0</t>
+<c1>P</c1><c2>13</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>0</t>
+<c1>P</c1><c2>14</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>0</t>
+<c1>P</c1><c2>15</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>0</t>
+<c1>P</c1><c2>16</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>0</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>146</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>146</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t>0</t>

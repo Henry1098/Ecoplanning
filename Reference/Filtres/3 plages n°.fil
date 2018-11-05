@@ -1,0 +1,4 @@
+<nom>3 plages n°</nom><comment>Actuellement ce filtre permet de visualiser
+vous filtrez là l'écran les tâches qui sont compris entre en trois  parties  les tâches comprise entre 1 et 9 - 21 et 49 - 61 et 80
+ 
+V</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>1</V1><V2>80</V2>|<A>Supprimer</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>10</V1><V2>20</V2>|<A>Supprimer</A><C>Numéro de Tâche</C><R>Compris entre</R><V1>50</V1><V2>60</V2>|</criteres>

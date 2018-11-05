@@ -1,0 +1,190 @@
+N°;Nom;Durée;Début;Fin;Prédécesseurs;Successeurs
+1;;;;;;
+2;O.S. TRAVAUX;0 jour;Jeu 11/06/09;Jeu 11/06/09;;3FD+2 jours
+3;PERIODE DE PREPARATION;8 sm;Lun 15/06/09;Ven 07/08/09;2FD+2 jours;"4DD+2 sm;9DD+10 jours"
+4;ETUDES (PAC entreprises);20 sm;Lun 29/06/09;Ven 13/11/09;3DD+2 sm;
+5;;;;;;
+6;;;;;;
+7;LOT N°01 / CLOS-COUVERT & TRAVAUX EXTERIEURS;387 jours;Jeu 11/06/09;Ven 03/12/10;;
+8;01.1 / TERRASEMENTS - V.R.D.;180 jours;Lun 29/06/09;Ven 05/03/10;;
+9;Terrassements généraux;3 sm;Lun 29/06/09;Ven 17/07/09;3DD+10 jours;10FD-5 jours
+10;Plate-formes;2 sm;Lun 13/07/09;Ven 24/07/09;9FD-5 jours;11
+11;Réseaux EP/EU/EV Bât G;3 sm;Lun 27/07/09;Ven 14/08/09;10;"13;12"
+12;Réseaux EP/EU/EV Bât P;3 sm;Lun 17/08/09;Ven 04/09/09;11;
+13;Réseaux secs + AEP Bât G;3 sm;Lun 17/08/09;Ven 04/09/09;11;14
+14;Réseaux secs + AEP Bât P;3 sm;Lun 07/09/09;Ven 25/09/09;13;15
+15;Réseaux parking couvert;4 sm;Lun 08/02/10;Ven 05/03/10;14;17
+16;01.2 / AMENAGEMENTS PAYSAGERS - ESPACES VERTS;195 jours;Lun 08/03/10;Ven 03/12/10;;
+17;Déblais / Remblais / Plate-formes;2 sm;Lun 08/03/10;Ven 19/03/10;15;18
+18;Ouvrages bétons;3 sm;Lun 22/03/10;Ven 09/04/10;17;19
+19;Travaux parking couvert & patios;3 sm;Lun 12/04/10;Ven 30/04/10;18;"20;140"
+20;Couches de formes P+G;2 sm;Lun 03/05/10;Ven 14/05/10;19;21
+21;Mise en œuvre terre végétale;1 sm;Lun 17/05/10;Ven 21/05/10;20;22FD+100 jours
+22;Traitement des surfaces P+G;2 sm;Lun 11/10/10;Ven 22/10/10;21FD+100 jours;23
+23;Plantations & équipements divers;3 sm;Lun 25/10/10;Ven 12/11/10;22;24
+24;Finitions;3 sm;Lun 15/11/10;Ven 03/12/10;23;
+25;01.3 / FONDATIONS - TERRASSEMENTS - GROS-ŒUVRE;277 jours;Jeu 11/06/09;Ven 02/07/10;;
+26;Installations de chantier;2 sm;Jeu 11/06/09;Mer 24/06/09;;28FD+4 jours
+27;Implantation / Montage grues;2 sm;Jeu 11/06/09;Mer 24/06/09;;42DD
+28;Colonnes ballastées;13 jours;Mer 01/07/09;Ven 17/07/09;26FD+4 jours;"30;42"
+29;Bâtiment G (Enseignement Général);90 jours;Lun 20/07/09;Ven 20/11/09;;
+30;Fondations;2 sm;Lun 20/07/09;Ven 31/07/09;28;31FD+10 jours
+31;Elevations R-1;1 sm;Lun 17/08/09;Ven 21/08/09;30FD+10 jours;32
+32;Dallage R-1;1 sm;Lun 24/08/09;Ven 28/08/09;31;33
+33;Dalle hte R-1;1 sm;Lun 31/08/09;Ven 04/09/09;32;34
+34;Elévations RdC;3 sm;Lun 07/09/09;Ven 25/09/09;33;35FD-1 sm
+35;Dalle haute RdC;2 sm;Lun 21/09/09;Ven 02/10/09;34FD-1 sm;36FD-1 sm
+36;Elévations R+1;3 sm;Lun 28/09/09;Ven 16/10/09;35FD-1 sm;37FD-1 sm
+37;Dalle haute R+1;2 sm;Lun 12/10/09;Ven 23/10/09;36FD-1 sm;38FD-1 sm
+38;Elévations R+2;3 sm;Lun 19/10/09;Ven 06/11/09;37FD-1 sm;39FD-1 sm
+39;Dalle haute R+2;2 sm;Lun 02/11/09;Ven 13/11/09;38FD-1 sm;"40;56;72"
+40;Ouvrages en toitures;1 sm;Lun 16/11/09;Ven 20/11/09;39;
+41;Bâtiment P (Enseignement Professionnel);175 jours;Lun 20/07/09;Ven 19/03/10;;
+42;Incidence modification dalles patios;3 sm;Lun 20/07/09;Ven 07/08/09;"27DD;28";43
+43;Fondations;3 sm;Lun 10/08/09;Ven 28/08/09;42;44FD-5 jours
+44;Poteaux PARKING;6 sm;Lun 24/08/09;Ven 02/10/09;43FD-5 jours;45DD+15 jours
+45;Dalle hte PARKING;7 sm;Lun 14/09/09;Ven 30/10/09;44DD+15 jours;46DD+15 jours
+46;Elévations RdC;7 sm;Lun 05/10/09;Ven 20/11/09;45DD+15 jours;47DD+3 sm
+47;Dalle haute RdC;6 sm;Lun 26/10/09;Ven 04/12/09;46DD+3 sm;48FD-2 sm
+48;Elévations R+1 AVANT INTEMPERIES;2 sm;Lun 23/11/09;Ven 04/12/09;47FD-2 sm;49
+49;INTEMPERIES 2009 CUMULEES;10 jours;Lun 07/12/09;Ven 18/12/09;48;50
+50;FETES DE FIN D'ANNEE;10 jours;Lun 21/12/09;Ven 01/01/10;49;51
+51;INTEMPERIES 2010 CUMULEES;35 jours;Lun 04/01/10;Ven 19/02/10;50;"52;58;73"
+52;Fin élévations R+1;4 sm;Lun 22/02/10;Ven 19/03/10;51;"53;54FD+40 jours"
+53;Travaux NON CRITIQUES sur consignes OPC-MOe;15 sm;Lun 22/03/10;Ven 02/07/10;52;
+54;Gros-Œuvre DECK;2 sm;Lun 17/05/10;Ven 28/05/10;52FD+40 jours;60FD+20 jours
+55;01.4 / CHARPENTE METALLIQUE;255 jours;Lun 16/11/09;Ven 05/11/10;;
+56;Montage CM escalier intérieur bât G;3 sm;Lun 16/11/09;Ven 04/12/09;39;"57FD+8 sm;64DD+10 jours"
+57;Montage CM escalier extérieur bât G;2 sm;Lun 01/02/10;Ven 12/02/10;56FD+8 sm;
+58;Montage CM toiture bât P;5 sm;Lun 22/02/10;Ven 26/03/10;51;"59DD+10 jours;65DD+15 jours"
+59;Passerelles de liaison G-P;3 sm;Lun 08/03/10;Ven 26/03/10;58DD+10 jours;60
+60;Montage CM DECK;3 sm;Lun 28/06/10;Ven 16/07/10;"59;54FD+20 jours";61FD+45 jours
+61;Platelage DECK;3 sm;Lun 20/09/10;Ven 08/10/10;60FD+45 jours;62
+62;Travaux non critiques sur cons OPC;4 sm;Lun 11/10/10;Ven 05/11/10;61;
+63;01.5 / ETANCHEITE;145 jours;Lun 30/11/09;Ven 18/06/10;;
+64;Hors d'eau Bât G;3 sm;Lun 30/11/09;Ven 18/12/09;56DD+10 jours;123FD+15 jours
+65;Hors d'eau bât P;6 sm;Lun 15/03/10;Ven 23/04/10;58DD+15 jours;"66;85DD+2 sm"
+66;Travaux non critiques sur cons OPC (P+G);8 sm;Lun 26/04/10;Ven 18/06/10;65;68FD+20 jours
+67;01.6 / BARDAGES METALLIQUE & BOIS - SERRURERIE;100 jours;Lun 19/07/10;Ven 03/12/10;;
+68;Traitement Façades bât G;10 sm;Lun 19/07/10;Ven 24/09/10;"73;66FD+20 jours";69FD-30 jours
+69;Traitement Façades bât P;12 sm;Lun 16/08/10;Ven 05/11/10;68FD-30 jours;"140FD-5 jours;70"
+70;Travaux non critiques sur cons OPC (P+G);4 sm;Lun 08/11/10;Ven 03/12/10;69;
+71;01.7 / MENUISERIES EXTERIEURES;255 jours;Lun 16/11/09;Ven 05/11/10;;
+72;Hors d'air bât G;8 sm;Lun 16/11/09;Ven 08/01/10;39;73
+73;Hors d'air bât P;10 sm;Lun 22/02/10;Ven 30/04/10;"72;51";"74;68"
+74;Traitement des passerelles;4 sm;Lun 03/05/10;Ven 28/05/10;73;75
+75;Travaux non critiques sur cons OPC (P+G);12 sm;Lun 16/08/10;Ven 05/11/10;74;
+76;;;;;;
+77;;;;;;
+78;LOT N°02 / LOTS TECHNIQUES;190 jours;Lun 29/03/10;Ven 17/12/10;;
+79;02.1 / PLOMBERIE;190 jours;Lun 29/03/10;Ven 17/12/10;;
+80;Bâtiment G;95 jours;Lun 31/05/10;Ven 08/10/10;;
+81;Distributions apparentes;3 sm;Lun 31/05/10;Ven 18/06/10;142;82FD+50 jours
+82;Appareillage;3 sm;Lun 30/08/10;Ven 17/09/10;81FD+50 jours;"83;95DD"
+83;Essais de mise en service;3 sm;Lun 20/09/10;Ven 08/10/10;82;
+84;Bâtiment P;190 jours;Lun 29/03/10;Ven 17/12/10;;
+85;Pose & raccordement DEP;6 sm;Lun 29/03/10;Ven 07/05/10;65DD+2 sm;98DD
+86;Incorporations plâtrerie;12 sm;Lun 12/04/10;Ven 02/07/10;126DD+10 jours;
+87;Incorporations chapes;6 sm;Lun 31/05/10;Ven 09/07/10;144DD;"88;91DD+15 jours"
+88;Réseaux en GT & FP (y/c calorifuges);8 sm;Lun 12/07/10;Ven 03/09/10;87;
+89;Distributions apparentes;8 sm;Lun 12/07/10;Ven 03/09/10;;90FD+5 jours
+90;Appareillage;6 sm;Lun 11/10/10;Ven 19/11/10;"89FD+5 jours;91FD+5 jours";92
+91;Travaux sous dalle parking;15 sm;Lun 21/06/10;Ven 01/10/10;87DD+15 jours;90FD+5 jours
+92;Essais de mise en service;4 sm;Lun 22/11/10;Ven 17/12/10;90;
+93;02.2 / CHAUFFAGE - VENTILATION;190 jours;Lun 29/03/10;Ven 17/12/10;;
+94;Bâtiment G;30 jours;Lun 30/08/10;Ven 08/10/10;;
+95;Appareillage;3 sm;Lun 30/08/10;Ven 17/09/10;82DD;96
+96;Essais de mise en service;3 sm;Lun 20/09/10;Ven 08/10/10;95;
+97;Bâtiment P;190 jours;Lun 29/03/10;Ven 17/12/10;;
+98;Réseaux aéroliques;12 sm;Lun 29/03/10;Ven 18/06/10;85DD;99DD+4 sm
+99;Réseaux de chauffage + pose radiateurs;8 sm;Lun 26/04/10;Ven 18/06/10;98DD+4 sm;100DD
+100;Travaux en locaux techniques;23 sm;Lun 26/04/10;Ven 01/10/10;99DD;"101DD+50 jours;102"
+101;Pose plafond filtrants;8 sm;Lun 05/07/10;Ven 27/08/10;100DD+50 jours;102
+102;Appareillage;5 sm;Lun 04/10/10;Ven 05/11/10;"101;100";103
+103;Essais de mise en service;6 sm;Lun 08/11/10;Ven 17/12/10;102;
+104;02.3 / ELECTRICITE CF-cf;190 jours;Lun 29/03/10;Ven 17/12/10;;
+105;Bâtiment G;95 jours;Lun 31/05/10;Ven 08/10/10;;
+106;Pose & raccordement tableaux;6 sm;Lun 31/05/10;Ven 09/07/10;153;107
+107;Appareillage;9 sm;Lun 12/07/10;Ven 10/09/10;106;108
+108;Essais de mise en service;4 sm;Lun 13/09/10;Ven 08/10/10;107;
+109;Bâtiment P;190 jours;Lun 29/03/10;Ven 17/12/10;;
+110;Incorporations plâtrerie;7 sm;Lun 29/03/10;Ven 14/05/10;126DD;
+111;Incorporations chapes;4 sm;Lun 31/05/10;Ven 25/06/10;144DD;112
+112;Réseaux en GT & FP (CF/cf);10 sm;Lun 28/06/10;Ven 03/09/10;111;"113;114"
+113;Pose & raccordement tableaux;9 sm;Lun 06/09/10;Ven 05/11/10;112;115
+114;Appareillage;9 sm;Lun 06/09/10;Ven 05/11/10;112;
+115;Essais de mise en service;6 sm;Lun 08/11/10;Ven 17/12/10;113;
+116;02.4 / ASCENSEURS;60 jours;Lun 05/04/10;Ven 25/06/10;;
+117;Travaux bât G;6 sm;Lun 05/04/10;Ven 14/05/10;;118
+118;Travaux bât P;6 sm;Lun 17/05/10;Ven 25/06/10;117;
+119;;;;;;
+120;;;;;;
+121;LOT N°03 / FINITION;285 jours;Lun 11/01/10;Ven 11/02/11;;
+122;03.1 / CLOISONS - PLÂTRERIE - DOUBLAGES;190 jours;Lun 11/01/10;Ven 01/10/10;;
+123;Cloisons + doublages G;6 sm;Lun 11/01/10;Ven 19/02/10;64FD+15 jours;"124;125;148"
+124;Fermeture GT G;3 sm;Lun 22/02/10;Ven 12/03/10;123;
+125;Enduits de finitions G;5 sm;Lun 22/02/10;Ven 26/03/10;123;"126;142FD+15 jours"
+126;Cloisons + doublages P;6 sm;Lun 29/03/10;Ven 07/05/10;125;"127FD+80 jours;169;110DD;143DD+4 sm;86DD+10 jours"
+127;Fermeture GT P;4 sm;Lun 30/08/10;Ven 24/09/10;126FD+80 jours;"128DD;134FD-5 jours"
+128;Enduits de finitions P;4 sm;Lun 30/08/10;Ven 24/09/10;127DD;"129FD-15 jours;157"
+129;Ouvrages non critiques sur consignes OPC;4 sm;Lun 06/09/10;Ven 01/10/10;128FD-15 jours;
+130;03.2 / FAUX-PLAFONDS;140 jours;Lun 17/05/10;Ven 26/11/10;;
+131;Ossatures bât G;17 sm;Lun 17/05/10;Ven 10/09/10;153FD-10 jours;"132DD+60 jours;162FD-45 jours;154FD-30 jours"
+132;Placage bât G;3 sm;Lun 09/08/10;Ven 27/08/10;131DD+60 jours;133FD+55 jours
+133;Placage circulations Bât G;2 sm;Lun 15/11/10;Ven 26/11/10;132FD+55 jours;
+134;FP fixes Bât P;3 sm;Lun 20/09/10;Ven 08/10/10;127FD-5 jours;135FD-5 jours
+135;Enduits plafonds Bât P;2 sm;Lun 04/10/10;Ven 15/10/10;134FD-5 jours;
+136;Ossatures bât P;4 sm;Lun 13/09/10;Ven 08/10/10;157FD-35 jours;"137;158FD+15 jours"
+137;Placage bât P;3 sm;Lun 11/10/10;Ven 29/10/10;136;138FD-5 jours
+138;Finitions Bât P;3 sm;Lun 25/10/10;Ven 12/11/10;137FD-5 jours;139FD-30 jours
+139;FP extérieur bât G;3 sm;Lun 04/10/10;Ven 22/10/10;138FD-30 jours;
+140;FP Parking;4 sm;Lun 01/11/10;Ven 26/11/10;"69FD-5 jours;19";
+141;03.3 / CARRELAGE - FAÏENCE;140 jours;Lun 19/04/10;Ven 29/10/10;;
+142;Carrelage + Faïences bât G;6 sm;Lun 19/04/10;Ven 28/05/10;125FD+15 jours;"153DD+10 jours;81;143FF"
+143;Prototype étanchéité (y/c validation);2 sm;Lun 17/05/10;Ven 28/05/10;"126DD+4 sm;142FF";144
+144;Chapes bât P;7 sm;Lun 31/05/10;Ven 16/07/10;143;"145;111DD;87DD"
+145;Carrelage + Faïences bât P;13 sm;Lun 19/07/10;Ven 15/10/10;144;146FD-10 jours
+146;Ouvrages non critiques sur consignes OPC;4 sm;Lun 04/10/10;Ven 29/10/10;145FD-10 jours;
+147;03.4 / MENUISERIES INTERIEURES;200 jours;Lun 22/02/10;Ven 26/11/10;;
+148;Pose boiseries à peindre Bât G;6 sm;Lun 22/02/10;Ven 02/04/10;123;149
+149;Pose boiseries à peindre Bât P;8 sm;Lun 05/04/10;Ven 28/05/10;148;
+150;Ouvrages finis bât G sur consignes OPC;6 sm;Lun 20/09/10;Ven 29/10/10;154FD+20 jours;
+151;Ouvrages finis bât P sur consignes OPC;4 sm;Lun 01/11/10;Ven 26/11/10;158FD-20 jours;
+152;03.5 / PEINTURE;205 jours;Lun 03/05/10;Ven 11/02/11;;
+153;Préparations + impressions bât G;4 sm;Lun 03/05/10;Ven 28/05/10;142DD+10 jours;"131FD-10 jours;106"
+154;Parements bât G;3 sm;Lun 02/08/10;Ven 20/08/10;131FD-30 jours;"150FD+20 jours;155"
+155;Finitions G sur consignes OPC;5 sm;Lun 23/08/10;Ven 24/09/10;154;156FD+5 jours
+156;Nettoyages G sur consignes OPC;10 sm;Lun 04/10/10;Ven 10/12/10;155FD+5 jours;
+157;Préparations + impressions bât P;5 sm;Lun 27/09/10;Ven 29/10/10;128;136FD-35 jours
+158;Parements bât P;4 sm;Lun 01/11/10;Ven 26/11/10;136FD+15 jours;"151FD-20 jours;159;160FD-5 jours"
+159;Finitions P sur consignes OPC;4 sm;Lun 29/11/10;Ven 24/12/10;158;
+160;Nettoyages P sur consignes OPC;12 sm;Lun 22/11/10;Ven 11/02/11;158FD-5 jours;
+161;03.6 / REVÊTEMENTS DE SOLS SOUPLES (bât G);100 jours;Lun 12/07/10;Ven 26/11/10;;
+162;Enduits de lissage;1 sm;Lun 12/07/10;Ven 16/07/10;131FD-45 jours;163
+163;Pose revetements Salles de classe;8 sm;Lun 19/07/10;Ven 10/09/10;162;164FD+40 jours
+164;Pose revetements Circulations;3 sm;Lun 08/11/10;Ven 26/11/10;163FD+40 jours;165FD-5 jours
+165;Finitions diverses;1 sm;Lun 22/11/10;Ven 26/11/10;164FD-5 jours;186FD-30 jours
+166;;;;;;
+167;LOT N°04 / EQUIPEMENTS DE CUISINE;155 jours;Lun 10/05/10;Ven 10/12/10;;
+168;04.1 / EQUIPEMENTS FRIGORIFIQUES;125 jours;Lun 10/05/10;Ven 29/10/10;;
+169;Production + distribution froid;4 sm;Lun 10/05/10;Ven 04/06/10;126;"170FD+12 sm;173DD;177DD;181DD"
+170;Montage chambres froides;6 sm;Lun 30/08/10;Ven 08/10/10;169FD+12 sm;"171;178;182"
+171;Essais de mise en service;3 sm;Lun 11/10/10;Ven 29/10/10;170;187
+172;04.2 / EQUIPEMENTS CUISSON;155 jours;Lun 10/05/10;Ven 10/12/10;;
+173;Fabrication;10 sm;Lun 10/05/10;Ven 16/07/10;169DD;174FD+60 jours
+174;Pose equipements;6 sm;Lun 11/10/10;Ven 19/11/10;173FD+60 jours;175
+175;Essais de mise en service;3 sm;Lun 22/11/10;Ven 10/12/10;174;
+176;04.3 / EQUIPEMENTS CUISINE;155 jours;Lun 10/05/10;Ven 10/12/10;;
+177;Fabrication;10 sm;Lun 10/05/10;Ven 16/07/10;169DD;178FD+4 sm
+178;Pose equipements;6 sm;Lun 11/10/10;Ven 19/11/10;"177FD+4 sm;170";179
+179;Essais de mise en service;3 sm;Lun 22/11/10;Ven 10/12/10;178;
+180;04.4 / EQUIPEMENTS LAVERIE;155 jours;Lun 10/05/10;Ven 10/12/10;;
+181;Fabrication;10 sm;Lun 10/05/10;Ven 16/07/10;169DD;182FD+4 sm
+182;Pose equipements;6 sm;Lun 11/10/10;Ven 19/11/10;"181FD+4 sm;170";183
+183;Essais de mise en service;3 sm;Lun 22/11/10;Ven 10/12/10;182;
+184;;;;;;
+185;;;;;;
+186;RECEPTIONS / LEVEE DES RESERVES BÂT G;6 sm;Lun 18/10/10;Ven 26/11/10;165FD-30 jours;187
+187;RECEPTIONS / LEVEE DES RESERVES BÂT P;8 sm;Lun 29/11/10;Jeu 03/02/11;"171;186";189
+188;;;;;;
+189;LIVRAISON;5 jours;Ven 04/02/11;Jeu 10/02/11;187;

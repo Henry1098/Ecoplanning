@@ -1,0 +1,43 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>R</l><d>RESSOURCES</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>220</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>Passation Marchés Préparation</d><r></r><t>8</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>Exécution des Travaux</d><r></r><t>212</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>220</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Maîtrise d'ouvrage & maîtrise d'oeuvre</d><r></r><t>8</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>Ensemble entreprises Tous Corps d' Etat</d><r></r><t>6</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Lot n° 01 - Gros-oeuvre</d><r></r><t>18</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Lot n° 02 - Charpente bois - Ossature bois</d><r></r><t>5</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Lot n° 03 - Etanchéité</d><r></r><t>2</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>Lot n° 04 - Charpente Métal</d><r></r><t>5</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Lot n° 05 - Enduit de facade, isolation</d><r></r><t>3</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Lot n° 06 - Menuiseries extérieures, vitrerie</d><r></r><t>9</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Lot n° 07 - Menuiseries intérieures</d><r></r><t>14</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Lot n° 08 - Cloisons doublages plafonds isolation</d><r></r><t>16</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Lot n° 09 - Revêtement sols souples</d><r></r><t>6</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>Lot n° 10 - Revêtement se sols durs, faïences</d><r></r><t>21</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>Lot n° 11 - Peinture, miroiterie, signalétique</d><r></r><t>14</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>Lot n° 12 - Serrurerie, métallerie</d><r></r><t>5</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>Lot n° 13 - Chauffage, ventilation plomberie</d><r></r><t>33</t>
+<c1>I</c1><c2>16</c2><c3></c3><c4></c4><d>Lot n° 14 - Electricité courants Forts</d><r></r><t>22</t>
+<c1>I</c1><c2>17</c2><c3></c3><c4></c4><d>Lot n° 15 - Courants faibles</d><r></r><t>16</t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>Lot n° 16 - Ascenseur</d><r></r><t>3</t>
+<c1>I</c1><c2>19</c2><c3></c3><c4></c4><d>Lot n° 17 - Equipement de cuisine</d><r></r><t>2</t>
+<c1>I</c1><c2>20</c2><c3></c3><c4></c4><d>Lot n° 18 - Voirie & réseaux divers</d><r></r><t>12</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>220</t>
+<c1>T</c1><c2>01</c2><c3></c3><c4></c4><d>ENSEMBLE du PROJET</d><r></r><t>38</t>
+<c1>T</c1><c2>02</c2><c3></c3><c4></c4><d>Zone 2 et 3 - Ensemble HEBERGEMENT</d><r></r><t>5</t>
+<c1>T</c1><c2>03</c2><c3></c3><c4></c4><d>Zone 1 - LOGISTIQUE & RESTAURATION</d><r></r><t>60</t>
+<c1>T</c1><c2>04</c2><c3></c3><c4></c4><d>Zone 3 - HEBERGEMENT ALZHEIMER</d><r></r><t>54</t>
+<c1>T</c1><c2>05</c2><c3></c3><c4></c4><d>Zone 2 - HEBERGEMENT Unités 1& 2</d><r></r><t>63</t>
+<c1>R</c1><c2></c2><c3></c3><c4></c4><d>RESSOURCES</d><r></r><t>220</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

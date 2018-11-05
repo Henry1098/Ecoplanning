@@ -1,0 +1,64 @@
+CH:01,,Numéro de Tache
+CH:02,,Désignation Tache
+CH:03,,Début au plus tot prévisonnel
+CH:04,,Fin au plus tot prévisionnelle
+CH:05,,Début au plus tot réel
+CH:06,,Fin au plus tot réelle
+CH:07,,Durée prévisionelle
+CH:08,,Marge Totale
+CH:09,,Marge libre
+CH:10,,Cout prévisionnel
+CH:11,,Durée réelle
+CH:12,,Début au plus tard prévisionnel
+CH:13,,Fin au plus tard prévisionelle
+CH:14,,Etat tache
+CH:15,,Cout réel
+CH:16,,Nombre prédécesseurs
+CH:17,,Nombre successeurs
+CH:18,,Nombre ressources
+CH:19,,Nombre avancements
+CH:20,,Code intervenant
+CH:21,,Code sous réseau
+CH:22,,Code tri
+CH:23,,Dernière actualisation
+CH:24,,% exécuté
+CH:25,,Nombre jours exécutés
+CH:26,,% cout consommé
+CH:27,,Montant cout consommé
+CH:28,,Début souhaité / Fin souhaitée
+CH:29,,Dates prévisionnelles calculéés ou souhaitées
+CH:30,,Début souhaité
+CH:31,,Fin souhaitée
+CH:32,,Code Tache
+CH:33,,Nom intervenant
+CH:34,,Nom sous réseau
+CH:35,,Nom tri
+CH:36,,Tache critique
+CH:37,,Début / Fin réel(le) imposé(e)
+CH:38,,Début au plus tard réel
+CH:39,,Fin au plus tard réelle
+CH:40,,Marge totale réelle
+CH:41,,Marge libre réelle
+CH:42,,Retard imputable
+CH:43,,Retard total
+CH:44,,Réductible / Irréductible
+CH:45,,Codes ressources
+CH:46,,Désignations ressources
+CH:47,,Ressources prév. par jour
+CH:48,,Ressources réelles par jour
+CH:49,,Ressources prév. cumulées
+CH:50,,Ressources réelles cumulées
+CH:51,,Ressources prévisionnelles
+CH:52,,Ressources réelles
+CH:53,,Numéros prédécesseurs
+CH:54,,Désignations prédécesseurs
+CH:55,,Prédécesseurs
+CH:56,,Numéro successeurs
+CH:57,,Désignations successeurs
+CH:58,,Successeurs
+VO:TT,Tables des taches
+VO:PR, Prédécesseurs
+VO:SU,Successeurs
+VO:DG,Diagramme Gantt
+VO:DH,Diagramme Historique
+PL:ST,Standard,VO:TT,VO:DG,VO:PR+VO:SU

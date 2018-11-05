@@ -1,0 +1,37 @@
+21/12/2009 14:23:46 Heure ouverture Dump.txt
+<cr>I</cr><oc>I-10---</oc><nc>I-09---</nc>
+<cr>I</cr><oc>I-09---</oc><nc>I-10---</nc>
+21/12/2009 14:23:46 Heure de Fermeture DUMP.TXT
+21/12/2009 14:25:38 Heure ouverture Dump.txt
+<cr>I</cr><oc>I-10---</oc><nc>I-09---</nc>
+<cr>I</cr><oc>I-09---</oc><nc>I-10---</nc>
+21/12/2009 14:25:38 Heure de Fermeture DUMP.TXT
+21/12/2009 15:55:15 Heure ouverture Dump.txt
+<cr>I</cr><oc>I-10---</oc><nc>I-09---</nc>
+<cr>I</cr><oc>I-09---</oc><nc>I-10---</nc>
+Ascrit TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit TASK= 0, COL= 5, NEWCRIT = I-10--- 
+Ascrit TASK= 0, COL= 5, NEWCRIT = I-10--- 
+21/12/2009 15:55:15 Heure de Fermeture DUMP.TXT
+21/12/2009 15:59:20 Heure ouverture Dump.txt
+<cr>I</cr><oc>I-10---</oc><nc>I-09---</nc>
+<cr>I</cr><oc>I-09---</oc><nc>I-10---</nc>
+Ascrit VAL = I-10---, TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-10---, TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-10---, TASK= 0, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-09---, TASK= 0, COL= 5, NEWCRIT = I-10--- 
+Ascrit VAL = I-09---, TASK= 0, COL= 5, NEWCRIT = I-10--- 
+21/12/2009 15:59:20 Heure de Fermeture DUMP.TXT
+21/12/2009 16:01:29 Heure ouverture Dump.txt
+<cr>I</cr><oc>I-10---</oc><nc>I-09---</nc>
+<cr>I</cr><oc>I-09---</oc><nc>I-10---</nc>
+Ascrit VAL = I-10---, TASK= 63, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-10---, TASK= 64, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-10---, TASK= 68, COL= 5, NEWCRIT = I-09--- 
+Ascrit VAL = I-09---, TASK= 60, COL= 5, NEWCRIT = I-10--- 
+Ascrit VAL = I-09---, TASK= 61, COL= 5, NEWCRIT = I-10--- 
+21/12/2009 16:01:29 Heure de Fermeture DUMP.TXT
+21/12/2009 16:24:56 Heure ouverture Dump.txt
+21/12/2009 16:24:56 Heure de Fermeture DUMP.TXT

@@ -1,0 +1,129 @@
+  for (tniv=0;tniv<iniv;tniv++)
+   {
+    inext=0; xmax=-1000;
+    while (niveaux[tniv][inext] != 0)
+     {
+      ind=niveaux[tniv][inext];
+      ind = exist_tache(ind,nb_taches); // §§§§§§§§§§§§§§§§§§§
+
+      if (tniv==0)  // niveau zero
+       {
+         // on traite les taches normales
+         imax=0; zcal=tcal[ind];
+         total=avance_conges(0,zcal);
+         total=avance_temps(total,zcal,duree[ind]);
+         if (total > xmax) { xmax=total; xind=ind; }
+       }
+      else
+       {
+        // cherchons les predecesseurs de ind
+        imax = -1000;ipred = 1; total=0;  flag_amont = 0;
+        while (pr[ind][ipred]!=0)
+          {
+           xtpred=pr[ind][ipred];
+           xtpred=exist_tache(xtpred,nb_taches);   // §§§§§§§§§§§§§§§§
+           if (pr_tl[ind][ipred]==0)     //  c est un lien fd
+                 {
+                   if ( pr_decal[ind][ipred] > 0)
+                      { zcal=tcal[ind];
+                        total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                        total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                      }
+                   else if ( pr_decal[ind][ipred] < 0)
+                      {  zcal=tcal[xtpred];
+                         total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total = recule_temps(total,zcal,-pr_decal[ind][ipred]);
+                      }
+                   else { zcal=tcal[ind];
+                          total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                        } // pas de calcul de decalage
+                  }
+               if (pr_tl[ind][ipred]==1)     // c est un lien ff
+                  {
+                    if (pr_decal[ind][ipred] > 0)
+                       { zcal=tcal[xtpred];
+                         total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                         total = recule_temps(total,zcal,duree[ind]);
+                        }
+                    else if (pr_decal[ind][ipred] < 0)
+                       { zcal=tcal[xtpred];
+                         total=recule_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total=recule_temps(total,zcal,-pr_decal[ind][ipred]);
+                         total = recule_temps(total,zcal,duree[ind]);
+                        }
+                    else
+                       {
+                        zcal= tcal[ind];
+                        total=recule_conges(fin_plus_tot[xtpred]+1,zcal);
+                        total = recule_temps(total,zcal,duree[ind]);
+                       }
+                  }
+
+               if (pr_tl[ind][ipred] == 2) flag_amont = ipred;
+               if (pr_tl[ind][ipred] == 3)    // Lien DD   Decal est >= 0
+                  {
+                   if ( pr_decal[ind][ipred] > 0)
+                      { zcal=tcal[xtpred];
+                        total=avance_conges(deb_plus_tot[xtpred],zcal);
+                        total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                       }
+                   else if ( pr_decal[ind][ipred] == 0)
+                        { zcal=tcal[ind];
+                          total=avance_conges(deb_plus_tot[xtpred],zcal);
+                        } // pas de calcul de decalage
+
+                  }
+
+           if (total > imax) imax=total;
+           ipred++;
+         }
+        zcal=tcal[ind];
+        deb_plus_tot[ind] = imax;
+        fin_plus_tot[ind] = avance_temps(imax,zcal,duree[ind]);  // !!!! decalage de -1
+        if (fin_plus_tot[ind] > xmax) { xmax= fin_plus_tot[ind];xind = ind; }
+        duree_reelle[ind]=fin_plus_tot[ind]-deb_plus_tot[ind]+1;
+        // si taches amont : calcul des dates au plus tot
+        if (flag_amont)
+          {
+           t_start = ind;
+           t_amont = pr[ind][flag_amont];
+           while (t_amont >0)
+             { int x_amont = t_amont;
+              t_amont = exist_tache(t_amont,nb_taches);
+              // on connait la mere
+              mom=tmom[t_amont];
+              //deb_plus_tot[t_amont]=deb_plus_tot[mom];
+              //deb_plus_tard[t_amont]=deb_plus_tard[mom];
+              zcal=tcal[t_start];
+              fdecal = comp_down(deb_plus_tot[t_start],zcal,pr_decal[t_start][flag_amont]);
+              zcal=tcal[t_amont];
+              fduree = comp_down(fdecal,zcal,duree[t_amont]);
+              if (fduree < 0)
+                { sprintf(tmp,"Tache Amont %d : Debordement possible sur le début",x_amont);
+                 Application->MessageBoxA(tmp,ecoplan,MB_OK);
+                }
+              deb_plus_tot[t_amont] = fduree; // fin_plus_tot[t_amont]=xstart;
+              fin_plus_tot[t_amont] = comp_up(fduree-1,zcal,duree[t_amont]); //fdecal-1;
+              duree_reelle[t_amont]= fin_plus_tot[t_amont]-deb_plus_tot[t_amont];
+              t_start= t_amont;
+              t_amont = pr[t_amont][1]; flag_amont = 1;
+
+             }
+
+          }
+
+       }
+     inext++;
+     }
+   }
+
+ // ??????????????????
+ deb_plus_tot[nb_taches+1]= deb_plus_tot[xind]+duree_reelle[xind];
+
+ // on fait des successeurs pour la tache fictive  (nb_taches+1)
+ for (ind=1;ind<=nb_taches;ind++)   // §§§§§§§§§§§§§§§§§§§!
+   {
+    if (su[ind][1]==0) su[ind][1]=9999;
+   }
+}

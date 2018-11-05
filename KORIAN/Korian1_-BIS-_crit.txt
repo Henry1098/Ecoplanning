@@ -1,0 +1,36 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>R</l><d>RESSOURCES</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>29</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>Tranche de travaux n°2</d><r></r><t>29</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>Tranche de travaux n°3</d><r></r><t>0</t>
+<c1>P</c1><c2>03</c2><c3></c3><c4></c4><d>Tranche de travaux n°4</d><r></r><t>0</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>29</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Maîtrise d'ouvrage</d><r></r><t>0</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>Maîtrise d'oeuvre</d><r></r><t>0</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Lot n° 1 - Démolitions & Gros-oeuvre - Ent DESCIBAT</d><r></r><t>17</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Lot n° 4 - Etanchéité - Ent SEM</d><r></r><t>4</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Lot n° 5 & 6 - Men. ext, serrurerie - Ent LANGUEDOC Alu</d><r></r><t>1</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d></d><r></r><t>0</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Lot n° 7 & 8 - Plâtrerie isolation, Men bois - Ent FRIYED</d><r></r><t>0</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Lot n° 9 - Sols souples, peinture - Ent LPL</d><r></r><t>1</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Lot n° 10 - Carrelage - Ent C.R.A</d><r></r><t>0</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Lot n° 12 & 15 - Plomberie Sanitaire, VMC Désenf - Ent NACENTA</d><r></r><t>3</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Lot n° 13 & 14 - Elec courants forts, faibles - Ent CEGELEC</d><r></r><t>2</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>Lot  n° 16 - Cuisine - Ent </d><r></r><t>0</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>Lot Désamiantage - Ent Sté Nouvelle E.A.S</d><r></r><t>1</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>Lot climatisation - Ent VAISSIERES</d><r></r><t>0</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>29</t>
+<c1>T</c1><c2>01</c2><c3></c3><c4></c4><d>Bât voltaire</d><r></r><t>28</t>
+<c1>T</c1><c2>02</c2><c3></c3><c4></c4><d>Bât Roumens</d><r></r><t>0</t>
+<c1>T</c1><c2>03</c2><c3></c3><c4></c4><d>Amgmts ext</d><r></r><t>1</t>
+<c1>R</c1><c2></c2><c3></c3><c4></c4><d>RESSOURCES</d><r></r><t>29</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

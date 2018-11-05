@@ -1,0 +1,312 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<style type="text/css">
+
+.hlpsimple
+{
+border-collapse:collapse;
+}
+
+.hlptable
+{
+border-collapse:collapse;
+width: 100%;
+}
+
+.hlpth
+{ margin:5px;
+padding: 8px;
+border:1px solid #000000;
+background-color: #999999;
+color: #FFFFFF;
+font-weight:bold;
+font-size: 10pt;
+}
+.hlptdleft
+{ margin:5px;
+padding: 5px;
+border:1px solid #000000;
+background-color: #E0E0E0;
+color: #000000;
+text-align: left;
+font-size: 10pt;
+}
+.hlptdcenter
+{ margin:5px;
+padding: 5px;
+border:1px solid #336699;
+background-color: #a0a0a0;
+color: #000000;
+text-align: center;
+font-size: 10pt;
+}
+.hlptdright
+{ margin:5px;
+padding: 5px;
+border:1px solid #000000;
+background-color: #E0E0E0;
+color: #000000;
+text-align: right;
+font-size: 10pt;
+}
+.hlptd2col
+{ margin:15px;
+padding: 20px;
+border:0px solid #000000;
+background-color: #FFFFFF;
+color: #000000;
+text-align: justify;
+vertical-align: top;
+font-size: 10pt;
+}
+
+.indent { padding-left:70pt; }
+
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline}
+
+</style>
+
+
+
+
+
+
+<style type="text/css">
+BODY { 
+font-style: normal;
+font-family: Arial;
+font-weight: normal;
+font-size: 12pt;
+font_variant: normal;
+color: #000000;
+background-color: #FFFFFF;
+text-align: justify;
+}
+</style>
+</HEAD>
+<BODY >
+<A NAME="top"></A> </P><H3> <B>Affectation <B><A HREF="main_index_.html#critères">Critères</A></B></B></H3></CENTER>
+
+<B><A HREF="AffectCriteres.html#Affect1">Remarques sur les codes <B><A HREF="main_index_.html#critères">critères</A></B> et leurs tâches <B><A HREF="main_index_.html#enveloppes">enveloppes</A></B> </A> </B><BR>
+<B><A HREF="AffectCriteres.html#Affect2">Une tâche enveloppe d’un sous critère</A> </B><BR>
+<B><A HREF="AffectCriteres.html#Affect3">Saisie des codes <B><A HREF="main_index_.html#critères">critères</A></B> en vue de leur affectation aux tâches</A> </B><BR>
+<B><A HREF="AffectCriteres.html#Affect4">Affecter aux tâches du projet les <B><A HREF="main_index_.html#critères">critères</A></B> et sous <B><A HREF="main_index_.html#critères">critères</A></B></A></B>
+<BR>
+<B><A HREF="AffectCriteres.html#Affect5">Visualisation des <B><A HREF="main_index_.html#critères">Critères</A></B> et Sous-Critères Affectés aux taches</A> </B><BR>
+
+<P  ALIGN="LEFT"><A NAME="Affect1"> </A>
+<B>Remarques sur les codes <B><A HREF="main_index_.html#critères">critères</A></B> et leurs tâches <B><A HREF="main_index_.html#enveloppes">enveloppes</A></B>  </B>
+<BR>
+<BR>On a la possibilité de choisir 3 <B><A HREF="main_index_.html#critères">critères</A></B> hiérarchisés.
+<BR>Chacun des <B><A HREF="main_index_.html#critères">critères</A></B> N-0 peut lui-même être décomposé en 3 sous <B><A HREF="main_index_.html#critères">critères</A></B> : niveau N-1- niveau N-2 niveau N-3,
+<BR>Le niveau suivant le plus faible des niveaux retenu sera le niveau des tâches d’exécution. (Exemple si l’on crée un niveau n-1 c’est le niveau N-2 qui sera le niveau des tâches d’exécution).
+<BR>
+<BR>Pour <A HREF="TrierGrouper.html#TG1">a chacun de <B><A HREF="main_index_.html#critères">critères</A></B> de ses sous <B><A HREF="main_index_.html#critères">critères</A></B> </A>on peut obtenir et visualiser une tâche enveloppe de ses sous <B><A HREF="main_index_.html#critères">critères</A></B> d’un niveau inférieur : pour un critère N.0 tous ses sous/<B><A HREF="main_index_.html#critères">critères</A></B> N-1, pour un sous/critère N-1 tous ses sous/<B><A HREF="main_index_.html#critères">critères</A></B> N-2.
+<BR>
+<BR>Ceci vous permet de visualiser pour un même projet
+<BR>des plannings résumés aux seules tâches enveloppe
+<BR>des plannings des tâches d’exécution.
+<BR>les deux types de visualisation sur un même planning..
+<BR>
+<BR>A partir de ces codes des sous <B><A HREF="main_index_.html#critères">critères</A></B> affecter aux tâches on pourra :
+<BR>sélectionner que les tâches qui ont un ou plusieurs code sous critère 
+<BR><B><A HREF="main_index_.html#trier">trier</A></B> les tâches les regrouper à partir de ces codes
+<BR>visualiser les tâches sous différentes formes et ceci sous un ou plus niveaux hiérarchisés.
+<BR>
+
+</P>
+
+<P  ALIGN="LEFT"><A NAME="Affect2"> </A>
+<B>Une tâche enveloppe d’un sous critère </B><BR>
+
+<BR> On peut matérialiser la représentation de la durée d'une période d'un groupe de tâches présentant un même sous critère par une <A HREF="TrierGrouper.html#TG1">tâche enveloppe</A>.
+<BR> Une tâche enveloppe d’un sous critère a comme date de début, la date de début de la première tâche qui possède ce sous critère et comme date de fin, la date de fin de la plus tardive des tâches de celui-ci.
+<BR>La durée de cette tâche enveloppe est variable dans le temps, car elle s’inscrit entre le début et de la fin de l’exécution des tâches extrêmes qui ont ce code sous critère 
+
+<br><A HREF="TrierGrouper.html#TG4">Voir Paramétrage de la bande Enveloppe</A>
+<BR>
+</P>
+
+
+<P  ALIGN="LEFT"><A NAME="Affect3"> </A>
+<B>Saisie des codes <B><A HREF="main_index_.html#critères">critères</A></B> en vue de leur affectation aux tâches </B><BR>
+<BR>Lorsqu’ on sélectionne la commande "<B><A HREF="main_index_.html#critères">Critères</A></B>" du menu "Outils", la boîte de dialogue "<B><A HREF="main_index_.html#critères">Critères</A></B> tâches" apparaît.
+<BR>Dans le volet du haut de cette boite on a accès aux 3 codes <B><A HREF="main_index_.html#critères">critères</A></B>. C1 à C3 
+<BR>Dans ce qui suit on va utiliser pour exemple le fichier «Restaurant » joint avec le logiciel
+<BR>
+<BR>Dans un premier temps  En fonction des besoins de traitements du projet, on va créer les codes de <B><A HREF="main_index_.html#critères">critères</A></B> de votre projet remplaçant les codes successifs en attente  : c,1 c2, c3.
+<BR>
+<BR>- saisir dans les colonnes correspondants du volet du haut, leur code et la désignation de ceux-ci
+<BR><TABLE CLASS="hlpsimple">
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Par exemple , C1=Code P</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Désignation Phases</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+C2 = Code I</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Désignation Intervenants</TD>
+</TR>
+</TABLE>
+<BR><TABLE CLASS="hlpsimple">
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 10pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+<IMG SRC="Ecopl48.jpg" ALIGN="LEFT" BORDER="1" VSPACE="10" HSPACE="10" >
+</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 10pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+<IMG SRC="Ecopl50.jpg" ALIGN="LEFT" BORDER="0" VSPACE="10" HSPACE="10" >
+</TD>
+</TR>
+</TABLE>
+
+<BR><B>Dans un deuxième temps</B>  On va pouvoir saisir dans le volet du bas les codes et désignation de leurs s/<B><A HREF="main_index_.html#critères">critères</A></B>.
+<BR>
+<BR>- cliquer sur l’un des <B><A HREF="main_index_.html#critères">critères</A></B> concerné dans la boite du haut. 
+<BR>Celui-ci va s’afficher en haut du volet du bas. Si on clique une ou plusieurs fois dans la colonne du 	niveau N-1 on va créer autant de sous <B><A HREF="main_index_.html#critères">critères</A></B> à celui-ci.
+<BR>Le logiciel par défaut va les créer de sous <B><A HREF="main_index_.html#critères">critères</A></B> de ce critère avec le même code critère plus numéro d’ordre de 01 à 99 en fonction de l’ordre de saisie, de préséance. Les nouveaux sous <B><A HREF="main_index_.html#critères">critères</A></B> viendront se placer à la suite par ordre hiérarchique.
+<BR>
+<BR>- saisissez pou chacun des sous/<B><A HREF="main_index_.html#critères">critères</A></B> créer leur désignation
+<BR><TABLE CLASS="hlpsimple">
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Pour le Critère PHASES</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Créer deux sous-critères N-1</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Préparation Réception Code P-01</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+et Travaux TCE Code P-02</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+&nbsp;</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+&nbsp;</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Pour le critère INTERVENANTS</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Créer 12 Sous-critères N-1 (12 Lots)</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Gros Oeuvre Code I-01 à</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Chambre Froide, code I-12</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+De plus le Sous-Critère Gros Oeuvre Code I-01</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Aura deux sous-critères N-2</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+"Base" Code I-01-01 et</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+"Sous Traitant" code I-01-02</TD>
+</TR>
+<TR>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+le sous-critère Chauffage Plomberie code I-05</TD>
+<TD  STYLE="margin: 5px; padding: 5px; border: 0px solid #000000; font-size: 11pt; background-color: #FFFFFF; color: #000000;  text-align: center;">
+Aura deux sous-critères N-2</TD>
+</TR>
+</TABLE>
+
+
+<BR>On peut modifier dans le volet du haut l’abréviation des <B><A HREF="main_index_.html#critères">critères</A></B> par exemple mettre P au lieu de PH, aussitôt celles-ci sera répercutée dans le volet du bas cette correction sera affectée à toutes les tâches correspondante
+<BR>dans l’ongle affectation des <B><A HREF="main_index_.html#critères">critères</A></B> aux tâches.
+<BR>
+</P>
+
+
+
+<IMG SRC="Ecopl49.jpg" ALIGN="LEFT" BORDER="1" VSPACE="10" HSPACE="10" >
+
+
+<P  ALIGN="LEFT"><A NAME="Affect4"> </A>
+<br><br><br><br><br><br><br><br>
+<BR><B>Affecter aux tâches du projet les <B><A HREF="main_index_.html#critères">critères</A></B> et sous <B><A HREF="main_index_.html#critères">critères</A></B></B> dans l'onglet d’affectation de <B><A HREF="main_index_.html#critères">critères</A></B> 
+
+<BR> On peut saisir les codes de sous/critère des tâches avec deux procédures.<br>
+<BR><B>Tâche par tâche </B>
+<BR>- déplacez-vous devant la tâche concernée avec la flèche basse dans la colonne de ce critère 
+<BR>- saisissez le code sous critère correspondant
+<BR>
+<BR><B>A partir d’un groupe de tâches cochées </B>	une coche apparaît dans la première case de sa ligne.
+<BR>- placez-vous dans la case devant le n° de la tâche 
+<BR>- cliquez avec la souris sur cette case, ou appuyez sur la touche "Espace" 
+<BR>En suite, à toutes ces tâches cochées, on va leur affecter en même temps un code de sous/ critère
+<BR>- cliquez sur la commande « Accès au critère » vous serez renvoyée a la boite précédente « Critère » 
+<BR>- cliquez dans une des colonnes N-1, N-2, N-3 sur le sous critère le plus faible N-3 ou N-2, voir N-1,
+<BR>- cliquez sur la commande «Revenir Affectation critère » 
+<BR>
+<BR>Vous reviendrez dans cet onglet et vous constaterez qu’aux tâches cochées a été affecté ce sous critère
+<BR>Lors de l’affectation des sous <B><A HREF="main_index_.html#critères">critères</A></B> aux tâches
+<BR>On va avec un filtre occultez les tâches à l’écran à qui on va affecter
+un sous critère, puis cochez d’autres tâches et saisir pour celles-ci un
+autre sous critère		 et ainsi de suite.
+<BR>On peut également décocher, rapidement; en une seule fois, les tâches
+cochées à qui on vient d’affecter un sous critère, avant dans cocher de nouvelles pour effectuer la même démarche. 
+<br>- cliquez sur la commande «<B> Décocher toutes les tâches</B>» du menu « <B>Cocher/Critère</B>»  
+
+</P>
+
+<BR>
+<P  ALIGN="LEFT"><A NAME="Affect5"> </A>
+<B>Visualisation des <B><A HREF="main_index_.html#critères">Critères</A></B> et Sous-Critères Affectés aux taches </B><BR>
+
+<br> Dans l'onglet affectation des <B><A HREF="main_index_.html#critères">critères</A></B>, on peut visualiser quels sont les <B><A HREF="main_index_.html#critères">critères</A></B> et sous <B><A HREF="main_index_.html#critères">critères</A></B> qui sont été affectés aux tâches du projet.
+<br>
+Il y a autant de lignes dans cet onglet que de tâches du projet. Après les colonnes numérotation </A>et désignation des tâches on a <A HREF="AffectCriteres.html#Affect3">les colonnes des 3 <B><A HREF="main_index_.html#critères">critères</A></B></A> que l’on peut affecter aux tâches, par exemple : P- I -T, avec leur désignation correspondante.
+<BR>- en cliquant sur chacune des colonnes des <B><A HREF="main_index_.html#critères">critères</A></B> vous connaîtrez le sous critère correspondant
+<BR>C’est le code le plus faible du sous/critère affecté aux tâches qui va apparaître dans la colonne du critère correspondant, exemple En haut du volet vous verrez apparaître la <B><A HREF="main_index_.html#hiérarchie">hiérarchie</A></B> du critère et sous critère avec le nombre concernée des tâches aux différents niveaux.
+<BR>C'est à partir de cette affectation aux tâches d' <B><A HREF="main_index_.html#critères">critères</A></B> et sous <B><A HREF="main_index_.html#critères">critères</A></B> que l'on pourra, ensuite,  <A HREF="TrierGrouper.html#TG1"><B><A HREF="main_index_.html#trier">trier</A></B> et regrouper </A>les tâches dans les plannings.
+<BR>
+</P>
+
+<BR>
+<BR><BR><CENTER><TABLE CLASS="hlptable"><TD CLASS="hlptdleft"><A HREF="index.html">Sommaire</A></A></TD>
+<TD CLASS="hlptdleft"><A HREF="Main_index_.html#LETTER_MAIN">
+Mots Clés</A></TD><TD CLASS="hlptdleft"><A HREF="index_a.html#LETTER_A">A</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_b.html#LETTER_B">B</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_c.html#LETTER_C">C</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_d.html#LETTER_D">D</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_e.html#LETTER_E">E</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_f.html#LETTER_F">F</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_g.html#LETTER_G">G</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_h.html#LETTER_H">H</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_i.html#LETTER_I">I</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_j.html#LETTER_J">J</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_k.html#LETTER_K">K</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_l.html#LETTER_L">L</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_m.html#LETTER_M">M</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_n.html#LETTER_N">N</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_o.html#LETTER_O">O</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_p.html#LETTER_P">P</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_q.html#LETTER_Q">Q</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_r.html#LETTER_R">R</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_s.html#LETTER_S">S</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_t.html#LETTER_T">T</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_u.html#LETTER_U">U</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_v.html#LETTER_V">V</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_w.html#LETTER_W">W</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_x.html#LETTER_X">X</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_y.html#LETTER_Y">Y</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_z.html#LETTER_Z">Z</A></TD>
+<TD CLASS="hlptdleft"><A HREF="index_-.html#LETTER_">
+Autres</A></TD>
+</TR></TABLE></CENTER><BR><BR>
+<A NAME="06-ABCD-4397-EFGH-5531"> </A>
+<BR></BODY></HTML>
+ 

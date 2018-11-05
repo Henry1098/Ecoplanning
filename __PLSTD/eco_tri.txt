@@ -1,0 +1,45 @@
+<l>1.1.1 Intervenants</l>
+<l>1.1.2 IntervenantsTâche Envelop et Execut Intervenants N-1</l>
+<l>1.1.3  Intervenants Seules Tâche Envelop</l>
+<l>1.1: 3 crit phas- interv - tris  N-1</l>
+<l>1.1: 4 crit phas- interv - tris  N-1</l>
+<l>1.2 : 3 crit phases N-1 inte N-1 N-2</l>
+<l>1.2.1 Phases</l>
+<l>1.3.1 Tris</l>
+<l>2.1.1  Phases - Intervenants  N-1</l>
+<l>2.1.1 Phases - Intervenants N-1</l>
+<l>2.1.2 Intervenants et Phases</l>
+<l>2.1.4 Envelop seul Phase-Inter </l>
+<l>2.1: 2 crit phases et  interv N-1</l>
+<l>2.2 : 2 crit interv  phases N-1</l>
+<l>2-1.1.4 Envelop seul Phase-Inter </l>
+<l>3.1 Phase-Intervenant-Tris</l>
+<l>3.1: 1 crit intervenants seuls n-1</l>
+<l>3.2 : 1 crit intrerv seul envelop N-1</l>
+<l>3.2 Phase et Inter N-1 et Inter N-2</l>
+<l>3-1.1 Phase-Intervenant-Tris</l>
+<l>4: 1 Crit  Phases seules N-1</l>
+<l>5: 1 crit Tris seuls N-1</l>
+<l>6 :  4.crit envelop exe  N-0 à N-3</l>
+<l>7 : 3 crit Gantt av échéanc  N-1</l>
+<l>8: 3 crit  récupéra autre planning </l>
+<l>examen de l'ordonnancement des tâches du projet </l>
+<l>exemple hiérarchie d'un critère sur 4 niveaux</l>
+<l>INT_PH_INT</l>
+<l>int-ph</l>
+<l>marge</l>
+<l>MargeTot</l>
+<l>numero</l>
+<l>par code tâches</l>
+<l>par numero</l>
+<l>PH_IT_TR</l>
+<l>pour elaboration ébauche planning</l>
+<l>présentation Gantt échéancier coûts</l>
+<l>projet 220 tâches 3 crit</l>
+<l>PUER_Intervenants</l>
+<l>Récupération d'un planning project</l>
+<l>Soulades</l>
+<l>tâches visualisées par marge totales</l>
+<l>Trié par n° de taches</l>
+<l>valladon</l>
+<l>Opera</l>

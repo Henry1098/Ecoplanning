@@ -1,0 +1,53 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>01</c3><c4></c4><d>OPERA</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>02</c3><c4>01</c4><d>TRANCHE FERME - ROTONDE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>02</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE 1 - FACADE OUEST</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>03</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>03</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>04</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>04</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>05</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>06</c3><c4></c4><d>LOT 04 PIERRE MARBRIERE - DBPM</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>06</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>06</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>07</c3><c4></c4><d>LOT 05A SCULPTURE PIERRE FRONTON</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>07</c3><c4>01</c4><d>TRANCHE FERME - PRADEAU MORIN</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>07</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE - NON DESIGNER</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>08</c3><c4></c4><d>LOT 05B SCULPTURE PIERRE CALCAIRE GROUPE ENFANTS - SOCRA</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>08</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>08</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>09</c3><c4></c4><d>LOT 05C SCULPTURE DES LUCARNES - ATELIERS BOUVIER</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>09</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>09</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>10</c3><c4></c4><d>LOT 06 TOITURE - PETIT & FILS</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>10</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>10</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>11</c3><c4></c4><d>LOT 07 MENUISERIES BOIS - ASSELIN</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>11</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>11</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>12</c3><c4></c4><d>LOT 08 METALLERIE - SFMP</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>13</c3><c4></c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>13</c3><c4>01</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>14</c3><c4></c4><d>LOT 09 SCULPTURE METALLIQUE - NON DESIGNER</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>14</c3><c4>01</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>15</c3><c4></c4><d>LOT 10 PEINTURE DECORATIVE & DORURE - DUVAL MAULER</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>15</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>15</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>16</c3><c4></c4><d>LOT 11 ANTI PIGEON - HDD</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>16</c3><c4>01</c4><d>TRANCHE FERME</d><r></r><t></t>
+<c1>P</c1><c2>01</c2><c3>16</c3><c4>02</c4><d>TRANCHE CONDITIONNELLE</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

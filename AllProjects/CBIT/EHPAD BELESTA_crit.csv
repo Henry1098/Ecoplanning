@@ -1,0 +1,221 @@
+N° ;Désignation;Durée;Crit 1;Désign Crit 1;Crit 2;Désign Crit 2;Crit 3;Désign Crit 3
+1;Signature des marchés de travaux;1;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-01---;ENSEMBLE du PROJET
+2;Notification des marchés;8;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-01---;ENSEMBLE du PROJET
+3;Ordre de service de démarrage des travaux;1;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-01---;ENSEMBLE du PROJET
+4;Période de préparation;30;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-02---;Ensemble entreprises Tous Corps d' Etat;T-01---;ENSEMBLE du PROJET
+5;Remise descentes de charges et réservations ;15;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-02---;Ensemble entreprises Tous Corps d' Etat;T-01---;ENSEMBLE du PROJET
+6;Etudes d'exécution, plans d'EXE;40;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-02---;Ensemble entreprises Tous Corps d' Etat;T-01---;ENSEMBLE du PROJET
+7;Plans IC, Convt.prorata,PPSPS;5;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-03---;Lot n° 01 - Gros-oeuvre;T-01---;ENSEMBLE du PROJET
+8;Implantations plateformes, validation;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+9;Terrassements Généraux, voies d'accès;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+10;Installation de chantier;8;P-01---;PHASE A - PASSATION Marchés, Préparation Chantier;I-03---;Lot n° 01 - Gros-oeuvre;T-01---;ENSEMBLE du PROJET
+11;Implantation des bâtiments;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-01---;ENSEMBLE du PROJET
+12;Fondations spéciales (env 250 pieux);30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-01---;ENSEMBLE du PROJET
+13;Z2+3 - Recépage pieux  et pose longrines;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-02---;Zone 2 et 3 - Ensemble HEBERGEMENT
+14;Z2+3 - Réseaux entérrés;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-02---;Zone 2 et 3 - Ensemble HEBERGEMENT
+15;Z2+3 - Libages et planchers Vs;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-02---;Zone 2 et 3 - Ensemble HEBERGEMENT
+16;Z2 - Elévations  et Pl Ht RdC;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+17;Z2 - Elévations et arasements en R+1 ;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+18;Z1 - Recépage pieux  et pose longrines;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+19;Z1 - Réseaux entérrés et dallage S/Sol Sous-sol;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+20;Z1 - Elévations et Pl Ht sous-sol;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+21;Z1 - Réseaux entérrés en VS;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+22;Z1 - Libages et planchers VS;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+23;Z1 - Elévations, Pl Ht RdC, acrotères;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+24;Z3 - Relevés béton sous ossature bois + seuils ;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+25;Z1 - Appuis + seuils menuiseries extérieures;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+26;Ouvrages divers extérieurs;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-03---;Lot n° 01 - Gros-oeuvre;T-01---;ENSEMBLE du PROJET
+27;Z3 - Ossature bois + Charpente couverture couverture;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-04---;Lot n° 02 - Charpente bois - Ossature bois - Couverture Zinc;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+28;Z2 - Charpente couverture;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-04---;Lot n° 02 - Charpente bois - Ossature bois - Couverture Zinc;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+29;Z2 - Etanchéité terrasse R+2;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-05---;Lot n° 03 - Etanchéité;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+30;Z2 - Galerie liaison resto > Hébergemt;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-06---;Lot n° 04 - Charpente Métal;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+31;Z3 - Galerie liaison Hébergemt Alzheimer;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-06---;Lot n° 04 - Charpente Métal;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+32;Z3 - Charpente métal Jardin d'hiver;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-06---;Lot n° 04 - Charpente Métal;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+33;Z1 - Etanchéité terrasses;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-05---;Lot n° 03 - Etanchéité;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+34;Z1 - Charpente métal Ht du RdC;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-06---;Lot n° 04 - Charpente Métal;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+35;Z2 - Charpente métal Ht du R+1;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-06---;Lot n° 04 - Charpente Métal;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+36;Z2 - Véture bardage bois;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-04---;Lot n° 02 - Charpente bois - Ossature bois - Couverture Zinc;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+37;Z3 - Véture bardage bois ou OSB;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-04---;Lot n° 02 - Charpente bois - Ossature bois - Couverture Zinc;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+38;Z1 - Revêtements de facades TRESPA;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-04---;Lot n° 02 - Charpente bois - Ossature bois - Couverture Zinc;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+39;Z3 - Enduits monocouche sur OSB;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-07---;Lot n° 05 - Enduit de facade, isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+40;Z2 - Enduits monocouches facades;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-07---;Lot n° 05 - Enduit de facade, isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+41;Appro coffres de volets roulants ;2;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-01---;ENSEMBLE du PROJET
+42;Z1 - Enduits monocouches facades;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-07---;Lot n° 05 - Enduit de facade, isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+43;Z3 - Pose des volets roulants;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+44;Z1 - Menuiseries extérieures, mise hors d'air;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+45;Z2 - Menuiseries extérieures, mise hors d'air;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+46;Z3 - Menuiseries extérieures, mise hors d'air;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+47;Z2 - Pose des volets roulants;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+48;Z1 - Pose des volets roulants;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+49;Pose des brises soleil R+1 Heb. S & E;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-02---;Zone 2 et 3 - Ensemble HEBERGEMENT
+50;Pose des stores d'occultation brx + soins;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-08---;Lot n° 06 - Menuiseries extérieures, vitrerie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+51;Z3 - Appro blocs portes & trappes visite;1;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+52;Z3 - Pose plinthes + mej portes;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+53;Z3 - Distributions des réseaux de VMC;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+54;Z3 - Divers mains courantes, miroirs, propretés, protections, etc..;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+55;Z2 - Appro blocs portes & trappes visite;1;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+56;Z2 - Pose plinthes + mej portes;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+57;Z2 - Pose plans vasques;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+58;Z2 - Divers mains courantes, miroirs, propretés, protections, etc..;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-02---;Zone 2 et 3 - Ensemble HEBERGEMENT
+59;Z1 - Appro blocs portes & trappes visite;1;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+60;Z1 - Pose plinthes + mej portes;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+61;Z1 - Pose plans vasques;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+62;Z1 - Divers mains courantes, miroirs, propretés, protections, etc..;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+63;Z3 - Cloisons phoniques séparatives chambres;18;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+64;Z3 - Doublages thermique 1/2 still;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+65;Z3 - Plafond placo + Ldv 250;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+66;Z3 - Cloisons Sdb ;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+67;Z2 - Cloisons phoniques séparatives chambres;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+68;Z2 - BA 13 collée sur murs façades;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+69;Z2 - Plafond placo + Ldv 250;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+70;Z2 - Cloisons Sdb ;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+71;Z1 - Cloisons  séparatives;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+72;Z1 - BA 13 collée sur murs façades;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+73;Z1 - Plafond placo + Ldv 250;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+74;Z1 - Faux plafonds dalles;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+75;Soffites, cornisches & caissons divers finitions placo Ens projet;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-01---;ENSEMBLE du PROJET
+76;Z3 - Pose des syphons de sols SdB;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+77;Z3 - Ragréage des SdB;2;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+78;Z3 - Poncage chape des chambres;4;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+79;Z3 - Pose des revêtements sols et murs SdB;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+80;Z3 - Pose des plans vasques;4;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+81;Z3 - Préparation & peinture Plafonds + boiserie SdB;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+82;Z3 - Pose appareils sanitaires SdB;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+83;Z3 - Pose appareils électriques;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+84;Z3 - Préparations et peinture Plafonds chambres;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+85;Z3 - Pose appareillages électriques chambres;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+86;Z3 - Peintures de finition sur murs et boiseries;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+87;Z3 - Toile de verre et peinture circulations et locaux divers;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+88;Z3 - Poncage sols circulations et locaux divers;2;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+89;Z3 - Sol durs et faïences sanitaires, offices;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+90;Z3 - Pose appareils sanitaires locaux communs;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+91;Z3 - Chape de ravoirage ensemble des locaux;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+92;Z3 - Pose du plancher chauffant chambres et locaux annexes;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+93;Z3 - Chape d'enrobage du plancher chauffant chambres + lcx annexes.;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+94;Z3 - Chape forme de pente SdB chambres et sanitaires communs;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+95;Z3 - Réseau primaire chauffage en plénum;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+96;Z3 - Procédure de mise en chauffe;24;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+97;Z3 - Distributions primaires canalisations alims + évacuat.;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+98;Z3 - Distributions Primaires chemins de cables;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+99;Z3 - Distributions secondaires aux appareils sanitaires;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+100;Z3 - Distributions secondaires gaines et filerie;35;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+101;Z3 - Pose des armoires et coffrets électriques;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+102;Z3 - Sol souple des chambres;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+103;Z3 - Plafonds secondaires circulations;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+104;Z3 - Sols souples circulations;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+105;Z3 - Pose lustrerie;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+106;Z3 - Signalétique et nettoyage OPR;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+107;Z3 - Opérations préalables a la Réception des Travaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+108;Z3 - Finitions, levée des observations OPR;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-02---;Ensemble entreprises Tous Corps d' Etat;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+109;Z3 - Distributions courants faibles;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+110;Z3 - Pose équipements courants faibles;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+111;Z3 - Gaines C Faible incorporées dans cloisons sèches;40;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+112;Z2 - Pose des syphons de sols SdB;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+113;Z2 - Ragréage des SdB;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+114;Z2 - Poncage chape des chambres;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+115;Z2 - Pose des revêtements sols et murs SdB;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+116;Z2 - Pose des plans vasques;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-09---;Lot n° 07 - Menuiseries intérieures;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+117;Z2 - Préparation & peinture Plafonds + boiserie SdB;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+118;Z2 - Pose appareils sanitaires SdB;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+119;Z2 - Pose appareils électriques;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+120;Z2 - Préparations et peinture Plafonds chambres;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+121;Z2 - Pose appareillages électriques chambres;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+122;Z2 - Peintures de finition sur murs et boiseries;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+123;Z2 - Toile de verre et peinture circulations et locaux divers;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+124;Z2 - Poncage sols circulations et locaux divers;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+125;Z2 - Sol durs et faïences sanitaires, offices;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+126;Z2 - Pose appareils sanitaires locaux communs;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+127;Z2 - Chape de ravoirage ensemble des locaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+128;Z2 - Pose du plancher chauffant chambres et locaux annexes;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+129;Z2 - Chape d'enrobage du plancher chauffant chambres + lcx annexes.;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+130;Z2 - Chape forme de pente SdB chambres et sanitaires communs;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+131;Z2 - Réseau primaire chauffage en plénums;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+132;Z2 - Procédure de mise en chauffe;21;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+133;Z2 - Distributions primaires canalisations alims + évacuat.;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+134;Z2 - Distributions Primaires chemins de cables;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+135;Z2 - Distributions secondaires aux appareils sanitaires;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+136;Z2 - Distributions secondaires gaines et filerie;45;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+137;Z2 - Pose des armoires et coffrets électriques;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+138;Z2 - Sol souple des chambres;18;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+139;Z2 - Plafonds secondaires circulations;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+140;Z2 - Sols souples circulations;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-11---;Lot n° 09 - Revêtement sols souples;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+141;Z2 - Pose lustrerie;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+142;Z2 - Signalétique et nettoyage OPR;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+143;Z2 - Opérations préalables a la Réception des Travaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+144;Z2 - Finitions, levée des observations OPR;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-02---;Ensemble entreprises Tous Corps d' Etat;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+145;Z2 - Distributions courants faibles;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+146;Z2 - Pose équipements courants faibles;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+147;Z2 - Gaines C Faible incorporées dans cloisons sèches;35;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+148;Z2 - Montage ascenseur, pose portes palières;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-18---;Lot n° 16 - Ascenseur;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+149;Z2 - Essais et mise en service ascenseur;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-18---;Lot n° 16 - Ascenseur;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+150;Essais et mises en service des installations Elec;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-01---;ENSEMBLE du PROJET
+151;Essais et mise en service Plomberie;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-01---;ENSEMBLE du PROJET
+152;Z1 - Pose carrelage tradi et faïences bloc Cuisine & annexes;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+153;Z1 - Préparation & peinture Plafonds + boiserie;12;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+154;Z1 - Pose appareils sanitaires;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+155;Z1 - Pose appareils électriques;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+156;Z1 - Peintures de finition sur murs et boiseries;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+157;Z1 - Toile de verre et peinture circulations et locaux divers;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+158;Z1 - Installation Chaufferie ;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+159;Z1 - Chape de ravoirage ensemble des locaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+160;Z1 - Pose du plancher chauffant salle a manger et Administration;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+161;Z1 - Chape d'enrobage du plancher chauffant Resto + Administ.;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+162;Z1 - Chape locaux techniques;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+163;Z1 - Réseau primaire chauffage en plénums;6;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+164;Z1 - Procédure de mise en chauffe;21;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+165;Z1 - Distributions primaires canalisations alims + évacuat.;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+166;Z1 - Distributions Primaires chemins de cables;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+167;Z1 - Distributions secondaires aux appareils sanitaires;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+168;Z1 - Distributions secondaires gaines et filerie;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+169;Z1 - Pose des armoires et coffrets électriques;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+170;Z1 - Pose carrelage collé bloc Resto/Adm.;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-12---;Lot n° 10 - Revêtement se sols durs, faïences;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+171;Z1 - Plafonds secondaires circulations;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-10---;Lot n° 08 - Cloisons doublages plafonds isolation;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+172;Z1 - Essais et mise en route chaufferie ;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+173;Z1 - Pose lustrerie;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+174;Z1 - Signalétique et nettoyage OPR;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-13---;Lot n° 11 - Peinture, miroiterie, signalétique;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+175;Z1 - Opérations préalables a la Réception des Travaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+176;Z1 - Finitions, levée des observations OPR;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-02---;Ensemble entreprises Tous Corps d' Etat;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+177;Z1 - Distributions courants faibles;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+178;Z1 - Pose équipements courants faibles;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+179;Z1 - Installation groupe électrogène;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+180;Z1 - Montage ascenseur, pose portes palières;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-18---;Lot n° 16 - Ascenseur;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+181;Z1 - Essais et mise en service groupe électrogène;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+182;Essais et mises en service des installations Elec;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+183;Essais et mise en service Plomberie;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-14---;Lot n° 12 - Serrurerie, métallerie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+184;Pose mains courantes escaliers;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-14---;Lot n° 12 - Serrurerie, métallerie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+185;Pose des gardes corps;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-14---;Lot n° 12 - Serrurerie, métallerie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+186;Pose des fermetures métalliques;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-14---;Lot n° 12 - Serrurerie, métallerie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+187;Divers grilles, echelles, etc;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-14---;Lot n° 12 - Serrurerie, métallerie;T-01---;ENSEMBLE du PROJET
+188;Montage cloisonnements isothermiques cuisine ;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-19---;Lot n° 17 - Equipement de cuisine;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+189;Installation du matériel de cuisine;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-19---;Lot n° 17 - Equipement de cuisine;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+190;Distributions élec aux appareils cuisines;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+191;Distributions plomberie aux appareils cuisine;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+192;Traitement a la chaux sous voirie;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+193;Couche de fondation des voiries;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+194;Exécution des réseaux humides Eu/Ev, Aep, EP;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+195;Exécution des réseaux secs;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+196;Reprofilage couche de fondation, pose couche de base;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+197;Aménagements espaces cours intérieures secteur hébergements;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+198;Pose des bordures;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+199;Aménagement des espaces verts, ;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+200;Tapis d'enrobé voiries;8;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+201;Signalisation & barrières;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-20---;Lot n° 18 - Voirie & réseaux divers;T-01---;ENSEMBLE du PROJET
+202;RECEPTION des OUVRAGES;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-01---;ENSEMBLE du PROJET
+203;VRD - Opérations préalables a la réception des travaux;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-01---;Maîtrise d'ouvrage & maîtrise d'oeuvre;T-01---;ENSEMBLE du PROJET
+204;Z1 - Pose radiateurs secteur cuisine;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+205;Z3 - Distribution réseaux VMC;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+206;Z2 - Distributions réseaux VMC;25;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+207;Z1 - Distribution réseaux VMC;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+208;Z3 - Accessoires Sécurité Incendie;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-04---;Zone 3 - HEBERGEMENT ALZHEIMER
+209;Z2 - Accessoires Sécurité Incendie;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-05---;Zone 2 - HEBERGEMENT Unités 1& 2
+210;Z1 - Accessoires Sécurité Incendie;3;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+211;Z1 - Installation production eau chaude chaufferie;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-15---;Lot n° 13 - Chauffage, ventilation plomberie;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+212;Réseau de terre + incorporés dans G/Oeuvre;30;P-02---;PHASE B - EXECUTION des TRAVAUX;I-16---;Lot n° 14 - Electricité courants Forts;T-03---;Zone 1 - LOGISTIQUE & RESTAURATION
+213;Réseau informatique;20;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+214;Telephonie;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+215;Système de sécurité incendie;10;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+216;desenfumage et asservissement;40;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+217;Télévision;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+218;Vidéo surveillance, contrôle d'accès;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+219;Système d'appel malades;15;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET
+220;Diffusio de l'heure, sonorisation;5;P-02---;PHASE B - EXECUTION des TRAVAUX;I-17---;Lot n° 15 - Courants faibles;T-01---;ENSEMBLE du PROJET

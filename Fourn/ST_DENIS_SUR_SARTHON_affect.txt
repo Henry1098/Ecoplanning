@@ -1,0 +1,31 @@
+<nt>1</nt><des>Ordre de service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>Escalier, caniveaux seuil ect ... BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>Charpente BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des>Pose des portes issus de secours, local RDJ BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>Plomberie - Colonnes montantes - distribution sanitaire - BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>Appareillage sanitaire - BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>10</nt><des>Chauffage - réseau plafond  - appareillage RDJ / RDC - BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>11</nt><des>Chauffage - réseau plafond -appareillage - 1er étage - BATIMENT NEUF </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>12</nt><des>Cloison / Doublages - RDC  BATIMENT EXISTANT</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>13</nt><des>Cloison / Doublages - 1er étage BATIEMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>14</nt><des>Plafond / faux plafond - RDJ BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>15</nt><des>Plafond / faux plafond - RDC BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>16</nt><des>Plafiond / faux plafond - 1er étage BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>17</nt><des>Menuiserie inérieure - RDJ </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>18</nt><des>Menuisrie intérieure - RDC</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>19</nt><des>Menuiserie intérieure - 1er étage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>20</nt><des>Carrelage chape </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>21</nt><des>Peinture RDC</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>22</nt><des>Peinture RDJ </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>23</nt><des>Appareillage RDC BATIMENT NEUF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>24</nt><des>Tache numéro 26</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>25</nt><des>Tache numéro 27</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>26</nt><des>Tache numéro 30</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>31</nt><des>Ordre de service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>32</nt><des>Chauffage - réseau plafond -appareillage - 1er étage - BATIMENT NEUF </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>35</nt><des>Ordre de service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>36</nt><des>Chauffage - réseau plafond -appareillage - 1er étage - BATIMENT NEUF </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>37</nt><des>Plancher haut RDC</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>38</nt><des>Elévation RDC</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>0</nt><des>Elévation RDJ</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>0</nt><des>Elévation RDC</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

@@ -1,0 +1,36 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>P</c1><c2>C</c2><c3></c3><c4></c4><d>1 Bt 2-3 S/SOL</d><r></r><t></t>
+<c1>P</c1><c2>D</c2><c3></c3><c4></c4><d>2 Bt 2-3-4 RDC</d><r></r><t></t>
+<c1>P</c1><c2>E</c2><c3></c3><c4></c4><d>3 Bt 2-3-4 COUR</d><r></r><t></t>
+<c1>P</c1><c2>F</c2><c3></c3><c4></c4><d>4 Bt 2-3-4 HALL</d><r></r><t></t>
+<c1>P</c1><c2>G</c2><c3></c3><c4></c4><d>5 Bt 2-3-4 ALLEE</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>MENUISERIES INT.</d><r></r><t></t>
+<c1>I</c1><c2>002</c2><c3></c3><c4></c4><d>GROS OEUVRE</d><r></r><t></t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>CHAUFFAGE VENTIL.</d><r></r><t></t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>ELECTRICITE</d><r></r><t></t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>METALLERIE</d><r></r><t></t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>CLOISONS PLATRERIE</d><r></r><t></t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>PEINTURE MIROITERIE</d><r></r><t></t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>EQUIPEMENTS CUISINES</d><r></r><t></t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>FAUX PLAFONDS</d><r></r><t></t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>SOLS SOUPLES</d><r></r><t></t>
+<c1>I</c1><c2>001</c2><c3></c3><c4></c4><d>TCE</d><r></r><t></t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>PLOMBERIE SANITAIRE</d><r></r><t></t>
+<c1>I</c1><c2>03B</c2><c3></c3><c4></c4><d>COUVERTURE ETANCHEITE</d><r></r><t></t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>SOLS SCELLES</d><r></r><t></t>
+<c1>I</c1><c2>19</c2><c3></c3><c4></c4><d>EQUIPEMENTS SPECIALISES</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

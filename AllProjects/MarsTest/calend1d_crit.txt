@@ -1,0 +1,45 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>P</c1><c2>004</c2><c3></c3><c4></c4><d>Niveau -1</d><r></r><t></t>
+<c1>P</c1><c2>T</c2><c3></c3><c4></c4><d>TEMOIN RDC</d><r></r><t></t>
+<c1>P</c1><c2>1</c2><c3></c3><c4></c4><d>Niveau 1</d><r></r><t></t>
+<c1>P</c1><c2>3</c2><c3></c3><c4></c4><d>Niveau 3</d><r></r><t></t>
+<c1>P</c1><c2>006</c2><c3></c3><c4></c4><d>Niveau 0</d><r></r><t></t>
+<c1>P</c1><c2>2</c2><c3></c3><c4></c4><d>Niveau 2</d><r></r><t></t>
+<c1>P</c1><c2>4</c2><c3></c3><c4></c4><d>Niveau 4</d><r></r><t></t>
+<c1>P</c1><c2>5</c2><c3></c3><c4></c4><d>Niveau 5</d><r></r><t></t>
+<c1>P</c1><c2>6</c2><c3></c3><c4></c4><d>Niveau 6</d><r></r><t></t>
+<c1>P</c1><c2>7</c2><c3></c3><c4></c4><d>Niveau 7</d><r></r><t></t>
+<c1>P</c1><c2>8</c2><c3></c3><c4></c4><d>Niveau 8</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>GROS OEUVRE LEON GROSSE</d><r></r><t></t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>PLATRERIE CLOISONS</d><r></r><t></t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>MENUISERIE INTERIEURE</d><r></r><t></t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>APPAREILS ELEVATEURS</d><r></r><t></t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>MENUISERIE EXTERIEURE</d><r></r><t></t>
+<c1>I</c1><c2>42</c2><c3></c3><c4></c4><d>NACELLES DE NETTOYAGE</d><r></r><t></t>
+<c1>I</c1><c2>19</c2><c3></c3><c4></c4><d>CARRELAGE FAIENCE</d><r></r><t></t>
+<c1>I</c1><c2>28</c2><c3></c3><c4></c4><d>ESPACES VERTS</d><r></r><t></t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>ETANCHEITE</d><r></r><t></t>
+<c1>I</c1><c2>21</c2><c3></c3><c4></c4><d>PEINTURE</d><r></r><t></t>
+<c1>I</c1><c2>25</c2><c3></c3><c4></c4><d>PIERRE INTERIEURE</d><r></r><t></t>
+<c1>I</c1><c2>30</c2><c3></c3><c4></c4><d>PLAFONDS SUSPENDUS</d><r></r><t></t>
+<c1>I</c1><c2>58</c2><c3></c3><c4></c4><d>PLANCHERS SURELEVES</d><r></r><t></t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>SERRURERIE METALLERIE</d><r></r><t></t>
+<c1>I</c1><c2>20</c2><c3></c3><c4></c4><d>SOLS SOUPLES</d><r></r><t></t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>GENIE ELECTRIQUE</d><r></r><t></t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>PLOMBERIE RIA</d><r></r><t></t>
+<c1>I</c1><c2>16</c2><c3></c3><c4></c4><d>GENIE CLIMATIQUE</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

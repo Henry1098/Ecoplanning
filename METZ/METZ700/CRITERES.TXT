@@ -1,0 +1,18 @@
+<c>01---</c><d>PHASE 1</d>
+<c>01-01--</c><d>PHASE 1A : DEMOLITIONS PREALABLES</d>
+<c>01-02--</c><d>PHASE 1B : BÂTIMENTS S, R1, N1 (BBC) & K1</d>
+<c>01-02-01-</c><d>CONSTRUCTION BÂTIMENT S (EMOP) y/c Réception</d>
+<c>01-02-02-</c><d>CONSTRUCTION BÂTIMENT R1 (GENIE CIVIL) y/c Réception</d>
+<c>01-02-03-</c><d>CONSTRUCTION BÂTIMENT N1 : BÂTIMENT (BOIS - COUVERTURE) y/c Réception</d>
+<c>01-02-04-</c><d>CONSTRUCTION BÂTIMENT K1 (ENERGIE) y/c Réception</d>
+<c>02---</c><d>PHASE 2</d>
+<c>02-01--</c><d>PHASE 2A</d>
+<c>02-02--</c><d>PHASE 2B</d>
+<c>02-02-01-</c><d>CONSTRUCTION BÂTIMENT M : Bâtiment BBC y/c Réception</d>
+<c>02-02-02-</c><d>CONSTRUCTION BÂTIMENT N2 : BOIS - COUVERTURE y/c Réception</d>
+<c>02-02-03-</c><d>CONSTRUCTION BÂTIMENT K2 (ENERGIE) & J (ELECTROTECHNIQUE) y/c Réception</d>
+<c>02-02-04-</c><d>CONSTRUCTION BÂTIMENT R2 (GENIE CIVIL) y/c Réception</d>
+<c>02-02-05-</c><d>GALERIE DE LIAISON T.C.E. sur consignes OPC</d>
+<c>03---</c><d>PHASE 3</d>
+<c>03-01--</c><d>PHASE 3A</d>
+<c>03-02--</c><d>PHASE 3B</d>

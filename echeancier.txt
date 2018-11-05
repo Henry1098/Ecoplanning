@@ -1,0 +1,176 @@
+void __fastcall TplStandard::Calcul_Echeancier()
+{
+ int mode; int dp1,dp2; char tmp[100],mt[100];
+ char xdat[50]; int i,j,cnt;  int cntt;
+ TDateTime dtFirst; int day,dist1;
+ double montpos,montneg,mttot,cumul;
+
+ int sp1[2000],sp2[2000], ctrsp;
+
+ if (RadioButton1->Checked==true) mode = 1;
+ if (RadioButton2->Checked==true) mode = 2;
+ if (RadioButton3->Checked==true) mode = 3;
+
+ sprintf(xdat,"%02d/%02d/%02d",JourPrev,MoisPrev,AnPrev%100);
+ dp1=convert_date(AnPrev,MoisPrev,JourPrev);
+
+ sprintf(xdat,"%02d/%02d/%02d",JourFin,MoisFin,AnFin%100);
+ dp2=convert_date(AnFin,MoisFin,JourFin);
+
+ dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+ int firstday = dtFirst.DayOfWeek();
+ int dow;  // day of week
+ dow = firstday-1;
+
+
+ Clean_Grid(ave,2);
+ cnt=0;
+ switch (mode)
+   {
+    case 1:
+        sp1[cnt]=0;
+        for (i=dp1;i<=dp2;i++)
+          {
+           add_jour(AnPrev,MoisPrev,JourPrev,i);
+           sprintf(xdat,"%02d/%02d/%02d",Jour,Mois,An%100);
+           if (cal[1][i]=='T')
+             {
+              cnt++;  if (cnt>1) ave->RowCount++;
+              ave->Cells[1][cnt]=AnsiString(xdat);
+              sp1[cnt]=i;
+             }
+          }
+
+        break;
+
+    case 2:
+        day=dp1;
+        add_jour(AnPrev,MoisPrev,JourPrev,day);
+        dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+        dow= dtFirst.DayOfWeek()-1;
+        sp1[cnt]=day;
+        cnt++;
+        sprintf(xdat,"%02d/%02d/%02d",Jour,Mois,An%100);
+        ave->Cells[1][cnt]=AnsiString(xdat);
+        day++;
+        while (day<=dp2)
+          {
+           add_jour(AnPrev,MoisPrev,JourPrev,day);
+           dtFirst = EncodeDate(An,Mois,Jour);
+           dow= dtFirst.DayOfWeek()-1;
+           if (dow==1)
+            {
+             cnt++; if (cnt>1) ave->RowCount++;
+             sprintf(xdat,"%02d/%02d/%02d",Jour,Mois,An%100);
+             ave->Cells[1][cnt]=AnsiString(xdat);
+             sp1[cnt]=day;
+            }
+           day++;
+          }
+
+
+        break;
+
+    case 3:
+        day=dp1;
+        add_jour(AnPrev,MoisPrev,JourPrev,day);
+        dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+        dow= dtFirst.DayOfWeek()-1;
+
+        cnt++;
+        sp1[cnt]=day;
+        sprintf(xdat,"%02d/%02d/%02d",Jour,Mois,An%100);
+        ave->Cells[1][cnt]=AnsiString(xdat);
+        day++;
+        while (day<=dp2)
+          {
+           add_jour(AnPrev,MoisPrev,JourPrev,day);
+           if (Jour==1)  // debut de mois
+            {
+             cnt++; if (cnt>1) ave->RowCount++;
+             day=avance_conges(day,1);
+             add_jour(AnPrev,MoisPrev,JourPrev,day);
+             sprintf(xdat,"%02d/%02d/%02d",Jour,Mois,An%100);
+             ave->Cells[1][cnt]=AnsiString(xdat);
+             sp1[cnt]=day;
+            }
+           day++;
+          }
+
+
+        break;
+   }
+
+
+
+sp1[cnt+1]=sp1[cnt]+2000;   // overflow
+
+// boucle pour distribuer les montants des taches dans la grille echeancier
+
+cntt= avc->RowCount;
+sprintf(tmp,"%10.2f",0.0);
+for (i=1;i<=cnt;i++) { ave->Cells[2][i]=AnsiString(tmp); ave->Cells[3][i]=AnsiString(tmp); }
+
+for (i=1;i<cntt;i++)
+  {
+   // calcul dist1 en fonction de la date
+   strcpy(xdat,avc->Cells[4][i].c_str());
+   dist1=convert_datex(xdat);
+   strcpy(mt,avc->Cells[6][i].c_str());
+   montpos=atof(mt);
+   strcpy(mt,avc->Cells[7][i].c_str());
+   montneg=atof(mt);
+
+   for (j=1;j<=cnt;j++)
+     {
+      if (dist1>=sp1[j] && dist1<sp1[j+1])
+        {
+         strcpy(mt,ave->Cells[2][j].c_str());
+         mttot=atof(mt);
+         if (cbPos->Checked==true) mttot = mttot + montpos;
+         if (cbNeg->Checked==true) mttot = mttot - montneg;
+         //sprintf(tmp,"<P align=\"right\">%10.2f</P>",mttot);
+         sprintf(tmp,"%10.2f",mttot);
+         ave->Cells[2][j]=AnsiString(tmp);
+        }
+
+
+     }
+  }
+
+ cumul=0.0;
+
+ for (j=1;j<=cnt;j++)
+     {
+         strcpy(mt,ave->Cells[2][j].c_str());
+         mttot=atof(mt);
+         cumul += mttot;
+         // sprintf(tmp,"<P align=\"right\">%10.2f</P>",cumul);
+         sprintf(tmp,"%10.2f",cumul);
+         ave->Cells[3][j]=AnsiString(tmp);
+     }
+}
+
+
+int  __fastcall TplStandard::convert_datex(char *dat)
+{
+ int n1,n2,bcl,N;
+ int initval,year,month,day;
+ char dt[20];
+
+ dt[0]=dat[0]; dt[1]=dat[1]; dt[2]=0;  day=atoi(dt);
+ dt[0]=dat[3]; dt[1]=dat[4]; dt[2]=0;  month=atoi(dt);
+ dt[0]=dat[6]; dt[1]=dat[7]; dt[2]=0;  year=atoi(dt)+2000;
+
+  n1 = (AnPrev%100)*365 + MoisPrev*28 + JourPrev;
+  n2 = (year%100)*365 + month*28 + day;
+ if (n2<n1) n2=n1+30;
+  initval = n2-n1-30; N=initval;
+  for (bcl=0;bcl<100;bcl++)
+    {
+     add_jour(AnPrev,MoisPrev,JourPrev,N);
+     if ((An==year) && (Mois==month) && (Jour==day)) break;
+     else N++;
+    }
+ return N;
+}

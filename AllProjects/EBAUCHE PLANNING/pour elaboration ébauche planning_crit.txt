@@ -1,0 +1,31 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>0</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>136</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>.</d><r></r><t>10</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>01/ GO DEMO </d><r></r><t>22</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>02-05/ CHARP MET </d><r></r><t>12</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>03/ ETANCHEITE  </d><r></r><t>6</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>04/ MENUIS ALU  </d><r></r><t>6</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>06/ CLOISONS  </d><r></r><t>8</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>07/ MENUIS BOIS  </d><r></r><t>8</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>08/ CARRELAGES F </d><r></r><t>8</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>09/ SOLS SOUPLES </d><r></r><t>6</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>10/ PEINT NETTOYAGE </d><r></r><t>8</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>11/ ASCENSEURS </d><r></r><t>6</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>12/   DESENFUMAGE  </d><r></r><t>10</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>13-14-16/ CH VENT PL SANIT </d><r></r><t>10</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>15/ FLUIDES MEDICAUX </d><r></r><t>8</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>17/ VRD ESPACES VERTS  </d><r></r><t>8</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>0</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

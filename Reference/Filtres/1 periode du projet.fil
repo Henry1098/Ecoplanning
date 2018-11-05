@@ -1,0 +1,11 @@
+<nom>1 periode du projet</nom><comment>Actuellement on filtre les tâches du projet
+qui commencent dans une période comprise entre deux dates début au + tôt
+
+Pour un nouveau besoin modifier
+celles-ci et remplacez 
+     10/01/07   par   --/--/--
+     05/02/07   par   --/--/--
+
+Ensuite pour ce projet vous pourrez 
+directement appliquer ce filtre
+</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>Début au plus tôt Prévisionnel</C><R>Compris entre</R><V1>01/05/09</V1><V2>31/08/09</V2>|</criteres>

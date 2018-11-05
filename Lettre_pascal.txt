@@ -1,0 +1,113 @@
+Monsieur
+
+
+Je sais très bien que la situation relative au développement d'Ecoplanning n'est pas facile,
+mais vous devez aussi comprendre ma position.
+
+Ma position de salarié d'ecoplanning était floue, et pas correctement assumée :
+- pas de bulletins de salaire ou bulletins incorrects,
+- un grand flou sur les cotisations (urssaf, retraite..)
+- une trop grande ingérence dans mes horaires, où votre père considérait que j'étais
+son esclave à 120 % de mon temps, alors que j'étais supposé travailler seulement à
+2/3 de mon temps.
+
+Donc, le fait que je ne sois plus salarié s'imposait, financierement , et pour un équilibre
+mental.
+
+Depuis le 1er Aout, je suis salarié d'une autre société, à 2/3 de mon temps.
+Ce n'est pas un contrat avec ma société alpes-software, c'est vraiment un contrat CDD qui
+me concerne directement. Il me reste donc environ 1/3 de temps pour d'autres travaux, et
+principalement pour Ecoplanning, au titre de contrats avec Alpes Software.
+
+Je sais très bien que votre père me réglera les arrières de salaire, et le fait de travailler
+sur une base horaire (40 euros / heure) est très saine, puisque les factures seront basées
+sur le temps réellement passé.
+
+J'ai pris 5 jours de vacances la semaine dernière, ce qui n'est pas abusif.
+
+Dorénavant, je serai pris les mardi, mercredi, jeudi de chaque semaine, et
+disponible le reste du temps pour les autres développements. 
+Le projet Ecoplanning avancera très bien, cependant.
+
+J'envoie des versions executables souvent non terminées, devant l'impatience de
+votre père, alors qu'il faudrait bien assurer les bases d'abord.
+
+Mais tout va rentrer dans l'ordre si je reçois des consignes strictes, non contradictoires.
+
+
+Cordialement
+
+
+
+ 
+Jean-Louis Gouin
+Alpes Software 36D Rue des Vingt Toises
+38950 St Martin le Vinoux
+France
+Membre du Reseau Hyper Horizon
+Tel : +33 04 76 56 07 49
+
+
+----- Original Message ----
+From: Pascal <pascal@learnperfect.fr>
+To: neurolab_500@yahoo.com
+Sent: Monday, August 25, 2008 7:45:52 AM
+Subject: Ecoplanning
+
+ 
+
+Monsieur
+
+ 
+
+Je prend l’initiative de faire ce mail car la situation existante entre mon père et vous me préoccupe.
+
+ 
+
+Mon Père ne comprend pas vos changements de position et donc ne vous comprends plus.
+
+Cela résulte de la mise au point du 24 juillet avec vous à Grenoble, de votre entretien téléphonique du 11/08/08 et de la livraison des deux derniers exécutables.
+
+ 
+
+Au cours de cette réunion vous lui avez indiqué que vous avez signé pour votre société un contrat avec une autre société et que vous commencerez à leur assurer un travail personnel pour les 2/3 de votre temps ceci dès le 1 Août.
+
+ 
+
+Mais vous lui avez indiqué que vous désirez continuer également le développement et la maintenance du logiciel Ecoplanning pour le 1/3 restant de votre temps (facturé à 40 Euros l’heure), ce qui signifiait de facto d’une part la résiliation de votre contrat de travail (2/3 du temps) qui ne peut vous permettre de travailler pour cette même durée auprès d’un autre employeur et donc formaliser un nouveau cadre pour assurer cette maintenance .
+
+ 
+
+Mon Père avait accepté vos conditions, vous deviez lui envoyer votre démission pour régularisation et il devait établir un contrat dans l’esprit de celui qu’il avait signé précédemment avec votre société.
+
+ 
+
+Par ailleurs vous lui avez demandé de vous régler, pour tout solde, dans les quelques mois à venir la somme de 5.500 euros qu’il vous devait. Un premier cheque de 2000 euros vous a été envoyé depuis ; vous recevrez : en septembre un chèque de 2000 euros, et en octobre un chèque de 1500 euros,
+
+ 
+
+Dans nos intérêts respectifs il est nécessaire que ne subsiste aucun différent entre nous et qu’une bonne collaboration continue.
+
+ 
+
+Mon Père étant très affecté, je vous demande de vous adresser à moi pour régler tout problème qui se poserait.
+
+Sans succès j’ai essayé de vous joindre au téléphone au 04 76 56 07 49, j’essayerai de vous joindre sur votre portable au 06 67 45 07 84 pour un entretien de vive voix et vous laisse également mon numéro 06 62 61 90 73.
+
+ 
+
+Je vous joins une note qui détaille ce qui reste à faire pour terminer la version 5.1, sachant que mon père continuera à examiner et vous faire part de ses remarques sur les exécutables et mails que vous lui enverrez.
+
+ 
+
+ 
+
+Cordialement
+
+ 
+
+ 
+
+ 
+
+http://www.learnperfect.fr/signature/logo_lp_trans.gif

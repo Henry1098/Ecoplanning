@@ -1,0 +1,141 @@
+N° ;Désignation;Durée;Crit 1;Désign Crit 1;Crit 2;Désign Crit 2;Crit 3;Désign Crit 3
+1;_ C. Plancher haut du VS;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-05---;Collectif - 6 lgmts
+2;_ 1/2. Elévation pignon garage;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-01---;Maisons 1/2
+3;_ 1/2. Charpente couverture;8;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-01---;Maisons 1/2
+4;_ 7/8. Plancher haut du RdC;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-04---;Maisons 7/8
+5;_ 3/4. Elévation pignons ;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-02---;Maisons 3/4
+6;_ 5/6. Elévations 1° et pignons;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-03---;Maisons 5/6
+7;_ 7/8. Elévations 1° et pignons;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-04---;Maisons 7/8
+8;_ 3/4. Charpente couverture;8;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-02---;Maisons 3/4
+9;_ 5/6. Charpente couverture;8;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-03---;Maisons 5/6
+10;_ 7/8. Charpente couverture;8;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-04---;Maisons 7/8
+11;_ 1/2. Appuis et dressages tableaux;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-01---;Maisons 1/2
+12;_ 3/4. Appuis et dressages tableaux;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-02---;Maisons 3/4
+13;_ 5/6. Appuis et dressages tableaux;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-03---;Maisons 5/6
+14;_ 7/8. Appuis et dressages tableaux;5;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-04---;Maisons 7/8
+15;_ 1/2. Pose menuiseries Ext;3;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-01---;Maisons 1/2
+16;_ 3/4. Pose menuiseries Ext;2;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-02---;Maisons 3/4
+17;_ 5/6. Pose menuiseries Ext;2;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-03---;Maisons 5/6
+18;_ 7/8. Pose menuiseries Ext;2;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-04---;Maisons 7/8
+19;_ Ens. Pose menuis. métal Ext portes et portails;8;P-01---;PHASE Travaux ;I-07---;Serrurerie;T-08---;Ens. maisons
+20;_ C. Plancher haut du RdC;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-05---;Collectif - 6 lgmts
+21;_ C. Plancher haut du 1°;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-05---;Collectif - 6 lgmts
+22;_ C. Elévations 2° + pignons;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-05---;Collectif - 6 lgmts
+23;_ C. Charpente couverture;15;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-05---;Collectif - 6 lgmts
+24;_ C. Appuis et dressages tableaux;10;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-05---;Collectif - 6 lgmts
+25;_ C. Pose menuiseries Ext;10;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-05---;Collectif - 6 lgmts
+26;_ 1/2. Doublages;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-01---;Maisons 1/2
+27;_ 1/2. Cloisonnements;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-01---;Maisons 1/2
+28;_ 1/2.Plafonds suspendus;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-01---;Maisons 1/2
+29;_ 1/2. Fermeture gaines tech + Joints placo;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-01---;Maisons 1/2
+30;_ Ens. Isolation souflée en combles maisons;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-08---;Ens. maisons
+31;_ 3/4. Doublages;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-02---;Maisons 3/4
+32;_ 3/4. Cloisonnements;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-02---;Maisons 3/4
+33;_ 3/4. Plafonds suspendus;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-02---;Maisons 3/4
+34;_ 3/4. Fermeture gaines tech + joints placo;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-02---;Maisons 3/4
+36;_ 5/6. Doublages;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-03---;Maisons 5/6
+37;_ 5/6. Cloisonnements;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-03---;Maisons 5/6
+38;_ 5/6.Plafonds suspendus;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-03---;Maisons 5/6
+39;_ 5/6. Fermeture gaines tech + joints placo;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-03---;Maisons 5/6
+41;_ 7/8. Doublages;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-04---;Maisons 7/8
+42;_ 7/8. Cloisonnements;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-04---;Maisons 7/8
+43;_ 7/8.Plafonds suspendus;2;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-04---;Maisons 7/8
+44;_ 7/8. Fermeture gaines tech + joints placo;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-04---;Maisons 7/8
+46;_ C. Doublages;12;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+47;_ C. Cloisonnements;15;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+48;_ C.Plafonds suspendus;4;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+49;_ C. Fermeture gaines tech + joints placo;15;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+50;_ C. Isolation souflée en combles;1;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+51;_ 1/2. Canas Incorporées dans placo;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-01---;Maisons 1/2
+52;_ 1/2. Fourreaux encastrés dans placo;3;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-01---;Maisons 1/2
+53;_ 3/4. Canas Incorporées dans placo + colonnes montantes;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-02---;Maisons 3/4
+54;_ 3/4. Fourreaux encastrés dans placo;3;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-02---;Maisons 3/4
+55;_ 5/6. Canas Incorporées dans placo + colonnes montantes;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-03---;Maisons 5/6
+56;_ 5/6. Fourreaux encastrés dans placo;3;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-03---;Maisons 5/6
+57;_ 7/8. Canas Incorporées dans placo + colonnes montantes;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-04---;Maisons 7/8
+58;_ 7/8. Fourreaux encastrés dans placo;3;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-04---;Maisons 7/8
+59;_ C. Canas Incorporées dans placo + colonnes montantes;10;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+60;_ C. Fourreaux encastrés dans placo;10;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-05---;Collectif - 6 lgmts
+61;_ Ens. SPEC salle de bain maisons;1;P-01---;PHASE Travaux ;I-04---;Carrelage;T-08---;Ens. maisons
+62;_ Ens. Pose des baignoires;4;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-08---;Ens. maisons
+63;_ Ens. Pose des escaliers intérieurs;5;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+64;_ Ens. Carrelage RdC maisons;15;P-01---;PHASE Travaux ;I-04---;Carrelage;T-08---;Ens. maisons
+65;_ Ext. Réseaux AEP et Assainissement;10;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+66;_ Ext. Réseaux Eaux pluviales;10;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+67;_ Ext. Réseaux Secs  Elec + Tél + Ecl Pub;10;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+68;_ Ens. Appro blocs portes & trappes gaines + plaf;1;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+69;_ C. Appro blocs portes & trappes gaines + plaf;1;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-05---;Collectif - 6 lgmts
+70;_ Ens. Mise en jeu des portes,couvre-joints, plinthes, etc;8;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+71;_ Ens. Filerie, appareillages et coffret ;8;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-08---;Ens. maisons
+72;_ Ens. Faîences + plinthes maisons;15;P-01---;PHASE Travaux ;I-04---;Carrelage;T-08---;Ens. maisons
+73;_ C. SPEC salle de bain Collectif;1;P-01---;PHASE Travaux ;I-04---;Carrelage;T-05---;Collectif - 6 lgmts
+74;_ C. Pose des baignoires collectif;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+75;_ C. Carrelage RdC collectif;4;P-01---;PHASE Travaux ;I-04---;Carrelage;T-05---;Collectif - 6 lgmts
+76;_ C. Faîences + plinthes collectif;4;P-01---;PHASE Travaux ;I-04---;Carrelage;T-05---;Collectif - 6 lgmts
+77;_ C. Mise en jeu des portes,couvre-joints, plinthes,  etc;6;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-05---;Collectif - 6 lgmts
+78;_ C. Filerie, appareillages et coffret ;6;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-05---;Collectif - 6 lgmts
+79;_ Ens. distributions aux appareils sanitaires;8;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-08---;Ens. maisons
+80;_ C. distributions aux appareils sanitaires;8;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+81;_ Ens. Préparation des supports, peintuire huisseries;15;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+82;_ Ens. Goutelette sur plafonds et murs;5;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+83;_ Ens. Finitions peintures sur boiseries, cana, ;16;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+84;_ Ens. Papiers peints ;16;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+85;_ Ens. Peintures extérieures;16;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+86;_ Ens. Impression, 1° couche peinture planches de rives, avants-toits;2;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+87;_ Ens. Peintures et lasures sur ouvrages extérieurs;16;P-01---;PHASE Travaux ;I-12---;Peintures;T-08---;Ens. maisons
+88;_ C. Préparation des supports, peintuire huisseries;12;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+89;_ C. Goutelette sur plafonds et murs;5;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+90;_ C. Finitions peintures sur boiseries, cana, ;6;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+91;_ C. Papiers peints ;12;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+92;_ C. Peintures extérieures;6;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+93;_ C. Impression, 1° couche peinture planches de rives, avants_toits;2;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+94;_ C. Peintures et lasures sur ouvrages extérieurs;8;P-01---;PHASE Travaux ;I-12---;Peintures;T-05---;Collectif - 6 lgmts
+95;_ Ens. Pose gardes-corps, mains courantes et grilles;3;P-01---;PHASE Travaux ;I-07---;Serrurerie;T-08---;Ens. maisons
+96;_ Ens. Pose des persiennes;5;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-08---;Ens. maisons
+97;_ C. Pose gardes-corps, mains courantes et grilles;5;P-01---;PHASE Travaux ;I-07---;Serrurerie;T-05---;Collectif - 6 lgmts
+98;_ C. Pose des persiennes;3;P-01---;PHASE Travaux ;I-06---;Menuis. PVC;T-05---;Collectif - 6 lgmts
+99;_ C. Chappes salles de bains handicapés;1;P-01---;PHASE Travaux ;I-04---;Carrelage;T-05---;Collectif - 6 lgmts
+100;_ Ens. Enduits de facades maisons;20;P-01---;PHASE Travaux ;I-02---;Enduits;T-08---;Ens. maisons
+101;_ Ens. Enduits de facades collectif;10;P-01---;PHASE Travaux ;I-02---;Enduits;T-08---;Ens. maisons
+102;_ Ens. Enduit plâtre sur refends maisons;8;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-08---;Ens. maisons
+103;_ C. Enduit plâtre THD sur cage d'escalier collectif;5;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+104;_ Ens. pose et rccdmts appareils sanitaires;8;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-08---;Ens. maisons
+105;_ C. pose et rcdmts appareils sanitaires;8;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+106;_ Ens. Sols souples étages maisons y cis plinthes;12;P-01---;PHASE Travaux ;I-11---;Sols souples;T-08---;Ens. maisons
+107;_ C. Sols souples collectif y cis plinthes;12;P-01---;PHASE Travaux ;I-11---;Sols souples;T-05---;Collectif - 6 lgmts
+108;_ C. PVC salles de bains handicapés;3;P-01---;PHASE Travaux ;I-11---;Sols souples;T-05---;Collectif - 6 lgmts
+109;_ C. pose des syphons de sols SdB hand.;1;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+110;_ G. Génie civil garages bât collectif;20;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-08---;Ens. maisons
+111;_ G. Charpente couverture garages ;10;P-01---;PHASE Travaux ;I-15---;Charp. couv.;T-06---;Garages bât collectif
+112;_ G. Pose portails bât garages du collectif;2;P-01---;PHASE Travaux ;I-07---;Serrurerie;T-06---;Garages bât collectif
+113;_ C. Pose ens porte hall d'entrée du collectif;2;P-01---;PHASE Travaux ;I-07---;Serrurerie;T-05---;Collectif - 6 lgmts
+114;_ Ens. Dallages enclos extérieurs;15;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-08---;Ens. maisons
+115;_ Ext. Soutènements et murets clôtures;20;P-01---;PHASE Travaux ;I-01---;Maconnerie;T-07---;Extérieurs
+116;_ G. Enduits facades garages collectif;5;P-01---;PHASE Travaux ;I-02---;Enduits;T-06---;Garages bât collectif
+117;_ Ext. Enduits murets de clôtures et soutènements;5;P-01---;PHASE Travaux ;I-02---;Enduits;T-07---;Extérieurs
+118;_ C. Fx plaf suspendus acoustiques esc collectif;3;P-01---;PHASE Travaux ;I-03---;Plâtrerie;T-05---;Collectif - 6 lgmts
+119;_ Ens. pose socles habillage baignoires;2;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+120;_ Ens. pose habillages baignoires;2;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+121;_ C. pose habillages des baignoires;2;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-05---;Collectif - 6 lgmts
+123;_ Ens. pose plafonds bois porches maisons;3;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+124;_ Ens. Pose bardages bois ens maisons;5;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+125;_ C. Pose bardages bois + écrans;5;P-01---;PHASE Travaux ;I-05---;Menuis. bois;T-08---;Ens. maisons
+126;_ C. Pose miroirs, poignées,;5;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+127;_ C. Mise en service et pose bouches vmc,  accessoires SdB hand;2;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-05---;Collectif - 6 lgmts
+128;_ Ext. Pose antenne de télévision;3;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-07---;Extérieurs
+129;_ Ens. Pose plastrons et lustrerie;5;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-08---;Ens. maisons
+130;_ C. Pose portier, plastrons et lustrerie;5;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-05---;Collectif - 6 lgmts
+131;_ C. Pose sol souple marches esc collectif;5;P-01---;PHASE Travaux ;I-11---;Sols souples;T-05---;Collectif - 6 lgmts
+132;_ Ext. pose numérotations et nettoyage;5;P-01---;PHASE Travaux ;I-11---;Sols souples;T-07---;Extérieurs
+133;_ Ext. Fondations + structures voiries;10;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+134;_ Ext. Clôtures, grillages et portails;8;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+135;_ Ext. Espaces verts, plantations;8;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+136;_ Ext. bordures, réglage forme, tricouche;10;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+137;_ Ext. mobilier urbain + signalisation;3;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+138;_ Ext. EDF, distribution elec + éclairage public;10;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-07---;Extérieurs
+139;_ Ext. FT, distribution réseau téléphonique;5;P-01---;PHASE Travaux ;I-09---;Elec. chauff.;T-07---;Extérieurs
+140;_ Ext. AEP, syndicat pose des compteurs d'eau;3;P-01---;PHASE Travaux ;I-08---;Plomb.sanit.;T-07---;Extérieurs
+141;_ Ext. Apport des terres végétales, préparation du terrain végétalisé;5;P-01---;PHASE Travaux ;I-22---;VRD;T-07---;Extérieurs
+142;Opérations préalables a la réception;15;P-02---;PHASE Reception ;I-002---;M/Œuvre;T-09---;Ens projet
+143;Finitions,  levée des observations;15;P-02---;PHASE Reception ;I-002---;M/Œuvre;T-09---;Ens projet
+144;RECEPTION des OUVRAGES;1;P-02---;PHASE Reception ;I-001---;M/Ouvrage;T-09---;Ens projet

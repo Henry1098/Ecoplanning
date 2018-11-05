@@ -1,0 +1,37 @@
+Ecoplanning : La maîtrise des objectifs d’un projet
+
+De nombreux exemples le montrent, la notion « maîtrise temps » du déroulement d’un 
+projet n’est pas prise en compte correctement au contraire des notions coût et 
+qualité avec lesquelles elle est liée..
+
+Or le logiciel Ecoplanning permet aux utilisateurs, sans formation spéciale, 
+de maîtriser la notion temps et ceci tout au long du déroulement du projet 
+et d’obtenir des plannings qui vont répondre aux besoins spécifiques 
+des branches Bâtiments et Ingénierie:
+
+De plus la lisibilité et l’esthétique des plannings sont améliorées car on peut
+- obtenir les plannings d’un projet sur seule page 
+- visualiser plusieurs tâches sur la même ligne. 
+
+Au cours du déroulement d’un projet il est nécessaire de prendre en 
+compte les aléas dus aux contraintes internes et externes au projet 
+dès le début de celui-ci. Ecoplanning permet de traiter cette 
+démarche en deux phases successives distinctes, mais la première 
+peut être suffisante : 
+
+Actualisation rapide du projet par saisie de l’avancement. 
+- il connaîtra aussitôt les retards qui sont intervenus dans le projet  
+- il en mesura les conséquences en regard des objectifs initiaux
+- il pourra ensuite par simulation, si nécessaire, établir un planning de rattrapage.
+
+Affiner une actualisation
+L’utilisateur procédera à une analyse plus fine et 
+plus complète pour déterminera pour chacune des tâches la 
+partie du retard total qui peut leur être imputée.
+					
+Autre possibilités Ecoplanning: un modèle pour récupérer les articles d’un devis 
+sur Excel. L’intérêt, c’est la possibilité d’obtenir un planning opérationnel
+- qui va prendre en compte les prestations à exécuter, 
+- qui respecte l’engagement financier du devis, où tout retard d’exécution 
+se traduira par une perte.
+

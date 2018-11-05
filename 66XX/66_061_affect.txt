@@ -1,0 +1,36 @@
+<nt>1</nt><des>Plateforme</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>Fondations</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des>Longrines</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>Dallage bureau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>Elévation</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>Charpente atelier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des>Charpente bureau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>Plancher collaborant</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>Terre</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>10</nt><des>Etanchéité bureau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>11</nt><des>Etanchéité atelier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>12</nt><des>Bardage bureau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>13</nt><des>Bardage atelier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>14</nt><des>Finition bardage </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>15</nt><des>Menuiseries bureau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>16</nt><des>Menuiserie atelier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>17</nt><des>Volets roulants</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>18</nt><des>Porte sectionnelle</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>19</nt><des>Livraison blocs portes</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>20</nt><des>Coffres bois</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>21</nt><des>mise en jeu - plinthes</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>22</nt><des>Finition quincaillerie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>23</nt><des>Cloisons doublage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>24</nt><des>Plafonds</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>25</nt><des>incorpo. électricité </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>26</nt><des>Cablâge distribution </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>27</nt><des>Appareillage électricité</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>28</nt><des>Finition appareillage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>29</nt><des>Réservations plomberie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>30</nt><des>Distribution plomberie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>31</nt><des>Appareils sanitaires</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>32</nt><des>Sols scellés</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>33</nt><des>Faïence</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>34</nt><des>Peinture</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>35</nt><des>terassement</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>36</nt><des>reseau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

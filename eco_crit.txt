@@ -1,0 +1,37 @@
+<c>1</c><l>PH</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>INT</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>C3</l><d>Critère 3</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Critère 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Critère 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Critère 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Critère 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Critère 8</d><t>(null)</t>
+<c1>PH</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>PH</c1><c2>01</c2><c3></c3><c4></c4><d>Préparation -Réception </d><r></r><t></t>
+<c1>PH</c1><c2>02</c2><c3></c3><c4></c4><d>Travaux TCE</d><r></r><t></t>
+<c1>INT</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>INT</c1><c2>01</c2><c3></c3><c4></c4><d>Gros Oeuvre</d><r></r><t></t>
+<c1>INT</c1><c2>01</c2><c3>01</c3><c4></c4><d>Gros Oeuvre base</d><r></r><t></t>
+<c1>INT</c1><c2>01</c2><c3>02</c3><c4></c4><d>Gros Oeuvre sous traitence</d><r></r><t></t>
+<c1>INT</c1><c2>02</c2><c3></c3><c4></c4><d>Menuiseries exterieures</d><r></r><t></t>
+<c1>INT</c1><c2>03</c2><c3></c3><c4></c4><d>Menuiserie bois</d><r></r><t></t>
+<c1>INT</c1><c2>04</c2><c3></c3><c4></c4><d>Electricité</d><r></r><t></t>
+<c1>INT</c1><c2>05</c2><c3></c3><c4></c4><d>Chauffage plomberie</d><r></r><t></t>
+<c1>INT</c1><c2>05</c2><c3>01</c3><c4></c4><d>Chauffage  </d><r></r><t></t>
+<c1>INT</c1><c2>05</c2><c3>02</c3><c4></c4><d>Plomberie</d><r></r><t></t>
+<c1>INT</c1><c2>06</c2><c3></c3><c4></c4><d>Parquet</d><r></r><t></t>
+<c1>INT</c1><c2>07</c2><c3></c3><c4></c4><d>Faux plafonds</d><r></r><t></t>
+<c1>INT</c1><c2>08</c2><c3></c3><c4></c4><d>Peinture</d><r></r><t></t>
+<c1>INT</c1><c2>09</c2><c3></c3><c4></c4><d>Vitrerie miroiterie</d><r></r><t></t>
+<c1>INT</c1><c2>10</c2><c3></c3><c4></c4><d>Equipement cuisine</d><r></r><t></t>
+<c1>INT</c1><c2>11</c2><c3></c3><c4></c4><d>Equipement laverie</d><r></r><t></t>
+<c1>INT</c1><c2>12</c2><c3></c3><c4></c4><d>Chambres froides</d><r></r><t></t>
+<c1>INT</c1><c2>13</c2><c3></c3><c4></c4><d>Equipement distribution</d><r></r><t></t>
+<c1>INT</c1><c2>14</c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>INT</c1><c2>15</c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>C3</c1><c2></c2><c3></c3><c4></c4><d>Critère 3</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

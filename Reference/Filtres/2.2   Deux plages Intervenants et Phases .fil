@@ -1,0 +1,10 @@
+<nom>2.2   Deux plages Intervenants et Phases </nom><comment>Le filtre prend en compte
+  une plage d'intervenants I-01 à I-20 
+  une plage phases de P-01 à P-10 
+Vous pourrez modifier ces intervalles si on
+ remplace I-01 par I-04 et I-20 par I-12
+ remplace P-01 par P-03 et P-10 par P-05
+
+On obtiendra les intervalles des 
+      Intervenants de I-04 par I-12
+      Phases de P-03 par P-05</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>*INTERVENANTS</C><R>Compris entre</R><V1>I-01</V1><V2>I-20</V2>|<A>Supprimer Sauf</A><C>*PHASES</C><R>Compris entre</R><V1>P-01</V1><V2>P-10</V2>|</criteres>

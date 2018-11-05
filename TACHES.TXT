@@ -1,0 +1,19 @@
+"1","Tache numéro 1 ","1","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"2","Tache numéro 2","4","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"3","Tache numéro 3","5","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"4","Tache numéro 4","5","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"5","Tache numéro 5","5","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"6","Tache numéro 6","5","P---","PHASES","I-01---","Tâches critiques","T---","TRIS","","0.000000","",""
+"7","Tache numéro 7","1","P---","PHASES","I-03---","Tâches Administratives ","T---","TRIS","","0.000000","",""
+"8","Tache numéro 8","4","P---","PHASES","I-02---","Autres tâches ","T---","TRIS","","0.000000","",""
+"9","Tache numéro 9","5","P---","PHASES","I-02---","Autres tâches ","T---","TRIS","","0.000000","",""
+"10","Tache numéro 10","2","P---","PHASES","I-02---","Autres tâches ","T---","TRIS","","0.000000","","13/01/12"
+"11","Tache numéro 11","6","P---","PHASES","I-02---","Autres tâches ","T---","TRIS","","0.000000","",""
+"12","Tache numéro 12","3","","","","","","","","0.000000","",""
+ 6</des<dur>5</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-01---</cr2><des2>Tâches critiques</des2><cr3>T---</cr3><des3>TRIS</des3><dtot>25/01/12</dtot><ftot>31/01/12</ftot><code>4122</code><cout>0.000000</cout>
+<nt>7</nt><des>Tache numéro 7</des<dur>1</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-03---</cr2><des2>Tâches Administratives </des2><cr3>T---</cr3><des3>TRIS</des3><dtot>02/01/12</dtot><ftot>02/01/12</ftot><code>5577</code><cout>0.000000</cout>
+<nt>8</nt><des>Tache numéro 8</des<dur>4</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-02---</cr2><des2>Autres tâches </des2><cr3>T---</cr3><des3>TRIS</des3><dtot>03/01/12</dtot><ftot>06/01/12</ftot><code>7596</code><cout>0.000000</cout>
+<nt>9</nt><des>Tache numéro 9</des<dur>5</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-02---</cr2><des2>Autres tâches </des2><cr3>T---</cr3><des3>TRIS</des3><dtot>09/01/12</dtot><ftot>13/01/12</ftot><code>6561</code><cout>0.000000</cout>
+<nt>10</nt><des>Tache numéro 10</des<dur>2</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-02---</cr2><des2>Autres tâches </des2><cr3>T---</cr3><des3>TRIS</des3><dtot>10/01/12</dtot><ftot>11/01/12</ftot><code>3803</code><cout>0.000000</cout>
+<nt>11</nt><des>Tache numéro 11</des<dur>6</dur><cr1>P---</cr1><des1>PHASES</des1><cr2>I-02---</cr2><des2>Autres tâches </des2><cr3>T---</cr3><des3>TRIS</des3><dtot>13/01/12</dtot><ftot>20/01/12</ftot><code>8585</code><cout>0.000000</cout>
+<nt>12</nt><des>Tache numéro 12</des<dur>3</dur><cr1></cr1><des1></des1><cr2></cr2><des2></des2><cr3></cr3><des3></des3><dtot>23/01/12</dtot><ftot>25/01/12</ftot><code>6252</code><cout>0.000000</cout>

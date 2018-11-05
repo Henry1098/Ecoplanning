@@ -1,0 +1,1 @@
+<nom>2 INTERVENANTS</nom><comment>deux intervalles</comment><tout></tout><aucun>Y</aucun><criteres><A>Ajouter</A><C>*INTERVENANTS</C><R>Compris entre</R><V1>I-001</V1><V2>I-16</V2>|<A>Supprimer Sauf</A><C>*INTERVENANTS</C><R>Compris entre</R><V1>I-002</V1><V2>I-10</V2>|</criteres>

@@ -1,0 +1,9 @@
+<nt>1</nt><des>OPR</des><c1>P---</c1><d1>PHASE</d1><c2>I-01---</c2><d2>TCE</d2><c3>T---</c3><d3>TRI</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>LEVER DES RESERVES</des><c1>P---</c1><d1>PHASE</d1><c2>I-01---</c2><d2>TCE</d2><c3>T---</c3><d3>TRI</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des>RECEPTION</des><c1>P---</c1><d1>PHASE</d1><c2>I-01---</c2><d2>TCE</d2><c3>T---</c3><d3>TRI</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>MISE EN PLACE PALISADE</des><c1>P-01---</c1><d1>TRAVAUX SUR QUAI 1</d1><c2>I-02---</c2><d2>GROS</d2><c3>T-01---</c3><d3>PHASE A</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>DEPOSE</des><c1>P-01---</c1><d1>TRAVAUX SUR QUAI 1</d1><c2>I-02---</c2><d2>GROS</d2><c3>T-01---</c3><d3>PHASE A</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>DEMOLITION</des><c1>P-01---</c1><d1>TRAVAUX SUR QUAI 1</d1><c2>I-02---</c2><d2>GROS</d2><c3>T-01---</c3><d3>PHASE A</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des>EVACUATION GRAVOIS</des><c1>P-01---</c1><d1>TRAVAUX SUR QUAI 1</d1><c2>I-02---</c2><d2>GROS</d2><c3>T-01---</c3><d3>PHASE A</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>OS</des><c1>P---</c1><d1>PHASE</d1><c2>I-01---</c2><d2>TCE</d2><c3>T---</c3><d3>TRI</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>PREPARATION DE CHANTIER</des><c1>P---</c1><d1>PHASE</d1><c2>I-01---</c2><d2>TCE</d2><c3>T---</c3><d3>TRI</d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

@@ -1,0 +1,40 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Critère 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Critère 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Critère 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Critère 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Critère 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>72</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>ENSEMBLE</d><r></r><t>17</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>SALLE DE LECTURE</d><r></r><t>19</t>
+<c1>P</c1><c2>03</c2><c3></c3><c4></c4><d>EXTENSION MAGASINS</d><r></r><t>28</t>
+<c1>P</c1><c2>04</c2><c3></c3><c4></c4><d>RESTRUCTURATION</d><r></r><t>8</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>72</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t>2</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>Etudes d'exécution</d><r></r><t>1</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>TCE</d><r></r><t>3</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>Démolition - GO</d><r></r><t>17</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>Charpente bois</d><r></r><t>1</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>Charpente métal</d><r></r><t>2</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>Etancheité</d><r></r><t>1</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>Couverture/bardage</d><r></r><t>2</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Façade</d><r></r><t>3</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Meuiseries ext</d><r></r><t>3</t>
+<c1>I</c1><c2>12</c2><c3></c3><c4></c4><d>Menuiseries int</d><r></r><t>3</t>
+<c1>I</c1><c2>13</c2><c3></c3><c4></c4><d>Cloisons/Doublage/Isol</d><r></r><t>11</t>
+<c1>I</c1><c2>14</c2><c3></c3><c4></c4><d>Metallerie</d><r></r><t>1</t>
+<c1>I</c1><c2>15</c2><c3></c3><c4></c4><d>Carrelage / Faïence</d><r></r><t>3</t>
+<c1>I</c1><c2>16</c2><c3></c3><c4></c4><d>Cfort / Cfaible</d><r></r><t>2</t>
+<c1>I</c1><c2>17</c2><c3></c3><c4></c4><d>Plomberie / Chauffage / VMC</d><r></r><t>7</t>
+<c1>I</c1><c2>18</c2><c3></c3><c4></c4><d>Revêtement sols souples</d><r></r><t>2</t>
+<c1>I</c1><c2>19</c2><c3></c3><c4></c4><d>Peinture</d><r></r><t>5</t>
+<c1>I</c1><c2>20</c2><c3></c3><c4></c4><d>Ascenseur</d><r></r><t>1</t>
+<c1>I</c1><c2>21</c2><c3></c3><c4></c4><d>VRD / Espaces verts</d><r></r><t>2</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>71</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t>0</t>

@@ -1,0 +1,7 @@
+<l>1.1.2 IntervenantsTâche Envelop et Execut Intervenants N-1</l><des>Présentation, au niveau N-1,des tâches                 
+
+"Enveloppe" et "d'Exécution"du critère  Intervenants
+
+                  Intervenants en  colonne
+
+</des><detail>O</detail><champs><CH>+*INTERVENANTS</CH><N0></N0><N1>X</N1><N2></N2><N3></N3><DT>X</DT><TR> </TR><BL> </BL><lc>C</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>36</ht><jh>Centre</jh><jv>Haut</jv><cb>10944511</cb><lg>550</lg><ep1>0.1</ep1><cl1>0</cl1><ls2></ls2><ep2>0.1</ep2><cl2>0</cl2>|</champs><envelop><lc>X</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>24</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>28</lg><coult>65280</coult><style>_________</style><epaiss>3.0</epaiss><design>X</design><encadr>X</encadr>|</envelop>

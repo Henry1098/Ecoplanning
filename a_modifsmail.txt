@@ -1,0 +1,6 @@
+// Modifs du 21 / 22 Octobre 2006
+
+- Modification de la gestion Historique,
+  ouverture du dernier projet 
+  rechargement des plannings et rapports s'ils sont definis
+  

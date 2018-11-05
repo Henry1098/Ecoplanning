@@ -1,0 +1,176 @@
+<nt>1</nt><des>Av Projet  Sommairs</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>2</nt><des>Fin études impact</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>3</nt><des>Préparation dossier DUP</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>4</nt><des>DUP</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>5</nt><des>DCE voirie</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>6</nt><des>Relevé parcéllaires</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>7</nt><des>Etudes de traçés</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>8</nt><des>Droit sols/servitudes</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>9</nt><des>Etudes de stuctures</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>10</nt><des>Etudes hydrauliques</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>11</nt><des>Travaux géomètre</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>12</nt><des>Assemblage dossier DUP</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>13</nt><des>Réunion  Préfecture/ Mairie/ CG</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>14</nt><des>PV de réunion</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>15</nt><des>Délibération des CM</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>16</nt><des>Reprise et montage du dossier</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>17</nt><des>Envoi  Préfecture</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>18</nt><des>Montage du dossier</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>19</nt><des>Parcéllaire (Base)</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>20</nt><des>Mise en comp POS</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>21</nt><des>Diffusion du dossier</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>22</nt><des>Enquête publique</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>23</nt><des>Réunion de conciliation</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>24</nt><des>Rapport CE</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>25</nt><des>Réponse CE</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>26</nt><des>Déclaration projet</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>27</nt><des>Arrêté  de DUP</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>28</nt><des>Procédure défrichement</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>29</nt><des>Etablissement DDE</des><c1>PH-01---</c1><d1>DUP-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>30</nt><des>Expro à l'amiable</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>31</nt><des>Expro avec Procédures</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>32</nt><des>Arrêté cessibilité</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>33</nt><des>Evalutions foncières</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>34</nt><des>Estimations foncières</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>35</nt><des>Etude parcellaire</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>36</nt><des>Etudes mise en compat POS/PLU</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>38</nt><des>Loi sur l'eau </des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>39</nt><des>Etudes hydrauliques</des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>40</nt><des>Consultation MISE</des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>41</nt><des>Envoi Préfecture</des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>42</nt><des>CDH</des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>43</nt><des>Arrêté loir Eau</des><c1>PH-03---</c1><d1>Loi sur l'Eau-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>44</nt><des>Consult Monuments Historiques</des><c1>PH-04---</c1><d1>Consultations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>45</nt><des>Consult Commission des Sites</des><c1>PH-04---</c1><d1>Consultations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>46</nt><des>Marché SPS études</des><c1>PH-05---</c1><d1>Marché -</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>47</nt><des>Marché EQOA</des><c1>PH-05---</c1><d1>Marché -</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>48</nt><des>DCE désignation Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>49</nt><des>Consultation Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>50</nt><des>Projet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>51</nt><des>Dépose réseaux</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>52</nt><des>Arrêté  Défrichement</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>53</nt><des>DCE Voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>54</nt><des>Appel d'offres voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>55</nt><des>OS voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>56</nt><des>Rédaction Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>57</nt><des>Consultation Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>58</nt><des>Récep propositions Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>59</nt><des>Choix du Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>60</nt><des>Notif marché Bet voirie</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>61</nt><des>Investigations</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>62</nt><des>Rapport d'évaluation</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>63</nt><des>Convention</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>64</nt><des>Réalisation</des><c1>PH-06---</c1><d1>Voirie-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>65</nt><des>Procédures études/réalisations OA </des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>66</nt><des>Reconnaissances géotechniques</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>67</nt><des>Dossier études préliminaires OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>68</nt><des>Transmission DDE</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>69</nt><des>Dossier avant-projet OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>70</nt><des>Etudes projet OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>71</nt><des>DDCE OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>72</nt><des>Appel d'offres OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>73</nt><des>OS OA</des><c1>PH-07---</c1><d1>Ouvrage d'Art-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>74</nt><des>Procédures études/réalisations Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>75</nt><des>OS travaux</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>76</nt><des>Rédact marché MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>77</nt><des>Consultation MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>78</nt><des>Récept propositions MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>79</nt><des>Choix du MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>80</nt><des>Notif marché MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>81</nt><des>Etudes MOE Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>82</nt><des>Finalisation études Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>83</nt><des>Consultation Entreprises Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>84</nt><des>OS Tunnel</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>85</nt><des>OS Préparation</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>86</nt><des>Période de  Préparation</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>87</nt><des>Réalisations travaux</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>88</nt><des>Réception travaux</des><c1>PH-08---</c1><d1>Tunnel-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+
+<nt>89</nt><des>Montage dossier parcellaire 38</des><c1>PH-02---</c1><d1>Expropriations-</d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+

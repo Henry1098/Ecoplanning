@@ -1,0 +1,29 @@
+<c>1</c><l>P</l><d>PHASES</d><t></t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t></t>
+<c>3</c><l>T</l><d>TRIS</d><t></t>
+<c>4</c><l>C4</l><d>Critère 4</d><t></t>
+<c>5</c><l>C5</l><d>Critère 5</d><t></t>
+<c>6</c><l>C6</l><d>Critère 6</d><t></t>
+<c>7</c><l>C7</l><d>Critère 7</d><t></t>
+<c>8</c><l>C8</l><d>Critère 8</d><t></t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t></t>
+<c1>P</c1><c2>001---</c2><c3></c3><c4></c4><d>Maître d'ouvrage</d><r></r><t></t>
+<c1>P</c1><c2>002---</c2><c3></c3><c4></c4><d>Maître d'œuvre</d><r></r><t></t>
+<c1>P</c1><c2>003---</c2><c3></c3><c4></c4><d>ENTREPRISES</d><r></r><t></t>
+<c1>P</c1><c2>004---</c2><c3></c3><c4></c4><d>Gros œuvre : GCC</d><r></r><t></t>
+<c1>P</c1><c2>005---</c2><c3></c3><c4></c4><d>Sous sol -2</d><r></r><t></t>
+<c1>P</c1><c2>006---</c2><c3></c3><c4></c4><d>Revêtement de façades : ROLANDO et POISSON</d><r></r><t></t>
+<c1>P</c1><c2>007---</c2><c3></c3><c4></c4><d>Serrurerie - Métallerie : METALLERIE DU FOREZ BLANCHET</d><r></r><t></t>
+<c1>P</c1><c2>008---</c2><c3></c3><c4></c4><d>Menuiseries intérieures bois : THALMANN</d><r></r><t></t>
+<c1>P</c1><c2>009---</c2><c3></c3><c4></c4><d>Ascenseur : KONE</d><r></r><t></t>
+<c1>P</c1><c2>010---</c2><c3></c3><c4></c4><d>Plomberie sanitaire - Chauffage ventilation : S.K.L.</d><r></r><t></t>
+<c1>P</c1><c2>011---</c2><c3></c3><c4></c4><d>Electricité - courant faible : BRUNET</d><r></r><t></t>
+<c1>P</c1><c2>012---</c2><c3></c3><c4></c4><d>VRD : ESPACES VERTS DU MONT D'OR</d><r></r><t></t>
+<c1>P</c1><c2>013---</c2><c3></c3><c4></c4><d>Espace verts : CHIEZE</d><r></r><t></t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t></t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t></t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Critère 4</d><r></r><t></t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Critère 5</d><r></r><t></t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Critère 6</d><r></r><t></t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Critère 7</d><r></r><t></t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Critère 8</d><r></r><t></t>

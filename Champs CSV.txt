@@ -1,0 +1,20 @@
+1       N°
+2       Désignation
+3       Durée
+4       Début Souhaité
+5       Fin Souhaitée
+6       Prédécesseur
+7       Successeurs
+8       Crit 1
+9       Désignation 1
+10      Crit 2
+11      Désignation 2
+12      Crit 3
+13      Désignation 3
+14      Crit 4
+15      Désignation 4
+16      Code Tache
+17      Cout +
+18      Cout -
+19
+

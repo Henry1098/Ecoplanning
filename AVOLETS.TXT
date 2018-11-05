@@ -1,0 +1,73 @@
+
+Volet 5  asAvanc
+=======================
+
+COLONNE     CHAMP   LIBELLE
+
+1           39      N° Tache
+2           40      Désignation
+3           41      Date Début Réel
+4           42      Durée Réelle
+5           43      Date Fin Réelle
+6           44      Retard Imputable
+7           45      Retard Total
+8           46      Date Début prévisionnel
+9           47      Durée Prévisionnelle
+10          48      Date Fin Prévisionnelle
+11          49      Cout Recette
+12          50      Cout reel
+13          70      Date Avancement
+14          62      Calendrier
+15          73      Marge réelle
+16          66      Marge Totale
+17          69      Début + Tot Possible
+18          71      % Restant
+19          72      Jours restants
+
+
+
+
+
+
+
+Volet 4  AdvStringGrid4
+=======================
+
+COLONNE     CHAMP   LIBELLE
+
+1           52      Date Avancement
+2           26      Date Début Réel Possible
+3           53      Retard Imputable
+4           54      Retard Total Imputable
+5           29      % Restant
+6           28      Jours restants
+7           55      Durée Réelle
+8           56      Date Début réel
+9           57      Date Fin Réelle
+10          30      % Cout Consommé
+11          58      Cout Réel
+
+
+
+
+
+Volet 6  AdvStringGrid5
+=======================
+
+COLONNE     CHAMP   LIBELLE
+
+1           31      N° Tache
+2           59      Désignation
+3           32      Date Début Réel possible
+4           33      Retard Imputable
+5           34      Retard Total
+6           35      Date de Début réel
+7           36      Date de fin réelle
+8           64      Durée réelle du prédécesseur
+9           37      % durée réelle
+10          38      Jours Restants
+11          60      type de lien
+12          61      Décalage
+13          63      Calendrier du predec.
+14          65      Date de fin Prévisionnelle
+

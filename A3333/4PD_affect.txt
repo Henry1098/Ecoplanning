@@ -1,0 +1,6 @@
+<nt>1</nt><des>Ordre de service</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-01---</c2><d2>T C E</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>Terrassements Pavillon A</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-03---</c2><d2>Gros Oeuvre</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des>Fondations Pavillon A</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-03---</c2><d2>Gros Oeuvre</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>Installation de chantier</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-02---</c2><d2>Terrassements</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>Elévation s/sol Pavillon A</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-03---</c2><d2>Gros Oeuvre</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>Plancher ht s/sol Pavillon A</des><c1>P-01---</c1><d1>Pavillon A</d1><c2>I-03---</c2><d2>Gros Oeuvre</d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

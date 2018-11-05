@@ -1,0 +1,44 @@
+<L>Numéro de Tâche</L><C>N</C><A>NTA</A><N>1</N><P>N°</P>
+<L>Désignation Tâche</L><C>A</C><A>LTA</A><N>2</N><P>Désignation</P>
+<L>Début au plus tôt Prévisionnel</L><C>D</C><A>SEP</A><N>4</N><P>D+Tot</P>
+<L>Fin au plus tôt Prévisionnel</L><C>D</C><A>EEP</A><N>5</N><P>F+Tot</P>
+<L>Durée prévisionnelle</L><C>N</C><A>DUP</A><N>3</N><P>Dur</P>
+<L>Marge Totale</L><C>N</C><A>MTO</A><N>8</N><P>Marg</P>
+<L>Début au plus tard Prévisionnel</L><C>D</C><A>SEP</A><N>6</N>D+Tard<P></P>
+<L>Fin au plus tard Prévisionnel</L><C>D</C><A>EEP</A><N>7</N><P>Fin+Tard</P>
+<L>Cout Prévisionnel Pos</L><C>N</C><A>CPR</A><N>18</N><P>Cout+</P>
+<L>Cout Prévisionnel Neg</L><C>N</C><A>CPR</A><N>19</N><P>Cout-</P>
+<L>Début Souhaité</L><C>D</C><A>DSO</A><N>12</N><P>Déb Souh.</P>
+<L>Fin Souhaitée</L><C>D</C><A>FSO</A><N>13</N><P>Fin Souh.</P>
+<L>Code Tâche</L><C>A</C><A>CTA</A><N>11</N><P>Code</P>
+<L>Champ 1</L><C>A</C><A>CH1</A><N>15</N><P>Champ 1</P>
+<L>Champ 2</L><C>A</C><A>CH2</A><N>16</N><P>Champ 2</P>
+<L>Champ 3</L><C>A</C><A>CH3</A><N>17</N><P>Champ 3</P>
+<L>Successeurs</L><C>A</C><A>SUC</A><N>64</N><P></P>
+<L>Prédécesseurs</L><C>A</C><A>PRE</A><N>62</N><P></P>
+<L>Début au plus tôt Réel</L><C>D</C><A>SEP</A><N>21</N><P></P>
+<L>Fin au plus tôt Réel</L><C>D</C><A>EEP</A><N>22</N><P></P>
+<L>Début au plus tard Réel</L><C>D</C><A>SEP</A><N>35</N><P></P>
+<L>Fin au plus tard Réelle</L><C>D</C><A>EEP</A><N>36</N><P></P>
+<L>Cout Réel Pos</L><C>N</C><A>COR</A><N>26</N><P></P>
+<L>Durée Réelle</L><C>N</C><A>DUR</A><N>23</N><P></P>
+<L>Marge Totale Réelle</L><C>N</C><A>DUR</A><N>29</N><P></P>
+<L>Début Réel Imposé</L><C>D</C><A>SEP</A><N>33</N><P></P>
+<L>Fin Réelle Imposée</L><C>D</C><A>EEP</A><N>34</N><P></P>
+<L>Retard Imputable</L><C>D</C><A>SEP</A><N>24</N><P></P>
+<L>Retard Total</L><C>D</C><A>EEP</A><N>25</N><P></P>
+<L>Dernière Actualisation</L><C>D</C><A>SEP</A><N>27</N><P></P>
+<L>% Restant</L><C>N</C><A>PRS</A><N>31</N><P></P>
+<L>Nombre de Jours Restants</L><C>N</C><A>NJR</A><N>32</N><P></P>
+//<L>% Coût Consommé</L><C>N</C><A>CCO</A><N>0</N><P></P>
+//<L>Montant Coût Consommé</L><C>N</C><A>MCO</A><N>0</N><P></P>
+//<L>Tache Critique</L><C>A</C><A>TCR</A><N>0</N><P></P>
+//<L>Codes Ressources</L><C>A</C><A>CRE</A><N>0</N><P></P>
+//<L>Désignations Ressources</L><C>A</C><A>LRE</A><N>0</N><P></P>
+//<L>Ressources Prévisionnelles / Jour</L><C>N</C><A>RPJ</A><N>0</N><P></P>
+//<L>Ressources Réelles / Jour</L><C>N</C><A>RRJ</A><N>0</N><P></P>
+//<L>Ressources Prévisionnelles Cumulées</L><C>N</C><A>RPC</A><N>0</N><P></P>
+//<L>Ressources Réelles Cumulées</L><C>N</C><A>RRC</A><N>0</N><P></P>
+//<L>Ressources Prévisionnelles</L><C>N</C><A>RPR</A><N>0</N><P></P>
+//<L>Ressources Réelles</L><C>N</C><A>RER</A><N>0</N><P></P>
+

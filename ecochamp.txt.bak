@@ -1,0 +1,57 @@
+<L>Numéro de Tâche</L><C>N</C><A>NTA</A><N>1</N>
+<L>Désignation Tâche</L><C>A</C><A>LTA</A><N>2</N>
+<L>Début au plus tôt Prévisionnel</L><C>D</C><A>SEP</A><N>4</N>
+<L>Fin au plus tôt Prévisionnel</L><C>D</C><A>EEP</A><N>5</N>
+<L>Début au plus tôt réel</L><C>D</C><A>SER</A><N>21</N>
+<L>Fin au plus tôt réel</L><C>D</C><A>EER</A><N>22</N>
+<L>Durée prévisionnelle</L><C>N</C><A>DUP</A><N>3</N>
+<L>Marge Totale</L><C>N</C><A>MTO</A><N>8</N>
+<L>Cout Prévisionnel</L><C>N</C><A>CPR</A><N>0</N>
+<L>Durée Réelle</L><C>N</C><A>DRE</A><N>3</N>
+<L>Début au plus Tard Prévisionnel</L><C>D</C><A>SLP</A><N>6</N>
+<L>Fin au Plus Tard Prévisionnelle</L><C>D</C><A>ELP</A><N>7</N>
+<L>Etat Tache</L><C>N</C><A>ETA</A><N>0</N>
+<L>Cout Réel</L><C>N</C><A>COR</A><N>0</N>
+<L>Nombre de Prédécesseurs</L><C>N</C><A>NPR</A><N>0</N>
+<L>Nombre de Successeurs</L><C>N</C><A>NSU</A><N>0</N>
+<L>Nombre de Ressources</L><C>N</C><A>NRE</A><N>0</N>
+<L>Nombre d'Avancements</L><C>N</C><A>NAV</A><N>0</N>
+<L>Code Intervenant</L><C>A</C><A>INT</A><N>0</N>
+<L>Code Sous-Reseau</L><C>A</C><A>CSR</A><N>0</N>
+<L>Code Tri</L><C>N</C><A>TRI</A><N>0</N>
+<L>Derniere Actualisation</L><C>D</C><A>ACT</A><N>0</N>
+<L>% Restant</L><C>N</C><A>PRS</A><N>31</N>
+<L>Nombre de Jours Restants</L><C>N</C><A>NJR</A><N>32</N>
+<L>% Coût Consommé</L><C>N</C><A>CCO</A><N>0</N>
+<L>Montant Coût Consommé</L><C>N</C><A>MCO</A><N>0</N>
+<L>Date de Début Souhaitée</L><C>D</C><A>SSO</A><N>12</N>
+<L>Date de Fin Souhaitée</L><C>D</C><A>ESO</A><N>13</N>
+<L>Dates Prévisionnelles Calculées ou Souhaitées</L><C>D</C><A>DPC</A><N>0</N>
+<L>Début Souhaité</L><C>D</C><A>DSO</A><N>33</N>
+<L>Fin Souhaitée</L><C>D</C><A>FSO</A><N>34</N>
+<L>Code Tâche</L><C>N</C><A>CTA</A><N>11</N>
+<L>Nom Intervenant</L><C>A</C><A>NIN</A><N>0</N>
+<L>Nom Sous-Réseau</L><C>A</C><A>NSR</A><N>0</N>
+<L>Nom Tri</L><C>A</C><A>NTR</A><N>0</N>
+<L>Tache Critique</L><C>A</C><A>TCR</A><N>0</N>
+<L>Début/Fin Réelle imposée</L><C>D</C><A>DFI</A><N>0</N>
+<L>Début au plus Tard Réel</L><C>D</C><A>SLR</A><N>35</N>
+<L>Fin au plus Tard Réelle</L><C>D</C><A>ELR</A><N>36</N>
+<L>Marge Totale Réelle</L><C>N</C><A>MTR</A><N>29</N>
+<L>Retard Imputable</L><C>N</C><A>RIM</A><N>24</N>
+<L>Retard Total</L><C>N</C><A>RTO</A><N>25</N>
+<L>Réductible / Irréductible</L><C>A</C><A>RED</A><N>0</N>
+<L>Codes Ressources</L><C>A</C><A>CRE</A><N>0</N>
+<L>Désignations Ressources</L><C>A</C><A>LRE</A><N>0</N>
+<L>Ressources Prévisionnelles / Jour</L><C>N</C><A>RPJ</A><N>0</N>
+<L>Ressources Réelles / Jour</L><C>N</C><A>RRJ</A><N>0</N>
+<L>Ressources Prévisionnelles Cumulées</L><C>N</C><A>RPC</A><N>0</N>
+<L>Ressources Réelles Cumulées</L><C>N</C><A>RRC</A><N>0</N>
+<L>Ressources Prévisionnelles</L><C>N</C><A>RPR</A><N>0</N>
+<L>Ressources Réelles</L><C>N</C><A>RER</A><N>0</N>
+<L>Numéros Prédécesseurs</L><C>N</C><A>NUP</A><N>0</N>
+<L>Désignation Prédécesseur</L><C>A</C><A>LPR</A><N>0</N>
+<L>Prédécesseurs</L><C>N</C><A>PRD</A><N>0</N>
+<L>Numéros Successeurs</L><C>N</C><A>NUS</A><N>0</N>
+<L>Désignation Successeurs</L><C>N</C><A>LSU</A><N>0</N>
+<L>Successeurs</L><C>N</C><A>SUC</A><N>0</N>

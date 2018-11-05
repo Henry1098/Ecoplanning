@@ -1,0 +1,35 @@
+<c>1</c><l>P</l><d>PHASES</d><t>(null)</t>
+<c>2</c><l>I</l><d>INTERVENANTS</d><t>(null)</t>
+<c>3</c><l>T</l><d>TRIS</d><t>(null)</t>
+<c>4</c><l>C4</l><d>Désignation 4</d><t>(null)</t>
+<c>5</c><l>C5</l><d>Désignation 5</d><t>(null)</t>
+<c>6</c><l>C6</l><d>Désignation 6</d><t>(null)</t>
+<c>7</c><l>C7</l><d>Désignation 7</d><t>(null)</t>
+<c>8</c><l>C8</l><d>Désignation 8</d><t>(null)</t>
+<c1>P</c1><c2></c2><c3></c3><c4></c4><d>PHASES</d><r></r><t>47</t>
+<c1>P</c1><c2>01</c2><c3></c3><c4></c4><d>VRD</d><r></r><t>30</t>
+<c1>P</c1><c2>02</c2><c3></c3><c4></c4><d>BATIMENTS</d><r></r><t>12</t>
+<c1>P</c1><c2>03</c2><c3></c3><c4></c4><d>Ensemble projet</d><r></r><t>2</t>
+<c1>I</c1><c2></c2><c3></c3><c4></c4><d>INTERVENANTS</d><r></r><t>47</t>
+<c1>I</c1><c2>01</c2><c3></c3><c4></c4><d>COLAS</d><r></r><t>26</t>
+<c1>I</c1><c2>02</c2><c3></c3><c4></c4><d>EIFFAGE</d><r></r><t>2</t>
+<c1>I</c1><c2>03</c2><c3></c3><c4></c4><d>MORA</d><r></r><t>0</t>
+<c1>I</c1><c2>04</c2><c3></c3><c4></c4><d>Saint ELOI</d><r></r><t>3</t>
+<c1>I</c1><c2>05</c2><c3></c3><c4></c4><d>SPIDECO</d><r></r><t>0</t>
+<c1>I</c1><c2>06</c2><c3></c3><c4></c4><d>SMAC bardage</d><r></r><t>0</t>
+<c1>I</c1><c2>07</c2><c3></c3><c4></c4><d>SMAC Etanchéité</d><r></r><t>5</t>
+<c1>I</c1><c2>08</c2><c3></c3><c4></c4><d>SPIE</d><r></r><t>6</t>
+<c1>I</c1><c2>09</c2><c3></c3><c4></c4><d>M/Oe + M/Ouv.</d><r></r><t>2</t>
+<c1>I</c1><c2>10</c2><c3></c3><c4></c4><d>Lots : 1,2,3,4,5,6,7,8,9,10,11 et 15</d><r></r><t>0</t>
+<c1>I</c1><c2>11</c2><c3></c3><c4></c4><d>Lots : 2,3,5,6,7,8,9,11 et 12</d><r></r><t>0</t>
+<c1>T</c1><c2></c2><c3></c3><c4></c4><d>TRIS</d><r></r><t>47</t>
+<c1>T</c1><c2>01</c2><c3></c3><c4></c4><d>Plateforme</d><r></r><t>22</t>
+<c1>T</c1><c2>02</c2><c3></c3><c4></c4><d>Bassin de rétention</d><r></r><t>3</t>
+<c1>T</c1><c2>03</c2><c3></c3><c4></c4><d>Quais france et andorre</d><r></r><t>5</t>
+<c1>T</c1><c2>04</c2><c3></c3><c4></c4><d>Aubettes et abris bus</d><r></r><t>1</t>
+<c1>T</c1><c2>05</c2><c3></c3><c4></c4><d>Bâtiment principal, Auvent</d><r></r><t>11</t>
+<c1>C4</c1><c2></c2><c3></c3><c4></c4><d>Désignation 4</d><r></r><t>0</t>
+<c1>C5</c1><c2></c2><c3></c3><c4></c4><d>Désignation 5</d><r></r><t>0</t>
+<c1>C6</c1><c2></c2><c3></c3><c4></c4><d>Désignation 6</d><r></r><t>0</t>
+<c1>C7</c1><c2></c2><c3></c3><c4></c4><d>Désignation 7</d><r></r><t>0</t>
+<c1>C8</c1><c2></c2><c3></c3><c4></c4><d>Désignation 8</d><r></r><t>0</t>

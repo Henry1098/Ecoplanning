@@ -1,0 +1,4 @@
+<l>Minimum</l>
+<l>Standard</l>
+<l>Maxi</l>
+<l>Nouveau</l>

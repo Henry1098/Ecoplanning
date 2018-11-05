@@ -1,0 +1,149 @@
+<nt>1</nt><des>OS n 01</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>2</nt><des>installation de chantier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>3</nt><des> implantation</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>4</nt><des>terrassements généraux</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>5</nt><des>fondations</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>6</nt><des>charpente métallique</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>7</nt><des> longrines et semelles filantes</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>8</nt><des>assainissement,réseaux enterrés</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>9</nt><des>préparation plateforme et dallage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>10</nt><des>dallage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>11</nt><des>élévation murs périmétriques</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>12</nt><des>couverture,dalle béton cellulaire</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>13</nt><des>étanchéité et raccordements EP</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>14</nt><des>bardage,1ère peau </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>15</nt><des>RDC,élévation maçonnerie,poteaux</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>16</nt><des> ht RDC,horizontaux</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>17</nt><des>élévation maçonnerie,niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>18</nt><des>encastrés (élec,chauffage,plomberie,)</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>19</nt><des>murs intérieurs en béton cellulaire</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>20</nt><des>maçonnerie d'agglomérés non porteur</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>21</nt><des>finition gaine ascenseur,cuvette et ht gaine</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>22</nt><des>enduits intérieurs ,rdc et njveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>23</nt><des> ouvrages divers,seuils et appuis</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>24</nt><des>isolation thermique et phonique</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>25</nt><des>bardage océane et ondine métallique</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>26</nt><des>bardage trespa,yc tablettes</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>27</nt><des>pose menuiseries extérieures</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>28</nt><des>pose protection solaire</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>29</nt><des>finitions menuiseries extérieures</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>30</nt><des>couvertine</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>31</nt><des>supports garde corps toiture terrasse</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>32</nt><des>châssis métalliques extérieurs,u6</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>33</nt><des>précadres des portes blindées,u 14</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>34</nt><des>chambre forte,approv,montage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>35</nt><des>pose portes blindées, u 14</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>36</nt><des>garde corps toiture terrasse</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>37</nt><des>fermetures extérieures,porte intérieure </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>38</nt><des>doublage,contre cloison rez de ch</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>39</nt><des>doublage,contre cloison,niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>40</nt><des>finition ébrasement</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>41</nt><des>cloisons et pl collées rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>42</nt><des>cloisons et pl collées niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>43</nt><des>blocs portes,pose huisseries,</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>44</nt><des>porte coulissante,scrigno rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>45</nt><des>demi cloison local 026,rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>46</nt><des>plafonds suspendus coupe feu,   </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>47</nt><des>habillage cuvettes wc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>48</nt><des>pl sanit,canalisations,ef,ecs,eu,ev</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>49</nt><des>raccord ,adduction d'eau</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>50</nt><des>essais d'étanchéité réseaux,calorifuge</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>51</nt><des>escalier métallique,local 034 </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>52</nt><des>grilles de ventilation</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>53</nt><des>approvisionnement CTA, groupe de froid</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>54</nt><des>chauffage,tuyauterie rdc </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>55</nt><des>chauffage,gaines de ventilation,rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>56</nt><des>chauffage,tuyauterie niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>57</nt><des>chauffage,gaines de ventilation niv  1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>58</nt><des>essais d'étanchéité tuyauterie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>59</nt><des>équipement chaufferie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>60</nt><des>pose radiateurs rdc,niv 1 </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>61</nt><des>raccordement gaz,essais d'étanchéité</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>62</nt><des>pose,raccordementarmoire élect chauf</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>63</nt><des>mise en service préchauffage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>64</nt><des>équipement local CTA ,  groupe de froid</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>65</nt><des>armoire électrique local CTA</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>66</nt><des> pose terminaux,aérauliques,hydrauliques    </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>67</nt><des>essais,mise en service,instrution</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>68</nt><des>installation de chantier,5 coffrets</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>69</nt><des>éclairage chantier</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>70</nt><des>chemins de câbles,rdc  182 ml</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>71</nt><des>chemins de câbles niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>72</nt><des>réseau de terre</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>73</nt><des>câbles principaux</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>74</nt><des>distribution intérieure rdc </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>75</nt><des>distribution intérieure niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>76</nt><des>distribution garage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>77</nt><des>éclairage extérieur sur bâtiment</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>78</nt><des>précablage tél,informatique,recette</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>79</nt><des>sécurité incendie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>80</nt><des> équipement tgbt</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>81</nt><des>raccordement EDF</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>82</nt><des> approv groupe électrogène</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>83</nt><des>équipement local gr électrogène</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>84</nt><des>appareillage luminaires, </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>85</nt><des>pose inters,pc,postes de travail</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>86</nt><des>essais,instruction,mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>87</nt><des> encastrés,courants faibles </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>88</nt><des>câblage courants faibles</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>89</nt><des>centales,raccordement</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>90</nt><des>pose des terminaux</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>91</nt><des>essais,mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>92</nt><des>pose sas palettes,ch métal int,p.doc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>93</nt><des>escaliers revêtus yc gc et mc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>94</nt><des>bac récup encre,cloison grillagée</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>95</nt><des>pl métal,sol sas,racks</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>96</nt><des>appareillage de ttes les portes métal</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>97</nt><des>carrelage grès cérame rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>98</nt><des>carrelage grès cérame niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>99</nt><des>revêtements muraux,rdc et niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>100</nt><des>plinthes,grès cérame</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>101</nt><des>revêtement sol industriel,résine</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>102</nt><des>ouvrages divers,finitions</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>103</nt><des>portes, cloisons vitrées,rdc et niveau 1</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>104</nt><des>peinture préparation,trx soignés B </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>105</nt><des> peinture préparation,trx soignés A</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>106</nt><des>peinture anti poussière</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>107</nt><des>diverses finitions</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>108</nt><des>nettoyage de livraison</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>109</nt><des>plafonds  dalles 600</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>110</nt><des>plafonds haute perf,acoustique rdc</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>111</nt><des>ap élévateur,guides et portes palières</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>112</nt><des>cabine,finitions et raccordement élec</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>113</nt><des>mise en service ap élévateur</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>114</nt><des>agencement,cl sanit,pl de toil,cafétaria </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>115</nt><des>hab décoratif,équip quincaillerie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>116</nt><des>boxes vitrées</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>117</nt><des> habillages marches d'escalier </des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>118</nt><des>protections  murales,finitions diverses</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>119</nt><des>équip appareils sanitaires,robinetteries</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>120</nt><des>équip ballons ecs</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>121</nt><des>désinfection réseaux,mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>122</nt><des>VRD,réseaux humides et secs</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>123</nt><des>ap prétraitement boue,hydrocarbure</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>124</nt><des>préparation corps de voierie</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>125</nt><des>préparation sol souple garage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>126</nt><des>modelage terrain,terre végétale</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>127</nt><des>ouvrages fosse bouclier,socle</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>128</nt><des>massifs candélabres</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>129</nt><des>câbles éclairage extérieur,alim portail</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>130</nt><des>génie civil portail</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>131</nt><des>jardin minéral et escalier paysager</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>132</nt><des>clôture fond de la propriété</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>133</nt><des>revêtement finition enrobés garage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>134</nt><des>revêtements des voieries enrobés</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>135</nt><des>fermetures extérieures porte garage</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>136</nt><des>essais mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>137</nt><des>clôture et portail</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>138</nt><des>raccord portail,mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>139</nt><des>pose raccord bouclier et barrière</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>140</nt><des>essais,mise en service</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>141</nt><des>préparation terrain,engazonnement</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>142</nt><des>plantations</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>145</nt><des>Tache numéro 145</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>146</nt><des>Tache numéro 146</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>147</nt><des>Tache numéro 147</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>148</nt><des>Tache numéro 148</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>149</nt><des>Tache numéro 149</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>150</nt><des>Tache numéro 150</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>
+<nt>151</nt><des>Tache numéro 151</des><c1></c1><d1></d1><c2></c2><d2></d2><c3></c3><d3></d3><c4></c4><d4></d4><c5></c5><d5></d5><c6></c6><d6></d6><c7></c7><d7></d7><c8></c8><d8></d8>

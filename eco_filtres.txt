@@ -1,0 +1,23 @@
+<l>1 plage n°</l>
+<l>Opera</l>
+<l>2 plages n°</l>
+<l>FP03</l>
+<l>1 periode du projet</l>
+<l>1 plage intervenant</l>
+<l>1 plage phase</l>
+<l>1 plage phase - intervenant - tri</l>
+<l>1 plage phase et intervenantI</l>
+<l>2 INTERVENANTS</l>
+<l>2 PHASES</l>
+<l>3 plages n°</l>
+<l>CodeTache</l>
+<l>CTache1</l>
+<l>filtre champ libre</l>
+<l>Mosaique</l>
+<l>mosaique</l>
+<l>plage20-50</l>
+<l>Retirer TCE</l>
+<l>xphase</l>
+<l>FP4-P10</l>
+<l>fitre periode</l>
+<l>periode</l>

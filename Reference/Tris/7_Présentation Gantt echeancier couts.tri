@@ -1,0 +1,15 @@
+<l>7 Présentation Gantt échéancier coûts</l><des>Avec 3 critère de niveau N-1
+
+                  Intervenants en ligne
+
+                  Tris en  colonne	
+
+                  Phases en ligne
+
+
+
+       Voir une application à partir du
+
+       fichier " Echéanciercoûts.eco "
+
+</des><detail>O</detail><champs><CH>+*INTERVENANTS</CH><N0></N0><N1>X</N1><N2></N2><N3></N3><DT> </DT><TR> </TR><BL> </BL><lc>C</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>36</ht><jh>Centre</jh><jv>Haut</jv><cb>16777139</cb><lg>280</lg><ep1>0.1</ep1><cl1>0</cl1><ls2></ls2><ep2>0.1</ep2><cl2>0</cl2>|<CH>+*TRIS</CH><N0></N0><N1>X</N1><N2></N2><N3></N3><DT> </DT><TR> </TR><BL> </BL><lc>L</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>32</ht><jh>Centre</jh><jv>Haut</jv><cb>16767487</cb><lg>38</lg><ep1>0.1</ep1><cl1>0</cl1><ls2>Non</ls2><ep2>0.1</ep2><cl2>0</cl2>|<CH>+*PHASES</CH><N0></N0><N1>X</N1><N2></N2><N3></N3><DT> </DT><TR> </TR><BL> </BL><lc>C</lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>30</ht><jh>Centre</jh><jv>Haut</jv><cb>11796479</cb><lg>730</lg><ep1>0.1</ep1><cl1>0</cl1><ls2></ls2><ep2>0.1</ep2><cl2>0</cl2>|</champs><envelop><lc> </lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>14</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>200</lg><coult>32768</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|<lc> </lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>14</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>200</lg><coult>32768</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|<lc> </lc><pol>Arial</pol><ct>0</ct><it>Standard</it><bd>Standard</bd><ht>14</ht><jh>Centre</jh><jv>Haut</jv><cb></cb><lg>200</lg><coult>32768</coult><style>_________</style><epaiss>1.0</epaiss><design>X</design><encadr>X</encadr>|</envelop>

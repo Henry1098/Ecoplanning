@@ -1,0 +1,29 @@
+6,7
+cw 0,35
+cw 1,35
+cw 2,46
+cw 3,98
+cw 4,35
+cw 5,35
+0,0,Sel
+1,0,Num.
+2,0,Code Volet
+3,0,Désignation
+1,1,V001
+2,1,Prev
+3,1,Prévisionnel
+1,2,V002
+2,2,PR
+3,2,Prédécesseurs
+1,3,V003
+2,3,SU
+3,3,Successeurs
+1,4,V004
+2,4,SAct
+3,4,Saisie Actualisation
+1,5,V005
+2,5,Act
+3,5,Actualisation
+1,6,V006
+2,6,PrAct
+3,6,Pred Actualisation

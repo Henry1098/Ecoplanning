@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="EcoPlanningNK.exe"/>
+    <OBJFILES value="EcoPlanningNK.obj ChildWin.obj about.obj projectwin.obj plstd.obj 
+      num_pred.obj num_succ.obj inserttask.obj copytask.obj liencc.obj 
+      calendars.obj tachesamont.obj AffCal.obj actualisation.obj modhelp.obj 
+      modplanches.obj modFilter.obj modCriteres.obj modChamps.obj modTri.obj 
+      modTriElem.obj modGhost.obj modLib.obj modHauteur.obj modJust.obj 
+      modRetrait.obj modResProj.obj modPrepPlanning.obj modPrepRapport.obj 
+      modEbauchPlan.obj modAffinParam.obj modFormat.obj modEntete.obj 
+      modeCadre.obj modDcal.obj modTaches.obj modPied.obj modMarges.obj 
+      modColonnes.obj modChcol.obj modUnitForm.obj modStyle.obj modTligne.obj 
+      modTcol.obj modEpaisseur.obj modResume.obj modDebut.obj modAffTC.obj 
+      modRempl.obj modCsim.obj modAffPred.obj modAffSucc.obj modDescEnvelop.obj 
+      modMiseEnPage.obj DescTrait.obj DescEsp.obj modDistVert.obj modCorps.obj 
+      modImport.obj modRenum.obj FinalIsam.obj modLignesBrisees.obj 
+      modPeriode.obj modPreview.obj modXLS.obj modregistr.obj MainNK.obj"/>
+    <RESFILES value="EcoPlanningNK.res dessins.res"/>
+    <IDLFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ChildWin.dfm about.dfm projectwin.dfm plstd.dfm num_pred.dfm 
+      num_succ.dfm inserttask.dfm copytask.dfm liencc.dfm calendars.dfm 
+      tachesamont.dfm AffCal.dfm actualisation.dfm modhelp.dfm modplanches.dfm 
+      modFilter.dfm modCriteres.dfm modChamps.dfm modTri.dfm modTriElem.dfm 
+      modGhost.dfm modLib.dfm modHauteur.dfm modJust.dfm modRetrait.dfm 
+      modResProj.dfm modPrepPlanning.dfm modPrepRapport.dfm modEbauchPlan.dfm 
+      modAffinParam.dfm modFormat.dfm modEntete.dfm modeCadre.dfm modDcal.dfm 
+      modTaches.dfm modPied.dfm modMarges.dfm modColonnes.dfm modChcol.dfm 
+      modUnitForm.dfm modStyle.dfm modTligne.dfm modTcol.dfm modEpaisseur.dfm 
+      modResume.dfm modDebut.dfm modAffTC.dfm modRempl.dfm modCsim.dfm 
+      modAffPred.dfm modAffSucc.dfm modDescEnvelop.dfm modMiseEnPage.dfm 
+      DescTrait.dfm DescEsp.dfm modDistVert.dfm modCorps.dfm modImport.dfm 
+      modRenum.dfm modLignesBrisees.dfm modPeriode.dfm modPreview.dfm modXLS.dfm 
+      modregistr.dfm MainNK.dfm"/>
+    <LIBFILES value="iKeyAPI.lib &quot;C:\Program Files\Borland\CBuilder5\Lib\cp32mt.lib&quot;"/>
+    <LIBRARIES value="bcb97axserver50.lib bcbie50.lib VCLX50.lib dclocx50.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib dclocx50.lib VCLX50.lib bcbie50.lib bcb97axserver50.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL"/>
+    <MAINSOURCE value="EcoPlanningNK.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;C:\Program Files\Borland\CBuilder5\Bin\&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;c:\asgreg\&quot;"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;$(BCB)\Projects\Lib;&quot;C:\Program Files\Borland\CBuilder5\Bin\&quot;;$(BCB)\lib\obj;$(BCB)\lib;&quot;c:\asgreg\&quot;"/>
+    <WARNINGS value="-w-ifr -w-par -w-ext -w-aus"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffixcpp -I$(BCB)\include -I$(BCB)\include\vcl"/>
+    <CFLAG1 value="-Od -w- -xp -RT- -X- -a8 -5 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -x -w -v -wdpl"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=5
+MinorVer=0
+Release=0
+Build=1863
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Ecoplanning
+FileDescription=Ecoplanning
+FileVersion=5.0.0.1863
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+$(BCB)\Bin\dcltee50.bpl=TeeChart 5.0 Components
+$(BCB)\Bin\DBWEBXPRT.BPL=Borland Web Wizard Package
+$(BCB)\Bin\dclite50.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;c:\asgreg\
+Item1=C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl;c:\asgreg
+Item2=C:\Program Files\Borland\CBuilder5\Projects\;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl
+Item3=C:\Program Files\Borland\CBuilder5\Projects;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl
+Item4=C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\lib\obj;$(BCB)\lib;c:\asgreg\
+Item1=C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\lib\obj;$(BCB)\lib;c:\asgreg
+Item2=C:\Program Files\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Program Files\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder5\Bin\;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>

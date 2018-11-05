@@ -1,0 +1,43 @@
+Logiciel Ecoplanning
+
+Pour la conduite des projets, au niveau des branches Bâtiments et Ingénierie, 
+le logiciel de gestion de projets Ecopanning version 5.0 présente deux qualités 
+essentielles :
+
+- sa convivialité 
+- la qualité d’impression de ses plannings,
+
+Sur un premier écran vous pourrez saisir les données des tâches, les lier 
+entre-elles, visualiser leur ordonnancement et 
+affiner le déroulement du projet pour rentrer dans votre objectif.
+Son utilisation ne demande aucune connaissance spéciale autre que celle de 
+votre profession.
+
+Mais c’est surtout la qualité d’impression (lisibilité, esthétique) au 
+niveau de la présentation visuelle des plannings fonctionnels que le 
+logiciel Ecoplanning est apprécié et fait la différence.  
+
+Avec le logiciel Ecoplanning vous avez la possibilité d’affecter à chacune 
+des tâches trois critères qui peuvent être hiérarchisés sur 4 niveaux. 
+A partir de ces affectations de critères aux tâches on pourra dans les plannings :
+
+- Trier et regrouper par bande les tâches qui ont les mêmes critères, et ceci dans l’ordre souhaité. 
+- Filtrer, si nécessaire, les tâches et ne conserver qu’un groupe ou plusieurs 
+  groupes de tâches qui possèdent un ou plusieurs critères donnés
+
+Ces plannings vont être de véritables outils de management de la notion temps.
+
+Egalement, en parallèle, vous maîtriserez le déroulement des projets, et les 
+aspects financiers et la qualité des prestations du projet, en effet :
+Pratiquement tout retard de l’objectif dans le temps va se traduire par une 
+augmentation des dépenses ou une perte de revenus
+On ne peut parler de qualité que pour des exécutions réalisées dans des 
+temps normaux en cas de retard on ne peut pas concilier vitesse et qualité
+
+
+De plus, avec le logiciel Ecoplanning l’impression des plannings pourra se présenter :
+
+sur seule page du format A4 à A0 en fonction du nombre de tâches, 
+avec visualisation de plusieurs tâches sur la même ligne
+
+

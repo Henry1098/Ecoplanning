@@ -1,0 +1,5385 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include <stdio.h>
+
+#include "plstd.h"
+#include "num_pred.h"                       
+#include "num_succ.h"
+#include "inserttask.h"
+#include "copytask.h"                         
+#include "liencc.h"
+#include "tachesamont.h"
+#include "affcal.h"
+#include "actualisation.h"
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "AdvGrid"
+#pragma link "BaseGrid"
+#pragma resource "*.dfm"
+TplStandard *plStandard;
+//---------------------------------------------------------------------------
+__fastcall TplStandard::TplStandard(TComponent* Owner)
+        : TForm(Owner)
+{
+  //Label5->Caption = DateToStr(Date());
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TplStandard::FormClose(TObject *Sender,
+      TCloseAction &Action)
+{
+ int rc;
+
+ //  forces change
+ //change=1;
+ if (change)  updatedatabase(LocalBase);
+ if (proj) { rc = proj->CloseEngine(); proj->~genbase(); }
+
+ // on signale a MainForm qu'on ferme
+ strcpy(status,"<close>"); strcat(status,DatabaseName);
+ strcat(status,"</close>");
+
+ Action = caFree;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::updatedatabase(char *name)
+{
+  int rc;
+  int recdata;
+  char buffer[2000];
+  char RetKey[100];
+  char Key[100];
+  char tmp[2000];
+  char format[500];
+  int ipred,isucc;
+  int ii;
+
+
+ if (Application->MessageBox("Voulez vous sauvegarder les modifications du projet",
+ LocalBase,MB_YESNO)==IDYES)
+   {
+    // le dbcode ne doit pas changer  'pb du nom de repertoire'
+    // lire le nom de code
+    rc = proj->ReadDirectKey(0,"<dbcode>",RetKey,&recdata);
+    if (rc)  // ok : clé trouvée
+       {
+         rc = proj->ReadRecord(buffer,recdata);
+         buffer[rc]=0;
+         strcpy(dbcode,buffer);
+       }
+    rc = proj->CloseEngine(); proj->~genbase();
+
+    strcpy(buffer,LocalBase); strcat(buffer,".dat");
+    unlink(buffer);
+    strcpy(buffer,LocalBase); strcat(buffer,".eco");
+    unlink(buffer);
+    proj = new genbase;
+    rc = proj->OpenEngine(LocalBase,120,"eco","dat");   //512 - 8
+    rc = proj->SetIndexMode(0,0);
+    if (rc==0) { ShowMessage("Erreur à l'ouverture des fichiers projets"); exit (1); }
+
+    // code de la base
+     strcpy(Key,"<dbcode>"); recdata=proj->GetNewRecordNumber();
+     rc = proj->WriteKey(0,Key,recdata);
+     rc = proj->WriteRecord(dbcode,strlen(dbcode)+1);
+
+    // titre de la base
+     strcpy(Key,"<dbtitre>"); recdata=proj->GetNewRecordNumber();
+     rc = proj->WriteKey(0,Key,recdata);
+     rc = proj->WriteRecord(dbtitre,strlen(dbtitre)+1);
+
+    // avancements
+    strcpy(Key,"<avanc>"); recdata=proj->GetNewRecordNumber();
+     rc = proj->WriteKey(0,Key,recdata);
+     rc = proj->WriteRecord(dateavanc,strlen(dateavanc)+1);
+
+    // date previsionnelle
+     strcpy(Key,"<dateprevdebut>"); recdata=proj->GetNewRecordNumber();
+     rc = proj->WriteKey(0,Key,recdata);
+     rc = proj->WriteRecord(dateprevdeb,strlen(dateprevdeb)+1);
+
+     // nombre de taches
+
+     strcpy(Key,"<taches>"); recdata=proj->GetNewRecordNumber();
+     rc = proj->WriteKey(0,Key,recdata);
+     sprintf(tmp,"%04d",nb_taches);
+     rc = proj->WriteRecord(tmp,strlen(tmp)+1);
+
+
+    // Taches par defaut
+
+    for (int i=1;i<=nb_taches;i++)         //§§§§§§§§§§§§§§§§§§§§§
+      {
+       ii=sommets[i];
+       sprintf(Key,"<T%04d>",ii);
+       recdata=proj->GetNewRecordNumber();
+       rc = proj->WriteKey(0,Key,recdata);
+
+       strcpy(buffer,AdvStringGrid1->Cells[2][i].c_str());
+
+       strcpy(format,"<T>%d</T><nom>%s</nom><duree>%d</duree><cal>%d</cal><mom>%d</mom>");
+       strcat(format,"<ct>%s</ct><da>%s</da><dtr>%s</dtr><ftr>%s<ftr><pc>%d</pc><nbj>%d</nbj>");
+       strcat(format,"<dds>%s</dds><dfs>%s</dfs>");
+       sprintf(tmp,format,
+              ii,buffer,duree[i],tcal[i],tmom[i],codetache[i],da[i],dtr[i],ftr[i],
+              pc[i],nbj[i],dds[i],dfs[i]);
+       rc = proj->WriteRecord(tmp,strlen(tmp)+1);
+
+       //  predecesseurs,
+       sprintf(Key,"<PR%04d>",ii);
+       recdata=proj->GetNewRecordNumber();
+       rc = proj->WriteKey(0,Key,recdata);
+       ipred=1;
+       buffer[0]=0; sprintf(buffer,"<PR%04d>",ii);
+       while ((pr[i][ipred]!=0) && (ipred<PS))
+         {
+          // if (pr[i][ipred] != 9999)
+          // {
+            sprintf(tmp,"<P%02d><num>%d</num><typ>%d</typ><decal>%d</decal></P%02d>",
+               ipred,pr[i][ipred],pr_tl[i][ipred],pr_decal[i][ipred],ipred);
+            strcat(buffer,tmp);
+           // }
+          ipred++;
+         }
+       sprintf(tmp,"</PR%04d>",ii); strcat(buffer,tmp);
+       rc = proj->WriteRecord(buffer,strlen(buffer)+1);
+    //  successeurs
+       sprintf(Key,"<SU%04d>",ii);
+       recdata=proj->GetNewRecordNumber();
+       rc = proj->WriteKey(0,Key,recdata);
+       isucc=1;
+       buffer[0]=0; sprintf(buffer,"<SU%04d>",ii);
+       while ((su[i][isucc]!=0)  && (isucc<PS))
+         {
+          //if (su[i][isucc] != 9999)
+          // {
+             sprintf(tmp,"<S%02d><num>%d</num><typ>%d</typ><decal>%d</decal></S%02d>",
+               isucc,su[i][isucc],su_tl[i][isucc],su_decal[i][isucc],isucc);
+            strcat(buffer,tmp);
+           // }
+          isucc++;
+         }
+       sprintf(tmp,"</SU%04d>",ii); strcat(buffer,tmp);
+       rc = proj->WriteRecord(buffer,strlen(buffer)+1);
+     }      // boucle for
+
+   }  // IF OK
+}
+
+int __fastcall TplStandard::exist_tache (int t,int range)
+{
+ int i,ret;
+
+ ret=0;
+ for (i=1;i<=range+1;i++)           // nb_taches
+   {
+    if (t==sommets[i]) ret=i;
+   }
+ return ret;
+}
+
+
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+
+int __fastcall TplStandard::Explode(char sep,char *str)
+{
+ int i, count, ip;
+ char c,cpred;
+ if (strlen(str)==0) return 0;
+ count = 0; params[count][0]=0; // indice params
+ c=str[0]; cpred=0;
+ i=0; ip=0;
+ while (c)
+  { cpred=c;
+   if (c==sep)
+     { params[count][ip]=0; count++; ip=0; if (count > 49) count=49; }
+   else
+     { params[count][ip]=c;  ip++; }
+   i++; c=str[i];
+  }
+ if (cpred==sep) count--; return (count+1);
+}
+
+void __fastcall TplStandard::Load_Fields()
+{
+ FILE *fp;
+ char tmp[100];
+ int col,row,cnt;
+ char *p;
+
+ fp = fopen("champs.txt","r+b");
+ if (!fp) return;
+ while (!feof(fp))
+   {
+    tmp[0]=0;
+    fgets(tmp,99,fp);
+    strcat(tmp,",");
+    cnt=Explode(',',tmp);
+    col=atoi(params[0]);
+    row=atoi(params[1]);
+    if (row>0)
+     {  p=strstr(params[2],"\r"); if (p) *p=0;
+        if (col==2) strcpy(ch_cod[row],params[2]);   // Code Champ
+        if (col==3) strcpy(ch_des[row],params[2]);   // Désignation
+        if (col==4) strcpy(ch_abb[row],params[2]);   // Abbreviation
+        if (col==5) strcpy(ch_typ[row],params[2]);   // Type
+        if (col==6) strcpy(ch_sai[row],params[2]);   // Saisie OUI/NON
+        if (col==13) strcpy(ch_esp[row],params[2]);  // Largeur dans la grille
+       }
+  }
+ fclose(fp);
+}
+
+int  __fastcall TplStandard::getvalue(int vol, int row, int ch)
+{
+ AnsiString val1; int col,x;
+ TAdvStringGrid *avs;
+// obtient valeur en fonction du champ systeme adv (valeur en retour stockee
+// dans char retvalue; la colonne est calculée en fonction du champ
+if (vol==4) avs=AdvStringGrid4;
+else if (vol==6) avs=AdvStringGrid5;
+else if (vol==5) avs= asAvanc;
+else if (vol==1) avs=AdvStringGrid1;
+else if (vol==2) avs=AdvStringGrid2;
+else if (vol==3) avs=AdvStringGrid3;
+col=0;
+while(col < MAX_CHP)
+ {
+   if (vl_chp[vol][col]==ch)break;
+   col++;
+ }
+if (col>=MAX_CHP) {strcpy(adv,"");
+Application->MessageBoxA("Get Value: erreur dans decodage des champs",ecoplan,MB_OK);
+return 0; }
+val1=avs->Cells[col][row];
+strcpy(adv,val1.c_str());
+x=atoi(adv);
+return x;
+}
+
+int  __fastcall TplStandard::setvalue(int vol,int row, int ch, char *p)
+{
+ int col;
+ TAdvStringGrid *avs;
+ // place la valeur stockee dans char p   vers la  ligne du volet,
+ // dans la colonne a calculer d'apres ch
+ col=0;
+if (vol==4) avs=AdvStringGrid4;
+else if (vol==6) avs=AdvStringGrid5;
+else if (vol==5) avs= asAvanc;
+else if (vol==1) avs=AdvStringGrid1;
+else if (vol==2) avs=AdvStringGrid2;
+else if (vol==3) avs=AdvStringGrid3;
+
+while(col < MAX_CHP)
+ {
+   if (vl_chp[vol][col]==ch)break;
+   col++;
+ }
+if (col>=MAX_CHP) {strcpy(adv,"");
+Application->MessageBoxA("SetValue : erreur dans decodage des champs",ecoplan,MB_OK);
+return 0; }
+avs->Cells[col][row]= AnsiString(p);
+return 1;
+}
+
+
+void __fastcall TplStandard::Init_Volet(int vol,TAdvStringGrid *avs)
+{
+ int i; //for (i=1;i<10;i++)  SGChamps->ColWidths[i]=50;
+ // lecture du fichiers des champs
+ FILE *fp;
+ char tmp[100];
+ char filename[255];
+ int col,row,cnt,nbcol,numchamp,nbchamps;
+ char *p;
+ int esp;
+
+
+ // clean zone volets
+ for (i=0;i<20;i++)  vl_chp[vol][i]=0;
+  // clean Grille (libélles, texte, etc..
+ avs->RowCount=2;
+ nbcol = avs->ColCount;
+ for (i=0;i<nbcol;i++)
+   {
+    avs->Cells[i][0]="";
+    avs->Cells[i][1]="";
+   }
+
+ nbchamps=0;
+ sprintf(filename,"Volet%03d.txt",vol);
+ fp = fopen(filename,"r+b");
+ if (!fp) return;
+ while (!feof(fp))
+   {
+    tmp[0]=0;
+    fgets(tmp,99,fp);
+    strcat(tmp,",");
+    cnt=Explode(',',tmp);
+    col=atoi(params[0]);
+    row=atoi(params[1]);
+    if ((row>0)&& (col>1) && (cnt>2))
+     {  p=strstr(params[2],"\r"); if (p) *p=0;
+        if (params[2][0]=='C') p=params[2]+1;
+        numchamp=atoi(p);
+        vl_chp[vol][col-2]=numchamp;
+        nbchamps++;
+       }
+  }
+ fclose(fp);
+
+ // boucle de chargement des labels et espacement
+ if (nbchamps>avs->ColCount)
+   { Application->MessageBoxA("Erreur definition Volet",ecoplan,MB_OK);
+     nbchamps=avs->ColCount;
+   }
+ for (i=0;i<nbchamps;i++)
+   {
+    numchamp = vl_chp[vol][i];
+    if (numchamp > MAX_CHAMP) numchamp = 51;  // champ neutre
+    // espacement
+    esp=atoi(ch_esp[numchamp]);
+    avs->ColWidths[i]=esp;
+    // ici on fait du HTML pour indiquer saisie possible
+    if (strcmp(ch_sai[numchamp],"N") != 0)
+      {
+       strcpy(tmp,"<FONT color=\"clGreen\">");
+       strcat(tmp,ch_abb[numchamp]);
+       strcat(tmp,"</FONT>");
+       avs->Cells[i][0]= AnsiString(tmp);
+      }
+
+    else avs->Cells[i][0]= AnsiString(ch_abb[numchamp]);
+   }
+}
+
+
+void __fastcall TplStandard::FormCreate(TObject *Sender)
+{
+  char tmp[2000];
+   int rc,ix;
+   char RetKey[100];
+   char Key[100];
+   int  recdata;
+   int i,j,ok,l,xval;
+   int ipred,isucc;
+   char delim[50];
+   char tmp1[50];
+   int lg,ik;
+   char *p;
+
+  Load_Fields();
+  Init_Volet(4,AdvStringGrid4);
+  Init_Volet(6,AdvStringGrid5);
+  Init_Volet(5,asAvanc);
+  Init_Volet(1,AdvStringGrid1);
+
+  strcpy(TYPL[0],"FD");
+  strcpy(TYPL[1],"FF");
+  strcpy(TYPL[2],"AM");
+  strcpy(TYPL[3],"DD");
+
+  strcpy(ecoplan,"Ecoplanning V 5.0");
+  PageControl1->ActivePageIndex=0;
+  TDateTime dtPresent = Now();
+  DecodeDate(dtPresent, Year1, Month1, Day1);
+  DecodeDate(dtPresent, Year2, Month2, Day2);
+  MonthCalendar1->Date = dtPresent;
+
+ //Application->MessageBox(DatabaseName,"Caption",MB_OK);
+ proj = new genbase();
+ strcpy(LocalBase,DatabaseName);
+ rc = proj->OpenEngine(LocalBase,120,"eco","dat");   //512 - 8
+ rc = proj->SetIndexMode(0,0);
+// strcpy(toto,DatabaseName); //MainForm->Caption = AnsiString(DatabaseName);
+ if (rc==0) { ShowMessage("Erreur à l'ouverture des fichiers projets"); exit (1); }
+
+ strcpy(status,"<create>");
+ strcat(status,DatabaseName);
+ strcat(status,"</create>");
+
+ rc = proj->ReadDirectKey(0,"<dbtitre>",RetKey,&recdata);
+ if (rc)  // ok : clé trouvée
+  {
+   rc = proj->ReadRecord(buffer,recdata);
+   buffer[rc]=0;
+   strcpy(dbtitre,buffer);
+   strcpy(tmp,"Project "); strcat(tmp,LocalBase);
+   strcat(tmp," "); strcat(tmp,buffer);
+   plStandard->Caption = AnsiString (tmp);
+   // modifier caption de la forme
+  }
+
+  // nettoyage buffer avvancement
+ // dateavanc[0]=0;
+
+rc = proj->ReadDirectKey(0,"<avanc>",RetKey,&recdata);
+ if (rc)  // ok : clé trouvée
+  {
+   rc = proj->ReadRecord(buffer,recdata);
+   buffer[rc]=0;
+   strcpy(dateavanc,buffer);
+  }
+
+AnPrev=2000; MoisPrev=1; JourPrev=1;
+rc = proj->ReadDirectKey(0,"<dateprevdebut>",RetKey,&recdata);
+ if (rc)  // ok : clé trouvée
+  {
+
+   rc = proj->ReadRecord(buffer,recdata);
+   buffer[rc]=0;
+   strcpy(dateprevdeb,buffer);
+   Label7->Caption = AnsiString(dateprevdeb);
+   buffer[2]=0; JourPrev=atoi(buffer);
+   buffer[5]=0; MoisPrev=atoi(buffer+3);
+   buffer[10]=0; AnPrev=atoi(buffer+6);  AnPrev2=An%100;
+  }
+
+ //  lecture du nombre de taches
+ nb_taches=0;
+ rc = proj->ReadDirectKey(0,"<taches>",RetKey,&recdata);
+ if (rc)  // ok : clé trouvée
+  {
+   rc = proj->ReadRecord(buffer,recdata);
+   buffer[rc]=0;
+   nb_taches = atoi (buffer);
+  }
+
+   for (i=0;i<=(nb_taches+10);i++)     //  &&&&&&&&&&&&
+     {
+      duree[i]=0;
+      duree_reelle[i]=0;
+      deb_plus_tot[i]=0;
+      fin_plus_tot[i]=0;
+      deb_plus_tard[i]=0;
+      fin_plus_tard[i]=0;
+      sommets[i]=0;
+      coche[i]= ' ';
+      filtr[i]= ' ';
+      tcal[i]=1;
+      tmom[i]=0;
+      da[i][0]=0;
+      dtr[i][0]=0;
+      ftr[i][0]=0;
+      pc[i]=0;
+      nbj[i]=0;
+      codetache[i][0]=0;
+      dds[i][0]=0;
+      dfs[i][0]=0;
+
+
+      for (j=0;j<PS;j++)
+        {
+         pr[i][j]=0; su[i][j]=0;
+         pr_tl[i][j]=0; su_tl[i][j]=0;
+         pr_decal[i][j]=0; su_decal[i][j]=0;
+        }
+     }
+  // AdvStringGrid1->RowCount=nb_taches+2;
+  /*
+  AdvStringGrid1->ColCount= 16;
+  AdvStringGrid1->Cells[0][0] = "";
+  AdvStringGrid1->Cells[1][0] = "N°";
+  AdvStringGrid1->Cells[2][0] = "Désignation";
+  AdvStringGrid1->Cells[3][0] = "Durée Prev";
+  AdvStringGrid1->Cells[4][0] = "Déb + Tot";
+  AdvStringGrid1->Cells[5][0] = "Fin + Tot";
+  AdvStringGrid1->Cells[6][0] = "Début + Tard";
+  AdvStringGrid1->Cells[7][0] = "Fin + Tard";
+  AdvStringGrid1->Cells[8][0] = "M. Tot.";
+  AdvStringGrid1->Cells[9][0] = "M. Lib.";
+  AdvStringGrid1->Cells[10][0] = "Cal";
+  AdvStringGrid1->Cells[11][0] = "Code Tache";
+  AdvStringGrid1->Cells[12][0] = "DD Souh.";
+  AdvStringGrid1->Cells[13][0] = "DF Souh.";
+  */
+  AdvStringGrid2->Cells[0][0] = "";
+  AdvStringGrid2->Cells[1][0] = "N°";
+  AdvStringGrid2->Cells[2][0] = "Désignation";
+  AdvStringGrid2->Cells[3][0] = "Durée";
+  AdvStringGrid2->Cells[4][0] = "Déb Prev Possible";
+  AdvStringGrid2->Cells[6][0] = "Décalage";
+  AdvStringGrid2->Cells[5][0] = "Type Lien";
+
+  AdvStringGrid3->Cells[0][0] = "";
+  AdvStringGrid3->Cells[1][0] = "N°";
+  AdvStringGrid3->Cells[2][0] = "Désignation";
+  AdvStringGrid3->Cells[3][0] = "Durée";
+  AdvStringGrid3->Cells[4][0] = "Déb + Tôt";
+  AdvStringGrid3->Cells[6][0] = "Décalage";
+  AdvStringGrid3->Cells[5][0] = "Type Lien";
+
+ // Boucle de lecture des taches // chargement des tableaux
+ // syntaxe pour les taxes : Clé = <T%04d>
+ // <T>%d</T><nom>Tache %d</nom><duree>1</duree>",i,i);
+
+  // faire une lecture sequentielle des cles   et charger sommets
+  // on remplit sommets
+  rc = proj->ReadFirstKey(0,RetKey,&recdata);
+  ix=0;
+  while (rc)
+    {  rc = proj->ReadRecord(buffer,recdata);  // read record in buffer
+       buffer[rc]=0;
+       lg = ExtractValue(tmp,buffer,"T",0);
+       if (lg)
+        { ix++;
+          if(ix>1) AdvStringGrid1->RowCount++;
+          sommets[ix]=atoi(tmp);
+          AdvStringGrid1->Cells[1][ix]=atoi(tmp);
+          ExtractValue(tmp,buffer,"nom",0);
+          AdvStringGrid1->Cells[2][ix]=tmp;
+          ExtractValue(tmp,buffer,"duree",0);
+          AdvStringGrid1->Cells[3][ix]=tmp;
+          duree[ix]=atoi(tmp);
+          ExtractValue(tmp,buffer,"cal",0);
+          if (strlen(tmp)) tcal[ix]=atoi(tmp);
+            else tcal[ix]=1;
+           AdvStringGrid1->Cells[10][ix]=tcal[ix];
+          ExtractValue(tmp,buffer,"mom",0);
+          if (strlen(tmp)) tmom[ix]=atoi(tmp);
+            else tmom[ix]=0;
+          ExtractValue(tmp,buffer,"da",0);
+          if (strlen(tmp)) strcpy(da[ix],tmp); else da[ix][0]=0;
+          ExtractValue(tmp,buffer,"dtr",0);
+          if (strlen(tmp)) strcpy(dtr[ix],tmp); else dtr[ix][0]=0;
+          ExtractValue(tmp,buffer,"ftr",0);
+          if (strlen(tmp)) strcpy(ftr[ix],tmp); else ftr[ix][0]=0;
+          ExtractValue(tmp,buffer,"pc",0);
+          if (strlen(tmp)) pc[ix]=atoi(tmp); else pc[ix]=-1;  // pourcentage
+          ExtractValue(tmp,buffer,"nbj",0);
+          if (strlen(tmp)) nbj[ix]=atoi(tmp); else nbj[ix]=-1;
+
+          ExtractValue(tmp,buffer,"dds",0);
+          if (strlen(tmp)) strcpy(dds[ix],tmp);
+          AdvStringGrid1->Cells[12][ix]=tmp;
+          ExtractValue(tmp,buffer,"dfs",0);
+          if (strlen(tmp)) strcpy(dds[ix],tmp);
+          AdvStringGrid1->Cells[13][ix]=tmp;
+        }
+       rc = proj->ReadNextKey(RetKey,&recdata);
+    }
+
+  if (ix != nb_taches)
+     Application->MessageBox("Anomalie sur NB_Taches","",MB_OK);
+
+  for (ix=1;ix<=nb_taches;ix++)       // &&&&&&&&&&&&
+    {
+
+     // traitement des predecesseurs,
+     // structure du record
+     // Cle = P000n    Record <PR%04d> puis ... <P%02d><num>.. </num>
+                                       //       <typ>..</typ>
+                                       //       <decal>..</decal></P%02d>
+     //                  puis  </PR%04d>
+
+        ik=sommets[ix];  // &&&&&&&& ok on cherche pred de la tache TT, pas de sa position
+        sprintf(Key,"<PR%04d>",ik);   //  build  key for predecesseurs
+        rc = proj->ReadDirectKey(0,Key,RetKey,&recdata);
+        if (rc)  // ok : clé trouvée
+         {
+          rc = proj->ReadRecord(buffer,recdata);
+          buffer[rc]=0;
+          if (rc)   //  ok, record predecesseur lu
+           {
+            ipred=1; ok=true;
+            while (ok)
+              {
+               sprintf(delim,"P%02d",ipred);
+               l = ExtractValue(tmp,buffer,delim,0);
+               if (l == 0)ok=false; // { pr[ix][ipred]=9999; ok=false; }
+                else
+                  {
+                   l= ExtractValue(tmp1,tmp,"num",0); xval=atoi(tmp1);
+                   pr[ix][ipred]= xval;
+                   l= ExtractValue(tmp1,tmp,"typ",0); xval=atoi(tmp1);
+                   pr_tl[ix][ipred]= xval;
+                   l= ExtractValue(tmp1,tmp,"decal",0); xval=atoi(tmp1);
+                   pr_decal[ix][ipred] = xval;
+                   ipred++;
+                  }
+
+               if (ipred >= PS) ok=false;
+
+              }
+
+           }
+         }
+
+
+
+     // traitement des successeurs
+      // structure du record
+     // Cle = S000n    Record <SU%04d> puis ... <SP%02d><num>.. </num>
+                                       //       <typ>..</typ>
+                                       //       <decal>..</decal></S%02d>
+     //                  puis  </SU%04d>
+
+        sprintf(Key,"<SU%04d>",ik);   // &&&&&&&& ok build  key for successeurs
+        rc = proj->ReadDirectKey(0,Key,RetKey,&recdata);
+        if (rc)  // ok : clé trouvée
+         {
+          rc = proj->ReadRecord(buffer,recdata);
+          buffer[rc]=0;
+          if (rc)   //  ok, record successeur lu
+           {
+            isucc=1; ok=true;
+            while (ok)
+              {
+               sprintf(delim,"S%02d",isucc);
+               l = ExtractValue(tmp,buffer,delim,0);
+               if (l == 0) ok=false;  // { su[ix][isucc]=9999; ok=false; }
+                else
+                  {
+                   l= ExtractValue(tmp1,tmp,"num",0); xval=atoi(tmp1);
+                   su[ix][isucc]= xval;
+                   l= ExtractValue(tmp1,tmp,"typ",0); xval=atoi(tmp1);
+                   su_tl[ix][isucc]= xval;
+                   l= ExtractValue(tmp1,tmp,"decal",0); xval=atoi(tmp1);
+                   su_decal[ix][isucc] = xval;
+
+                   isucc++;
+                  }
+               if (isucc >= PS) ok=false;
+              }
+           }
+         }
+    }  //  boucle for nb of tasks
+
+  init_calendrier();
+
+  current_task=1;
+  grefresh(current_task);
+
+}
+//---------------------------------------------------------------------------
+
+int  __fastcall TplStandard::add_select(int it)
+{
+ int ix; int flg;
+ ix = 1;  flg=0;
+ while (t_select[ix] != 0)
+   {
+    if (t_select[ix] == it) {flg=1; break; }
+
+    ix++;
+   }
+ if (flg==0)  t_select[ix]=it;
+ return 1;
+}
+
+int  __fastcall TplStandard::exist_select(int it)
+{
+ int retval=0;
+ int ix;
+ for (ix=1;ix<=nb_taches;ix++)      // &&&&&&&&&&&&
+   {
+    if (t_select[ix]==it) {retval=ix; break; }
+   }
+ return retval;
+}
+
+
+void __fastcall TplStandard::RemovePredSeul(int tach,int tpred)
+{
+
+  // tach et tpred sont les numeros reel de taches : pas la position dans sommets
+
+  int it, nt,indx,ipred;
+  ipred=1;
+  indx=exist_tache(tach,nb_taches);  // &&&&&&&&&&
+  if (indx==0) return;
+     while (pr[indx][ipred] !=0)
+        {
+         nt=pr[indx][ipred];
+         if (nt==tpred)
+          {// decaler  + break;
+           for (it=ipred;it<PS;it++)
+             {
+              pr[indx][it]=pr[indx][it+1];
+              pr_tl[indx][it]=pr_tl[indx][it+1];
+              pr_decal[indx][it]=pr_decal[indx][it+1];
+             }
+           break;
+          }
+         ipred++;
+       }
+}
+
+void __fastcall TplStandard::RemoveSuccSeul(int tach, int tsucc)
+{
+ int nt,it,indx,isucc;
+
+    // tach et tsucc sont les numeros reels, pas les position
+      isucc=1;
+      indx=exist_tache(tach,nb_taches);       // &&&&&&&&&&&&&&
+  if (indx==0) return;
+      while ((su[indx][isucc] !=0) && (su[indx][isucc] != 9999))
+       {
+        nt=su[indx][isucc];
+        if (nt==tsucc)
+          { // decaler + break;
+           for (it=isucc;it<PS;it++)
+             {
+              su[indx][it]=su[indx][it+1];
+              su_tl[indx][it]=su_tl[indx][it+1];
+              su_decal[indx][it]=su_decal[indx][it+1];
+             }
+           break;
+          }
+
+        isucc++;
+       }
+}
+
+
+
+int  __fastcall TplStandard::remove_task(int it)
+{
+ // examine all predecesseurs, and remove task (decalage);
+ int ix,ip, xt, xtrouve;
+
+ ix = exist_tache(it,nb_taches);
+     // §§§§§§§§§§§§§§§§§§§§
+ if (ix==0) return 0;
+ t_pred[ix][1]=-1;
+ // t_pred[it][1] = -1;
+ for (ix=1;ix<=nb_taches;ix++)
+    {  ip=1; xtrouve = 0;
+       while (t_pred[ix][ip] !=0)
+       {
+        if (t_pred[ix][ip]==it) xtrouve=ip;   // xtrouve a indice
+
+        ip++;
+       }
+     // si xtrouvé, on va decaler et eliminer it , ip contient n+1 predecceseurs
+     if (xtrouve)
+       {
+        for (xt=xtrouve;xt<=ip;xt++) t_pred[ix][xt]= t_pred[ix][xt+1];
+
+       }
+    }
+}
+
+
+int  __fastcall TplStandard::init_calendrier()
+{
+ TDateTime dtFirst;
+ int sum, i, n_cal;
+ int rc, recdata;
+ char ikey[50];
+ char RetKey[50];
+ char buffer[255];
+ AnsiString Comment;
+ char tmp[250];
+
+ //lb1->Clear();
+
+ char days[7][15] = {"Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi",
+  "Samedi" };
+  char months[12][15] = {"Janvier","Février","Mars","Avril","Mai","Juin","Juillet",
+   "Aout","Septembre","Octobre","Novembre","Décembre"};
+  int nbdays[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+  if (AnPrev==0) AnPrev=2005;
+  if (MoisPrev==0) MoisPrev=1;
+  if (JourPrev==0) JourPrev=1;
+
+  dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+  int counter = nbdays[MoisPrev-1];
+  if (MoisPrev==2){ if (IsLeapYear(AnPrev)) counter = 29;}
+  // on a besoin de savoir le 1er jour du mois
+  int firstday = dtFirst.DayOfWeek();
+  int dow;  // day of week
+  dow = firstday-1;
+  Comment = "1 er Jour Date Prev Debut " + AnsiString(dow) + " = " + AnsiString(days[dow]);
+  //lb1->Items->Add(Comment);
+
+  cals = new genbase();
+  rc = cals->OpenEngine("calend",56,"ndx","dat");   //64 - 8
+  rc = cals->SetIndexMode(0,0);
+  // calcule la longueur de la duree reelle probable
+  //  Sommme(duree[i] + 2) * 2
+  sum=0;
+  for (i=1;i<=nb_taches;i++) sum=sum+duree[i]+2;   // §§§§§§§§§§§§§
+  sum = sum + sum;
+
+  // for (i=0;i<=NB_CAL;i++) cal[i] = new char[sum];
+
+
+  for (n_cal=1;n_cal<=NB_CAL;n_cal++)
+   {
+    // lecture WE
+    // la date prev de debut correspond au 1 er jour
+    sprintf(ikey,"%02d-0000-00-00",n_cal);   // clef pour determiner WE
+    rc = cals->ReadDirectKey(0,ikey,RetKey,&recdata);
+    rc = cals->ReadRecord(buffer,recdata);
+    buffer[rc]=0;
+    strncpy(weeks[n_cal],buffer+4,7); strncat(weeks[n_cal],buffer+4,7);
+    // pour avoir au moins 13 jours
+    //lb1->Items->Add(AnsiString(weeks[n_cal]));
+
+    for (i=0;i<MAX_JOURS;i++)
+      {
+       cal[n_cal][i]=weeks[n_cal][dow-1 + (i % 7)];
+       add_jour(AnPrev,MoisPrev,JourPrev,i);
+       if ((i % 7) == 0)
+         {
+          sprintf (tmp,"%02d-%02d-%04d",Jour,Mois,An);
+          //lb1->Items->Add(AnsiString(tmp));
+         }
+       //verifie si il existe un record N ou T
+       sprintf(tmp,"%02d-%04d-%02d-%02d",n_cal,An,Mois,Jour);
+       rc = cals->ReadDirectKey(0,tmp,RetKey,&recdata);
+       if (rc)    // il existe des modifs apportées
+          {
+            rc = cals->ReadRecord(buffer,recdata);
+            buffer[rc]=0;
+            if (buffer[13]==0) buffer[13]='N';
+            cal[n_cal][i]=buffer[13];
+          }
+      }
+    cal[n_cal][MAX_JOURS-1]= 0;
+    //lb1->Items->Add(AnsiString(cal[n_cal]));
+   }
+
+ cals->CloseEngine(); cals->~genbase();
+ //Label20->Caption = AnsiString(weeks[1]);
+ return 1;
+}
+
+int  __fastcall TplStandard::add_jour(int year, int month, int day, int jours)
+{
+  // resultats dans An,Mois,Jour
+  int i,counter,nbj_restant, j;
+//  char days[7][15] = {"Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi",
+//  "Samedi" };
+  char months[12][15] = {"Janvier","Février","Mars","Avril","Mai","Juin","Juillet",
+   "Aout","Septembre","Octobre","Novembre","Décembre"};
+  int nbdays[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
+
+  An=year;Mois=month;Jour=day;
+  int ok=1; j=jours;
+  while (ok)
+    {
+     counter = nbdays[Mois-1];
+     if (Mois==2){ if (IsLeapYear(An)) counter = 29;}
+     nbj_restant = counter - Jour; // nb jours restants dans le mois en cours
+     if (j <= nbj_restant)   // on va sortir
+        {
+         Jour=Jour+j;
+         ok=0;
+        }
+     else
+        {
+         j=j-nbj_restant-1;
+         Mois++;
+         if (Mois==13) {Mois=1; An++; }
+         Jour=1;  // 1er jour du mois suivant //Jour+nbj_restant+1;
+        }
+
+    }
+
+ return 1;
+ }
+
+int  __fastcall TplStandard::convert_date(int year, int month, int day)
+{
+ int n1,n2,bcl,N;
+ int initval;
+ int nbdays[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+  // calcul approximatif de  la distance par rapport au previsionnel
+  n1 = (AnPrev%100)*365 + MoisPrev*28 + JourPrev;
+  n2 = (year%100)*365 + month*28 + day;
+
+  if (n2<n1)  { Application->MessageBoxA("Date Anterieure a la date de Début previsionnel",
+                 ecoplan,MB_OK);
+                return 0;
+              }
+
+  initval = n2-n1-30; N=initval;
+  for (bcl=0;bcl<100;bcl++)
+    {
+     add_jour(AnPrev,MoisPrev,JourPrev,N);
+     if ((An==year) && (Mois==month) && (Jour==day)) break;
+     else N++;
+    }
+ return N;
+}
+
+
+
+
+int  __fastcall TplStandard::avance_conges(int base,int ncal)
+{
+ // base doit etre place sur le Premier jour a examiner
+ int xdeb,xlimit;
+ xdeb=base; xlimit= MAX_JOURS-1000;
+ // enlever les jours feries
+ if (cal[ncal][xdeb] == 'N')
+   { while ((cal[ncal][xdeb]=='N')&& (xlimit>0))
+      { xdeb++; xlimit--; }
+
+   }
+return xdeb;
+}
+
+int  __fastcall TplStandard::avance_temps(int base,int ncal,int dur)
+{
+  // base doit etre positionné sur le premier jour a examiner
+ int xdeb,xdur,xlimit;
+ xdeb=base; xdur=dur; xlimit=MAX_JOURS-1000;
+ while ((xdur>0) && (xlimit > 0))
+   { if (cal[ncal][xdeb]=='T') xdur--;
+    xdeb++; xlimit--;
+    }
+return xdeb;
+}
+
+int  __fastcall TplStandard::recule_conges(int base,int ncal)
+{
+
+ int xdeb,xlimit;
+ //  base pointe sur le jour devant celui a examiner
+ // en retour c'est un pointeur sur le "premier jour de conges"
+ // sinon, c'est sur base
+ xdeb=base-1;xlimit=xdeb;
+ // sauter les jours feries;
+
+ if (cal[ncal][xdeb] == 'N')
+   { while((cal[ncal][xdeb] == 'N') && (xlimit >= 0)) {xlimit--; xdeb--; }
+   }
+ xdeb++;
+ return xdeb;
+
+ }
+
+int  __fastcall TplStandard::recule_temps(int base,int ncal, int dur)
+{
+  int xdeb, xdur, xlimit;
+  // base pointe sur le jour devant celui a examiner
+  xdeb=base-1; xdur=dur; xlimit=xdeb;
+ xlimit=base;
+ while ((xdur > 0) && (xlimit >= 0))
+   {
+    if (cal[ncal][xdeb] == 'T') xdur--;
+    xdeb--; xlimit--;
+   }
+ xdeb++;
+ return xdeb;
+}
+
+
+
+void __fastcall TplStandard::Compute_PlusTotA()
+{
+  int indx,ix,ipred,imax,istop, flag, count;
+  int ok, xtpred, total;
+  int nb_pass,fini;
+  char tmp[250];
+  int xind;
+  int avance;
+  int A,M,J;
+  int inext,ind,tniv;
+  int fduree,fdecal;
+  int idd, ddflag,flag_amont,t_amont,t_start;
+  int i,j;
+  int mom; int zcal;
+
+sommets[nb_taches+1]=0; // $$$$ 9999;   // nb_taches+1;
+ // clean niveaux
+
+
+ if (nb_taches == 0) return;
+
+
+ for (i=0; i<MAX_T;i++) t_select[i]=0;
+ for (i=0;i<MAX_NIV;i++)
+    {
+     for (j=0;j<NS;j++) {  niveaux[i][j]=0;  t_pred[i][j]=0; }
+    }
+  // etablir le dictionnaire des predecesseurs
+ // c est une copie de pr
+ for (i=1;i<=nb_taches;i++)     // §§§§§§§§§§§§§§§§
+   { ipred=1;
+     while(pr[i][ipred] !=0)
+      { t_pred[i][ipred]= pr[i][ipred];
+        ipred++;
+      }
+   }
+
+ iniv=0; ok=1;
+ while (ok)  // on definit les niveaux
+    {
+     flag=0;
+     inext=0;
+     // t_select va recevoir les taches sans predecesseurs
+     for (i=0;i<=nb_taches;i++) t_select[i]=0;  // §§§§§§§§§§§§§§§
+
+     for (i=1;i<=nb_taches;i++)   // §§§§§§§§§§§§§§§§§§§§
+       {
+        if (t_pred[i][1] == 0)    // la tache sommets[i] n a pas de predecesseurs
+          {
+           // elle entre dans t_select,
+           add_select(sommets[i]);  // sommets [i]
+
+           // examen des successeurs pour detecter les AMONT
+           idd=1; ddflag=0;
+           while (su[i][idd] !=0)
+             {if (su_tl[i][idd] == 2)
+               { ddflag=1; break; }
+              idd++;
+             }
+           if (ddflag == 0)  // les AM ne sont pas integrees
+             { niveaux[iniv][inext]=sommets[i];
+               inext++;
+             }
+           }
+       }
+     ind = 1;
+     while (t_select[ind] != 0)
+     { remove_task(t_select[ind]);
+       ind++;
+     }
+     // next
+     iniv++;
+     // fin de calcul ?  quand toutes les taches ont ete selectionnees
+     count=0;
+     for (i=1;i<=nb_taches;i++) if (t_pred[i][1] == -1)  count++;    // -1
+     if (count == nb_taches) flag=1;
+     if (flag) ok=0;
+    }  // end while
+
+ // maintenant, on calcule les dates au plus tot
+ // au niveau 0 : pas de calcul de max a faire
+
+ // sommet terminal
+  for (i=1;i<=nb_taches;i++) duree_reelle[i]=duree[i]; // §§§§§§§§§§§
+  // date debut = date previsionnelle
+
+  A=AnPrev; M=MoisPrev;J=JourPrev;
+
+  for (tniv=0;tniv<iniv;tniv++)
+   {
+    inext=0; xmax=-1000;
+    while (niveaux[tniv][inext] != 0)
+     {
+      ind=niveaux[tniv][inext];
+      ind = exist_tache(ind,nb_taches); // §§§§§§§§§§§§§§§§§§§
+
+      if (tniv==0)  // niveau zero
+       {
+         // on traite les taches normales
+         imax=0; zcal=tcal[ind];
+         total=avance_conges(0,zcal);
+
+//         fduree = comp_up(-1,zcal,duree[ind]); // on demarre de -1 = fin plot tot du precedent!!!!
+
+         deb_plus_tot[ind] = total;
+         fin_plus_tot[ind]=  avance_temps(total,zcal,duree[ind])-1;
+         duree_reelle[ind] = fin_plus_tot[ind] - deb_plus_tot[ind]+ 1;
+         if (total > xmax) { xmax=total; xind=ind; }
+       }
+      else
+       {
+        // cherchons les predecesseurs de ind
+        imax = -1000;ipred = 1; total=0;  flag_amont = 0;
+        while (pr[ind][ipred]!=0)
+          {
+           xtpred=pr[ind][ipred];
+           xtpred=exist_tache(xtpred,nb_taches);   // §§§§§§§§§§§§§§§§
+           // total=deb_plus_tot[xtpred] + duree_reelle[xtpred];  // remplacé par
+           //total=fin_plus_tot[xtpred];
+              if (pr_tl[ind][ipred]==0)     //  c est un lien fd
+                 {
+                   if ( pr_decal[ind][ipred] > 0)
+                      { zcal=tcal[ind];
+                        total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                        total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                      }
+                   else if ( pr_decal[ind][ipred] < 0)
+                      {  zcal=tcal[xtpred];
+                         total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total = recule_temps(total,zcal,-pr_decal[ind][ipred]);
+                      }
+                   else { zcal=tcal[ind];
+                          total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                        } // pas de calcul de decalage
+                  }
+               if (pr_tl[ind][ipred]==1)     // c est un lien ff
+                  {
+                   if (pr_decal[ind][ipred] > 0)
+                       { zcal=tcal[xtpred];
+                         total = avance_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                         total = recule_temps(total,zcal,duree[ind]);
+                        }
+                    else if (pr_decal[ind][ipred] < 0)
+                       { zcal=tcal[xtpred];
+                         total=recule_conges(fin_plus_tot[xtpred]+1,zcal);
+                         total=recule_temps(total,zcal,-pr_decal[ind][ipred]);
+                         total = recule_temps(total,zcal,duree[ind]);
+                        }
+                    else
+                       {
+                        zcal= tcal[ind];
+                        total=recule_conges(fin_plus_tot[xtpred]+1,zcal);
+                        total = recule_temps(total,zcal,duree[ind]);
+                       }
+                  }
+
+               if (pr_tl[ind][ipred] == 2)  flag_amont = ipred;
+               if (pr_tl[ind][ipred] == 3)    // Lien DD   Decal est >= 0
+                  {
+                   if ( pr_decal[ind][ipred] > 0)
+                      { zcal=tcal[xtpred];
+                        total=avance_conges(deb_plus_tot[xtpred],zcal);
+                        total = avance_temps(total,zcal,pr_decal[ind][ipred]);
+                       }
+                   else if ( pr_decal[ind][ipred] == 0)
+                        { zcal=tcal[ind];
+                          total=avance_conges(deb_plus_tot[xtpred],zcal);
+                        } // pas de calcul de decalage
+                  }
+
+           if (total > imax) imax=total;
+           ipred++;
+         }
+        zcal=tcal[ind];
+        deb_plus_tot[ind] = imax;
+        fin_plus_tot[ind] = avance_temps(imax,zcal,duree[ind])-1;  // !!!! decalage de -1
+        if (fin_plus_tot[ind] > xmax) { xmax= fin_plus_tot[ind];xind = ind; }
+        duree_reelle[ind]=fin_plus_tot[ind]-deb_plus_tot[ind]+1;
+
+
+        if (fin_plus_tot[ind] > xmax) { xmax= fin_plus_tot[ind];xind = ind; }
+
+        // si taches amont : calcul des dates au plus tot
+        if (flag_amont)
+          {
+           t_start = ind;
+           t_amont = pr[ind][flag_amont];
+           while (t_amont >0)
+             { int x_amont = t_amont;
+              t_amont = exist_tache(t_amont,nb_taches);
+              // on connait la mere
+              mom=tmom[t_amont];
+              //deb_plus_tot[t_amont]=deb_plus_tot[mom];
+              //deb_plus_tard[t_amont]=deb_plus_tard[mom];
+              zcal=tcal[t_start];
+              fdecal = comp_down(deb_plus_tot[t_start],zcal,pr_decal[t_start][flag_amont]);
+              zcal=tcal[t_amont];
+              fduree = comp_down(fdecal,zcal,duree[t_amont]);
+              if (fduree < 0)
+                { sprintf(tmp,"Tache Amont %d : Debordement possible sur le début",x_amont);
+                 Application->MessageBoxA(tmp,ecoplan,MB_OK);
+                }
+              deb_plus_tot[t_amont] = fduree; // fin_plus_tot[t_amont]=xstart;
+              fin_plus_tot[t_amont] = comp_up(fduree-1,zcal,duree[t_amont]); //fdecal-1;
+              duree_reelle[t_amont]= fin_plus_tot[t_amont]-deb_plus_tot[t_amont];
+              t_start= t_amont;
+              t_amont = pr[t_amont][1]; flag_amont = 1;
+
+             }
+
+          }
+
+       }
+     inext++;
+     }
+   }
+
+ // ??????????????????
+ deb_plus_tot[nb_taches+1]= deb_plus_tot[xind]+duree_reelle[xind];
+
+ // on fait des successeurs pour la tache fictive  (nb_taches+1)
+ for (ind=1;ind<=nb_taches;ind++)   // §§§§§§§§§§§§§§§§§§§!
+   {
+    if (su[ind][1]==0) su[ind][1]=9999;
+   }
+}
+
+int  __fastcall TplStandard::comp_up(int deb,int ncal,int dur)
+{
+ int xdeb,xdur,xlimit;
+ xdeb=deb+1; xdur=dur; xlimit=MAX_JOURS;
+ // enlever les jours feries
+ if (cal[ncal][xdeb] == 'N')
+   { while (cal[ncal][xdeb]=='N') xdeb++;
+     xstart= xdeb; xdeb--;
+   }
+ else xstart=xdeb;
+
+ while ((xdur>0) && (xlimit > 0))
+   { if (cal[ncal][xdeb]=='T')
+         xdur--;
+    xdeb++; xlimit--;
+    }
+ xdeb--;
+return xdeb;
+}
+
+int  __fastcall TplStandard::comp_down(int deb,int ncal,int dur)
+{
+ int xdeb,xdur,xlimit;
+ xdeb=deb-1; xdur=dur; xlimit=xdeb;
+ // sauter les jours feries;
+ if (cal[ncal][xdeb] == 'N')
+   { while((cal[ncal][xdeb] == 'N') && (xlimit >= 0)) {xlimit--; xdeb--; }
+     xstart=xdeb; xdeb++;
+   }
+ else { xstart=xdeb; }   // xdeb
+ xlimit=deb;
+ while ((xdur > 0) && (xlimit >0))
+   {
+    if (cal[ncal][xdeb] == 'T') xdur--;
+    xdeb--; xlimit--;
+   }
+ xdeb++;
+ return xdeb;
+}
+
+
+void __fastcall TplStandard::Compute_PlusTardA()
+{
+ int ix,tniv,inext,indx,isucc,xtsucc;
+ int imin,xtotal;
+ int mmin;
+ int i,imax,zx;
+ int fdecal, fduree;
+ char tmp[250];
+ int idd, ddflag,flag_amont,t_amont,t_start,imom;
+ int indmom;
+ int zcal;
+
+ flag_amont=0;
+ if (nb_taches==0) return;
+ for (ix=0;ix<MAX_T;ix++)   { deb_plus_tard[ix]=-1; }
+ sommets[nb_taches+1]=9999;   // juste pour calcul au plus tard
+
+ // calcul de la date au plus tard de 9999  (nb_taches + 1)  depend de la duree
+ // max si certaines taches sont longues
+ imax=-1;
+ for (i=1;i<=nb_taches;i++)    //§§§§§§§§§§§§§
+   {
+    ix=deb_plus_tot[i]+duree_reelle[i];
+    if (ix > imax) imax=ix;
+   }
+
+  if (imax>deb_plus_tot[nb_taches+1]) deb_plus_tard[nb_taches+1]=imax;
+   else deb_plus_tard[nb_taches+1] = deb_plus_tot[nb_taches+1];
+
+  for (tniv=iniv-1;tniv>=0;tniv--)
+   {
+    inext=0;
+    while (niveaux[tniv][inext] != 0)
+      {
+       indx=niveaux[tniv][inext];
+       indmom = niveaux[tniv][inext];
+       indx = exist_tache(indx,nb_taches);  // §§§§§§§§§§§§
+       imin=+100000;
+        // cherchons les successeurs de ind
+        isucc = 1; xtotal=0;
+        while ((su[indx][isucc]!=0)) // && (su[indx][isucc]!=9999))
+          {
+            xtsucc=su[indx][isucc];
+            if (xtsucc==9999)
+             {
+               if (isucc == 1)  // pas de vrai successeurs
+                   // imin = deb_plus_tard[nb_taches+1] - duree_reelle[indx]; //0;
+                  {
+                   zcal=tcal[indx];
+                   xtotal = recule_conges(deb_plus_tard[nb_taches+1],zcal); //,duree[indx]);
+                   xtotal = recule_temps(xtotal,zcal,duree[indx]);
+                   imin=xtotal;
+                  }
+                else  // il existe un successeur
+                  {  imin=imin; }
+              isucc++;
+           }
+            else
+              {
+                xtsucc = exist_tache(xtsucc,nb_taches); //§§§§§§§§§§§§§§§
+                if (su_tl[indx][isucc]==0)     //  c est un lien fd
+                  {
+                   if (su_decal[indx][isucc] > 0)
+                     { zcal=tcal[indx];  // xtsucc];
+                       xtotal=recule_conges(deb_plus_tard[xtsucc],zcal);
+                       xtotal=recule_temps(xtotal,zcal,su_decal[indx][isucc]);
+                       xtotal=recule_temps(xtotal,zcal,duree[indx]);
+                     }
+                   else if (su_decal[indx][isucc] < 0)
+                     {
+                      zcal=tcal[indx]; //xtsucc];
+                      xtotal=avance_conges(deb_plus_tard[xtsucc],zcal);
+                      xtotal=avance_temps(xtotal,zcal,-su_decal[indx][isucc]);
+                      xtotal=recule_temps(xtotal,zcal,duree[indx]);
+                      //fduree = comp_up(deb_plus_tard[xtsucc],zcal,-su_decal[indx][isucc]);
+                      //zcal=tcal[indx];
+                      //xtotal = comp_down(fduree,zcal,duree[indx]);
+                     }
+                   else
+                     {zcal=tcal[indx];
+                      xtotal=recule_conges(deb_plus_tard[xtsucc],zcal);
+                      xtotal=recule_temps(xtotal,zcal,duree[indx]);
+                      //xtotal = comp_down(deb_plus_tard[xtsucc],zcal,duree[indx]);
+                     }
+                  }
+                if (su_tl[indx][isucc]==1)     //  c est un lien ff
+                  {
+                   if (su_decal[indx][isucc] > 0)
+                     {zcal=tcal[indx]; //  indx]; // xtsucc];
+                      xtotal=recule_conges(fin_plus_tard[xtsucc]+1,zcal);
+                      xtotal=recule_temps(xtotal,zcal,su_decal[indx][isucc]);
+                      xtotal=recule_temps(xtotal,zcal,duree[indx]);
+
+                      //fduree = comp_down(fin_plus_tard[xtsucc],zcal,su_decal[indx][isucc]-1);
+                      //zcal=tcal[indx];
+                      //xtotal = comp_down(fduree,zcal,duree[indx]);
+                     }
+                   else if (su_decal[indx][isucc] < 0)
+                     {zcal=tcal[indx];  //  indx]; //xtsucc];
+                      xtotal=avance_conges(fin_plus_tard[xtsucc]+1,zcal);
+                      xtotal=avance_temps(xtotal,zcal,-su_decal[indx][isucc]);
+                      xtotal=recule_temps(xtotal,zcal,duree[indx]);
+
+                      //fduree = comp_up(fin_plus_tard[xtsucc],zcal,-su_decal[indx][isucc]); // -1);
+                      //zcal=tcal[indx];
+                      //xtotal = comp_down(fduree,zcal,duree[indx]);
+                     }
+                   else
+                     {zcal=tcal[indx];
+                      xtotal=recule_conges(fin_plus_tard[xtsucc]+1,zcal);
+                      xtotal=recule_temps(xtotal,zcal,duree[indx]);
+                      // xtotal = comp_down(fduree,zcal,duree[indx]);
+                     }
+                  }
+                 if (su_tl[indx][isucc]==2)     //  c est un lien amont
+                  {
+                   flag_amont = isucc;
+                  }
+
+                 if (su_tl[indx][isucc]==3)     //  c est un lien DD
+                  {
+                   if (su_decal[indx][isucc] > 0)
+                     { zcal=tcal[indx];  // xtsucc];
+
+                       fduree = comp_down(deb_plus_tard[xtsucc],zcal,su_decal[indx][isucc]);
+                       zcal=tcal[indx];
+                       xtotal = comp_down(fduree,zcal,duree[indx]);    // $$$$$$$$$$$$
+                     }
+                   else if (su_decal[indx][isucc] == 0)
+                     {zcal=tcal[indx];
+                      xtotal = comp_down(deb_plus_tard[xtsucc],zcal,duree[indx]);
+                     }
+                  }
+
+
+
+                if (xtotal < imin) { imin=xtotal; }
+                isucc++;
+              }
+          }  // while su
+
+        if (imin==100000)  imin=0;
+        deb_plus_tard[indx]=imin;
+        zcal=tcal[indx];
+        fin_plus_tard[indx]=avance_temps(imin,zcal,duree[indx]) -1;
+        //fduree = comp_up(deb_plus_tard[indx]-1,zcal,duree[indx]);
+         //duree_reelle[indx] = fduree;
+        //  $$$$ fin_plus_tard[indx]= imin + duree_reelle[indx] - 1;
+        //fin_plus_tard[indx]= fduree;
+
+        if (su_tl[indx][1]== 2)
+          {
+           deb_plus_tard[indx] = deb_plus_tot[indx];
+           fin_plus_tard[indx] = fin_plus_tot[indx];
+          }
+        if (flag_amont) { }
+      inext++;
+      }
+   }
+
+  // marge totale
+  for (indx=1;indx<=nb_taches;indx++)
+    {
+     if (deb_plus_tard[indx]==deb_plus_tot[indx]) marg_tot[indx]=0;
+     else
+      { // calculer le nombre de jour travaillés
+        // marg_tot[indx]= deb_plus_tard[indx] - deb_plus_tot[indx];
+
+        zcal=tcal[indx];
+
+
+        marg_tot[indx] = compute_marge(deb_plus_tot[indx],deb_plus_tard[indx],zcal);
+
+        //marg_tot[indx]= deb_plus_tard[indx] - deb_plus_tot[indx];
+      }
+    }
+  // marge libre
+
+  for (indx=1;indx<=nb_taches;indx++)
+    {
+
+    }
+
+   sommets[nb_taches+1]=0;
+
+
+ //  Remplissage des differentes colonnes de AdvStringGrid1;
+
+  for (indx=1;indx<=nb_taches;indx++)     // §§§§§§§§§§§§§§§§§§
+    {
+      AdvStringGrid1->Cells[3][indx] = AnsiString(duree[indx]);
+      add_jour(AnPrev,MoisPrev,JourPrev,deb_plus_tot[indx]);
+      sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+      AdvStringGrid1->Cells[4][indx] = AnsiString(tmp); //deb_plus_tot[indx]+1);
+      add_jour(AnPrev,MoisPrev,JourPrev,fin_plus_tot[indx]);
+      sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+      AdvStringGrid1->Cells[5][indx] = AnsiString(tmp);  // fin_plus_tot[indx]);
+      add_jour(AnPrev,MoisPrev,JourPrev,deb_plus_tard[indx]);
+      sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+      AdvStringGrid1->Cells[6][indx] = AnsiString(tmp); //deb_plus_tard[indx]+1);
+      add_jour(AnPrev,MoisPrev,JourPrev,fin_plus_tard[indx]);
+      sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+      AdvStringGrid1->Cells[7][indx] = AnsiString(tmp);   // fin_plus_tard[indx]);
+      AdvStringGrid1->Cells[8][indx] = AnsiString(marg_tot[indx]);
+      AdvStringGrid1->Cells[9][indx] = AnsiString(marg_lib[indx]);
+    }
+
+}
+
+int  __fastcall TplStandard::compute_marge(int tot, int tard, int ncal)
+{
+ int i,marg;
+ marg=0;
+ for (i=tot; i<tard;i++)
+  {
+   if (cal[ncal][i]== 'T') marg++;
+  }
+ return marg;
+}
+
+
+void __fastcall TplStandard::DrawGantt(int task,int pos)
+{
+  int nbjours;
+  int ix,ixx,tdeb,tfin;
+  int xbase,x1base,ttot;
+  int interval;
+  char tmp[120];
+  int  X1,X2,Y,xx1,xx2;
+  int isucc;
+  int firstday;
+  AnsiString Texte;
+  TDateTime dtFirst;
+  int jx,jcal;
+  int kx,kinterv,K1,K2;
+  int basecal;
+  int xtask;
+
+  dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+  firstday = dtFirst.DayOfWeek();
+  int dow;  // day of week
+  dow = firstday-1;
+
+  if (nb_taches==0) return;
+
+   BgColor=clWhite;
+   FgColor=clLime;
+   TxColor=clYellow;
+
+
+ Diagram = Rect(0,0, imGantt->Width,imGantt->Height);
+ imGantt->Canvas->Brush->Color = clWhite; // BgColor;
+ imGantt->Canvas->FillRect(Diagram);
+
+ Diagram = Rect(0,0,imGantt->Width,imGantt->Height/10);
+ imGantt->Canvas->Brush->Color = clAqua; //
+ imGantt->Canvas->FillRect(Diagram);
+
+ // tracé du rectangle du haut;
+ imGantt->Canvas->Brush->Color = clBlack; //
+ imGantt->Canvas->MoveTo(0,0);
+ imGantt->Canvas->LineTo(imGantt->Width-1,0);
+ imGantt->Canvas->LineTo(imGantt->Width-1,imGantt->Height/20);
+ imGantt->Canvas->LineTo(0,imGantt->Height/20);
+ imGantt->Canvas->LineTo(0,0);
+ imGantt->Canvas->LineTo(0,imGantt->Height);
+ //  Tracé du compte de jours
+
+ if (nb_taches==0) return;
+
+ nbjours = deb_plus_tot[nb_taches+1];
+ if (nbjours != 0) interval = (imGantt->Width / nbjours)*0.90;
+   else interval = 100;
+ imGantt->Canvas->Font->Color = clBlack;
+
+ interval=25; //nbjours=30;
+
+ xtask=task-5; if (xtask <1) xtask=1;
+
+ ttot=deb_plus_tot[xtask];
+ // adjust with position
+ // position is relative to the middle (50 %)
+ ttot = ttot + int (40*pos/200);     //  30/2
+ if (ttot <0) ttot=0;
+ ScrollBar2->Position = 50 + pos;
+ if (nb_taches>0) ScrollBar1->Position = 100 * xtask / nb_taches;
+
+ imGantt->Canvas->Font->Color = clBlack;
+ imGantt->Canvas->MoveTo(0,imGantt->Height/10);
+ imGantt->Canvas->LineTo(imGantt->Width,imGantt->Height/10);
+
+ // fixé a l'aide de calendrier 1;  //////////////////
+ for (ix=ttot;ix<=(nbjours+ttot);ix++)    // tenir compte du calendrier
+   {
+    xbase=(ix-ttot)*interval +interval/3;
+    sprintf (tmp,"%d",ix+1);       // doit commencer à 1, pas a zéro
+    add_jour(AnPrev,MoisPrev,JourPrev,ix);
+    sprintf(tmp, "%02d",Jour);
+    imGantt->Canvas->Font->Height = 8;
+    imGantt->Canvas->Font->Color = clBlack;
+    imGantt->Canvas->Brush->Color = clAqua;  // White;
+    imGantt->Canvas->TextOut(xbase,3,(AnsiString) tmp);
+    imGantt->Canvas->Font->Color = clBlack;
+    imGantt->Canvas->MoveTo(ix*interval,0);
+    imGantt->Canvas->LineTo(ix*interval,imGantt->Height/20);
+
+    // tracé des conges
+    xbase= (ix-ttot+1)*interval;
+        if (cal[1][ix]=='N')
+      {
+       x1base  =  xbase - interval+1;
+       Diagram = Rect(x1base,(imGantt->Height/10)+1,xbase,imGantt->Height);
+       imGantt->Canvas->Brush->Color = clSilver; //
+       imGantt->Canvas->FillRect(Diagram);
+      }
+
+     imGantt->Canvas->Brush->Color = clWhite;
+     imGantt->Canvas->Pen->Style = psDot;  // Dash;
+     imGantt->Canvas->MoveTo(xbase,imGantt->Height/10);
+     imGantt->Canvas->LineTo(xbase,imGantt->Height);
+     imGantt->Canvas->Pen->Style = psSolid;
+
+     dtFirst = EncodeDate(An,Mois,Jour);
+     firstday = dtFirst.DayOfWeek();
+     if (firstday == 2)  // Mondays
+       {
+       // trace d'un trait vertical noir
+        x1base  =  xbase - interval;
+        sprintf(tmp,"%02d/%02d/%04d",Jour,Mois,An);
+        imGantt->Canvas->Font->Color = clBlack;
+        imGantt->Canvas->Brush->Color = clAqua;  // White;
+        imGantt->Canvas->TextOut(x1base+5,(imGantt->Height/20)+3,(AnsiString) tmp);
+        imGantt->Canvas->MoveTo(x1base,imGantt->Height/20);
+        imGantt->Canvas->LineTo(x1base,imGantt->Height);
+       }
+     if (Jour==1)  // 1er du mois, un trait rouge;
+       {
+        x1base  =  xbase - interval;
+        imGantt->Canvas->Pen->Color = clRed;
+        imGantt->Canvas->MoveTo(x1base,imGantt->Height/10);
+        imGantt->Canvas->LineTo(x1base,imGantt->Height);
+        imGantt->Canvas->Pen->Color = clBlack;
+       }
+
+   }
+
+
+ //14 taches par ecran   // 30
+ tdeb=xtask;  tfin=tdeb+30; if (tfin>nb_taches) tfin=nb_taches;
+
+ for (ixx=tdeb;ixx<=tfin;ixx++)
+   {
+    // calcul des coordonnees
+    xx1 = deb_plus_tot[ixx]-ttot;
+    xx2=fin_plus_tot[ixx]+1-ttot;
+    X1= xx1*interval;
+    X2= xx2*interval;
+    Y = (ixx-tdeb+1)*25+ 30;
+    if (X2>=0)
+       { imGantt->Canvas->Pen->Width = 4;
+         if (su_tl[ixx][1] == 2) imGantt->Canvas->Pen->Color = clGreen;
+         else if (marg_tot[ixx]==0) imGantt->Canvas->Pen->Color = clRed;
+         else imGantt->Canvas->Pen->Color = clBlue;
+
+         jcal= tcal[ixx];if ((jcal < 1) || (jcal>5)) jcal =1;
+         //for (jx=ttot;jx<=(nbjours+ttot);jx++)
+         basecal = deb_plus_tot[ixx]-1;
+         for (jx=xx1;jx<xx2;jx++)
+           {
+            X1=jx*interval;
+            X2 = X1+interval;
+
+            basecal++;
+            if (cal[jcal][basecal] == 'T')
+             { imGantt->Canvas->MoveTo(X1,Y);
+             imGantt->Canvas->LineTo(X2,Y);
+             }
+            else
+             { kinterv = 5;  // interval / 5   *
+               K1=X1+kinterv; K2=X1+2*kinterv;
+               imGantt->Canvas->MoveTo(K1,Y);
+               imGantt->Canvas->LineTo(K2,Y);
+               K1=X1+3*kinterv; K2=X1+4*kinterv;
+               imGantt->Canvas->MoveTo(K1,Y);
+               imGantt->Canvas->LineTo(K2,Y);
+               //K1=X1+kinterv; K2=X1+2*kinterv;
+               //mGantt->Canvas->MoveTo(K1,Y);
+               //imGantt->Canvas->LineTo(K2,Y);
+             }
+
+           }
+
+         //imGantt->Canvas->MoveTo(X1,Y);
+         //imGantt->Canvas->LineTo(X2,Y);
+
+         Y= (ixx-tdeb+1)*25 + 15;
+         X1= xx1*interval;
+         imGantt->Canvas->MoveTo(X1,Y);
+         imGantt->Canvas->Pen->Color = clLime;
+         imGantt->Canvas->Font->Color = clBlue;
+         imGantt->Canvas->Brush->Color = clYellow;
+         add_jour(AnPrev,MoisPrev,JourPrev,deb_plus_tot[ixx]);
+         //sprintf(tmp,"%02d/%02d/%04d ",Jour,Mois,An);
+         Texte = ""; AnsiString(tmp);
+         Texte = Texte + AdvStringGrid1->Cells[2][ixx] + " (d=" + IntToStr(duree[ixx]) + ")";
+         imGantt->Canvas->TextOut(X1,Y,Texte);
+
+         // affichage des successeurs
+
+         isucc=1;  Texte="";
+         while ((su[ixx][isucc]!=0) && (isucc <PS))
+            {
+              if (su[ixx][isucc] != 9999)
+              {
+                Texte = Texte + IntToStr(su[ixx][isucc]);
+                if (su_tl[ixx][isucc] == 0) Texte = Texte + " FD ";
+                if (su_tl[ixx][isucc] == 1) Texte = Texte + " FF ";
+                if (su_tl[ixx][isucc] == 2) Texte = Texte + " AM ";
+                if (su_tl[ixx][isucc] == 3) Texte = Texte + " DD ";
+               Texte = Texte + IntToStr(su_decal[ixx][isucc])+ "  ";
+              }
+            isucc++;
+           }
+         Y = (ixx-tdeb+1)*25+ 23;
+         //imGantt->Canvas->MoveTo(X2+8,Y);
+         imGantt->Canvas->Brush->Color=clWhite;
+         imGantt->Canvas->Pen->Color=clBlack;
+         imGantt->Canvas->TextOut(X2,Y,Texte);
+         imGantt->Canvas->Pen->Width = 1;
+     }  // if X1 > 0
+   }
+ DrawMiniGantt(task,pos);
+}
+
+void __fastcall TplStandard::DrawMiniGantt(int task,int pos)
+{
+  int nbjours;
+  int ix,ixx,tdeb,tfin;
+  int xbase,x1base,ttot;
+  int interval;
+  char tmp[120];
+  int  X1,X2,Y,xx1,xx2;
+  int isucc;
+  int firstday;
+  AnsiString Texte;
+  TDateTime dtFirst;
+  int jx,jcal;
+  int kx,kinterv,K1,K2;
+  int basecal;
+  int xtask;
+  int itask,idateplustot,ipred,i,isel,indx,indice;
+
+  dtFirst = EncodeDate(AnPrev,MoisPrev,JourPrev);
+  firstday = dtFirst.DayOfWeek();
+  int dow;  // day of week
+  dow = firstday-1;
+
+  if (nb_taches==0) return;
+   // rechercher les predecesseurs et successeurs de TASK !
+
+ for (i=0;i<MAX_T;i++) selection[i]=0;
+ itask=task;isel=1;ipred=1; idateplustot=deb_plus_tot[task];
+ while ((pr[task][ipred]!=0) && (ipred<PS))
+        { indx =  pr[task][ipred]; indice=exist_tache(indx,nb_taches);
+          if (deb_plus_tot[indice]<idateplustot) idateplustot=deb_plus_tot[indice];
+          selection[isel]=indx; ipred++; isel++;
+        }
+
+ selection[isel]=task; isel++;
+ isucc=1;
+ while ((su[task][isucc]!=0) && (isucc<PS))
+         {indx = su[task][isucc];
+          if (su[task][isucc] != 9999)
+            { selection[isel]=indx;
+              isel++;
+            }
+          isucc++;
+         }
+   BgColor=clWhite;
+   FgColor=clLime;
+   TxColor=clYellow;
+
+
+ Diagram = Rect(0,0, immGantt->Width,immGantt->Height);
+ immGantt->Canvas->Brush->Color = clWhite; // BgColor;
+ immGantt->Canvas->FillRect(Diagram);
+
+ Diagram = Rect(0,0,immGantt->Width,immGantt->Height/10);
+ immGantt->Canvas->Brush->Color = clAqua; //
+ immGantt->Canvas->FillRect(Diagram);
+
+ // tracé du rectangle du haut;
+ immGantt->Canvas->Brush->Color = clBlack; //
+ immGantt->Canvas->MoveTo(0,0);
+ immGantt->Canvas->LineTo(immGantt->Width-1,0);
+ immGantt->Canvas->LineTo(immGantt->Width-1,immGantt->Height/20);
+ immGantt->Canvas->LineTo(0,immGantt->Height/20);
+ immGantt->Canvas->LineTo(0,0);
+ immGantt->Canvas->LineTo(0,immGantt->Height);
+ //  Tracé du compte de jours
+
+ if (nb_taches==0) return;
+
+ nbjours = deb_plus_tot[nb_taches+1];
+ if (nbjours != 0) interval = (immGantt->Width / nbjours)*0.90;
+   else interval = 100;
+ immGantt->Canvas->Font->Color = clBlack;
+
+ interval=25; //nbjours=30;
+
+
+
+  ttot=idateplustot;   //deb_plus_tot[xtask];
+ // adjust with position
+ // position is relative to the middle (50 %)
+ ttot = ttot + int (40*pos/200);     //  30/2
+ if (ttot <0) ttot=0;
+ ScrollBar2->Position = 50 + pos;
+ if (nb_taches>0) ScrollBar1->Position = 100 * xtask / nb_taches;
+
+ immGantt->Canvas->Font->Color = clBlack;
+ immGantt->Canvas->MoveTo(0,immGantt->Height/10);
+ immGantt->Canvas->LineTo(immGantt->Width,immGantt->Height/10);
+
+ // fixé a l'aide de calendrier 1;  //////////////////
+ for (ix=ttot;ix<=(nbjours+ttot);ix++)    // tenir compte du calendrier
+   {
+    xbase=(ix-ttot)*interval +interval/3;
+    sprintf (tmp,"%d",ix+1);       // doit commencer à 1, pas a zéro
+    add_jour(AnPrev,MoisPrev,JourPrev,ix);
+    sprintf(tmp, "%02d",Jour);
+    immGantt->Canvas->Font->Height = 6;
+    immGantt->Canvas->Font->Color = clBlack;
+    immGantt->Canvas->Brush->Color = clAqua;  // White;
+    immGantt->Canvas->TextOut(xbase,3,(AnsiString) tmp);
+    immGantt->Canvas->Font->Color = clBlack;
+    immGantt->Canvas->MoveTo(ix*interval,0);
+    immGantt->Canvas->LineTo(ix*interval,immGantt->Height/20);
+
+    // tracé des conges
+    xbase= (ix-ttot+1)*interval;
+        if (cal[1][ix]=='N')
+      {
+       x1base  =  xbase - interval+1;
+       Diagram = Rect(x1base,(immGantt->Height/10)+1,xbase,immGantt->Height);
+       immGantt->Canvas->Brush->Color = clSilver; //
+       immGantt->Canvas->FillRect(Diagram);
+      }
+
+     immGantt->Canvas->Brush->Color = clWhite;
+     immGantt->Canvas->Pen->Style = psDot;  // Dash;
+     immGantt->Canvas->MoveTo(xbase,immGantt->Height/10);
+     immGantt->Canvas->LineTo(xbase,immGantt->Height);
+     immGantt->Canvas->Pen->Style = psSolid;
+
+     dtFirst = EncodeDate(An,Mois,Jour);
+     firstday = dtFirst.DayOfWeek();
+     if (firstday == 2)  // Mondays
+       {
+       // trace d'un trait vertical noir
+        x1base  =  xbase - interval;
+        sprintf(tmp,"%02d/%02d/%04d",Jour,Mois,An);
+        immGantt->Canvas->Font->Color = clBlack;
+        immGantt->Canvas->Brush->Color = clAqua;  // White;
+        immGantt->Canvas->TextOut(x1base+5,(immGantt->Height/20)+3,(AnsiString) tmp);
+        immGantt->Canvas->MoveTo(x1base,immGantt->Height/20);
+        immGantt->Canvas->LineTo(x1base,immGantt->Height);
+       }
+     if (Jour==1)  // 1er du mois, un trait rouge;
+       {
+        x1base  =  xbase - interval;
+        immGantt->Canvas->Pen->Color = clRed;
+        immGantt->Canvas->MoveTo(x1base,immGantt->Height/10);
+        immGantt->Canvas->LineTo(x1base,immGantt->Height);
+        immGantt->Canvas->Pen->Color = clBlack;
+       }
+
+   }
+
+
+
+
+ //14 taches par ecran   // 30
+ tdeb=selection[1]; tfin=tdeb+14; if (tfin>nb_taches) tfin=nb_taches;
+
+ for (ixx=1;ixx<isel;ixx++)
+   {
+    indice=exist_tache(selection[ixx],nb_taches);
+    // calcul des coordonnees
+    xx1 = deb_plus_tot[indice]-ttot;
+    xx2=fin_plus_tot[indice]+1-ttot;
+    X1= xx1*interval;
+    X2= xx2*interval;
+    Y = ixx*25+ 30;
+    if (X2>=0)
+       { immGantt->Canvas->Pen->Width = 4;
+         if (su_tl[indice][1] == 2) immGantt->Canvas->Pen->Color = clGreen;
+         else if (marg_tot[indice]==0) immGantt->Canvas->Pen->Color = clRed;
+         else immGantt->Canvas->Pen->Color = clBlue;
+
+         jcal= tcal[indice];if ((jcal < 1) || (jcal>5)) jcal =1;
+         //for (jx=ttot;jx<=(nbjours+ttot);jx++)
+         basecal = deb_plus_tot[indice]-1;
+         for (jx=xx1;jx<xx2;jx++)
+           {
+            X1=jx*interval;
+            X2 = X1+interval;
+
+            basecal++;
+            if (cal[jcal][basecal] == 'T')
+             { immGantt->Canvas->MoveTo(X1,Y);
+             immGantt->Canvas->LineTo(X2,Y);
+             }
+            else
+             { kinterv = 5;  // interval / 5   *
+               K1=X1+kinterv; K2=X1+2*kinterv;
+               immGantt->Canvas->MoveTo(K1,Y);
+               immGantt->Canvas->LineTo(K2,Y);
+               K1=X1+3*kinterv; K2=X1+4*kinterv;
+               immGantt->Canvas->MoveTo(K1,Y);
+               immGantt->Canvas->LineTo(K2,Y);
+             }
+
+           }
+
+
+         Y= ixx*25 + 15;
+         X1= xx1*interval;
+         immGantt->Canvas->MoveTo(X1,Y);
+         immGantt->Canvas->Pen->Color = clLime;
+         immGantt->Canvas->Font->Color = clBlue;
+         immGantt->Canvas->Brush->Color = clYellow;
+         add_jour(AnPrev,MoisPrev,JourPrev,deb_plus_tot[ixx]);
+         //sprintf(tmp,"%02d/%02d/%04d ",Jour,Mois,An);
+         Texte = ""; AnsiString(tmp);
+         Texte = Texte + AdvStringGrid1->Cells[2][indice] + " (d=" + IntToStr(duree[indice]) + ")";
+         immGantt->Canvas->TextOut(X1,Y,Texte);
+
+         // affichage des successeurs
+
+         isucc=1;  Texte="";
+         while ((su[indice][isucc]!=0) && (isucc <PS))
+            {
+              if (su[indice][isucc] != 9999)
+              {
+                Texte = Texte + IntToStr(su[indice][isucc]);
+                if (su_tl[indice][isucc] == 0) Texte = Texte + " FD ";
+                if (su_tl[indice][isucc] == 1) Texte = Texte + " FF ";
+                if (su_tl[indice][isucc] == 2) Texte = Texte + " AM ";
+                if (su_tl[indice][isucc] == 3) Texte = Texte + " DD ";
+               Texte = Texte + IntToStr(su_decal[indice][isucc])+ "  ";
+              }
+            isucc++;
+           }
+         Y = ixx*25+ 23;
+         immGantt->Canvas->Brush->Color=clWhite;
+         immGantt->Canvas->Pen->Color=clBlack;
+         immGantt->Canvas->TextOut(X2,Y,Texte);
+         immGantt->Canvas->Pen->Width = 1;
+     }  // if X1 > 0
+   }
+}
+
+
+
+
+int __fastcall TplStandard::ExtractValue(char *result, char *buff, char *tag, int posdeb)
+{
+ char tmp[250];
+ char *p,*p1,*p2;
+ int pos,l;
+
+ result[0]=0;
+ strcpy(tmp,"<"); strcat(tmp,tag); strcat(tmp,">");
+ p = strstr(buff,tmp);
+ l=0;
+ if (p)
+   {
+    strcpy(tmp,"</"); strcat(tmp,tag); strcat(tmp,">");
+    p1= strstr(buff,tmp);
+    if (p1)
+      {
+       p2=p + strlen(tag)+2; l= p1-p2;
+       strncpy(result,p2,l);
+       result[l]=0;
+      }
+   }
+ return l;
+}
+
+ void __fastcall TplStandard::refresh_coches()
+ {
+  int i, ctr_coche,ctr_filt;
+  // calculer le nombre de taches cochees et filtrees
+  Label15->Caption = IntToStr(nb_taches);
+  ctr_coche=0; ctr_filt=0;
+  for (i=1;i<=nb_taches;i++)
+    {
+     if (coche[i]=='X') ctr_coche++;
+     if (filtr[i]=='X') ctr_filt++;
+    }
+
+ Label16->Caption = IntToStr(ctr_coche);
+ Label17->Caption = IntToStr(ctr_filt);
+}
+
+void __fastcall TplStandard::Refresh_Pred_Succ(int row)
+ {
+  int  ipred, isucc,is;
+  int irow,icol;
+  char tmp[100];
+  int itask;
+  int indice;
+  int indx;
+  int fd;
+
+  if (nb_taches==0) return;
+  if (row==0) return;
+  // nettoyer les 2 grilles
+  if (sommets[current_task] != 9999)
+  Label11->Caption = IntToStr(sommets[current_task]);
+  else Label11->Caption = "";
+
+
+
+  for (irow=1;irow<AdvStringGrid2->RowCount;irow++)
+    for (icol=1;icol<=AdvStringGrid2->ColCount;icol++)
+      AdvStringGrid2->Cells[icol][irow]="";
+
+    for (irow=1;irow<AdvStringGrid3->RowCount;irow++)
+    for (icol=1;icol<=AdvStringGrid3->ColCount;icol++)
+      AdvStringGrid3->Cells[icol][irow]="";
+
+  itask=sommets[row];
+  if (itask != 9999)
+   {
+   sprintf(tmp,"Prédécesseurs de la tâche %d",itask);
+   Label3->Caption = AnsiString(tmp);
+   sprintf(tmp,"Successeurs de la tâche %d",itask);
+   Label4->Caption = AnsiString(tmp);
+   }
+   else
+    {
+     Label3->Caption = "Prédécesseurs";
+     Label4->Caption = "Successeurs";
+    }
+  // afficher les predecesseurs;
+  current_task=row;
+  ipred=1;
+  AdvStringGrid2->RowCount = 2; // 20;
+  AdvStringGrid3->RowCount = 2; //20;
+
+  while ((pr[row][ipred]!=0) && (ipred<PS))
+         {                                         // §§§§§§§§§§§§§§§§§§§§§
+          indx =  pr[row][ipred];
+          indice = exist_tache(indx,nb_taches);
+          if (pr[row][ipred] !=9999)
+          {
+          if (row > 1) AdvStringGrid2->RowCount++;
+          AdvStringGrid2->Cells[1][ipred]=pr[row][ipred];           // taches
+          AdvStringGrid2->Cells[2][ipred]=AdvStringGrid1->Cells[2][indice];           // designation
+          AdvStringGrid2->Cells[3][ipred]=duree[indice];    //duree
+
+          // Deb Prev Possible = fin au plus tot du predecesseur + decalage
+          // add_jour_cal(AnPrev,MoisPrev,JourPrev,fin_plus_tot[indx]+1);
+          // compute_date_possible
+
+          if (pr_decal[row][ipred]>0)
+          //fd = comp_up(fin_plus_tot[indx],tcal[current_task],pr_decal[row][ipred]+1);
+           {  fd = avance_conges(fin_plus_tot[indice]+1,tcal[indice]);
+              fd = avance_temps(fd,tcal[indice],pr_decal[row][ipred]);
+              fd = avance_conges(fd,tcal[indice]);
+           }
+          else if (pr_decal[row][ipred]<0)
+           { // fd = comp_up(fin_plus_tot[indx],tcal[current_task],-pr_decal[row][ipred]-1);
+             fd = avance_conges(fin_plus_tot[indice]+1,tcal[indice]);
+             fd = recule_temps(fd,tcal[indice],-pr_decal[row][ipred]);
+           }
+          else // =0
+           {
+            fd = avance_conges(fin_plus_tot[indice]+1,tcal[indice]);
+
+           }
+
+          add_jour(AnPrev,MoisPrev,JourPrev,fd);
+          sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+          AdvStringGrid2->Cells[4][ipred]=AnsiString(tmp);
+
+          //AdvStringGrid2->Cells[4][ipred]=deb_plus_tot[indice]; // +1;
+          if (pr_tl[row][ipred]==0) AdvStringGrid2->Cells[5][ipred]="FD";
+           else if (pr_tl[row][ipred]==1) AdvStringGrid2->Cells[5][ipred]="FF";
+           else if (pr_tl[row][ipred]==2) AdvStringGrid2->Cells[5][ipred]="AM";
+           else if (pr_tl[row][ipred]==3) AdvStringGrid2->Cells[5][ipred]="DD";
+          AdvStringGrid2->Cells[6][ipred]=pr_decal[row][ipred];     // decal
+          }
+          ipred++;
+         }
+
+  // afficher les successeurs;
+  isucc=1; is=1;
+  while ((su[row][isucc]!=0) && (isucc<PS))
+         {
+          indx = su[row][isucc];
+          indice = exist_tache(indx,nb_taches);
+          // ne pas afficher si tache END
+          if (su[row][isucc] != 9999)
+            {                          // §§§§§§§§§§§§§§§§§§§§§§§§§§§§
+              if (row>1) AdvStringGrid3->RowCount++;
+              AdvStringGrid3->Cells[1][is]=su[row][isucc];           // taches
+              AdvStringGrid3->Cells[2][is]=AdvStringGrid1->Cells[2][indice];          // designation
+              AdvStringGrid3->Cells[3][is]=duree[indice];    //duree
+              AdvStringGrid3->Cells[4][is]=deb_plus_tot[indice]+1;
+              if (su_tl[row][isucc]==0) AdvStringGrid3->Cells[5][is]="FD";
+              else if (su_tl[row][isucc]==1) AdvStringGrid3->Cells[5][is]="FF";
+              else if (su_tl[row][isucc]==2) AdvStringGrid3->Cells[5][is]="AM";
+              else if (su_tl[row][isucc]==3) AdvStringGrid3->Cells[5][is]="DD";
+              AdvStringGrid3->Cells[6][is]=su_decal[row][isucc];
+              is++;
+            }
+          isucc++;
+         }
+ refresh_coches();
+}
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::InsertPredSeul(int tach,int tpred, int tl, int decal)
+{
+ int ipred,found,indx;
+  //AdvStringGrid2->Row++;
+    // FAUX  insere tache predecesseur  (la tache en cours est current_task
+    // tach et trped sont les numeros reels
+    ipred=1;  found=0;
+    indx = exist_tache(tach,new_nb_taches);
+
+    while ((pr[indx][ipred]!=0) && (ipred<PS)) // && (pr[tach][ipred]!=9999)) && (ipred<PS))
+       {
+        if (pr[indx][ipred] == tpred){found=1; break; }
+        else  ipred++;
+       }
+
+    if (ipred >= PS-1) Application->MessageBox("Insert Pred : Pred > PS ",ecoplan,MB_OK);
+    pr[indx][ipred] = tpred;
+    pr_tl[indx][ipred] = tl;
+    pr_decal[indx][ipred] = decal;
+
+    if (!found) AdvStringGrid2->RowCount++;
+    pr[indx][ipred+1]=0; // 9999;
+
+}
+
+void __fastcall TplStandard::InsertSuccSeul(int tach,int tsucc,int tl, int decal)
+{
+ int isucc;
+ int dec,xsucc;
+ int found;
+
+
+ // &&&&&&&&&&&&&&
+
+ dec= exist_tache(tach,new_nb_taches);
+ xsucc= tsucc; // =exist_tache(tsucc,new_nb_taches);
+ if (dec==0) return;
+ if (xsucc==0) return;
+
+    isucc=1; found=0;
+    while (((su[dec][isucc]!=0) && (su[dec][isucc] !=9999)) && (isucc<PS))
+       {  if (su[dec][isucc] == tsucc) { found=1; break;} else isucc++; }
+
+    if (isucc >= PS-1) Application->MessageBox("Insert Succ : Succ > PS ",ecoplan,MB_OK);
+    su[dec][isucc] = xsucc;
+    su_tl[dec][isucc] = tl;
+    su_decal[dec][isucc] = decal;
+     if (!found) AdvStringGrid3->RowCount++;
+
+    isucc=1;
+    while (su[dec][isucc] !=0) isucc++;
+    su[dec][isucc]=9999; //0  9999;
+
+}
+
+
+
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::Effacer1Click(TObject *Sender)
+{
+
+ char tmp[100];
+ // Effacer Tache   en cours
+ sprintf(tmp,"Confirmer effacement de la tâche %d",current_task);
+ if (Application->MessageBox(tmp,ecoplan,MB_YESNO) ==IDNO) return;
+ effacer_tache(current_task);
+
+ current_task=1;
+ grefresh(current_task);
+
+
+}
+//---------------------------------------------------------------------------
+
+
+
+
+void __fastcall TplStandard::Inserer1Click(TObject *Sender)
+{
+ // click sur Inserer Tache
+ int a,b,nt;
+ int indx,k;
+ char tmp[250];
+
+ a=current_task;
+ if (nb_taches==0)
+ {
+  Application->MessageBox("Pas de tâche existante - Utilisez la touche 'INSER'","Insertion Tâche",MB_OK);
+  return;
+  }
+ if (a==1)
+ sprintf (tmp,"Insertion d'une tâche devant la tâche %d ? ", a);
+  else
+ sprintf (tmp,"Insertion d'une tâche entre les tâches %d et %d ? ", a-1,a);
+
+ if (Application->MessageBox(tmp,"Insertion Tâche",MB_YESNO) == IDNO) return;
+
+    // chercher premier numero de tache libre
+    nt = next_task();
+    sprintf(tmp,"Nlle Tache %d",nt);
+    for (indx=nb_taches;indx>=a;indx--)
+      {
+       coche[indx+1]=coche[indx];
+       sommets[indx+1]=sommets[indx];
+       filtr[indx+1]=filtr[indx];
+       duree[indx+1]=duree[indx];
+       duree_reelle[indx+1]=duree_reelle[indx];
+       strcpy(codetache[indx+1],codetache[indx]);
+       strcpy(da[indx+1],da[indx]);
+       strcpy(dtr[indx+1],dtr[indx]);
+       strcpy(ftr[indx+1],ftr[indx]);
+       pc[indx+1]=pc[indx];
+       nbj[indx+1]=nbj[indx];
+       tmom[indx+1]=tmom[indx];
+       tcal[indx+1]=tcal[indx];
+
+
+       // maj des predecesseurs et successeurs
+
+       for (k=0;k<PS;k++)
+         { pr[indx+1][k] = pr[indx][k];
+           pr_tl[indx+1][k] = pr_tl[indx][k];
+           pr_decal[indx+1][k] = pr_decal[indx][k];
+           su[indx+1][k] = su[indx][k];
+           su_tl[indx+1][k] = su_tl[indx][k];
+           su_decal[indx+1][k] = su_decal[indx][k];
+         }
+
+       AdvStringGrid1->Cells[1][indx+1]=AdvStringGrid1->Cells[1][indx];
+       AdvStringGrid1->Cells[2][indx+1]=AdvStringGrid1->Cells[2][indx];
+       AdvStringGrid1->Cells[3][indx+1]=AdvStringGrid1->Cells[3][indx];
+      } // for indx
+
+   // insertion de la tache en indice "a"
+   sommets[a]=nt;
+   coche[a]=' ';
+   duree[a]=1;
+   duree_reelle[a]=1;
+   filtr[a]=' ';
+   tcal[a]=1;
+   tmom[a]=0;
+   codetache[a][0]=0;
+   for (k=0;k<PS;k++)
+     { pr[a][k]=0; pr_tl[a][k]=0; pr_decal[a][k]=0;
+       su[a][k]=0; su_tl[a][k]=0; su_decal[a][k]=0;
+     }
+   su[a][1]=9999;
+   sprintf(tmp,"Nlle Tache %d",nt);
+   AdvStringGrid1->Cells[1][a]=nt;
+   AdvStringGrid1->Cells[2][a]=AnsiString(tmp);
+   AdvStringGrid1->Cells[3][a]=1;
+   if (a>1) AdvStringGrid1->RowCount++;
+   sprintf(tmp,"Creation d'une nouvelle tâche %d",nt);
+   Application->MessageBox(tmp,"Insertion Tâche",MB_OK);
+
+   nb_taches++;
+   current_task=1;
+   grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+int __fastcall TplStandard::next_task()
+{
+ int indx,it;
+ it=0;
+ for (indx=1;indx<=nb_taches;indx++)
+   {
+    if (sommets[indx] > it) it = sommets[indx];
+   }
+ it++;
+ return it;
+}
+
+
+
+
+void __fastcall TplStandard::WriteExchange(int n)
+{
+ FILE *fp;
+ fp = fopen("dataexchange.txt","w");
+ if (fp)
+   {
+    fputs(exchange,fp);   fputs("\n",fp);
+    if (n>1) { fputs(exchange2,fp); fputs("\n",fp); }
+    fclose(fp);
+   }
+ else Application->MessageBox("Impossible d'ouvrir le fichier échanges",ecoplan,MB_OK);
+
+}
+
+void __fastcall TplStandard::ReadExchange(int n)
+{
+  FILE *fp;  int l;
+ exchange2[0]=0;
+ fp = fopen("dataexchange.txt","r+b");
+ fgets(exchange,1999,fp);
+ l=strlen(exchange); if (l>1) exchange[l-2]=0;
+ if (n>1) { fgets(exchange2,1999,fp); l=strlen(exchange2); if (l>1) exchange2[l-2]=0; }
+ fclose(fp);
+}
+void __fastcall TplStandard::CochertouteslesTaches1Click(TObject *Sender)
+{
+ int i;
+ for (i=1;i<=nb_taches;i++) // §§§§§§§§§§§§§§§
+   { coche[i] = 'X';
+     AdvStringGrid1->Cells[0][i]="X";
+   }
+ refresh_coches();
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::DcochertouteslesTaches1Click(TObject *Sender)
+{
+ int i;
+ for (i=1;i<=nb_taches;i++)  // §§§§§§§§§§§§§§§§§§§
+   {
+    coche[i]=' ';
+    AdvStringGrid1->Cells[0][i]=" ";
+   }
+ refresh_coches();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::CopierlesTaches1Click(TObject *Sender)
+{
+
+ char tmp[250];
+ TCopy *CTask;
+ int cascade;
+ int decalage;
+ int tl;
+ int tlien;
+ int oldcoche;
+ int newcoche;
+ int nexttache;
+ int ipred,tpred,decal,nt;
+ int numtachpred,decalpred,tlpred,indpred;
+ int l,count,i,index,first;
+ int xnb_taches;
+ int nb_coches;
+ //   on va faire appel a une boite de dialogue;
+
+     CTask = new TCopy(Application);
+     CTask->ShowModal();
+     delete CTask;
+     ReadExchange(1);
+     l=ExtractValue(tmp,exchange,"null",0);
+     if (strcmp(tmp,"TRUE")==0) return;
+
+     nexttache=0; nb_coches=0;
+     for (i=1;i<=nb_taches;i++)
+        { if (sommets[i]>nexttache) nexttache=sommets[i];
+          if (coche[i]=='X') nb_coches++;
+        }
+     //  preparer sommets [i] defacon a prendre en compte les nlles taches
+     // nb taches cochees dans nb_coches;
+     for (i=1; i <=nb_coches; i++)
+           sommets[i+nb_taches] = nexttache + i;
+        new_nb_taches = nb_taches+nb_coches;
+
+     // decodage de exchange
+     cascade=0; decalage=0; tl=0;
+     ExtractValue(tmp,exchange,"cascade",0);
+     if (strcmp(tmp,"T")==0)
+       { cascade=1;
+         ExtractValue(tmp,exchange,"decalage",0);
+         decalage=atoi(tmp);
+         ExtractValue(tmp,exchange,"tl",0);
+         tlien=atoi(tmp);
+       }
+     oldcoche=0; newcoche=0;
+     ExtractValue(tmp,exchange,"old",0);
+     if (strcmp(tmp,"T")==0)  oldcoche=1;
+     ExtractValue(tmp,exchange,"new",0);
+     if (strcmp(tmp,"T")==0)  newcoche=1;
+
+   // compter les coches : message si dup > MAX_T
+   count=0;
+   xnb_taches=nb_taches;
+   for (i=1;i<=xnb_taches;i++)if (coche[i]=='X') count++;
+   if ((nb_taches+count) >= MAX_T)
+    {
+     Application->MessageBox("Nombre de tâches trop élevé ( > 4200 )",ecoplan,MB_OK);
+     return;
+    }
+   //  maintenant, on y va, on duplique
+
+   count=0;
+
+   first=true;
+   for (i=1;i<=xnb_taches;i++)
+     {
+      if ((coche[i]=='X') && (su_tl[i][1] != 2))   // ne pas copier taches amont
+       {
+        count++;  index= xnb_taches+count;
+        nexttache++;
+
+        duree[index]=duree[i];
+        tcal[index] = tcal[i];
+
+        filtr[index]=filtr[i];
+       duree_reelle[index]=duree_reelle[i];
+       strcpy(codetache[index],codetache[i]);
+       strcpy(da[index],da[i]);
+       strcpy(dtr[index],dtr[i]);
+       strcpy(ftr[index],ftr[i]);
+       //pc[indx+1]=pc[indx];
+       //nbj[indx+1]=nbj[indx];
+       //tmom[indx+1]=tmom[indx];
+
+
+
+        sommets[index]=nexttache;
+        AdvStringGrid1->Cells[1][index]= nexttache;
+        AdvStringGrid1->Cells[2][index]= "Tache " + IntToStr(nexttache) + " ";
+        nb_taches=nb_taches+1;
+ //       pr[index][1]=0; su[index][1]=0; // 9999;
+
+        if (!cascade)
+          {
+           if (!first)
+             {
+              ipred=1;
+              while ((pr[i][ipred] != 0) && (ipred<PS))
+                {
+                  // inserer un predecesseur que si tache cochee
+                  nt= pr[i][ipred];  //
+                  if (coche[nt]=='X')
+                   {
+                      tl = pr_tl[i][ipred];
+                      decal = pr_decal[i][ipred];
+                      tpred = nexttache - i + nt;
+                     InsertPredSeul(nexttache,tpred,tl,decal);
+                     InsertSuccSeul(tpred,nexttache,tl,decal);
+                    }
+                  ipred++;
+                 } // while
+
+              } //
+            first=false;
+           } // ! cascade
+
+
+        if (cascade)   //
+         {
+          // if (!first)
+          //   {
+              InsertPredSeul(index,i,tlien,decalage);
+              InsertSuccSeul(i,index,tlien,decalage);
+              ipred=1;
+              while ((pr[i][ipred] != 0) && (ipred<PS))
+                {
+                  nt= pr[i][ipred];  //
+                  if (coche[nt]=='X')
+                   {
+                      tl = pr_tl[i][ipred];
+                      decal = pr_decal[i][ipred];
+                      tpred = nexttache - i + nt;
+                     InsertPredSeul(nexttache,tpred,tl,decal);
+                     InsertSuccSeul(tpred,nexttache,tl,decal);
+                    }
+                 ipred++;
+               }
+         } // if cascade
+      }  // if coche=X
+     } // for
+
+           // cocher-decocher en fin de traitement
+
+  count=0; nexttache=0;
+  for (i=1;i<=xnb_taches;i++)
+     {
+      if (coche[i]=='X')
+       {
+        count++;    index= xnb_taches+count;
+        nexttache++;
+
+        if (oldcoche==0)  {coche[i]=' '; AdvStringGrid1->Cells[0][i]= " "; }
+        AdvStringGrid1->RowCount++;
+        if (newcoche==1)
+          { coche[index]='X';
+            AdvStringGrid1->Cells[0][index]= "X";
+          }
+        else
+          {
+           coche[index]=' ';
+            AdvStringGrid1->Cells[0][index]= " ";
+          }
+      }
+    }
+
+  current_task=1;
+  grefresh(current_task);
+}
+
+void __fastcall TplStandard::effacer_tache(int t)
+{
+ int indice;
+ int indx,k,nt,it;
+ int ipred,isucc;
+
+ indice = exist_tache(t,nb_taches);
+ if ((indice==0) || (indice > MAX_T)) return;
+ if (nb_taches < 1) return;
+
+ for (indx=indice; indx<=nb_taches+1; indx++)
+   {
+    sommets[indx]=sommets[indx+1];
+    coche[indx]=coche[indx+1];
+    tcal[indx]=tcal[indx+1];
+    tmom[indx]=tmom[indx+1];
+    filtr[indx]=filtr[indx+1];
+    duree[indx]=duree[indx+1];
+    duree_reelle[indx]=duree_reelle[indx+1];
+       // maj des predecesseurs et successeurs
+
+       for (k=0;k<PS;k++)
+         { pr[indx][k] = pr[indx+1][k];
+           pr_tl[indx][k] = pr_tl[indx+1][k];
+           pr_decal[indx][k] = pr_decal[indx+1][k];
+           su[indx][k] = su[indx+1][k];
+           su_tl[indx][k] = su_tl[indx+1][k];
+           su_decal[indx][k] = su_decal[indx+1][k];
+         }
+
+
+       AdvStringGrid1->Cells[1][indx]=AdvStringGrid1->Cells[1][indx+1];
+       AdvStringGrid1->Cells[2][indx]=AdvStringGrid1->Cells[2][indx+1];
+       AdvStringGrid1->Cells[3][indx]=AdvStringGrid1->Cells[3][indx+1];
+   }
+
+   // clean the last row
+   for (k=0;k<=AdvStringGrid1->ColCount;k++)  AdvStringGrid1->Cells[k][nb_taches]="";
+
+   nb_taches--;
+ // traitement pour retirer tous les predecesseurs ou successeurs
+ // lies a la tache T
+
+  for (indx=1;indx<=nb_taches;indx++)
+    {
+     ipred=1;
+     while ((pr[indx][ipred] !=0) && (pr[indx][ipred] !=9999))
+       {
+        nt=pr[indx][ipred];
+        if (nt==t)
+          {// decaler  + break;
+           for (it=ipred;it<PS;it++)
+             {
+              pr[indx][it]=pr[indx][it+1];
+              pr_tl[indx][it]=pr_tl[indx][it+1];
+              pr_decal[indx][it]=pr_decal[indx][it+1];
+             }
+           break;
+          }
+
+        ipred++;
+       }
+     isucc=1;
+      while ((su[indx][isucc] !=0) && (su[indx][isucc] != 9999))
+       {
+        nt=su[indx][isucc];
+        if (nt==t)
+          { // decaler + break;
+           for (it=isucc;it<PS;it++)
+             {
+              su[indx][it]=su[indx][it+1];
+              su_tl[indx][it]=su_tl[indx][it+1];
+              su_decal[indx][it]=su_decal[indx][it+1];
+             }
+           break;
+          }
+
+        isucc++;
+       }
+
+
+    }
+
+ current_task=1;
+ grefresh(current_task);
+}
+
+
+//---------------------------------------------------------------------------
+
+
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::CocherDcocherTacheencours1Click(
+      TObject *Sender)
+{
+ int i;
+ i = current_task;
+ // tache en cours doit etre dans current_task
+ if (coche[i]=='X')
+   {
+    coche[i]=' ';
+    AdvStringGrid1->Cells[0][i]=" ";
+   }
+ else
+   {
+    coche[i]='X';
+    AdvStringGrid1->Cells[0][i]="X";
+   }
+ refresh_coches();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::CocherDcocherTches1Click(TObject *Sender)
+{
+  int i;
+ for (i=1;i<=nb_taches;i++)
+  {
+  if (coche[i]=='X')
+   {
+    coche[i]=' ';
+    AdvStringGrid1->Cells[0][i]=" ";
+   }
+ else
+   {
+    coche[i]='X';
+    AdvStringGrid1->Cells[0][i]="X";
+   }
+ }
+
+ refresh_coches();
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::ScrollBar2Scroll(TObject *Sender,
+      TScrollCode ScrollCode, int &ScrollPos)
+{
+ //
+ int x;
+ x=ScrollBar2->Position - 50;
+ DrawGantt(current_task,x);
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::ScrollBar1Scroll(TObject *Sender,
+      TScrollCode ScrollCode, int &ScrollPos)
+{
+ int x1,x2;
+ x2=ScrollBar2->Position - 50;
+ x1=int (ScrollBar1->Position*nb_taches/100)+1;
+
+ DrawGantt(x1,x2);
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::LierTachesCoches1Click(TObject *Sender)
+{
+  int l,decal,tl;
+  char tmp[250];
+  int ix; int first; int previous;
+
+   TLienCoche *CLien;
+ // lier taches cochees
+ // faire paraitre une petite fenetre de dialogue
+     CLien = new TLienCoche(Application);
+     CLien->ShowModal();
+     delete CLien;
+     ReadExchange(1);
+     l=ExtractValue(tmp,exchange,"null",0);
+     if (strcmp(tmp,"TRUE")==0) return;
+
+ // on extrait type de lien et decalage
+     l=ExtractValue(tmp,exchange,"decalage",0);
+     decal = atoi(tmp);
+     l=ExtractValue(tmp,exchange,"tl",0);
+     tl= atoi(tmp);
+
+
+ //  on fabrique les liens avec les predecesseurs
+ // previous contient le numero de taches precedente
+     first = 1;  // la premiere tache cochee n'aura pas de predecesseurs
+     for (ix=1;ix<=nb_taches;ix++)
+       {
+        if (coche[ix]=='X')
+         {
+          if (first)  first=0;
+          else
+           {
+            // nt=sommets[ix];
+            new_nb_taches = nb_taches;
+            ctask=sommets[ix];
+            InsertPredSeul(ctask,previous,tl,decal);
+            InsertSuccSeul(previous,ctask,tl,decal);
+           }
+          previous = sommets[ix];
+         }
+       }
+
+     current_task=1;
+     grefresh(current_task);
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::SupprimerTchesCoches1Click(TObject *Sender)
+{
+ int ok,i,numtache;
+ if (Application->MessageBox("Voulez vous supprimer les taches cochées ?",
+      ecoplan,MB_YESNO)== IDNO) return;
+ ok = 1;
+
+ while(ok)
+   {
+    // chercher s'il reste une tache cochee
+    numtache=0;
+    for (i=1;i<=nb_taches;i++)
+       {
+        if (coche[i] == 'X') { coche[i]=' '; numtache=sommets[i]; break; }
+       }
+     if (numtache != 0)
+        effacer_tache(numtache);
+     else ok=0;
+   }
+
+    current_task=1;
+    grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::delier_tache(int t)
+{
+ int indice;
+ int indx,k,nt,it;
+ int ipred,isucc;
+ int tblpred[500], tblsucc[500];
+ int ctrpred,ctrsucc,i;
+
+
+ indice = exist_tache(t,nb_taches);
+ if ((indice==0) || (indice > MAX_T)) return;
+ if (nb_taches < 1) return;
+
+ for (i=0;i<500;i++) {tblpred[i]=0; tblsucc[i]=0; }
+ ctrpred=0;ctrsucc=0;
+
+ // traitement pour retirer tous les predecesseurs ou successeurs
+ // lies a la tache T   : delier uniquement entre taches cochees
+  indx=1;
+  while (indx<=nb_taches)
+     {
+      if (sommets[indx]==t)
+        {
+         ipred=1;
+         while (pr[indx][ipred] !=0)
+           {
+             if (coche[pr[indx][1]]=='X')
+               { tblpred[ctrpred]=pr[indx][ipred];
+                 ctrpred++;
+               }
+             ipred++;
+           }
+         isucc=1;
+         while  ((su[indx][isucc] !=0) && (su[indx][isucc]!=9999))
+           {
+             if (coche[su[indx][isucc]]=='X')
+              { tblsucc[ctrsucc]= su[indx][isucc];
+                ctrsucc++;
+              }
+             isucc++;
+           }
+
+         break;
+        }
+      indx++;
+     }
+
+// on va maintenant  retirer les pred et succ selectionnes
+
+  for (i=0;i<ctrpred;i++)
+     {
+       ctask=sommets[indx];
+       RemovePredSeul(ctask,tblpred[i]);
+       RemoveSuccSeul(tblpred[i],ctask);
+     }
+  for (i=0;i<ctrsucc;i++)
+     { ctask=sommets[indx];
+       RemoveSuccSeul(indx,tblsucc[i]);
+       RemovePredSeul(tblsucc[i],indx);
+     }
+
+}
+
+
+
+void __fastcall TplStandard::DlierTchesCoches1Click(TObject *Sender)
+{
+ // delier taches cochees
+ // enlever tous les liens suppr et pred lies a une tache donnee
+ int i;
+ if (Application->MessageBox("Voulez vous délier les tâches cochées ?",
+      ecoplan,MB_YESNO)== IDNO) return;
+
+    for (i=1;i<=nb_taches;i++)
+       {
+        if (coche[i] == 'X')  delier_tache(sommets[i]);
+
+        }
+
+
+  current_task=1;
+ grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+
+int __fastcall TplStandard::SaveAs(char *name)
+{
+ char newname[256];
+ char *p;
+
+ strcpy(newname,name); strlwr(newname);
+ p = strstr(newname,".indx");
+ if (p) *p=0;
+ strcpy(LocalBase,name);
+ updatedatabase(LocalBase);
+ Application->MessageBox(newname,ecoplan,MB_OK);
+ return 1;
+
+}
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::MonthCalendar1Click(TObject *Sender)
+{
+ Edit3->Text = MonthCalendar1->Date;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::Button9Click(TObject *Sender)
+{
+ char Key[100],RetKey[100];
+ int  rc, recdata;
+ char tmp1[200],tmp[200];
+     strcpy(Key,"<dateprevdebut>");
+     strcpy(tmp1,Edit3->Text.c_str());
+     rc = proj->ReadDirectKey(0,Key,RetKey,&recdata);
+     if (rc) rc = proj->RewriteRecord(tmp1, strlen(tmp1)+1,recdata);
+     else
+     { recdata=proj->GetNewRecordNumber();
+       rc = proj->WriteKey(0,Key,recdata);
+       rc = proj->WriteRecord(tmp1,strlen(tmp1)+1);
+     }
+ strcpy(dateprevdeb,tmp1);
+ Label7->Caption = Edit3->Text;
+
+   tmp1[2]=0; JourPrev=atoi(tmp1);
+   tmp1[5]=0; MoisPrev=atoi(tmp1+3);
+   tmp1[10]=0; AnPrev=atoi(tmp1+6);
+
+ PageControl1->ActivePageIndex=0;
+ init_calendrier();
+
+  current_task=1;
+ grefresh(current_task);
+}
+
+// =======================================================================
+//  ALL ADVSTRINGGRID 1
+// =======================================================================
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid1ContextPopup(TObject *Sender,
+      TPoint &MousePos, bool &Handled)
+{
+ int X,Y;
+ X = MousePos.x;
+ Y = MousePos.y;
+  AdvStringGrid1->MouseToCell(X, Y, CurCol, CurRow);
+ // conversion en ligne et colonne courantes
+ PopupList->Popup(X, Y);
+}
+
+void __fastcall TplStandard::AdvStringGrid1MouseUp(TObject *Sender,
+      TMouseButton Button, TShiftState Shift, int X, int Y)
+{
+  int Column, Row;
+
+  AdvStringGrid1->MouseToCell(X, Y, Column, Row);
+  if ((Row > nb_taches) || (Row < 0)) return;
+  if (Column==0)
+     { SG1Row=Row; SG1Col=0;
+      if (coche[Row]=='X') coche[Row]=' ';
+       else coche[Row]='X';
+    AdvStringGrid1->Cells[0][Row] = coche[Row];
+    AdvStringGrid1->Cells[1][Row] = IntToStr(sommets[Row]);
+    AdvStringGrid1->Row=sommets[Row];
+    AdvStringGrid1->Col=1;
+     }
+ }
+
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid1KeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+ int i,ipred,isucc;
+ char tmp[250];
+ int nt,dur;
+ TNewTask *NewTask;
+ int exist,ok;
+ int j;
+
+ if (Key == VK_INSERT)
+    {    //  insertion d une tache a la fin
+
+     nt=nb_taches+1;
+     ok=0;
+     while (!ok)
+      {
+         exist = exist_tache(nt,nb_taches);
+         if (exist !=0)  nt++;  else ok=1;
+       }
+     if (nt>1) AdvStringGrid1->RowCount++;
+     nb_taches++; new_nb_taches=nb_taches;
+
+     sommets[nb_taches]=nt;
+     AdvStringGrid1->Cells[1][nb_taches]=nt;
+
+
+     //ExtractValue(tmp,exchange,"libel",0);
+
+     sprintf(tmp,"Tache numéro %d",nt);
+
+     AdvStringGrid1->Cells[2][nb_taches]= AnsiString (tmp);
+     AdvStringGrid1->Cells[10][nb_taches]= "1";
+     //ExtractValue(tmp,exchange,"duree",0);
+     //dur = atoi(tmp);
+      i=nb_taches;
+      duree[i]=0;
+      duree_reelle[i]=0;
+      deb_plus_tot[i]=0;
+      fin_plus_tot[i]=0;
+      deb_plus_tard[i]=0;
+      fin_plus_tard[i]=0;
+      sommets[i]=0;
+      coche[i]= ' ';
+      filtr[i]= ' ';
+      tcal[i]=1;
+      tmom[i]=0;
+      da[i][0]=0;
+      dtr[i][0]=0;
+      ftr[i][0]=0;
+      pc[i]=0;
+      nbj[i]=0;
+
+
+      for (j=0;j<PS;j++)
+        {
+         pr[i][j]=0; su[i][j]=0;
+         pr_tl[i][j]=0; su_tl[i][j]=0;
+         pr_decal[i][j]=0; su_decal[i][j]=0;
+        }
+
+
+     dur=1;
+
+
+     if (dur <=0) dur=1;
+     duree[nb_taches]=dur;
+
+     // nettoyage des predecesseurs de la tache END ainsi que
+     // les succ
+
+     ipred=1;
+     sommets[nb_taches]=nt;  ///nb_taches;
+
+     AdvStringGrid1->Cells[3][nb_taches]= IntToStr(dur);
+      current_task=nb_taches;
+      grefresh(current_task);
+     return;
+   }  // VK_INSERT
+
+ if (Key==VK_DELETE)
+    {
+    sprintf(tmp,"Confirmer effacement de la tâche %d",current_task);
+    if (Application->MessageBox(tmp,ecoplan,MB_YESNO) ==IDNO) return;
+    effacer_tache(current_task);
+
+     current_task=1;
+      if (nb_taches==0) current_task=0;
+     else
+      {  current_task=1;
+         grefresh(current_task);
+      }
+    // AdvStringGrid1->Refresh();
+    }
+
+ }
+
+void __fastcall TplStandard::AdvStringGrid1GetCellColor(TObject *Sender,
+      int ARow, int ACol, TGridDrawState AState, TBrush *ABrush,
+      TFont *AFont)
+{
+  /*
+  char tmp[250]; char n[15];
+  char filename[255];
+  if (AdvStringGrid1->Cells[8][ARow]=="0")
+   {
+    if (ACol==1)
+    { GetCurrentDirectory(MAX_PATH,filename);
+      strcat(filename,"\\critical.bmp");
+      strcpy(tmp,"<IMG src=\"file://"); strcat(tmp,filename); strcat(tmp,"\">");
+      strcpy(n,AdvStringGrid1->Cells[1][ARow].c_str());
+      strcat(tmp," ");
+      strcat(tmp,n);
+      AdvStringGrid1->Cells[1][ARow]= AnsiString(tmp);
+
+     }
+  */
+
+
+ if (AdvStringGrid1->Cells[8][ARow]=="0")
+   {
+    if (ACol==1)
+      {  ABrush->Color=clRed;
+      }
+   }
+
+}
+
+
+
+
+
+
+
+void __fastcall TplStandard::AdvStringGrid1CanEditCell(TObject *Sender,
+      int ARow, int ACol, bool &CanEdit)
+{
+ CanEdit = true;
+ if (ARow == 0) CanEdit = false;
+ //if ((ACol < 2) || (ACol > 3)) CanEdit = false;
+ if (ACol == 11) CanEdit = true;  // code tache
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::AdvStringGrid1ClickCell(TObject *Sender,
+      int ARow, int ACol)
+{
+  /*
+  if ((ARow <1) || (ARow > nb_taches)) return;
+  SG1Col = Cur1Col = ACol;
+  SG1Row = Cur1Row = ARow;
+
+  current_task=ARow;
+ grefresh(current_task);
+ */
+}
+//---------------------------------------------------------------------------
+
+
+
+
+void __fastcall TplStandard::AdvStringGrid1CellValidate(TObject *Sender,
+      int ACol, int ARow, AnsiString &Value, bool &Valid)
+{
+  int a,nt;
+  char tmp[250];
+  if (ACol==3)  // duree
+    { // verifier si numerique (sinon ca plante)
+     strcpy(tmp,Value.c_str());
+     a = atoi(tmp);
+     if (a <=0) { Valid=false; Beep(); return; }
+
+     duree[ARow] = a;
+     Valid = true;
+    }
+  change=1;
+  current_task=ARow;
+ grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid1SelectCell(TObject *Sender,
+      int ACol, int ARow, bool &CanSelect)
+{
+ // int a,b;
+ if ((ARow>0) && (ARow <= nb_taches))
+  {  current_task=ARow;
+  grefresh(current_task);
+  }
+}
+
+// =================================================================
+//          ADVSTRINGGRID2
+// =================================================================
+
+void __fastcall TplStandard::AdvStringGrid2KeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+ int numt,nt;
+ int tl;
+ int decal;
+ TNum_Tache_Pred *Num_Tache_Pred;
+ //int ipred,isucc;
+
+ char tmp[250];
+
+ // §§§§§§§§§§§§§§§§§§
+
+ if (Key==VK_INSERT)
+   {
+    exchange[0]=0;
+    sprintf(exchange,"Préd. Tache %d",sommets[current_task]);
+    WriteExchange(1);
+    Num_Tache_Pred = new TNum_Tache_Pred(Application);
+    Num_Tache_Pred->ShowModal();
+    delete Num_Tache_Pred;
+    ReadExchange(1);
+    ExtractValue(tmp,exchange,"tache",0);
+    numt = atoi(tmp);
+    if ((numt <1) || (numt>9999)) return;
+    nt = exist_tache(numt,nb_taches);
+    if (nt==0)
+     {
+     Application->MessageBox("Cette tache n'existe pas",ecoplan,MB_OK);
+     return;
+     }
+    ExtractValue(tmp,exchange,"tl",0);
+    tl = atoi(tmp);
+    ExtractValue(tmp,exchange,"decal",0);
+    decal = atoi(tmp);
+
+    if (numt==sommets[current_task])        // @@@@@@@@@@@@@@
+      {
+      Application->MessageBox("Même numéro de tâche prédecesseur",ecoplan,MB_OK);
+      return;
+     }
+
+    new_nb_taches = nb_taches;
+    ctask=sommets[current_task];
+    InsertPredSeul(ctask,numt,tl,decal);           // numt @@@@@@@@@@@@ààà nt
+    InsertSuccSeul(numt,ctask,tl,decal);           //  nt  @@@@@@@@@@@@@à
+
+    grefresh(current_task);
+    }
+  else if (Key == VK_DELETE)
+    {
+     if (Application->MessageBox("Comfirmez la suppression du predecesseur",ecoplan,MB_YESNO)== IDNO)
+     return;
+     numt = StrToInt(AdvStringGrid2->Cells[1][SG2Row]);
+     ctask=sommets[current_task];
+     RemovePredSeul(ctask,numt);
+     RemoveSuccSeul(numt,ctask);
+     grefresh(current_task);
+    }
+}
+
+
+// =========================================================================
+//      ADVSTRINGGRID3
+// =========================================================================
+
+void __fastcall TplStandard::AdvStringGrid3KeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+ int nt,numt;
+ int tl;
+ int decal;
+ TNum_Tache_Succ *Num_Tache_Succ;
+ //int isucc,ipred;
+
+ char tmp[250];
+
+ // §§§§§§§§§§§§§§§§§§§§§§
+
+ if (Key==VK_INSERT)
+   {
+    exchange[0]=0;
+    sprintf(exchange,"Succ. Tache %d",sommets[current_task]);
+    WriteExchange(1);
+    Num_Tache_Succ = new TNum_Tache_Succ(Application);
+    Num_Tache_Succ->ShowModal();
+    delete Num_Tache_Succ;
+    ReadExchange(1);
+    ExtractValue(tmp,exchange,"tache",0);
+    numt = atoi(tmp);
+    if ((numt <1) || (numt>9999)) return; //nb_taches)) return;
+    nt = exist_tache(numt,nb_taches);
+    if (nt==0)
+     {
+     Application->MessageBox("Cette tache n'existe pas",ecoplan,MB_OK);
+     return;
+     }
+    ExtractValue(tmp,exchange,"tl",0);
+    tl = atoi(tmp);
+    ExtractValue(tmp,exchange,"decal",0);
+    decal = atoi(tmp);
+
+    if (numt==sommets[current_task])
+      {
+      Application->MessageBox("Même numéro de tâche successeur",ecoplan,MB_OK);
+      return;
+      }
+
+    // insere tache successeur  (la tache en cours est current_task
+
+    new_nb_taches = nb_taches;
+    ctask=sommets[current_task];
+    InsertSuccSeul(ctask,numt,tl,decal);
+    InsertPredSeul(numt,ctask,tl,decal);
+    grefresh(current_task);
+    }
+  else if (Key == VK_DELETE)
+    {
+     if (Application->MessageBox("Comfirmez la suppression du successeur",ecoplan,MB_YESNO)== IDNO)
+     return;
+
+
+     numt = StrToInt(AdvStringGrid3->Cells[1][SG3Row]);
+     ctask=sommets[current_task];
+     RemoveSuccSeul(ctask,numt);
+     RemovePredSeul(numt,ctask);
+     grefresh(current_task);
+    }
+}
+
+
+// =========================================================================
+//---------------------------------------------------------------------------
+
+int __fastcall TplStandard::insere_tache(int pos, int dur, int nt, char *txt)
+{
+int a,indx,k;
+char tmp[250];
+a=pos;
+for (indx=nb_taches;indx>=a;indx--)  // PROVISOIRE   §§§§§§§§§§§§§§§§§§
+      {
+       coche[indx+1]=coche[indx];
+       sommets[indx+1]=sommets[indx];
+       filtr[indx+1]=filtr[indx];
+       tcal[indx+1]=tcal[indx];
+       tmom[indx+1]=tmom[indx];
+       duree[indx+1]=duree[indx];
+       duree_reelle[indx+1]=duree_reelle[indx];
+       // maj des predecesseurs et successeurs
+
+       for (k=0;k<PS;k++)
+         { pr[indx+1][k] = pr[indx][k];
+           pr_tl[indx+1][k] = pr_tl[indx][k];
+           pr_decal[indx+1][k] = pr_decal[indx][k];
+           su[indx+1][k] = su[indx][k];
+           su_tl[indx+1][k] = su_tl[indx][k];
+           su_decal[indx+1][k] = su_decal[indx][k];
+         }
+
+       AdvStringGrid1->Cells[1][indx+1]=AdvStringGrid1->Cells[1][indx];
+       AdvStringGrid1->Cells[2][indx+1]=AdvStringGrid1->Cells[2][indx];
+       AdvStringGrid1->Cells[3][indx+1]=AdvStringGrid1->Cells[3][indx];
+      }
+
+   // insertion de la tache en indice "a"
+   sommets[a]=nt;
+   coche[a]=' ';
+   duree[a]=1;
+   duree_reelle[a]=1;
+   tcal[a]=1;
+   tmom[a]=0;
+   filtr[a]=' ';
+   if (a>1) AdvStringGrid1->RowCount++;
+    for (k=0;k<PS;k++)
+    { pr[a][k]=0; pr_tl[a][k]=0; pr_decal[a][k]=0;
+      su[a][k]=0; su_tl[a][k]=0; su_decal[a][k]=0;
+    }
+  su[a][1]=9999;
+
+   // sprintf(tmp,"Nlle Tache %d",nt);
+   AdvStringGrid1->Cells[1][a]=nt;
+   AdvStringGrid1->Cells[2][a]=AnsiString(txt);
+   nb_taches++;
+
+}
+
+void __fastcall TplStandard::TachesAmontssurtachesCoches1Click(
+      TObject *Sender)
+{
+  int ind,precedent,torig, nt,ix,l;
+  char tmp[250]; int nbt,dur_amont,design,pos;
+  char libel[100],opdesign[10];
+ //  examiner la premiere tache cochées
+  TfTachesAmont *tam;
+
+
+for (ind=1;ind <= nb_taches; ind++)
+  {
+   if (coche[ind]=='X')
+    {
+     exchange[0]=0;
+     sprintf(exchange,"%d",sommets[ind]);
+     strcpy(exchange2,AdvStringGrid1->Cells[2][ind].c_str());
+     WriteExchange(2);
+     tam = new TfTachesAmont(Application);
+     tam->ShowModal();
+     delete tam;
+     ReadExchange(1);
+     l=ExtractValue(tmp,exchange,"null",0);
+     if (strcmp(tmp,"TRUE")!=0)
+       {
+         ExtractValue(tmp,exchange,"nbt",0);
+         nbt = atoi(tmp);
+         ExtractValue(tmp,exchange,"dur",0);
+         dur_amont = atoi(tmp);
+         ExtractValue(opdesign,exchange,"design",0);
+         strcpy(libel,AdvStringGrid1->Cells[2][ind].c_str());
+
+         // on demarre avec tache mere
+         precedent = sommets[ind];
+         torig = ind+1;
+         for (ix=1;ix<=nbt;ix++)
+          {
+            nt = next_task();
+
+            if (strcmp(opdesign,"same")==0) strcpy(tmp,libel);
+              else sprintf(tmp,"Tache Amont %d",nt);
+            insere_tache(torig,dur_amont,nt,tmp);  // ,precedent,2,1, tmp);
+            new_nb_taches = nb_taches;
+            InsertPredSeul(precedent,nt,2,0);
+            InsertSuccSeul(nt,precedent,2,0);
+            pos = exist_tache(nt,new_nb_taches);
+            tmom[pos]=ind;   // memorise la mere;
+            precedent=nt;
+            torig++;
+          }
+         current_task=ind;
+         grefresh(current_task);
+       } //if not null
+
+   } // if coche
+  } // end boucle for
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::AffecterunCalendrier1Click(TObject *Sender)
+{
+ int ind,num_cal,l;
+ TAffectCal *taf;
+ char tmp[250];
+
+ taf = new TAffectCal(Application);
+ taf->ShowModal();
+ delete taf;
+
+ ReadExchange(1);
+ l=ExtractValue(tmp,exchange,"null",0);
+ if (strcmp(tmp,"TRUE")==0)  return;
+ ExtractValue(tmp,exchange,"ncal",0);
+ num_cal = atoi(tmp);
+ if ((num_cal<1) || (num_cal>5)) num_cal= 1;
+
+
+ for (ind=1;ind <= nb_taches; ind++)
+  {
+   if (coche[ind]=='X')
+    {
+         tcal[ind] = num_cal;
+         AdvStringGrid1->Cells[10][ind]= num_cal;
+    }
+   } // end FOR
+
+   current_task=1;
+   //  init_calendrier();
+   grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid2CanEditCell(TObject *Sender,
+      int ARow, int ACol, bool &CanEdit)
+{
+ CanEdit = true;
+ if (ARow < 1) CanEdit = false;
+
+ if ((ACol < 3) || (ACol > 6)) CanEdit = false;
+ if  (ACol==4) CanEdit = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid3CanEditCell(TObject *Sender,
+      int ARow, int ACol, bool &CanEdit)
+{
+  CanEdit = true;
+ if (ARow < 1) CanEdit = false;
+
+ if ((ACol < 3) || (ACol > 6)) CanEdit = false;
+ if  (ACol==4) CanEdit = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid2CellValidate(TObject *Sender,
+      int ACol, int ARow, AnsiString &Value, bool &Valid)
+{
+  int a; int vtask;
+  char tmp[250];
+  int typl,idecal;
+  char stypl[10];
+
+  strcpy(tmp,Value.c_str());
+  if (ACol==3)  // duree
+    { // verifier si numerique (sinon ca plante)
+     vtask = atoi(AdvStringGrid2->Cells[1][ARow].c_str());
+     vtask=exist_tache(vtask,nb_taches);
+     a = atoi(tmp);
+     if (a <=0) { Valid=false; Beep(); return; }
+     duree[vtask] = a;
+     Valid = true;
+     //current_task=vtask;
+     grefresh(current_task);
+     return;
+    }
+  if (ACol==5)  // Type
+    { Valid=false;
+      vtask = atoi(AdvStringGrid2->Cells[1][ARow].c_str());
+      // vtask=exist_tache(vtask,nb_taches);
+      if (strcmp(tmp,"fd")==0) { Valid=true; strcpy(tmp,"FD"); AdvStringGrid2->Cells[5][ARow]="FD"; }
+      if (strcmp(tmp,"ff")==0) { Valid = true;strcpy(tmp,"FF"); AdvStringGrid2->Cells[5][ARow]="FF"; }
+      if (strcmp(tmp,"am")==0) { Valid=true; strcpy(tmp,"AM"); AdvStringGrid2->Cells[5][ARow]="AM"; }
+      if (strcmp(tmp,"dd")==0) { Valid=true; strcpy(tmp,"DD"); AdvStringGrid2->Cells[5][ARow]="DD"; }
+      if ((strcmp(tmp,"FD")==0) ||
+           (strcmp(tmp,"FF")==0) ||
+           (strcmp(tmp,"DD")==0) ||
+           (strcmp(tmp,"AM")==0))
+       {
+        idecal = atoi(AdvStringGrid2->Cells[6][ARow].c_str()); typl=0;
+        if (strcmp(tmp,"FD")==0) typl = 0;
+        if (strcmp(tmp,"FF")==0) typl= 1;
+        if (strcmp(tmp,"AM")==0) typl= 2;
+        if (strcmp(tmp,"DD")==0) typl= 3;
+        Valid=true;
+        new_nb_taches=nb_taches;
+        InsertPredSeul(current_task,vtask,typl,idecal);
+        InsertSuccSeul(vtask,current_task,typl,idecal);
+        grefresh(current_task);
+        return;
+       }
+       else { Valid=false; Beep(); return; }
+    }
+
+  if (ACol==6) // Decal
+     {
+      vtask = atoi(AdvStringGrid2->Cells[1][ARow].c_str());
+      idecal = atoi(tmp);  // decalage
+      strcpy(stypl,AdvStringGrid2->Cells[5][ARow].c_str());
+        if (strcmp(stypl,"FD")==0) typl = 0;
+        if (strcmp(stypl,"FF")==0) typl= 1;
+        if (strcmp(stypl,"AM")==0) typl= 2;
+        if (strcmp(stypl,"DD")==0) typl= 3;
+        Valid=true;
+        new_nb_taches=nb_taches;
+        InsertPredSeul(current_task,vtask,typl,idecal);
+        InsertSuccSeul(vtask,current_task,typl,idecal);
+     grefresh(current_task);
+     return;
+     }
+  change=1;
+}
+//---------------------------------------------------------------------------
+
+
+int __fastcall  TplStandard::grefresh(int task)
+{
+
+ Compute_PlusTotA();
+ Compute_PlusTardA();
+ DrawGantt(task,-20);
+ Refresh_Pred_Succ(task);
+}
+
+
+/////////////////////////////////////////////////////////////////
+
+void __fastcall TplStandard::AdvStringGrid3CellValidate(TObject *Sender,
+      int ACol, int ARow, AnsiString &Value, bool &Valid)
+{
+    int a; int vtask;
+  char tmp[250];
+  int typl,idecal;
+  char stypl[10];
+
+  strcpy(tmp,Value.c_str());
+  if (ACol==3)  // duree
+    { // verifier si numerique (sinon ca plante)
+     vtask = atoi(AdvStringGrid3->Cells[1][ARow].c_str());
+     vtask=exist_tache(vtask,nb_taches); // OK
+     a = atoi(tmp);
+     if (a <=0) { Valid=false; Beep(); return; }
+     duree[vtask] = a;
+     Valid = true;
+     grefresh(current_task);
+     return;
+    }
+  if (ACol==5)  // Type
+    { Valid=false;
+      vtask = atoi(AdvStringGrid3->Cells[1][ARow].c_str());
+      // vtask=exist_tache(vtask,nb_taches);
+      if (strcmp(tmp,"fd")==0) { Valid=true; strcpy(tmp,"FD"); AdvStringGrid3->Cells[5][ARow]="FD"; }
+      if (strcmp(tmp,"ff")==0) { Valid = true;strcpy(tmp,"FF"); AdvStringGrid3->Cells[5][ARow]="FF"; }
+      if (strcmp(tmp,"am")==0) { Valid=true; strcpy(tmp,"AM"); AdvStringGrid3->Cells[5][ARow]="AM"; }
+      if (strcmp(tmp,"dd")==0) { Valid=true; strcpy(tmp,"DD"); AdvStringGrid3->Cells[5][ARow]="DD"; }
+      if ((strcmp(tmp,"FD")==0) ||
+           (strcmp(tmp,"FF")==0) ||
+           (strcmp(tmp,"DD")==0) ||
+           (strcmp(tmp,"AM")==0))
+       {
+        idecal = atoi(AdvStringGrid3->Cells[6][ARow].c_str()); typl=0;
+        if (strcmp(tmp,"FD")==0) typl = 0;
+        if (strcmp(tmp,"FF")==0) typl= 1;
+        if (strcmp(tmp,"AM")==0) typl= 2;
+        if (strcmp(tmp,"DD")==0) typl= 3;
+        Valid=true;
+        new_nb_taches=nb_taches;
+        InsertSuccSeul(current_task,vtask,typl,idecal);
+        InsertPredSeul(vtask,current_task,typl,idecal);
+        grefresh(current_task);
+        return;
+       }
+       else { Valid=false; Beep(); return; }
+    }
+
+  if (ACol==6) // Decal
+     {
+      vtask = atoi(AdvStringGrid3->Cells[1][ARow].c_str());
+      idecal = atoi(tmp);  // decalage
+      strcpy(stypl,AdvStringGrid3->Cells[5][ARow].c_str());
+        if (strcmp(stypl,"FD")==0) typl = 0;
+        if (strcmp(stypl,"FF")==0) typl= 1;
+        if (strcmp(stypl,"AM")==0) typl= 2;
+        if (strcmp(stypl,"DD")==0) typl= 3;
+        Valid=true;
+        new_nb_taches=nb_taches;
+        InsertSuccSeul(current_task,vtask,typl,idecal);
+        InsertPredSeul(vtask,current_task,typl,idecal);
+        grefresh(current_task);
+     return;
+     }
+ change=1;
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TplStandard::AdvStringGrid2SelectCell(TObject *Sender,
+      int ACol, int ARow, bool &CanSelect)
+{
+ SG2Col=ACol;
+ SG2Row=ARow; // pour pouvoir effacer
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::AdvStringGrid3SelectCell(TObject *Sender,
+      int ACol, int ARow, bool &CanSelect)
+{
+ SG3Col=ACol;
+ SG3Row=ARow; // pour pouvoir effacer
+}
+//---------------------------------------------------------------------------
+
+
+
+int __fastcall TplStandard::verifdate(char *dt10)
+{
+ char d[50];     // format DD/MM/AAAA    et stockage dans std_date et reverse_date
+ char tmp[10];
+ strcpy(d,dt10);
+ d[2]=0; JourVerif=atoi(d);
+ d[5]=0; MoisVerif=atoi(d+3);
+ d[10]=0; AnVerif=atoi(d+6);
+
+
+ std_date[0]=0; reverse_date[0]=0;
+
+ if ((JourVerif < 0) || (JourVerif > 31))
+   {
+    Application->MessageBoxA("Jour Incorrect",ecoplan,MB_OK);
+    return 1;
+   }
+ if ((MoisVerif < 0) || (MoisVerif > 12))
+   {
+    Application->MessageBoxA("Mois Incorrect",ecoplan,MB_OK);
+    return 1;
+   }
+ if ((AnVerif < 2000) || (AnVerif > 2050))
+   {
+    Application->MessageBoxA("Année Incorrecte",ecoplan,MB_OK);
+    return 1;
+   }
+
+sprintf(std_date,"%02d/%02d/%02d",JourVerif,MoisVerif,AnVerif%100);
+sprintf(reverse_date,"%02d/%02d/%02d",AnVerif,MoisVerif,JourVerif%100);
+return 0;
+}
+
+int __fastcall TplStandard::verifdate8(char *dt)
+{
+ char d[50];     // format DD/MM/AA    et stockage dans std_date et reverse_date
+ char tmp[10];
+ strcpy(d,dt);
+ d[2]=0; JourVerif=atoi(d);
+ d[5]=0; MoisVerif=atoi(d+3);
+ d[8]=0; AnVerif=atoi(d+6);
+
+
+ std_date[0]=0; reverse_date[0]=0;
+
+ if ((JourVerif < 0) || (JourVerif > 31))
+   {
+    Application->MessageBoxA("Jour Incorrect",ecoplan,MB_OK);
+    return 1;
+   }
+ if ((MoisVerif < 0) || (MoisVerif > 12))
+   {
+    Application->MessageBoxA("Mois Incorrect",ecoplan,MB_OK);
+    return 1;
+   }
+ if ((AnVerif < 0) || (AnVerif > 50))
+   {
+    Application->MessageBoxA("Année Incorrecte",ecoplan,MB_OK);
+    return 1;
+   }
+
+sprintf(std_date,"%02d/%02d/%02d",JourVerif,MoisVerif,AnVerif%100);
+sprintf(reverse_date,"%02d/%02d/%02d",AnVerif,MoisVerif,JourVerif%100);
+return 0;
+}
+
+
+void __fastcall TplStandard::AdvStringGrid1GetFormat(TObject *Sender,
+      int ACol, TSortStyle &AStyle, AnsiString &aPrefix,
+      AnsiString &aSuffix)
+{
+
+//TSortStyle = (ssAutomatic, ssAlphabetic, ssNumeric, ssDate, ssAlphaNoCase, ssAlphaCase,
+//ssShortDateEU, ssShortDateUS, ssCustom, ssFinancial);
+
+switch(ACol) {
+case 1: AStyle=ssNumeric; //AStyle=ssAlphaNoCase;
+break;
+case 2: AStyle=ssAlphaNoCase;
+break;
+case 3: AStyle=ssNumeric;
+break;
+case 4: ssShortDateEU; //  AStyle=ssDate;
+break;
+case 5: AStyle=ssNumeric;
+aSuffix="pk";
+break;
+case 6: AStyle=ssNumeric;
+aPrefix="$";
+break;
+
+}
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::validate_avancement()
+{
+ if (!global_valid) return;
+ // row_avancement est a l'origine
+ //asAvanc->Cells[6][row_avancement] = AdvStringGrid4->Cells[7][1];
+ //asAvanc->Cells[7][row_avancement] = AdvStringGrid4->Cells[8][1];
+ //asAvanc->Cells[8][row_avancement] = AdvStringGrid4->Cells[6][1];
+ //asAvanc->Cells[9][row_avancement] = AdvStringGrid4->Cells[5][1];
+// asAvanc->Cells[6][row_avancement] = AdvStringGrid4->Cells[7][1];
+// asAvanc->Cells[6][row_avancement] = AdvStringGrid4->Cells[7][1];
+// asAvanc->Cells[6][row_avancement] = AdvStringGrid4->Cells[7][1];
+// asAvanc->Cells[6][row_avancement] = AdvStringGrid4->Cells[7][1];
+
+}
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid4CanEditCell(TObject *Sender,
+      int ARow, int ACol, bool &CanEdit)
+{
+ int ch;
+ CanEdit = false;
+ if (ARow < 1) return;
+ ch=vl_chp[4][ACol];
+ if (ch_sai[ch][0]=='N') return;
+ CanEdit = true;
+}
+//---------------------------------------------------------------------------
+
+
+
+
+void __fastcall TplStandard::btDatActClick(TObject *Sender)
+{
+TActual *tac;
+ char tmp[250];
+ char isamname[250];
+ char dt1[15];char dt2[15];
+ int i,j,ok,indx;
+ int count,rc,nt,l,cnt;
+ bool conc;
+ char tachconcern[20];
+ genbase *avanc;
+ char nameact[255];
+
+ char Key[100],RetKey[100];
+ int recdata;
+ char buffer[1000];
+ char str[200];
+
+
+ FLAG_AVANC_LOADED = false;
+
+ // dateavanc[0]=0;  /// ££££££££££££££££££
+
+ strcpy(exchange,dateavanc);
+ WriteExchange(1);
+ tac = new TActual(Application);
+ tac->ShowModal();
+ delete tac;
+ ReadExchange(1);
+ l=ExtractValue(tmp,exchange,"null",0);
+ if (strcmp(tmp,"TRUE")==0) return;
+
+  l=ExtractValue(dt1,exchange,"da",0);
+  if (l!=10)
+    {
+     Application->MessageBoxA("Date Incorrecte",ecoplan,MB_OK);
+     return;
+    }
+  rc = verifdate(dt1);
+  if (rc>0) return;
+  Label12->Caption = AnsiString(std_date);
+
+  l=ExtractValue(tachconcern,exchange,"tc",0);
+  conc=false; if (strcmp(tachconcern,"true")==0) conc=true;
+
+  count=0;
+
+ AnAvanc=AnVerif;MoisAvanc=MoisVerif;JourAvanc=JourVerif;
+ // pour verifier les dates dt1 et dt2
+ sprintf(dt1,"%04d-%02d-%02d",AnAvanc,MoisAvanc,JourAvanc);
+
+ // ou bien il existe deja un avancement, sinon, on convertit
+ // en date, a partir de date au plus tot prev;
+
+ // on nettoie la stringgrid !
+
+ for (i=1;i<=asAvanc->ColCount;i++){for (j=1;j<=asAvanc->RowCount;j++) asAvanc->Cells[i][j]="";}
+ asAvanc->RowCount=2;
+ // // lecture du fichier pour trouver les avancements possibles
+ // examen des dates d'avancement de toutes les taches
+  cnt= Explode('@',dateavanc);
+
+  if (cnt ==0)
+     {flag_avanc=false;
+      // on pointe sur le previsionnel
+
+
+     }
+   else
+     {
+       /*
+       flag_avanc=true;
+       avanc = new  genbase();
+       strcpy(tmp,LocalBase);
+       sprintf(isamname,"-%03d",cnt);
+       strcat(tmp,isamname);
+       strcpy(nameact,isamname); strcat(nameact,".act");
+       if (!FileExists(AnsiString(nameact)))
+         {
+          strcpy(tmp,"Fichier Actualisation ");
+          strcat(tmp,isamname);
+          strcat(tmp," non trouvé");
+          Application->MessageBoxA(tmp,ecoplan,MB_OK);
+          return;
+         }
+       rc = avanc->OpenEngine(tmp,120,"act","dat");   //512 - 8
+       rc = avanc->SetIndexMode(0,0);
+       */
+     }
+
+ for (indx=1;indx<=nb_taches;indx++)
+   { ok=false;
+    add_jour(AnPrev,MoisPrev,JourPrev,deb_plus_tot[indx]);
+    sprintf(dt2,"%02d-%02d-%02d",An,Mois,Jour);
+    nt=exist_tache(indx,nb_taches);
+    if (!conc) ok=true;
+    else if  (strcmp(dt1,dt2) >=0) ok=true;  // tache concernee
+    if (ok)
+      {count++;
+       if (count>1) asAvanc->RowCount++;
+
+       // le previsionnel
+
+       asAvanc->Cells[1][count] = indx;
+       sprintf(str,"%d",indx);
+       setvalue(5,count,39,str);
+
+       setvalue(5,count,40,AdvStringGrid1->Cells[2][nt].c_str());   // designation
+       setvalue(5,count,62,AdvStringGrid1->Cells[10][nt].c_str());  // calendrier
+       setvalue(5,count,46,AdvStringGrid1->Cells[4][nt].c_str());   // date plus tot prev
+       sprintf(str,"%d",duree[indx]);
+       setvalue(5,count,47,str);  // duree
+       setvalue(5,count,66,AdvStringGrid1->Cells[8][nt].c_str());  // Marge Totale
+
+       setvalue(5,count,48,AdvStringGrid1->Cells[5][nt].c_str());   // date fintot prev
+       setvalue(5,count,49,"");    // cout previsionnel
+       if (!flag_avanc) //
+         {
+          setvalue(5,count,46,AdvStringGrid1->Cells[4][nt].c_str());   // date plus tot prev
+          sprintf(str,"%d",duree[indx]);
+          setvalue(5,count,42,str);
+          setvalue(5,count,41,AdvStringGrid1->Cells[4][nt].c_str());
+          setvalue(5,count,43,AdvStringGrid1->Cells[5][nt].c_str());
+
+          getvalue(5,count,46); setvalue(5,count,69,adv);  // ^date plus tot possible
+
+          setvalue(5,count,44,"0");
+          setvalue(5,count,45,"0");
+         }
+       // lecture fichier isam pour les autres données
+       if (flag_avanc) //
+         {
+          sprintf(Key,"<T%04d>",nt);
+          rc = avanc->ReadDirectKey(0,Key,RetKey,&recdata);
+          if (rc) // trouve
+            {
+             avanc->ReadRecord(buffer,recdata);
+             ExtractValue(tmp,buffer,"ddebreel",0);
+             setvalue(5,count,41,tmp);
+
+             ExtractValue(tmp,buffer,"durreel",0);
+             setvalue(5,count,42,tmp);
+             ExtractValue(tmp,buffer,"dfinreel",0);
+             setvalue(5,count,43,tmp);
+             ExtractValue(tmp,buffer,"retimp",0);
+             setvalue(5,count,44,tmp);
+
+             ExtractValue(tmp,buffer,"rettot",0);
+             setvalue(5,count,45,tmp);
+
+             ExtractValue(tmp,buffer,"coutr",0);
+             setvalue(5,count,50,tmp);
+
+
+
+            }   //if rc trouvé
+         } // if flag_avanc
+      } // if OK
+
+   } // for Loop
+
+
+  Compute_DateDebutPossible();
+
+  FLAG_AVANC_LOADED = true;
+  ///// $$$$if (flag_avanc)  { avanc->CloseEngine(); avanc->~genbase(); }
+  sprintf(tmp,"%d",count);
+  Label22->Caption = AnsiString(tmp);
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::btSavActClick(TObject *Sender)
+{
+ genbase *avanc;
+ // preparer nouvelle date pour string dateavanc.
+ int count,cntact; int ix; char tmp[250]; char cnt[100];
+ int rc; int indx; char isamname[250];
+ int tachnumber,tacheact;
+ char Key[100]; char RetKey[100];
+ int recdata; bool ok; char str[50];
+ char da[15];
+
+ count= Explode('@',dateavanc);
+ //label 12, contient la date
+ strcpy(tmp,Label12->Caption.c_str()); strcpy(da,tmp);
+ if (strcmp(tmp,"----------")==0)
+  { Application->MessageBoxA("Aucune Date Actualisation Choisie",ecoplan,MB_OK);
+   return;
+  }
+ strcat(dateavanc,tmp);
+ sprintf(tmp,"-%03d@",count+1);
+ strcat(dateavanc,tmp);
+
+ // preparer copie dans nouveau fichier Isam !
+ verifdate8(da);
+ avanc = new  genbase();
+ strcpy(tmp,LocalBase);
+ sprintf(cnt,"-%02d%02d%02d-%03d",AnVerif,MoisVerif,JourVerif,count+1);
+ strcat(tmp,cnt);
+
+ strcpy(isamname,tmp); strcat(isamname,".act"); unlink(isamname);
+ strcpy(isamname,tmp); strcat(isamname,".dat"); unlink(isamname);
+
+ rc = avanc->OpenEngine(tmp,120,"act","dat");   //512 - 8
+ rc = avanc->SetIndexMode(0,0);
+
+ count = nb_taches;
+
+ for (indx=1;indx<=count;indx++)
+  {
+   // pour toutes les taches, verifier si elles sont dans l'actualisation
+   // si c'est non, on copie juste le previsionnel
+   // mais toutes les taches doivent etre la !
+
+   strcpy(tmp,AdvStringGrid1->Cells[1][indx].c_str());
+   tachnumber=atoi(tmp);
+   buffer[0]=0;
+   ok=false;
+   cntact=asAvanc->RowCount;
+   for (ix=1;ix<cntact;ix++)
+     {
+      getvalue(5,ix,39);
+      //strcpy(str,asAvanc->Cells[1][ix].c_str());
+      tacheact = atoi(adv);
+      if (tacheact == tachnumber) {ok=true; break; }
+     }
+
+   buffer[0]=0;
+   getvalue(1,indx,1); concat("nt");
+   getvalue(1,indx,2); concat("lb");
+   getvalue(1,indx,4); concat("ddp");
+   getvalue(1,indx,3); concat("dp");
+   getvalue(1,indx,5); concat("dfp");
+   getvalue(1,indx,9); concat("cal");
+
+   if (ok) // on sauve l'actualisation
+    {
+     strcpy(adv,da); concat("da");
+     getvalue(5,ix,41); concat("ddr");
+     getvalue(5,ix,42); concat("dr");
+     getvalue(5,ix,43); concat("dfr");
+     getvalue(5,ix,44); concat("rimp");
+     getvalue(5,ix,45); concat("rtot");
+    }
+   else
+    {
+     adv[0]=0; concat("da");
+     getvalue(1,indx,4); concat("ddr");
+     getvalue(1,indx,3); concat("dr");
+     getvalue(1,indx,5); concat("dfr");
+     strcpy(adv,"0"); concat("rimp");
+     concat("rtot");
+    }
+
+   sprintf(Key,"<T%04d>",tachnumber);
+   recdata=avanc->GetNewRecordNumber();
+   rc = avanc->WriteKey(0,Key,recdata);
+   rc = avanc->WriteRecord(buffer,strlen(buffer)+1);
+  }
+ rc = avanc->CloseEngine(); avanc->~genbase();
+ Application->MessageBoxA("Actualisation Saugardée",ecoplan,MB_OK);
+}
+//---------------------------------------------------------------------------
+
+int __fastcall TplStandard::concat(char *tag)
+{
+ strcat(buffer,"<"); strcat(buffer,tag); strcat(buffer,">");
+ strcat(buffer,adv);
+ strcat(buffer,"</"); strcat(buffer,tag); strcat(buffer,">");
+}
+
+void __fastcall TplStandard::Button1Click(TObject *Sender)
+{
+  char tmp[250]; int count,i;
+  char cnt[10];
+  char isamname[250];
+
+ count= Explode('@',dateavanc);
+ if (count >0)
+  {
+   for (i=1;i<=count;i++)
+    { strcpy(tmp,LocalBase);
+      sprintf(cnt,"-%03d",i);
+      strcat(tmp,cnt);
+      strcpy(isamname,tmp); strcat(isamname,".act"); unlink(isamname);
+      strcpy(isamname,tmp); strcat(isamname,".dat"); unlink(isamname);
+     }
+
+  }
+ dateavanc[0]=0;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::ScrollBar6Scroll(TObject *Sender,
+      TScrollCode ScrollCode, int &ScrollPos)
+{
+ int x1,x2;
+ x2=ScrollBar6->Position - 50;
+ x1=int (ScrollBar1->Position*nb_taches/100)+1;
+
+ DrawMiniGantt(x1,x2);
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::ScrollBar5Scroll(TObject *Sender,
+      TScrollCode ScrollCode, int &ScrollPos)
+{
+ int x;
+ x=ScrollBar5->Position - 50;
+ DrawMiniGantt(current_task,x);
+}
+//---------------------------------------------------------------------------
+
+
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::btRecalculClick(TObject *Sender)
+{
+ init_calendrier();
+ current_task=1;
+ grefresh(current_task);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::btVoletClick(TObject *Sender)
+{
+ char tmp[255];
+ char filename[255];
+ GetCurrentDirectory(MAX_PATH,filename);
+ strcat(filename,"\\critical.bmp");
+
+
+
+ strcpy(tmp,"<IMG src=\"file://"); strcat(tmp,filename); strcat(tmp,"\">Tache X");
+
+ AdvTest->Cells[1][1]= AnsiString(tmp);
+
+ strcpy(tmp,"<IMG src=\"res://dessins.DANGER\">  Tache 2");
+ AdvTest->Cells[1][2]= AnsiString(tmp);
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::Timer1Timer(TObject *Sender)
+{
+ char tmp[255];
+
+ if (flag_alert)
+  {
+   if (flip_flop)
+    { lAlert->Font->Color = clBlack;
+      lAlert->Caption = "";
+      flip_flop = false;
+    }
+   else
+    {
+     lAlert->Font->Color = clRed;
+      lAlert->Caption = "Retard Imputable";
+      flip_flop = true;
+    }
+  }
+
+if (flag_alertPred)
+  {
+   if (flip_flopPred)
+    { lAlertPred->Font->Color = clBlack;
+      lAlertPred->Caption = "";
+      flip_flopPred = false;
+    }
+   else
+    {
+     lAlertPred->Font->Color = clRed;
+     sprintf(tmp,"Tache %d : Retard Imputable",av_tache_pred);
+      lAlertPred->Caption = AnsiString(tmp);
+      flip_flopPred = true;
+    }
+  }
+
+
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TplStandard::btSACTClick(TObject *Sender)
+{
+ int i,row,nt,t,maj;
+
+ // envoi des saisies dans la grille principale
+ getvalue(4,1,53);  setvalue(5,row_avancement,44,adv);  // ret imp
+ getvalue(4,1,54);  setvalue(5,row_avancement,45,adv);  // ret total
+ getvalue(4,1,55);  setvalue(5,row_avancement,42,adv);  // duree reelle
+ getvalue(4,1,56);  setvalue(5,row_avancement,41,adv);  // deb plus tot reel
+ getvalue(4,1,57);  setvalue(5,row_avancement,43,adv);  // date fin reelle
+ getvalue(4,1,57);  setvalue(5,row_avancement,69,adv);  // date debut reel possible
+ getvalue(4,1,52);  setvalue(5,row_avancement,70,adv);  // date avancement
+ // maj des prédecesseurs aussi
+
+ for (row=1;row<AdvStringGrid5->RowCount;row++)
+  {
+    getvalue(6,row,31); nt=atoi(adv);
+    maj=0;
+    for (i=1;i<asAvanc->RowCount; i++)
+      { getvalue(5,i,39); t=atoi(adv);
+        if (t==nt)
+          {
+           getvalue(6,row,35); setvalue(5,i,41,adv);  // date debut reel
+           getvalue(6,row,36); setvalue(5,i,43,adv);
+           getvalue(6,row,64); setvalue(5,i,42,adv);
+           getvalue(6,row,33); setvalue(5,i,44,adv);
+           getvalue(6,row,34); setvalue(5,i,45,adv);
+           getvalue(4,1,52);  setvalue(5,i,70,adv);  // date avancement
+
+           maj=1;
+           break;
+          }
+      }
+   if (maj==0)
+     {
+       // predecesseur pas present dans la grille
+
+     }
+  }
+
+ change=1;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::asAvancCanEditCell(TObject *Sender, int ARow,
+      int ACol, bool &CanEdit)
+{
+ CanEdit=false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid5CanEditCell(TObject *Sender,
+      int ARow, int ACol, bool &CanEdit)
+{
+ int ch;
+ CanEdit = false;
+ if (ARow < 1) return;
+ ch=vl_chp[6][ACol];
+ if (ch_sai[ch][0]=='N') return;
+ CanEdit = true;
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TplStandard::asAvancClickCell(TObject *Sender, int ARow,
+      int ACol)
+{
+ int task,ptask,pptask;
+ char tmp[250];
+ char str[250];
+ int dur,nb,i,t,nt,count;
+ int ipred;
+ AnsiString Val1;
+
+ flag_alert = false;
+ flag_alertPred=false;
+
+ row_avancement = ARow;
+ strcpy(tmp,asAvanc->Cells[1][ARow].c_str());
+ task = atoi(tmp);
+ sprintf(tmp,"%d",task);
+ lTA->Caption = AnsiString(tmp);
+  getvalue(5,ARow,44);           // retard imputable
+  setvalue(4,1,53,adv);
+  getvalue(5,ARow,45);           // retard imputable
+  setvalue(4,1,54,adv);
+  getvalue(5,ARow,41);           // date debut reelle
+  setvalue(4,1,56,adv);
+  getvalue(5,ARow,42);           // duree reelle
+  setvalue(4,1,55,adv);
+  getvalue(5,ARow,43);           // date fin reelle
+  setvalue(4,1,57,adv);
+  getvalue(5,ARow,69);           // date deb possible
+  setvalue(4,1,26,adv);
+
+ // Date dans label 12
+ sprintf(tmp,"%02d/%02d/%02d",JourAvanc,MoisAvanc,AnAvanc%100);
+ setvalue(4,1,52,tmp);
+
+ setvalue(4,1,29,"0");  // pourcentage restant
+ setvalue(4,1,28,"0");  // jours restant
+ setvalue(4,1,30,"0");  // jours restant
+ // cleaner les predecesseurs
+ AdvStringGrid5->RowCount=2;
+ for(i=0;i<AdvStringGrid5->ColCount;i++)
+      AdvStringGrid5->Cells[i][1]="";
+
+ ipred=1; count=0;
+ while(pr[task][ipred] != 0)
+   {
+    nt=pr[task][ipred];
+
+
+    for (i=1; i<asAvanc->RowCount; i++)
+      {
+       getvalue(5,i,39); t=atoi(adv);
+       if (t==nt)
+         {
+          count++; if (count>1) AdvStringGrid5->RowCount++;
+          getvalue(5,i,39); setvalue(6,count,31,adv);
+          getvalue(5,i,40); setvalue(6,count,59,adv);
+          getvalue(5,i,41); setvalue(6,count,35,adv);
+          getvalue(5,i,42); setvalue(6,count,64,adv);
+          getvalue(5,i,43); setvalue(6,count,36,adv);
+          getvalue(5,i,44); setvalue(6,count,33,adv);
+          getvalue(5,i,45); setvalue(6,count,34,adv);
+          getvalue(5,i,69); setvalue(6,count,32,adv);
+          getvalue(5,i,48); setvalue(6,count,65,adv);
+          getvalue(5,i,62); setvalue(6,count,63,adv);
+
+          setvalue(6,ipred,37,"0");
+          setvalue(6,ipred,38,"0");
+
+          pptask=exist_tache(nt,nb_taches);
+          strcpy(tmp,TYPL[pr_tl[nt][ipred]]);
+          setvalue(6,ipred,60,tmp);
+          sprintf(tmp,"%d",pr_decal[nt][ipred]);
+          setvalue(6,ipred,61,tmp);
+
+         }
+      }
+
+
+    ipred++;
+   }
+
+ // lecture des predecesseurs
+
+ /*
+ ipred=1;  //
+ while(pr[task][ipred] !=0)
+   { ptask = pr[task][ipred];
+     pptask=exist_tache(ptask,nb_taches);
+     if (ipred > 1) AdvStringGrid5->RowCount++;
+     strcpy(str,AdvStringGrid1->Cells[2][pptask].c_str());
+     sprintf(tmp,"%d",ptask);
+     setvalue(6,ipred,31,tmp);
+     setvalue(6,ipred,59,str);
+
+     strcpy(tmp,TYPL[pr_tl[task][ipred]]);
+     setvalue(6,ipred,60,tmp);
+
+
+     sprintf(tmp,"%d",pr_decal[task][ipred]);
+     setvalue(6,ipred,61,tmp);
+
+     sprintf(tmp,"%d",tcal[task]);
+     setvalue(6,ipred,63,tmp);
+
+
+     //
+     // chargement des dates prev si pas avancement
+     if (!flag_avanc)
+       {
+        strcpy(str,AdvStringGrid1->Cells[4][pptask].c_str());
+        setvalue(6,ipred,35,str);
+        strcpy(str,AdvStringGrid1->Cells[5][pptask].c_str());
+        setvalue(6,ipred,36,str);
+        strcpy(str,AdvStringGrid1->Cells[3][pptask].c_str());
+        setvalue(6,ipred,64,str);
+        strcpy(str,AdvStringGrid1->Cells[5][pptask].c_str());
+        setvalue(6,ipred,65,str);  // date fin prev
+        strcpy(str,AdvStringGrid1->Cells[4][pptask].c_str());
+        setvalue(6,ipred,32,str);  // date deb possible
+        setvalue(6,ipred,33,"0");
+        setvalue(6,ipred,34,"0");
+        setvalue(6,ipred,37,"0");
+        setvalue(6,ipred,38,"0");
+       }
+     else
+       {
+        // lire dans fichier Avancement
+
+       }
+
+     ipred++;
+    }
+  */
+ Compute_DateDebutPossible();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::AdvStringGrid5CellValidate(TObject *Sender,
+      int ACol, int ARow, AnsiString &Value, bool &Valid)
+{
+  // retrouver le champ
+ int ch; int val,rc;
+ char tmp[255]; float cout; int x; int tache,tachepred;
+ float fdata; float fdata2; int result,result2;
+ char str[50];
+ char dt1[15],dt2[15],dt3[15];
+
+
+ getvalue(6,ARow,31); tachepred=atoi(adv);
+ av_tache_pred=tachepred;
+ getvalue(5,row_avancement,39); tache=atoi(adv);
+ ch=vl_chp[6][ACol];
+ strcpy(tmp,AdvStringGrid5->Cells[ACol][ARow].c_str());
+ row_av_pred =ARow;
+ Valid=true;
+ switch (ch)
+   {
+    case 37 : // % restant
+       val=atoi(tmp);
+       if ((val <0) || (val > 100))
+         { Application->MessageBoxA("Pourcentage incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+
+       // lire durée réelle et calculer nb jours restants
+       getvalue(6,ARow,55);
+       result = atoi(adv);
+       x =  ((float) val) * (((float) result) / 100.0) +0.5;
+
+       sprintf(str,"%d",x);
+       setvalue(6,ARow,38,str);
+       break;
+    case 38 : // Jours restants
+       val=atoi(tmp);
+       if ((val <0) || (val > 999))
+         { Application->MessageBoxA("Nombre Jours restants Incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+       // compute percentage
+       getvalue(6,ARow,38);
+       result = atoi(adv);
+       fdata = (float) result;
+       getvalue(6,ARow,64); // duree reelle predecesseur
+       result2=atoi(adv);
+       fdata2 = (float) result2;
+       x= ( fdata *100.0) / (fdata2);
+       sprintf(str,"%d",x);
+       setvalue(6,ARow,37,str);
+       break;
+
+    case 64 :  // duree reelle predecesseur
+       val=atoi(tmp);
+       if ((val <0) || (val > 999))
+         { Application->MessageBoxA("Duree Réelle Incorecte",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+
+       break;
+
+    case 35 :  // date début réel
+       rc=verifdate8(tmp);
+       if (rc>0) { Valid = false; break;}
+
+       break;
+
+    case 36 : // date fin rélle
+       rc=verifdate8(tmp);
+       if (rc>0) { Valid = false; break;}
+
+       break;
+
+   }
+ if (Valid==true)
+   {
+    Compute_DateDebutPossiblePred(ARow);
+    setvalue(6,ARow,ch,tmp);
+
+    getvalue(4,1,52); strcpy(dt1,adv);   // data avancement
+    getvalue(6,ARow,35); strcpy(dt2,adv);   // date debut reel
+    getvalue(6,ARow,36); strcpy(dt3,adv);   // date fin reelle
+
+    rc= comp_dist_dates(dt1,dt3,0,0);
+    if (rc < 0)   // date fin < date avanc
+      {
+       setvalue(6,ARow,37,"0");  // pourcent restant
+       setvalue(6,ARow,38,"0");
+       switch (ch)
+       {
+       case 64:   // duree
+                getvalue(6,ARow,64); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                break;
+              case 35:   // DDR
+                Compute_Duree_ReellePred(ARow);
+                getvalue(6,ARow,55); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                break;
+              case 36:
+                Compute_Duree_ReellePred(ARow);
+                getvalue(6,ARow,64); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                break;
+             } // end switch
+            //Compute_Percent_RestantPred(ARow);
+            Compute_Retard_TotalPred(ARow);
+            Compute_Retard_ImputablePred(ARow);
+      }
+    else
+      {
+       rc=comp_dist_dates(dt1,dt2,0,0);
+       if (rc >0)  // date ddr > Dav
+         {
+          rc = comp_dist_dates(dt2,dt3,0,0);
+          if (rc <0) Application->MessageBoxA("Date de Fin Réelle < Date de Début Réel",
+                     ecoplan,MB_OK);
+          else // OK
+           {
+            setvalue(6,ARow,37,"100");
+            switch (ch)
+             {
+              case 64:   // duree
+                getvalue(6,ARow,64); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                Compute_Date_DebPred(ARow);
+                break;
+              case 35:   // DDR
+                Compute_Duree_ReellePred(ARow);
+                getvalue(6,ARow,55); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                break;
+              case 36:
+                Compute_Duree_ReellePred(ARow);
+                getvalue(6,ARow,64); setvalue(6,ARow,38,adv);
+                Compute_Date_FinPred(ARow);
+                Compute_Date_DebPred(ARow);
+                break;
+             } // end switch
+            Compute_Percent_RestantPred(ARow);
+            Compute_Retard_TotalPred(ARow);
+            Compute_Retard_ImputablePred(ARow);
+           } // cas OK;
+         }
+       else   // cas tache en cours
+         {
+          switch (ch)
+           {
+            case 37 :  //     % Restant;
+              Compute_Jours_RestantsPred(ARow);
+              Compute_Fin_AvancePred(ARow);
+              Compute_Duree_ReellePred(ARow);
+
+              break;
+            case 38 :  //   Jours Restants
+              Compute_Percent_RestantPred(ARow);
+              Compute_Fin_AvancePred(ARow);
+              Compute_Date_DebPred(ARow);
+              Compute_Duree_ReellePred(ARow);
+
+
+              break;
+            case 64:  // Duree Reelle
+              Compute_Date_FinPred(ARow);
+              Compute_Date_DebPred(ARow);
+              break;
+            case 35:  // DDeb Reel
+              Compute_Duree_ReellePred(ARow);
+              break;
+            case 36:  // Date fin Reelle
+              Compute_Date_DebPred(ARow);
+              Compute_Duree_ReellePred(ARow);
+              break;
+
+
+           }
+          Compute_Percent_RestantPred(ARow);
+          Compute_Jours_RestantsPred(ARow);
+          Compute_Retard_TotalPred(ARow);
+          Compute_Retard_ImputablePred(ARow);
+         }
+      }
+
+
+    Compute_DateDebutPossible();  // de la tache en cours
+    Compute_Flag_Alert();
+    Compute_Flag_AlertPred(ARow);
+
+   }
+change=1;
+}
+
+
+
+
+void __fastcall TplStandard::AdvStringGrid4CellValidate(TObject *Sender,
+      int ACol, int ARow, AnsiString &Value, bool &Valid)
+{
+ // retrouver le champ
+ int ch; int val,rc;
+ char tmp[255]; float cout; int x;
+ float fdata; float fdata2; int result,result2;
+ char str[50];
+ char dt1[15],dt2[15],dt3[15];
+
+
+ ch=vl_chp[4][ACol];
+ strcpy(tmp,AdvStringGrid4->Cells[ACol][1].c_str());
+ Valid=true;
+ switch (ch)
+   {
+    case 29 : // % restant
+       val=atoi(tmp);
+       if ((val <0) || (val > 100))
+         { Application->MessageBoxA("Pourcentage incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+
+       // lire durée réelle et calculer nb jours restants
+       getvalue(4,1,55);
+       result = atoi(adv);
+       x =  ((float) val) * (((float) result) / 100.0) +0.5;
+
+       sprintf(str,"%d",x);
+       setvalue(4,1,28,str);
+       break;
+    case 28 : // Jours restants
+       val=atoi(tmp);
+       if ((val <0) || (val > 999))
+         { Application->MessageBoxA("Nombre Jours restants Incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+       // compute percentage
+       getvalue(4,1,28);
+       result = atoi(adv);
+       fdata = (float) result;
+       getvalue(4,1,55);
+       result2=atoi(adv);
+       fdata2 = (float) result2;
+       x= ( fdata *100.0) / (fdata2);
+       sprintf(str,"%d",x);
+       setvalue(4,1,29,str);
+       break;
+
+    case 55 :  // duree reelle
+       val=atoi(tmp);
+       if ((val <0) || (val > 999))
+         { Application->MessageBoxA("Duree Réelle Incorecte",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+
+       break;
+
+    case 56 :  // date début réel
+       rc=verifdate8(tmp);
+       if (rc>0) { Valid = false; break;}
+
+       break;
+
+    case 57 : // date fin rélle
+       rc=verifdate8(tmp);
+       if (rc>0) { Valid = false; break;}
+
+       break;
+
+    case 30 : // % cout reel
+       val=atoi(tmp);
+       if ((val <0) || (val > 100))
+         { Application->MessageBoxA("Pourcentage Cout Réel Incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+       break;
+
+    case 58 : // Cout reel consomé
+       cout = atof(tmp);
+       if (cout < 0.0)
+       { Application->MessageBoxA("Cout Réel Incorrect",ecoplan,MB_OK);
+           Valid = false; break;
+         }
+       break;
+   }
+ if (Valid==true)
+   {
+    setvalue(4,1,ch,tmp);
+  //  Compute_DateDebutPossible();
+
+    getvalue(4,1,52); strcpy(dt1,adv);   // data avancement
+    getvalue(4,1,56); strcpy(dt2,adv);   // date debut reel
+    getvalue(4,1,57); strcpy(dt3,adv);   // date fin reelle
+
+    rc= comp_dist_dates(dt1,dt3,0,0);
+    if (rc < 0)   // date fin < date avanc
+      {
+       setvalue(4,1,29,"0");
+       setvalue(4,1,28,"0");
+       switch (ch)
+           {
+            case 29 :  //     % Restant;
+              Compute_Jours_Restants();
+              Compute_Fin_Avance();
+              Compute_Date_Deb();
+              //Compute_Duree_Reelle();
+
+              break;
+            case 28 :  //   Jours Restants
+              Compute_Percent_Restant();
+              Compute_Fin_Avance();
+              Compute_Date_Deb();
+              //Compute_Duree_Reelle();
+
+              break;
+            case 55:  // Duree Reelle
+              Compute_Date_Fin();
+              Compute_Date_Deb();
+              break;
+            case 56:  // DDeb Reel
+              Compute_Duree_Reelle();
+              break;
+            case 57:  // Date fin Reelle
+              Compute_Duree_Reelle();
+              Compute_Date_Deb();
+              break;
+           }
+       Compute_Percent_Restant();
+       Compute_Jours_Restants();
+       Compute_Retard_Total();
+       Compute_Retard_Imputable();
+      }
+    else
+      {
+       rc=comp_dist_dates(dt1,dt2,0,0);
+       if (rc >0)  // date ddr > Dav
+         {
+          rc = comp_dist_dates(dt2,dt3,0,0);
+          if (rc <0) Application->MessageBoxA("Date de Fin Réelle < Date de Début Réel",
+                     ecoplan,MB_OK);
+          else // OK
+           {
+            setvalue(4,1,29,"100");
+            switch (ch)
+             {
+              case 55:   // duree
+                getvalue(4,1,55); setvalue(4,1,28,adv);
+                Compute_Date_Fin();
+                Compute_Date_Deb();
+                break;
+              case 56:   // DDR
+                //Compute_Duree_Reelle();
+                getvalue(4,1,55); setvalue(4,1,28,adv);
+                Compute_Date_Fin();
+                break;
+              case 57: //DFR
+                // Compute_Duree_Reelle();
+                getvalue(4,1,55); setvalue(4,1,28,adv);
+                Compute_Date_Fin();
+                break;
+             } // end switch
+            Compute_Percent_Restant();
+            Compute_Retard_Total();
+            Compute_Retard_Imputable();
+           } // cas OK;
+         }
+       else   // cas tache en cours
+         {
+          switch (ch)
+           {
+            case 29 :  //     % Restant;
+              Compute_Jours_Restants();
+              Compute_Fin_Avance();
+              // Compute_Duree_Reelle();
+              Compute_Date_Deb();
+              break;
+            case 28 :  //   Jours Restants
+              Compute_Percent_Restant();
+              Compute_Fin_Avance();
+              // Compute_Duree_Reelle();
+              Compute_Date_Deb();
+              break;
+            case 55:  // Duree Reelle
+              Compute_Date_Fin();
+              break;
+            case 56:  // DDeb Reel
+              Compute_Duree_Reelle();
+              //Compute_Date_Fin();
+
+              break;
+            case 57:  // Date fin Reelle
+              Compute_Duree_Reelle();
+              break;
+
+
+           }
+          Compute_Percent_Restant();
+          Compute_Jours_Restants();
+          Compute_Retard_Total();
+          Compute_Retard_Imputable();
+         }
+      }
+
+
+
+    Compute_Flag_Alert();
+    //Compute_Flag_AlertPred();
+  }
+
+
+}
+//---------------------------------------------------------------------------
+
+
+int __fastcall TplStandard::Compute_Percent_Restant()
+{
+ char str[50],tmp[200];
+ int result,val,x,result2;
+ float fdata,fdata2;
+
+
+
+       getvalue(4,1,28);   // nbjrestants
+       result = atoi(adv);
+       fdata = (float) result;
+       getvalue(4,1,55);
+       result2=atoi(adv);
+       fdata2 = (float) result2;
+       if (fdata2==0.0) fdata2=1.0;
+       x= ( fdata *100.0) / (fdata2);
+       sprintf(str,"%d",x);
+       setvalue(4,1,29,str);
+}
+int __fastcall TplStandard::Compute_Jours_Restants()
+{
+char str[50],tmp[200];
+ int result,val,x,xcal,rc;
+ char dt1[15],dt2[15];
+
+       getvalue(5,row_avancement,62); xcal=atoi(adv);
+       // comparer date de fin et date avancement
+       getvalue(4,1,57); strcpy(dt1,adv);   // date fin reelle
+       getvalue(4,1,52); strcpy(dt2,adv);   // date avancement
+       rc=comp_dist_dates(dt1,dt2,0,0);
+       getvalue(4,1,29); val=atoi(adv);
+       getvalue(4,1,55); result = atoi(adv);
+       x =  ((float) val) * (((float) result) / 100.0) +0.5;
+       sprintf(str,"%d",x); setvalue(4,1,28,str);
+       return 0;
+}
+
+int __fastcall TplStandard::Compute_Duree_Reelle()
+{
+ int xcal; int nbrestants,rc;
+ char tmp[50],dt1[20], dt2[20];
+
+ getvalue(5,row_avancement,62); xcal=atoi(adv);  // calendrier
+ getvalue(4,1,28); nbrestants = atoi(adv);     // nbjourrestant
+ // lire date de debut reelle
+ getvalue(4,1,57); strcpy(dt2,adv);   // fin reelle
+ getvalue(4,1,56); strcpy(dt1,adv);   // debut reelle
+ comp_dist_dates(dt1,dt2,xcal,0);
+ // NB1= distance y compris conges NB2= nombre de jours travailles
+ sprintf(tmp,"%d",NB2+1);
+ setvalue(4,1,55,tmp);
+
+}
+
+int __fastcall TplStandard::Compute_Fin_Avance()
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_tot,x,y,xcal,nbrest;
+
+
+ getvalue(5,row_avancement,62); xcal=atoi(adv);  // calendrier
+ getvalue(4,1,28); nbrest= atoi(adv);
+ getvalue(4,1,52); strcpy(d1,adv);   // avancement
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ // avance conges , avance temps
+ dist_tot = convert_date(a1+2000,m1,j1);   // calcule N par rapport au deb previsionnel
+ x=avance_conges(dist_tot+1,xcal);
+ y=avance_temps(x,xcal,nbrest);
+ add_jour(AnPrev,MoisPrev,JourPrev,y-1);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(4,1,57,tmp);
+
+}
+
+int __fastcall TplStandard::Compute_Date_Fin()
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_tot,x,y,xcal,dur;
+
+
+ getvalue(5,row_avancement,62); xcal=atoi(adv);  // calendrier
+ getvalue(4,1,55); dur= atoi(adv);
+ getvalue(4,1,56); strcpy(d1,adv);   // debut reelle
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ // avance conges , avance temps
+ dist_tot = convert_date(a1+2000,m1,j1);   // calcule N par rapport au deb previsionnel
+ x=avance_conges(dist_tot,xcal);
+ y=avance_temps(x,xcal,dur);
+ add_jour(AnPrev,MoisPrev,JourPrev,y-1);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(4,1,57,tmp);
+
+}
+
+
+
+int __fastcall TplStandard::Compute_Fin_AvancePred(int row)
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_tot,x,y,xcal,nbrest;
+
+
+ getvalue(6,row,63); xcal=atoi(adv);  // calendrier
+ getvalue(6,row,38); nbrest= atoi(adv);
+ getvalue(4,1,52); strcpy(d1,adv);   // avancement
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ // avance conges , avance temps
+ dist_tot = convert_date(a1+2000,m1,j1);   // calcule N par rapport au deb previsionnel
+ x=avance_conges(dist_tot+1,xcal);
+ y=avance_temps(x,xcal,nbrest);
+ add_jour(AnPrev,MoisPrev,JourPrev,y-1);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(6,row,36,tmp);
+
+}
+
+
+
+int  __fastcall TplStandard::Compute_Deb_From_Fin(char *dt)
+{
+ int xcal,x,y,dur; char d1[15];
+ int a1,m1,j1,dist;  char tmp[100];
+
+getvalue(5,row_avancement,62); xcal=atoi(adv);  // calendrier
+getvalue(4,1,55); dur= atoi(adv);      // duree reelle
+//getvalue(4,1,57);
+strcpy(d1,dt);      // date fin reelle
+d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+dist = convert_date(a1+2000,m1,j1);   //
+x=recule_conges(dist+1,xcal);
+y=recule_temps(x,xcal,dur);
+add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+setvalue(4,1,56,tmp);  // deb tot reel
+
+}
+
+int __fastcall TplStandard::Compute_Date_Deb()
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_avanc,x,y,xcal,dur,nbjrest,nbjfait;
+ getvalue(5,row_avancement,62); xcal=atoi(adv);  // calendrier
+ getvalue(4,1,55); dur= atoi(adv);      // duree reelle
+ getvalue(4,1,52);  strcpy(d1,adv);    // date avancement
+ getvalue(4,1,28); nbjrest=atoi(adv);
+ nbjfait=dur-nbjrest;
+
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ dist_avanc = convert_date(a1+2000,m1,j1);   // calcule N par
+ x=recule_conges(dist_avanc+1,xcal);
+ y=recule_temps(x,xcal,nbjfait);
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(4,1,56,tmp);  // deb tot reel
+
+ x=avance_conges(dist_avanc,xcal);
+ y=avance_temps(x,xcal,nbjrest);
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(4,1,57,tmp);  // fin temps reel
+}
+
+int __fastcall TplStandard::Compute_Retard_Total()
+{
+ char dt1[15]; char dt2[15];
+ int xcal; char tmp[50];
+ int margetot;
+
+ getvalue(5,row_avancement,62); xcal=atoi(adv);
+  //  getvalue(4,1,56); strcpy(dt2,adv);   // date debut reel
+
+ getvalue(4,1,57); strcpy(dt2,adv);   // date fin réel
+
+ getvalue(5,row_avancement,66); margetot=atoi(adv);
+ //getvalue(5,row_avancement,46); strcpy(dt1,adv);   // debut previsionnel
+ getvalue(5,row_avancement,48); strcpy(dt1,adv);
+ comp_dist_dates(dt1,dt2,xcal,0);
+
+ NB2=NB2-margetot;
+ // NB2= retard total
+ sprintf(tmp,"%d",NB2);
+ setvalue(4,1,54,tmp);
+}
+
+
+int __fastcall TplStandard::Compute_Retard_Imputable()
+{
+ char dt1[15]; char dt2[15];
+ int xcal; char tmp[50];
+ int j1,m1,a1,j2,m2,a2;
+ int dist,durp,x,y;
+ int decal;
+
+
+ getvalue(5,row_avancement,62); xcal=atoi(adv);
+ getvalue(5,row_avancement,47); durp=atoi(adv);
+
+ //getvalue(4,1,56); strcpy(dt2,adv);   // date debut reel
+ //getvalue(4,1,26); strcpy(dt1,adv);   // debut reel possible
+
+ //  ret imputable = fin reelle tache - duree previsonelle - date debut reelle
+ //                  +/- decalages
+
+ getvalue(4,1,57); strcpy(dt2,adv);   // date fin reel
+ dt2[2]=0; j2=atoi(dt2);  dt2[5]=0; m2=atoi(dt2+3);  dt2[8]=0; a2=atoi(dt2+6);
+
+ dist = convert_date(a2+2000,m2,j2);   //
+ x=recule_conges(dist+1,xcal);
+ y=recule_temps(x,xcal,durp);
+
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ sprintf(dt2,"%02d/%02d/%02d",Jour,Mois,An%100);
+
+ // getvalue(4,1,56);   strcpy(dt1,adv);      // date debut reelle
+
+ getvalue(4,1,26); strcpy(dt1,adv);   // debut reel possible
+ // getvalue(5,row_avancement,46); strcpy(dt1,adv); // date debut previsionnel //possible
+ comp_dist_dates(dt1,dt2,xcal,0);
+
+ // NB2= retard imputable
+ sprintf(tmp,"%d",NB2);
+ setvalue(4,1,53,tmp);
+}
+
+
+
+int __fastcall TplStandard::Compute_DateDebutPossible()
+{
+ int i,decal; int typl,fd,rc;
+ int calp,calt, fin_plus_tot;
+ int durtache;
+ int max_contrainte;
+
+ char tmp[255];
+ char dt1[15],dt2[15];
+ char type_lien[20];
+
+ // calcul date debut reelle possible
+
+  max_contrainte = 0;
+  for (i=1;i<AdvStringGrid5->RowCount;i++)
+     {
+       getvalue(6,i,31);
+       if (strcmp(adv,"")==0)
+       {
+         getvalue(4,1,56);  // lire date debut reel
+         setvalue(4,1,26,adv); // l'ecrire dans date deb possible
+         break;
+       }
+       getvalue(6,i,61);  // decalage
+       decal = atoi(adv);
+       getvalue(6,i,63);  // calendrier predecesseur
+       calp= atoi(adv);
+       getvalue(5,row_avancement,62);
+       calt= atoi(adv);
+       getvalue(6,i,36);
+       strcat(adv,"01/01/00");
+       elargir_annee(adv);
+       date10[2]=0; JourPred=atoi(date10);
+       date10[5]=0; MoisPred=atoi(date10+3);
+       date10[10]=0; AnPred=atoi(date10+6);
+       fin_plus_tot = convert_date(AnPred,MoisPred,JourPred);
+       getvalue(4,1,55); durtache = atoi(adv);
+
+       getvalue(6,i,60); strcpy(type_lien,adv);
+
+       fd = Compute_Decalages(fin_plus_tot,type_lien,calt,calp,decal,durtache);
+       if ((fd )>max_contrainte)
+              {max_contrainte = fd ; row_contrainte=i; }
+
+      }
+
+  if (max_contrainte !=0)
+    {
+     add_jour(AnPrev,MoisPrev,JourPrev,max_contrainte);
+     // on a la date dans An,Mois,Jour;
+     sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+     setvalue(4,1,26,tmp);
+     // pousser debut reel , et calculer fin reelle
+    setvalue(4,1,56,tmp);
+    Compute_Date_Fin();
+    Compute_Flag_Alert();
+   }
+}
+
+int  __fastcall TplStandard::Compute_Decalages(int base,char *typl,int caltache,int calpred,int decal,int dur)
+{
+ int total;
+ total=0;
+
+ if (strcmp(typl,"FD")==0) // FD
+                 {
+                   if ( decal > 0)
+                      {
+                        total = avance_conges(base+1,caltache);
+                        total = avance_temps(total,caltache,decal);
+                      }
+                   else if ( decal < 0)
+                      {  total = avance_conges(base+1,calpred);
+                         total = recule_temps(total,calpred,-decal);
+                      }
+                   else {
+                          total = avance_conges(base+1,caltache);
+                        } // pas de calcul de decalage
+                  }
+               if (strcmp(typl,"FF")==0)    // c est un lien ff
+                  {
+                   if (decal > 0)
+                       { total = avance_conges(base+1,calpred);
+                         total = avance_temps(total,calpred,decal);
+                         total = recule_temps(total,calpred,dur);
+                        }
+                    else if (decal < 0)
+                       {
+                         total=recule_conges(base+1,calpred);
+                         total=recule_temps(total,calpred,-decal);
+                         total = recule_temps(total,calpred,dur);
+                        }
+                    else
+                       {
+
+                        total=recule_conges(base+1,caltache);
+                        total = recule_temps(total,caltache,dur);
+                       }
+                  }
+
+               if (strcmp(typl,"AM")==0) {} // flag_amont = ipred;
+               if (strcmp(typl,"DD")==0)   // Lien DD   Decal est >= 0
+                  {
+                   if ( decal > 0)
+                      {
+                        total=avance_conges(base,calpred);
+                        total = avance_temps(total,calpred,decal);
+                       }
+                   else if ( decal == 0)
+                        {
+                          total=avance_conges(base,caltache);
+                        } // pas de calcul de decalage
+                  }
+ return total;
+
+}
+
+int __fastcall TplStandard::Compute_Flag_Alert()
+
+{
+char dt1[15],dt2[15];
+int rc;
+    /*
+    getvalue(4,1,56);   //  d plus tot reel
+    strcpy(dt1,adv);
+    getvalue(4,1,26);   //  d plus tot reel possible
+    strcpy(dt2,adv);
+    rc=comp_dist_dates(dt1,dt2,0,0);
+
+    if (rc<0) { flag_alert = true; }
+     else { flag_alert = false; lAlert->Caption = ""; }
+    */
+    getvalue(4,1,53); rc=atoi(adv);
+    if (rc!=0) { flag_alert = true; }
+     else { flag_alert = false; lAlert->Caption = ""; }
+}
+
+int __fastcall TplStandard::Compute_Flag_AlertPred(int row)
+
+{
+char dt1[15],dt2[15];
+int rc;
+
+/*
+    getvalue(6,row,35);   //  d plus tot reel
+    strcpy(dt1,adv);
+    getvalue(6,row,32);   //  d plus tot reel possible
+    strcpy(dt2,adv);
+    rc=comp_dist_dates(dt1,dt2,0,0);
+    if (rc<0) { flag_alertPred = true; }
+     else { flag_alertPred = false; lAlertPred->Caption = ""; }
+
+ */
+
+ getvalue(6,row,33); rc=atoi(adv);
+    if (rc!=0) { flag_alertPred = true; }
+     else { flag_alertPred = false; lAlertPred->Caption = ""; }
+}
+
+
+int __fastcall  TplStandard::elargir_annee(char *dt8)
+{
+ strcpy(date10,dt8);
+ date10[9]=dt8[7]; date10[8]=dt8[6];
+ date10[6]='2';  date10[7]='0';   date10[10]=0;
+}
+
+int  __fastcall TplStandard::comp_dist_dates(char *dt1, char *dt2, int calx,int offset)   // date8
+{
+ Word a1,a2,m1,m2,j1,j2;
+ char d1[15],d2[15];
+ int dist1,dist2,i;
+ int annee20; int borne1; int borne2;
+
+ if (strlen(dt1) != 8)
+   {
+    Application->MessageBoxA("Format Date Incorrect",ecoplan,MB_OK);
+    return 0;
+   }
+ if (strlen(dt2) != 8)
+   {
+    Application->MessageBoxA("Format Date Incorrect",ecoplan,MB_OK);
+    return 0;
+   }
+ strcpy(d1,dt1); strcpy(d2,dt2);
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ d2[2]=0; j2=atoi(d2);  d2[5]=0; m2=atoi(d2+3);  d2[8]=0; a2=atoi(d2+6);
+
+ if (cal !=0)  // on elargit les dates, et on calcule
+   {
+    annee20=2000+a1; dist1=convert_date(annee20,m1,j1);
+    annee20=2000+a2; dist2=convert_date(annee20,m2,j2);
+    NB1 = dist2-dist1+offset;
+     if (NB1 < 0)  { borne1=dist2; borne2=dist1; }
+     else {borne1=dist1; borne2=dist2; }
+    // calcul de NB2 en fonction du calendrier
+    NB2=0;
+    for (i=borne1; i < borne2 ; i++)
+      {
+       if (cal[calx][i] == 'T') NB2++;
+      }
+   }
+
+ if (a2>a1) return 1;
+ if (a2<a1) return -1;
+
+ if (m2>m1) return 1;
+ if (m2<m1) return -1;
+
+ if (j2>j1) return 1;
+ if (j2<j1) return -1;
+ return 0;
+}
+
+
+
+int __fastcall TplStandard::Compute_Percent_RestantPred(int row)
+{
+ char str[50],tmp[200];
+ int result,val,x,result2;
+ float fdata,fdata2;
+
+       getvalue(6,row,38);  // Jours restants
+       result = atoi(adv);
+       fdata = (float) result;
+       getvalue(6,row,64);  // Duree
+       result2=atoi(adv);
+       fdata2 = (float) result2;
+       x= ( fdata *100.0) / (fdata2);
+       sprintf(str,"%d",x);
+       setvalue(6,row,37,str);
+}
+int __fastcall TplStandard::Compute_Jours_RestantsPred(int row)
+{
+char str[50],tmp[200];
+ int result,val,x;
+       getvalue(6,row,37); val=atoi(adv);
+       getvalue(6,row,64); result = atoi(adv);
+       x =  ((float) val) * (((float) result) / 100.0) +0.5;
+       sprintf(str,"%d",x); setvalue(6,row,38,str);
+}
+
+int __fastcall TplStandard::Compute_Duree_ReellePred(int row)
+{ // uniquement si des date de debut ou de fin on ete changees
+ int xcal; int nbrestants,rc;
+ char tmp[50],dt1[20], dt2[20];
+
+ getvalue(6,row,63); xcal=atoi(adv);  // calendrier
+ getvalue(6,row,38); nbrestants = atoi(adv);     // nbjourrestant
+ // lire date de debut reelle
+ getvalue(6,row,36); strcpy(dt2,adv);   // fin reelle
+ getvalue(6,row,35); strcpy(dt1,adv);   // debut reelle
+ comp_dist_dates(dt1,dt2,xcal,0);
+ // NB1= distance y compris conges NB2= nombre de jours travailles
+ sprintf(tmp,"%d",NB2+1);
+ setvalue(6,row,64,tmp);
+
+}
+
+int __fastcall TplStandard::Compute_Date_FinPred(int row)
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_tot,x,y,xcal,dur;
+
+
+ getvalue(6,row,63); xcal=atoi(adv);  // calendrier
+ getvalue(6,row,64); dur= atoi(adv);    // duree
+ getvalue(6,row,35); strcpy(d1,adv);   // debut reelle
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ // avance conges , avance temps
+ dist_tot = convert_date(a1+2000,m1,j1);   // calcule N par rapport au deb previsionnel
+ x=avance_conges(dist_tot,xcal);
+ y=avance_temps(x,xcal,dur);
+ add_jour(AnPrev,MoisPrev,JourPrev,y-1);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(6,row,36,tmp);
+
+}
+
+int  __fastcall TplStandard::Compute_Deb_From_FinPred(int row)
+{
+ int xcal,x,y,dur;
+ char d1[15]; int dist,a1,j1,m1;
+ char tmp[15];
+
+getvalue(6,row,63); xcal=atoi(adv);  // calendrier
+getvalue(6,row,64); dur= atoi(adv);      // duree reelle
+getvalue(6,row,36); strcpy(d1,adv);      // date fin reelle
+d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+dist = convert_date(a1+2000,m1,j1);   //
+x=recule_conges(dist+1,xcal);
+y=recule_temps(x,xcal,dur);
+add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+setvalue(6,row,35,tmp);  // deb tot reel
+
+}
+
+int __fastcall TplStandard::Compute_Date_DebPred(int row)
+{
+ Word j1,m1,a1;
+ char d1[15]; char tmp[50];
+ int dist_avanc,x,y,xcal,dur,nbjrest,nbjfait;
+ getvalue(6,row,63); xcal=atoi(adv);  // calendrier
+ getvalue(6,row,64); dur= atoi(adv);
+ getvalue(4,1,52);  strcpy(d1,adv);    // date avancement
+ getvalue(6,row,38); nbjrest=atoi(adv);
+ nbjfait=dur-nbjrest;
+
+ d1[2]=0; j1=atoi(d1);  d1[5]=0; m1=atoi(d1+3);  d1[8]=0; a1=atoi(d1+6);
+ dist_avanc = convert_date(a1+2000,m1,j1);   // calcule N par rapport au deb previsionnel
+ x=recule_conges(dist_avanc+1,xcal);
+ y=recule_temps(x,xcal,nbjfait);
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(6,row,35,tmp);  // deb tot reel
+
+ x=avance_conges(dist_avanc,xcal);
+ y=avance_temps(x,xcal,nbjrest);
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ // result dans An,Mois,Jour
+ sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+ setvalue(6,row,36,tmp);  // fin temps reel
+}
+
+int __fastcall TplStandard::Compute_Retard_TotalPred(int row)
+{
+ char dt1[15]; char dt2[15];
+ int xcal; char tmp[50];
+ int margetot;  int i,t,nt;
+
+ getvalue(6,row,63); xcal=atoi(adv);
+ //getvalue(6,row,35); strcpy(dt2,adv);   // date debut reel
+
+ getvalue(6,row,36); strcpy(dt2,adv);
+ getvalue(6,row,65); strcpy(dt1,adv);   // fin previsionnel
+
+ getvalue(6,row,31); nt=atoi(adv);
+ for (i=1;i<asAvanc->RowCount; i++)
+   { getvalue(5,i,39); t=atoi(adv);
+     if (t==nt) {getvalue(5,i,66); margetot=atoi(adv);
+        break; }
+   }
+
+ comp_dist_dates(dt1,dt2,xcal,0);
+ // NB2= retard total
+ // retirer la marge totale
+ NB2=NB2-margetot;
+ sprintf(tmp,"%d",NB2);
+ setvalue(6,row,34,tmp);
+
+}
+
+int __fastcall TplStandard::Compute_Retard_ImputablePred(int row)
+{
+ char dt1[15]; char dt2[15];
+ int xcal; char tmp[50];
+ int i,nt,t; int durp;
+ int j1,j2,m1,m2,a1,a2;
+ int dist,x,y;
+
+ getvalue(6,row,63); xcal=atoi(adv);
+ getvalue(6,row,36); strcpy(dt2,adv);   // date fin réel
+ // get value duree reel
+ // boucle dans asAvanc pour trouver la duree previsionnelle
+ // numero de taches dans
+
+ getvalue(6,row,31); nt=atoi(adv);
+ for (i=1;i<asAvanc->RowCount; i++)
+   { getvalue(5,i,39); t=atoi(adv);
+     if (t==nt) {getvalue(5,i,47); durp=atoi(adv);
+        break; }
+   }
+
+
+ //  ret imputable = fin reelle tache - duree previsonelle - date debut reelle
+ //  +/- charge
+
+ dt2[2]=0; j2=atoi(dt2);  dt2[5]=0; m2=atoi(dt2+3);  dt2[8]=0; a2=atoi(dt2+6);
+
+ dist = convert_date(a2+2000,m2,j2);   //
+ x=recule_conges(dist+1,xcal);
+ y=recule_temps(x,xcal,durp);
+ add_jour(AnPrev,MoisPrev,JourPrev,y);
+ sprintf(dt2,"%02d/%02d/%02d",Jour,Mois,An%100);
+
+ // getvalue(6,row,35);   strcpy(dt1,adv);      // date debut reelle
+
+ getvalue(6,row,32);   strcpy(dt1,adv);
+ comp_dist_dates(dt1,dt2,xcal,0);
+
+ // NB2= retard imputable
+ sprintf(tmp,"%d",NB2);
+ setvalue(6,row,33,tmp);
+}
+
+
+int __fastcall TplStandard::Compute_DateDebutPossiblePred(int row)
+{
+ int i,decal; int typl,fd,rc;
+ int calp,calt, f_plus_tot;
+ int durtache;
+ int max_contrainte;
+ int row_contrainte;
+ char tmp[255];
+ char dt1[15],dt2[15];
+ char type_lien[20];
+
+ int ch; int ind,pt,ipred;
+
+ // calcul date debut reelle possible
+
+  max_contrainte = 0;
+
+  // boucle sur les predecesseurs des predecesseurs !!!!
+  getvalue(6,row,31);  ch=atoi(adv); if (ch==0) return 0;
+  ind = exist_tache(ch,nb_taches);
+  ipred = 1;
+  while(pr[ind][ipred]!=0)
+    {
+     pt=pr[ind][ipred]; pt=exist_tache(pt,nb_taches);
+     strcpy(type_lien,TYPL[pr_tl[ind][ipred]]);
+     decal = pr_decal[ind][ipred];
+     calt = tcal[ind];
+     calp = tcal[pt];
+     f_plus_tot = fin_plus_tot[pt];
+     getvalue(6,row,64); durtache=atoi(adv);
+     fd = Compute_Decalages(f_plus_tot,type_lien,calt,calp,decal,durtache);
+     if ((fd )>max_contrainte)
+              {max_contrainte = fd ; row_contrainte=i; }
+     ipred++;
+    }
+  if (max_contrainte !=0)
+    {
+     add_jour(AnPrev,MoisPrev,JourPrev,max_contrainte);
+     // on a la date dans An,Mois,Jour;
+     sprintf(tmp,"%02d/%02d/%02d",Jour,Mois,An%100);
+     setvalue(6,row,59,tmp);
+
+   }
+}
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TplStandard::asAvancContextPopup(TObject *Sender,
+      TPoint &MousePos, bool &Handled)
+{
+int X,Y;
+ X = MousePos.x;
+ Y = MousePos.y;
+  asAvanc->MouseToCell(X, Y, CurCol, CurRow);
+ // conversion en ligne et colonne courantes
+ PopupActiv->Popup(X, Y);
+}
+//---------------------------------------------------------------------------
+
