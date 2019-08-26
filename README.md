@@ -1,9 +1,10 @@
 ECOPLANNING
 
-Code du logiciel de gestion de projets Ecoplanning présentant des spécificités innovantes et intéressantes pour maitriser la notion temps dans déroulement de différents types de projets et présenter sous différente forme le séquencement, vos priorités et contraintes dans la réalisation de votre objectif.
+Ecoplanning is a project management software with innovative and interesting specificities to help the user to master the notion of time in the course of different types of projects and present in different form the sequencing, your priorities and constraints in achieving your goal.
 
-Logiciel:
+
+Software (in French):
 https://www.ecoplanningtime.com/produit/ecoplanning-v5/
 
-Démo:
+Demo (in French):
 https://www.ecoplanningtime.com/demande-de-demo/
