@@ -1,6 +1,6 @@
 ECOPLANNING
 
-Ecoplanning is a project management software with innovative and interesting specificities to help the user to master the notion of time in the course of different types of projects and present in different form the sequencing, your priorities and constraints in achieving your goal.
+Ecoplanning is a project management software with innovative and interesting specificities to help the project manager to master the notion of time in the course of different types of projects and present in different form the sequencing, of your project, your priorities and constraints to achieve your goal.
 
 
 Software (in French):
